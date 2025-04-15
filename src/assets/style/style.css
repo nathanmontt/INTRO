@@ -94,6 +94,23 @@ body {
 }
 
 /* ======================================================= */
+
+#container {
+    border: 2px solid;
+}
+#container p {
+    /* background-color: crimson; */
+}
+#container > p {
+    /* background-color: crimson; */
+}
+#container ~ p {
+    /* background-color: crimson; */
+}
+#container + p {
+    background-color: crimson;
+}
+
 /* ======================================================= */
 /* ======================================================= */
 /* ======================================================= */
