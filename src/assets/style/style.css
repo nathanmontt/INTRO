@@ -27,3 +27,31 @@ body {
     font-weight: bold;
     font-style: italic;
 }
+
+#test-title {
+    /* border-style: dashed; */
+    /* border-style: dotted;
+    border-style: double;
+    border-style: groove;
+    border-style: hidden;
+    border-style: none;
+    border-style: outset;
+    border-style: inset;
+    border-style: ridge; */
+
+    /* border-style: solid;
+    border-width: 3px;
+    border-color: darkorange; */
+    
+    border-radius: 3px;
+
+    /* shorthand */
+    border: 3px solid darkorange;
+}
+
+#test-text {
+    border-bottom: 4px solid greenyellow;
+    border-top: 6px solid firebrick;
+    border-left: 6px dotted black;
+    border-right: 6px outset blue;
+}
