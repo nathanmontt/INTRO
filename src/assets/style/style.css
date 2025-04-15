@@ -64,7 +64,7 @@ body {
 
 #test-shadow {
     font-size: 3em;
-
+    
     /* horizontal vertical blur (optional) color, repetir tudo para mais shadows*/
     text-shadow: 3px 5px 2px red, -3px -5px 2px blue;
 }
@@ -73,6 +73,30 @@ body {
     width: 100px;
     height: 100px;
     background-color: rgb(201, 201, 201);
-
+    
     box-shadow: 3px 3px 5px green;
 }
+
+/* ======================================================= */
+
+.box {
+    border: 5px solid;
+    font-size: 5em;
+    height: 250px;
+    width: 250px;
+}
+#box1-margin {
+    background-color: brown;
+    margin-left: 50px;
+}
+#box2-margin {
+    background-color: darkturquoise;
+}
+
+/* ======================================================= */
+/* ======================================================= */
+/* ======================================================= */
+/* ======================================================= */
+/* ======================================================= */
+/* ======================================================= */
+/* ======================================================= */
