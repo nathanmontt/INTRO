@@ -112,6 +112,30 @@ body {
 }
 
 /* ======================================================= */
+
+#pseudo::first-letter {
+    font-size: 2em;
+    font-style: italic;
+}
+#lorem-text-pseudo::first-line {
+    background-color: saddlebrown;
+}
+
+#lorem-text-pseudo::selection {
+    color: green;
+    background-color: rgb(65, 65, 65);
+}
+
+#fruit li::before {
+    content: "-> ";
+}
+
+#fruit > #apple::after {
+    content: " muito bom!!";
+}
+#fruit > #banana{}
+#fruit > #orange{}
+
 /* ======================================================= */
 /* ======================================================= */
 /* ======================================================= */
