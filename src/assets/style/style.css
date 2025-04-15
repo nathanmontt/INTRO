@@ -137,6 +137,30 @@ body {
 #fruit > #orange{}
 
 /* ======================================================= */
+
+/* .pagination {
+    text-align: center;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    display: inline-block;
+} */
+
+/* Dentro da nossa classe pagination, ache toda anchor tag que tenha a classe active */
+/* .pagination a.active {
+    background-color: rgb(1, 172, 1);
+    font-weight: bold;
+    border-radius: 5px;
+} */
+/* Todo o elemento que for hoverado, achar o elemento que não tenha a classe active (que está em hover) */
+/* .pagination a:hover:not(.active) {
+    background-color: rgb(69, 69, 69);
+    border-radius: 5px;
+} */
+
 /* ======================================================= */
 /* ======================================================= */
 /* ======================================================= */
