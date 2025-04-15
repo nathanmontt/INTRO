@@ -7,430 +7,443 @@
     <title>INTRO</title>
 </head>
 <body>
-    <h1>INTRO</h1>
-    <h2>Desde o início, devagar e sempre</h2>
+    <!-- Utilizando o 13. para ajudar -->
+    <header>
+        <h1>INTRO</h1>
+        <h2>Desde o início, devagar e sempre</h2>
 
-    <p>OBS.: todo o contéudo a seguir está sendo seguido pelo site do roadmap.sh, mais especificamente o contéudo de Front-end.</p>
+        <p>OBS.: todo o contéudo a seguir está sendo seguido pelo site do roadmap.sh, mais especificamente o contéudo de Front-end.</p>
+    </header>
 
-    <h2>Internet</h2>
+    <main>
+        <h2>Internet</h2>
 
-    <h3>How does the Internet work?</h3>
-    <p>Conteúdo resumido do vídeo: How the Internet Works in 5 Minutes, por Aaron.</p>
-    <ul>
-        <li>Podemos pensar na Internet como um <strong>cabo</strong>, um fio, um <em>wire</em>;</li>
+        <h3>How does the Internet work?</h3>
+        <p>Conteúdo resumido do vídeo: How the Internet Works in 5 Minutes, por Aaron.</p>
+        <ul>
+            <li>Podemos pensar na Internet como um <strong>cabo</strong>, um fio, um <em>wire</em>;</li>
+            
+            <li>Sendo um cabo, ele está (pelo menos no caso da Internet) debaixo da terra sendo um fio de cobre, por exemplo. Mas também temos os <strong>satélites</strong>, por exemplo;</li>
+            
+            <li>Além disso, temos <strong>computadores especiaias</strong>, os <strong>servidores</strong>. São eles que estão diretamente conectados aos <em>wires</em>, além de, dentro deles (os <em>servers</em>), termos <em>hardrives</em> que armazenam as <em>web pages</em>;</li>
+            
+            <li>Só que ter apenas isso não faz a comunicação entre tudo acontecer de forma mágia. Precisamos de algo. Com isso, os servidores possuem algo chamado <em>IP</em> (ou <strong>protocolo de Internet</strong>). Se ficar complicado de imaginar, é só pensar em um endereço;</li>
+            
+            <li>O problema é que, se pesquisarmos, por exemplo, <em>endereços de IP</em>, vamos nos deparar com <strong>72.14.205.100</strong>. E o que é esse valor??? Bom, já que não conseguimos entender esse valor, é dado um nome a ele. Esse nós chamamos de <strong>google.com</strong>;</li>
+            
+            <li>E para se comunicar entre si, no caso eu e minha tia, por exemplo? Bom, nossos PC's não são conectados diretamente nos <em>wires</em>, então precisamos de um <em>meio termo</em> para isso. Surge então as <strong>ISPs</strong>, <strong>Internet Service Providers</strong>, ou só <strong>Provedores de Internet</strong> (VIVO, TIM, Claro, e por aí vai...). Mandamos mensagens "por elas", elas mandam "pela Internet" e chega até o destino;</li>
+            
+            <li>Lembrando que ela a mensagem não sai inteira do seu PC até o destinatário. Ela é quebrada em <strong><em>packets</em></strong>, ou <strong>pacotes</strong>. No fim, ao ir chegando ao outro cliente (chamamos dessa forma chique mesmo), ela vai se reconstruindo;</li>
+            
+            <li>Mas e se eu quiser mandar um email a uma pessoa e, na minha casa, meu pai quiser fazer o mesmo? Meu email não vai colidir com o dele??</li>
+            
+            <li>Na verdade, não. O motivo disso são os <strong>endereços IP</strong> e os <strong>roteadores</strong>. Eles são responsáveis para que isso não ocorra. Para os servidores, eles tem a finalidade de <strong>guiar os pacotes ao seu devido destino</strong>. E como eles fazem isso? Através dos <strong>endereços IP</strong> (são únicos, ok?);</li>
+        </ul>
         
-        <li>Sendo um cabo, ele está (pelo menos no caso da Internet) debaixo da terra sendo um fio de cobre, por exemplo. Mas também temos os <strong>satélites</strong>, por exemplo;</li>
-        
-        <li>Além disso, temos <strong>computadores especiaias</strong>, os <strong>servidores</strong>. São eles que estão diretamente conectados aos <em>wires</em>, além de, dentro deles (os <em>servers</em>), termos <em>hardrives</em> que armazenam as <em>web pages</em>;</li>
-        
-        <li>Só que ter apenas isso não faz a comunicação entre tudo acontecer de forma mágia. Precisamos de algo. Com isso, os servidores possuem algo chamado <em>IP</em> (ou <strong>protocolo de Internet</strong>). Se ficar complicado de imaginar, é só pensar em um endereço;</li>
-        
-        <li>O problema é que, se pesquisarmos, por exemplo, <em>endereços de IP</em>, vamos nos deparar com <strong>72.14.205.100</strong>. E o que é esse valor??? Bom, já que não conseguimos entender esse valor, é dado um nome a ele. Esse nós chamamos de <strong>google.com</strong>;</li>
-        
-        <li>E para se comunicar entre si, no caso eu e minha tia, por exemplo? Bom, nossos PC's não são conectados diretamente nos <em>wires</em>, então precisamos de um <em>meio termo</em> para isso. Surge então as <strong>ISPs</strong>, <strong>Internet Service Providers</strong>, ou só <strong>Provedores de Internet</strong> (VIVO, TIM, Claro, e por aí vai...). Mandamos mensagens "por elas", elas mandam "pela Internet" e chega até o destino;</li>
-        
-        <li>Lembrando que ela a mensagem não sai inteira do seu PC até o destinatário. Ela é quebrada em <strong><em>packets</em></strong>, ou <strong>pacotes</strong>. No fim, ao ir chegando ao outro cliente (chamamos dessa forma chique mesmo), ela vai se reconstruindo;</li>
-        
-        <li>Mas e se eu quiser mandar um email a uma pessoa e, na minha casa, meu pai quiser fazer o mesmo? Meu email não vai colidir com o dele??</li>
-        
-        <li>Na verdade, não. O motivo disso são os <strong>endereços IP</strong> e os <strong>roteadores</strong>. Eles são responsáveis para que isso não ocorra. Para os servidores, eles tem a finalidade de <strong>guiar os pacotes ao seu devido destino</strong>. E como eles fazem isso? Através dos <strong>endereços IP</strong> (são únicos, ok?);</li>
-    </ul>
-    
-    <h2>What is HTTP?</h2>
-    <p>Conteúdo resumido do vídeo: What is HTTP and Why Web Is Built On It?, por Hooman Mardox.</p>
-    <ul>
-        <li>De acordo com o vídeo, HTTP significa <strong>HyperText Transfer Protocol</strong>. O HyperText é possível entender como os <strong><em>links</em></strong> que estão presentes dentro da página;</li>
-        
-        <li>Então, de forma resumida, HTTP é um protocolo que transfere esses HyperTexts do servidor web para os browsers;</li>
-    </ul>
+        <h2>What is HTTP?</h2>
+        <p>Conteúdo resumido do vídeo: What is HTTP and Why Web Is Built On It?, por Hooman Mardox.</p>
+        <ul>
+            <li>De acordo com o vídeo, HTTP significa <strong>HyperText Transfer Protocol</strong>. O HyperText é possível entender como os <strong><em>links</em></strong> que estão presentes dentro da página;</li>
+            
+            <li>Então, de forma resumida, HTTP é um protocolo que transfere esses HyperTexts do servidor web para os browsers;</li>
+        </ul>
 
-    <h2>What is Domain Name?</h2>
-    <p>Conteúdo resumido do vídeo: What Is a Domain Name | Domain Names Explained, por Hostinger Academy.</p>
-    <ul>
-        <li>Se procurarmos por endereços IP na Internet, veremos uma baita quantidade de números, como 8.8.8.8, 8.8.8.4, e assim por diante. Mas esses número tem um significado. Para o PC. Para nós, não de cara;</li>
-        
-        <li>Eles são os <strong>nomes dos sites</strong>. Mas não vamos ficar sabendo de todos os IPs de cabeça, e é para isso que o <strong>DNS</strong> (Domain Name Server) serve. QUando digitamos na barra de pesquisa de algum browser, é enviado uma <em>request</em> para o <em>DNS</em> que sai em busca desse nome. Quando o acha, compara com os endereços já registrados e, se compatíveis, retorna a pesquisa (no caso, vai em direção ao site escolhido);</li>
-    </ul>
+        <h2>What is Domain Name?</h2>
+        <p>Conteúdo resumido do vídeo: What Is a Domain Name | Domain Names Explained, por Hostinger Academy.</p>
+        <ul>
+            <li>Se procurarmos por endereços IP na Internet, veremos uma baita quantidade de números, como 8.8.8.8, 8.8.8.4, e assim por diante. Mas esses número tem um significado. Para o PC. Para nós, não de cara;</li>
+            
+            <li>Eles são os <strong>nomes dos sites</strong>. Mas não vamos ficar sabendo de todos os IPs de cabeça, e é para isso que o <strong>DNS</strong> (Domain Name Server) serve. QUando digitamos na barra de pesquisa de algum browser, é enviado uma <em>request</em> para o <em>DNS</em> que sai em busca desse nome. Quando o acha, compara com os endereços já registrados e, se compatíveis, retorna a pesquisa (no caso, vai em direção ao site escolhido);</li>
+        </ul>
 
-    <h2>What is Hosting?</h2>
-    <p>Conteúdo resumido (esse foi mais do resumido. O conteúdo pode não estar todo aqui, porque estou escrevendo ele em um caderno a parte, até porque o vídeo é <strong>incrível</strong>) do vídeo: How Web Browsers Work, por Tadas Petra.</p>
-    <ul>
-        <li>No vídeo, toda a explicação é bem colocada, mas ele menciona a árvore de como o <em>browser</em> funciona, começando na <strong>interface do usuário</strong> até a parte de <strong>networking</strong>, <strong>intérprete de JavaScript</strong>;</li>
+        <h2>What is Hosting?</h2>
+        <p>Conteúdo resumido (esse foi mais do resumido. O conteúdo pode não estar todo aqui, porque estou escrevendo ele em um caderno a parte, até porque o vídeo é <strong>incrível</strong>) do vídeo: How Web Browsers Work, por Tadas Petra.</p>
+        <ul>
+            <li>No vídeo, toda a explicação é bem colocada, mas ele menciona a árvore de como o <em>browser</em> funciona, começando na <strong>interface do usuário</strong> até a parte de <strong>networking</strong>, <strong>intérprete de JavaScript</strong>;</li>
+            
+            <li>Menciona também sobre o <strong>HTML</strong> ter seu <em>parser</em> inciado e depois ser criado uma árvore dele(caso tenha um <strong>CSS</strong> [vou ver ainda], o processo é o mesmo, mas com um <strong>CSS Parser)</strong> e, caso haja outro arquivo, juntarem para formar a <strong>Render Tree</strong>;</li>
+            
+            <li>O vídeo é incível. Assistam!</li>
+        </ul>
         
-        <li>Menciona também sobre o <strong>HTML</strong> ter seu <em>parser</em> inciado e depois ser criado uma árvore dele(caso tenha um <strong>CSS</strong> [vou ver ainda], o processo é o mesmo, mas com um <strong>CSS Parser)</strong> e, caso haja outro arquivo, juntarem para formar a <strong>Render Tree</strong>;</li>
-        
-        <li>O vídeo é incível. Assistam!</li>
-    </ul>
-    
-    <hr>
+        <hr>
 
-    <p>Com isso, marcamos uma parte do roadmap como concluída! Agora, partimos para a parte seguinte: <strong>HTML e CSS</strong>. Primeiro, vamos dar início no HTML.</p>
-    
-    <hr>
+        <p>Com isso, marcamos uma parte do roadmap como concluída! Agora, partimos para a parte seguinte: <strong>HTML e CSS</strong>. Primeiro, vamos dar início no HTML.</p>
+        
+        <hr>
 
-    <h2>HTML</h2>
-    <h3>1. Introduction to HTML</h3>
-    <p>Conteúdo estudado do canal: Bro Code</p>
-    
-    <ul>
-        <li>HTML significa <strong>Hyper-text Markup Language</strong>. A ideia é que <strong>tags</strong> (essas que estão fazendo o texto ficar em <strong>negrito</strong> ou <em>itálico</em>), também conhecidas como - pasmem - <strong>markups</strong>, são usadas em <em>web browsers</em> para dar <em>display</em> em certos elementos, como por exemplo - pasmem mais uma vez - <strong>todo esse conteúdo</strong>;</li>
-        
-        <li>Se ainda não deu para entender, imagine que você queira construir uma casa. O HTML seria a <strong>fundação dela</strong>. E aí entramos com a <strong>CSS</strong> (Cascading Style Sheet), que seria o equivalente às <strong>decorações, design de interiores e cores</strong> da casa.</li>
-    </ul>
-    
-    <h3>2. HTML Basics</h3>
-    <p>Conteúdo (ainda) estudado do canal: Bro Code</p>
-    
-    <ul>
-        <li>
-            <p><strong>Headings</strong></p>
-            <p>Temos alguns titpos de títulos, que vai do h1 até o h6</p>
-            <ul>
-                <li><h1>Heading 1</h1></li>
-                <li><h2>Heading 2</h2></li>
-                <li><h3>Heading 3</h3></li>
-                <li><h4>Heading 4</h4></li>
-                <li><h5>Heading 5</h5></li>
-                <li><h6>Heading 6</h6></li>
-            </ul>
-        </li>
-        
-        <br>
+        <h2>HTML</h2>
+        <h3>1. Introduction to HTML</h3>
+        <p>Conteúdo estudado do canal: Bro Code</p>
         
         <ul>
-            <p><strong>Pré-formato</strong></p>
-            <p>Aqui é como o texto vai se apresentar dentro da tag pre. Dentro dela, o que foi colocado (espaço, quebra de linha, não como tag, mas à mão mesmo) é <strong>permanecido</strong>. Um exemplo:</p>
+            <li>HTML significa <strong>Hyper-text Markup Language</strong>. A ideia é que <strong>tags</strong> (essas que estão fazendo o texto ficar em <strong>negrito</strong> ou <em>itálico</em>), também conhecidas como - pasmem - <strong>markups</strong>, são usadas em <em>web browsers</em> para dar <em>display</em> em certos elementos, como por exemplo - pasmem mais uma vez - <strong>todo esse conteúdo</strong>;</li>
             
+            <li>Se ainda não deu para entender, imagine que você queira construir uma casa. O HTML seria a <strong>fundação dela</strong>. E aí entramos com a <strong>CSS</strong> (Cascading Style Sheet), que seria o equivalente às <strong>decorações, design de interiores e cores</strong> da casa.</li>
+        </ul>
+        
+        <h3>2. HTML Basics</h3>
+        <p>Conteúdo (ainda) estudado do canal: Bro Code</p>
+        
+        <ul>
             <li>
-                Dentro dessa tag li,          entre a vírgula e o "entre" temos um espaço de 10 espaços em branco. Mas no browser, ele não conta esses espaços;
+                <p><strong>Headings</strong></p>
+                <p>Temos alguns titpos de títulos, que vai do h1 até o h6</p>
+                <ul>
+                    <li><h1>Heading 1</h1></li>
+                    <li><h2>Heading 2</h2></li>
+                    <li><h3>Heading 3</h3></li>
+                    <li><h4>Heading 4</h4></li>
+                    <li><h5>Heading 5</h5></li>
+                    <li><h6>Heading 6</h6></li>
+                </ul>
             </li>
+            
+            <br>
+            
+            <ul>
+                <p><strong>Pré-formato</strong></p>
+                <p>Aqui é como o texto vai se apresentar dentro da tag pre. Dentro dela, o que foi colocado (espaço, quebra de linha, não como tag, mas à mão mesmo) é <strong>permanecido</strong>. Um exemplo:</p>
+                
+                <li>
+                    Dentro dessa tag li,          entre a vírgula e o "entre" temos um espaço de 10 espaços em branco. Mas no browser, ele não conta esses espaços;
+                </li>
+                
+                <li>
+                    <pre>
+                        Já aqui dentro da tag pre,       o espaço permanece,
+                        
+                        
+                        as quebras de linhas também     (até   a   f o n t e muda).
+                    </pre>
+                </li>
+            </ul>
+
+            <li>Como meio de treino, vamos fazer um treino. Vamos mostrar as letras de uma música que gostamos. De início, não vamos separar nada em arquivos, mas colocar tudo por aqui mesmo;</li>
             
             <li>
                 <pre>
-                    Já aqui dentro da tag pre,       o espaço permanece,
+                    <h2>Take On Me</h2>
+                    <h4>Song by A-ha</h4>
+                    <a href="https://www.youtube.com/watch?v=djV11Xbc914" target="_blank" translate="yes" title="Vídeo original da musica Take on Me">Original vídeo</a>
+                    <p>Usando o contéudo do <strong>3. Hyperlinks</strong> para implentar aqui</p>
+
+                    We're talking away
+                    I don't know what I'm to say
+                    I'll say it anyway
+                    Today is another day to find you
                     
+                    Shying away
+                    I'll be coming for your love, okay?
                     
-                    as quebras de linhas também     (até   a   f o n t e muda).
+                    Take on me (take on me)
+                    Take me on (take on me)
+                    I'll be gone
+                    In a day or two
+                    
+                    So needless to say
+                    I'm odds and ends
+                    But I'll be stumbling away
+                    Slowly learning that life is okay
+                    
+                    Say after me
+                    It's no better to be safe than sorry
+
+                    Take on me (take on me)
+                    Take me on (take on me)
+                    I'll be gone
+                    In a day or two
+                    
+                    All the things that you say, yeah
+                    Is it life or just to play my worries away?
+                    You're all the things I've got to remember
+                    
+                    You're shying away
+                    I'll be coming for you anyway
+
+                    Take on me (take on me)
+                    Take me on (take on me)
+                    I'll be gone in a day
+                    Take on me (take on me)
+                    Take me on (take on me)
+                    
+                    I'll be gone (take on me, take on me)
+                    In a day (take me on, take on me)
+
+                    Take on me (take on me)
+                    Take me on (take on me)
                 </pre>
             </li>
         </ul>
 
-        <li>Como meio de treino, vamos fazer um treino. Vamos mostrar as letras de uma música que gostamos. De início, não vamos separar nada em arquivos, mas colocar tudo por aqui mesmo;</li>
+        <h3>3. Hyperlinks</h3>
+        <p>Conteúdo (continuando) estudado do canal: Bro Code</p>
         
-        <li>
-            <pre>
-                <h2>Take On Me</h2>
-                <h4>Song by A-ha</h4>
-                <a href="https://www.youtube.com/watch?v=djV11Xbc914" target="_blank" translate="yes" title="Vídeo original da musica Take on Me">Original vídeo</a>
-                <p>Usando o contéudo do <strong>3. Hyperlinks</strong> para implentar aqui</p>
-
-                We're talking away
-                I don't know what I'm to say
-                I'll say it anyway
-                Today is another day to find you
-                
-                Shying away
-                I'll be coming for your love, okay?
-                
-                Take on me (take on me)
-                Take me on (take on me)
-                I'll be gone
-                In a day or two
-                
-                So needless to say
-                I'm odds and ends
-                But I'll be stumbling away
-                Slowly learning that life is okay
-                
-                Say after me
-                It's no better to be safe than sorry
-
-                Take on me (take on me)
-                Take me on (take on me)
-                I'll be gone
-                In a day or two
-                
-                All the things that you say, yeah
-                Is it life or just to play my worries away?
-                You're all the things I've got to remember
-                
-                You're shying away
-                I'll be coming for you anyway
-
-                Take on me (take on me)
-                Take me on (take on me)
-                I'll be gone in a day
-                Take on me (take on me)
-                Take me on (take on me)
-                
-                I'll be gone (take on me, take on me)
-                In a day (take me on, take on me)
-
-                Take on me (take on me)
-                Take me on (take on me)
-            </pre>
-        </li>
-    </ul>
-
-    <h3>3. Hyperlinks</h3>
-    <p>Conteúdo (continuando) estudado do canal: Bro Code</p>
-    
-    <ul>
-        <li>Hyperlinks são referências a dados que podemos seguir clicando em um link, como <a href="https://www.google.com/">esse aqui, que vai direto ao Google</a></li>
-
-        <li>Tem também <a href="https://www.google.com/" target="_blank">esse aqui</a>. Ele abre no Google, mas em outra aba;</li>
-        
-        <li>Tem mais um, <a href="https://www.google.com/" title="Opa, cá estou eu, depois de dar um hover em cima deste link incrível!" target="_blank">esse</a>. Só dar um <em>hover</em> (passar o mouse por cima) que você vai ver;</li>
-        
-        <li>Como não temos outro arquivo HTML, não faremos a "linkagem" entre eles, mas saiba que existe. O que faremos é mandar um <a href="mailto:test@gmail.com">email</a>. Ele é falso, mas entra na parte de enviar emails</li>
-    </ul>
-
-    <h3>4. Images</h3>
-    <p>Conteúdo (sem parar) estudado do canal: Bro Code</p>
-    
-    <ul>
-        <li>Aqui vamos começar a introduzir o conceito de <strong>imagens</strong>;</li>
-
-        <li>
-            <img src="img/karsten-winegeart-NE0XGVKTmcA-unsplash.jpg" alt="Dog" width="100px">
-        </li>
-        
-        <li>É possível também transformar uma imagem em um hyperlink. Não faremos aqui, mas é só envelopar a imagem com a tag de anchor. Também é possível adicionar um gif;</li>
-    </ul>
-
-    <h3>5. Audio</h3>
-    <p>Conteúdo (não acabou) estudado do canal: Bro Code</p>
-    
-    <ul>
-        <li>Bom, aqui é como comandar o áudio. Uma coisa boa a se perceber é que, caso o <em>browser</em> não tenha compatibilidade com um certo tipo de áudio, colocamos outra tag source abaixo para substituir caso a primeira não exista. Mas é importante usarmos o atributo type para indicar o tipo de áudio que estamos usando;</li>
-        <li>
-            <p>Almost a Year Ago (Sting) - John Deley and the 41 Players</p>
-            <audio controls muted loop>
-                <source src="audio/Almost a Year Ago (Sting) - John Deley and the 41 Players.mp3" type="audio/mpeg">
-            </audio>
-
-            <p>Ersatz Bossa (Sting) - John Deley and the 41 Players</p>
-            <audio controls muted loop>
-                <source src="audio/Ersatz Bossa (Sting) - John Deley and the 41 Players.mp3" type="audio/mpeg">
-            </audio>
-
-            <p>Bluesy Vibes (Sting) - Doug Maxwell_Media Right Productions</p>
-            <audio controls muted loop>
-                <source src="audio/Bluesy Vibes (Sting) - Doug Maxwell_Media Right Productions.mp3" type="audio/mpeg">
-            </audio>
-        </li>
-    </ul>
-
-    <h3>6. Video</h3>
-    <p>Conteúdo (26 minutos direto de 4 horas, não aguento) estudado do canal: Bro Code</p>
-    
-    <ul>
-        <li>O mesmo serve para o vídeo (no caso, o que fizemos com o áudio). O que acho que é um diferencial é encapsular o vídeo com uma <em>anchor tag</em>;</li>
-        
-        <li>
-            Tem um link para um vídeo aqui. Porém, ele é muito grande. Adicionando também um tópico que não vimos aqui, <strong>Comentários</strong>, o vídeo dentro dele tem a explicação de como um deve ser;
-            <!-- <video src="videos/river.mp4" type="video/mp4" width="500px" controls muted autoplay loop ></video> -->
-        </li>
-    </ul>
-
-    <h3>7. Video</h3>
-    <p>Conteúdo (agora em 31:25 minutos de 4 horas) estudado do canal: Bro Code</p>
-
-    <ul>
-        <li>Esse nós olhamos para a aba em si, a "figurinha" que fica lá em cima. O importante lembrar são as medidas: <strong>96px x 96px</strong>;</li>
-    </ul>
-
-    <h3>8. Text Formating</h3>
-    <p>Conteúdo (pulando para 35:02. Curtinha a aula passada) estudado do canal: Bro Code</p>
-    
-    <p>Vamos ver alguns formatos de textos mais comuns:</p>
-    <ul>
-        <li>Texto em normal;</li>
-        <li>Texto em <strong>negrito</strong>;</li>
-        <li>Texto em <em>itálico</em>;</li>
-        <li>Texto em <u>underline</u>;</li>
-        <li>Texto em <del>deletado</del>;</li>
-        <li>Texto em <small>pequeno</small>;</li>
-        <li>Texto em <sub>sub</sub>;</li>
-        <li>Texto em <sup>sup</sup>;</li>   
-        <li>Texto em <mark>grifado</mark>;</li>
-    </ul>
-    
-    <h3>9. Span & Div</h3>
-    <p>Conteúdo (38:27 minutos. <em>Tamo estudando, tamo estudando</em>) estudado do canal: Bro Code</p>
-    
-    <ul>
-        <li>Primeiro, vamos listar as diferenças entre as duas: <strong>span</strong> é um <strong>contêiner</strong>, mas para propósitos de estilização <strong><em>inline</em></strong>, enquanto a <strong>div</strong> também é um <strong>contêiner</strong>, mas para propósitos de estilização <strong><em>em bloco</em></strong>. Abaixo tem é possível <strong>ver</strong> a diferença;</li>
-        
-        <li><span style="background-color: tomato;">Esse é um item span;</span></li>
-        <li><div style="background-color: cyan;">Esse é um item div;</div></li>
-
-        <li><p>Esse é um item <span style="background-color: tomato;">span;</span></p></li>
-        <li>Esse é um item <div style="background-color: cyan;">div;</div></li>
-    </ul>
-    
-    <h3>10. Lists</h3>
-    <p>Conteúdo (43:14 minutos.) estudado do canal: Bro Code</p>
-
-    <p>Bom, já estamos estudando essa parte desde o início...</p>
-    <p>Mas agora, vamos comentar sobre os <strong>tipos diferentes de <em>lists</em></strong>.</p>
-    
-    <h4>Unordered List</h4>
-    <ul>
-        <li>Uma de suas características que a difere das outras são as <em><strong>bullet points</strong></em>. Mas só elas, sem nada a mais. Sem valores, algarismos romanos, etc;</li>
-        
-        <li>Então vamos criar uma lista de compras rapidamente: leite;</li>
-        <li>Ovos;</li>
-        <li>Café;</li>
-        <li>Frango;</li>
-        <li>Mas para café, precisamos de mais algumas coisas:</li>
         <ul>
-            <li>Filtro;</li>
-            <li>Açúcar;</li>
-            <li>Colher;</li>
+            <li>Hyperlinks são referências a dados que podemos seguir clicando em um link, como <a href="https://www.google.com/">esse aqui, que vai direto ao Google</a></li>
+
+            <li>Tem também <a href="https://www.google.com/" target="_blank">esse aqui</a>. Ele abre no Google, mas em outra aba;</li>
+            
+            <li>Tem mais um, <a href="https://www.google.com/" title="Opa, cá estou eu, depois de dar um hover em cima deste link incrível!" target="_blank">esse</a>. Só dar um <em>hover</em> (passar o mouse por cima) que você vai ver;</li>
+            
+            <li>Como não temos outro arquivo HTML, não faremos a "linkagem" entre eles, mas saiba que existe. O que faremos é mandar um <a href="mailto:test@gmail.com">email</a>. Ele é falso, mas entra na parte de enviar emails</li>
         </ul>
-    </ul>
-    
-    <h4>Ordered List</h4>
-    <ol>
-        <li>Para esta, são os <strong>valores</strong>. Precisamos de uma ordem;</li>
+
+        <h3>4. Images</h3>
+        <p>Conteúdo (sem parar) estudado do canal: Bro Code</p>
         
-        <li>Vamos de <strong><em>To Do List</em></strong>:</li>
-        <li>Tomar café;</li>
-        <li>Arrumar a cama;</li>
-        <li>Escovar os dentes;</li>
-        <li>Mas para café, precisamos de mais algumas coisas:</li>
-    </ol>
+        <ul>
+            <li>Aqui vamos começar a introduzir o conceito de <strong>imagens</strong>;</li>
 
-    <h4>Description List</h4>
-    <p>Aqui, temos valores-chaves em par, ou seja, <strong>um termo e uma definição</strong>;</p>
-    <p>Usamos os termos com tags <strong>dt</strong> e para definição, a tag <strong>dd</strong></p>
-    <dl>
+            <li>
+                <img src="img/karsten-winegeart-NE0XGVKTmcA-unsplash.jpg" alt="Dog" width="100px">
+            </li>
+            
+            <li>É possível também transformar uma imagem em um hyperlink. Não faremos aqui, mas é só envelopar a imagem com a tag de anchor. Também é possível adicionar um gif;</li>
+        </ul>
+
+        <h3>5. Audio</h3>
+        <p>Conteúdo (não acabou) estudado do canal: Bro Code</p>
         
-        <dt>Dragão</dt>
-        <dd>Um bicho mitológico que voa;</dd>
+        <ul>
+            <li>Bom, aqui é como comandar o áudio. Uma coisa boa a se perceber é que, caso o <em>browser</em> não tenha compatibilidade com um certo tipo de áudio, colocamos outra tag source abaixo para substituir caso a primeira não exista. Mas é importante usarmos o atributo type para indicar o tipo de áudio que estamos usando;</li>
+            <li>
+                <p>Almost a Year Ago (Sting) - John Deley and the 41 Players</p>
+                <audio controls muted loop>
+                    <source src="audio/Almost a Year Ago (Sting) - John Deley and the 41 Players.mp3" type="audio/mpeg">
+                </audio>
+
+                <p>Ersatz Bossa (Sting) - John Deley and the 41 Players</p>
+                <audio controls muted loop>
+                    <source src="audio/Ersatz Bossa (Sting) - John Deley and the 41 Players.mp3" type="audio/mpeg">
+                </audio>
+
+                <p>Bluesy Vibes (Sting) - Doug Maxwell_Media Right Productions</p>
+                <audio controls muted loop>
+                    <source src="audio/Bluesy Vibes (Sting) - Doug Maxwell_Media Right Productions.mp3" type="audio/mpeg">
+                </audio>
+            </li>
+        </ul>
+
+        <h3>6. Video</h3>
+        <p>Conteúdo (26 minutos direto de 4 horas, não aguento) estudado do canal: Bro Code</p>
         
-        <dt>Fênix</dt>
-        <dd>Um bicho mitológico que também voa, mas que se "refaz";</dd>
+        <ul>
+            <li>O mesmo serve para o vídeo (no caso, o que fizemos com o áudio). O que acho que é um diferencial é encapsular o vídeo com uma <em>anchor tag</em>;</li>
+            
+            <li>
+                Tem um link para um vídeo aqui. Porém, ele é muito grande. Adicionando também um tópico que não vimos aqui, <strong>Comentários</strong>, o vídeo dentro dele tem a explicação de como um deve ser;
+                <!-- <video src="videos/river.mp4" type="video/mp4" width="500px" controls muted autoplay loop ></video> -->
+            </li>
+        </ul>
+
+        <h3>7. Video</h3>
+        <p>Conteúdo (agora em 31:25 minutos de 4 horas) estudado do canal: Bro Code</p>
+
+        <ul>
+            <li>Esse nós olhamos para a aba em si, a "figurinha" que fica lá em cima. O importante lembrar são as medidas: <strong>96px x 96px</strong>;</li>
+        </ul>
+
+        <h3>8. Text Formating</h3>
+        <p>Conteúdo (pulando para 35:02. Curtinha a aula passada) estudado do canal: Bro Code</p>
         
-        <dt>Vampiro</dt>
-        <dd>Um bicho mitológico que tem medo de alho e banho;</dd>
+        <p>Vamos ver alguns formatos de textos mais comuns:</p>
+        <ul>
+            <li>Texto em normal;</li>
+            <li>Texto em <strong>negrito</strong>;</li>
+            <li>Texto em <em>itálico</em>;</li>
+            <li>Texto em <u>underline</u>;</li>
+            <li>Texto em <del>deletado</del>;</li>
+            <li>Texto em <small>pequeno</small>;</li>
+            <li>Texto em <sub>sub</sub>;</li>
+            <li>Texto em <sup>sup</sup>;</li>   
+            <li>Texto em <mark>grifado</mark>;</li>
+        </ul>
         
-        <dt>Lobisomem</dt>
-        <dd>Crepúsculo;</dd>
-    </dl>
-    
-    
-    
-    <h3>10. Tables</h3>
-    <p>Conteúdo (49:32 minutos..) estudado do canal: Bro Code</p>
-    
-    <p><strong>Tabelas</strong> foi um conteúdo que eu pulei bastante. Já tenho conhecimento em HTML e CSS, mas resolvi voltar e re-estudar <strong>tudo</strong>, então mesmo que "simples", conhecimento nunca é demais;</p>
-    <p>Os elementos que usamos são:</p>
-    <ul>
-        <li><strong>table</strong>, para darmos início à tabela;</li>
-        <li><strong>tr</strong>, <em>table row</em>, que é onde colocaremos os <strong>elementos da linha</strong>;</li>
-        <li><strong>th</strong>, <em>table header</em>, que é onde colocaremos os <strong>títulos na linha</strong>;</li>
-        <li><strong>td</strong>, <em>table data</em>, que é onde colocaremos os <strong>dados</strong>. Esses dados estarão <strong>alinhados com os th</strong>;</li>
-    </ul>
-
-    <p>Também é possível adicionar atributos</p>
-
-    <table border="1">
-        <tr align="center">
-            <th width="100px">Segunda</th>
-            <th width="100px">Terça</th>
-            <th width="100px">Quarta</th>
-            <th width="100px">Quinta</th>
-            <th width="100px">Sexta</th>
-            <th width="100px">Sábado</th>
-            <th width="100px">Domingo</th>
-        </tr>
-
-        <tr align="center">
-            <td>Fechado</td>
-            <td>09:00hr - 17:00hr</td>
-            <td>09:00hr - 17:00hr</td>
-            <td>09:00hr - 17:00hr</td>
-            <td>09:00hr - 17:00hr</td>
-            <td>09:00hr - 17:00hr</td>
-            <td>10:00hr - 14:00hr</td>
-        </tr>
-    </table>
-    
-    <h3>11. Buttons</h3>
-    <p>Conteúdo (54:13 minutos...) estudado do canal: Bro Code</p>
-    
-    <p>Botões. Só prestar atenção abaixo. Alguns estilos serão adicionados depois no CSS, em um arquivo separado;</p>
-    
-    <a href="https://www.google.com/" target="_blank"><button>Clique</button></a>
-    
-    <h3>12. Forms</h3>
-    <p>Conteúdo (59:29 minutos....) estudado do canal: Bro Code</p>
-    
-    <p>Uma parte que acho meio chata, mas é bastante necessário. Alguns pontos importantes a se considerar:</p>
-    <ul>
-        <li><strong>action</strong>: depois de preencher o formulário, para onde enviá-lo? O <strong>action</strong> serve para indicar o local. Normalmente, é pelo backend que se faz toda a lógica.</li>
-        <li><strong>method</strong>: temos o <strong>GET e POST</strong>, onde POST é usado para <strong>informações confidenciais</strong> (username, senha, etc) e GET para <strong>informações não tão sensíveis</strong>;</li>
-        <li><strong>for</strong>: isso é usado normalmente para pessoas com dificuldade visual. Geralmente é o mesmo valor que está dentro da tag;</li>
-
-        <li>OBS.: se toda vez que formos acessar um <em>forms</em> tivermos que clicar na caixa de texto, pode não ter problema. Mas caso queiramos acessar a caixa de texto ao clicar em, no caso inicial, "username", seu respectivo input precisa ter <strong>o mesmo id que o for da label</strong>;</li>
-
-        <li><strong>lenght</strong>: no caso, usamos <em>minlenght</em> ou <em>maxlenght</em>. São usados para delimitar o tamanho de dado (no caso, caracteres) colocado pelo <em>user</em>;</li>
-
-        <li><strong>name</strong>: pelo menos no sentido dos <strong><em>radio</em></strong>, caso não queiramos que todos fiquem marcados, agrupamos em um conglomerado, usando o <em>name</em>;</li>
-    </ul>
-
-    <form action="" method="post" enctype="multipart/form-data">
-        <label for="username">Username:</label>
-        <input type="text" id="username" required minlength="6" maxlength="15" placeholder="Spongebob">
-
-        <label for="password">Password:</label>
-        <input type="password" id="password"><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="SSquarepants@gmail.com"><br>
-
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" placeholder="9 1234-5678" pattern="[9]{1}[0-9]{4}[0-9]{4}"><br>
-
-        <label for="bday">Birthday:</label>
-        <input type="date" id="bday"><br>
-
-        <label for="quantity">Quantity:</label>
-        <input type="number" id="quantity" min="0" max="99" value="1"><br>
-
-        <label for="title">Title:</label>
-
-        <label for="mr">Mr.:</label>
-        <input type="radio" id="mr" value="Mr." name="title">
+        <h3>9. Span & Div</h3>
+        <p>Conteúdo (38:27 minutos. <em>Tamo estudando, tamo estudando</em>) estudado do canal: Bro Code</p>
         
-        <label for="ms">MS.:</label>
-        <input type="radio" id="ms" value="Ms." name="title">
+        <ul>
+            <li>Primeiro, vamos listar as diferenças entre as duas: <strong>span</strong> é um <strong>contêiner</strong>, mas para propósitos de estilização <strong><em>inline</em></strong>, enquanto a <strong>div</strong> também é um <strong>contêiner</strong>, mas para propósitos de estilização <strong><em>em bloco</em></strong>. Abaixo tem é possível <strong>ver</strong> a diferença;</li>
+            
+            <li><span style="background-color: tomato;">Esse é um item span;</span></li>
+            <li><div style="background-color: cyan;">Esse é um item div;</div></li>
+
+            <li><p>Esse é um item <span style="background-color: tomato;">span;</span></p></li>
+            <li>Esse é um item <div style="background-color: cyan;">div;</div></li>
+        </ul>
         
-        <label for="phd">Phd:</label>
-        <input type="radio" id="phd" value="Phd" name="title"><br>
+        <h3>10. Lists</h3>
+        <p>Conteúdo (43:14 minutos.) estudado do canal: Bro Code</p>
 
-        <label for="payment">Payment</label>
-        <select id="payment">
-            <option value="Visa">Visa</option>
-            <option value="Mastercard">Mastercard</option>
-            <option value="Express">Express</option>
-        </select><br>
+        <p>Bom, já estamos estudando essa parte desde o início...</p>
+        <p>Mas agora, vamos comentar sobre os <strong>tipos diferentes de <em>lists</em></strong>.</p>
+        
+        <h4>Unordered List</h4>
+        <ul>
+            <li>Uma de suas características que a difere das outras são as <em><strong>bullet points</strong></em>. Mas só elas, sem nada a mais. Sem valores, algarismos romanos, etc;</li>
+            
+            <li>Então vamos criar uma lista de compras rapidamente: leite;</li>
+            <li>Ovos;</li>
+            <li>Café;</li>
+            <li>Frango;</li>
+            <li>Mas para café, precisamos de mais algumas coisas:</li>
+            <ul>
+                <li>Filtro;</li>
+                <li>Açúcar;</li>
+                <li>Colher;</li>
+            </ul>
+        </ul>
+        
+        <h4>Ordered List</h4>
+        <ol>
+            <li>Para esta, são os <strong>valores</strong>. Precisamos de uma ordem;</li>
+            
+            <li>Vamos de <strong><em>To Do List</em></strong>:</li>
+            <li>Tomar café;</li>
+            <li>Arrumar a cama;</li>
+            <li>Escovar os dentes;</li>
+            <li>Mas para café, precisamos de mais algumas coisas:</li>
+        </ol>
 
-        <label for="subscribe">Subscribe</label>
-        <input type="checkbox" id="subscribe"><br>
+        <h4>Description List</h4>
+        <p>Aqui, temos valores-chaves em par, ou seja, <strong>um termo e uma definição</strong>;</p>
+        <p>Usamos os termos com tags <strong>dt</strong> e para definição, a tag <strong>dd</strong></p>
+        <dl>
+            
+            <dt>Dragão</dt>
+            <dd>Um bicho mitológico que voa;</dd>
+            
+            <dt>Fênix</dt>
+            <dd>Um bicho mitológico que também voa, mas que se "refaz";</dd>
+            
+            <dt>Vampiro</dt>
+            <dd>Um bicho mitológico que tem medo de alho e banho;</dd>
+            
+            <dt>Lobisomem</dt>
+            <dd>Crepúsculo;</dd>
+        </dl>
+        
+        
+        
+        <h3>10. Tables</h3>
+        <p>Conteúdo (49:32 minutos..) estudado do canal: Bro Code</p>
+        
+        <p><strong>Tabelas</strong> foi um conteúdo que eu pulei bastante. Já tenho conhecimento em HTML e CSS, mas resolvi voltar e re-estudar <strong>tudo</strong>, então mesmo que "simples", conhecimento nunca é demais;</p>
+        <p>Os elementos que usamos são:</p>
+        <ul>
+            <li><strong>table</strong>, para darmos início à tabela;</li>
+            <li><strong>tr</strong>, <em>table row</em>, que é onde colocaremos os <strong>elementos da linha</strong>;</li>
+            <li><strong>th</strong>, <em>table header</em>, que é onde colocaremos os <strong>títulos na linha</strong>;</li>
+            <li><strong>td</strong>, <em>table data</em>, que é onde colocaremos os <strong>dados</strong>. Esses dados estarão <strong>alinhados com os th</strong>;</li>
+        </ul>
 
-        <label for="comment"></label>
-        <textarea id="comment" rows="3" cols="25"></textarea><br>
+        <p>Também é possível adicionar atributos</p>
 
-        <label for="file"></label>
-        <input type="file" id="file" accept="image/png, image/jpeg"><br>
+        <table border="1">
+            <tr align="center">
+                <th width="100px">Segunda</th>
+                <th width="100px">Terça</th>
+                <th width="100px">Quarta</th>
+                <th width="100px">Quinta</th>
+                <th width="100px">Sexta</th>
+                <th width="100px">Sábado</th>
+                <th width="100px">Domingo</th>
+            </tr>
 
-        <input type="reset">
-        <input type="submit">
-    </form>
+            <tr align="center">
+                <td>Fechado</td>
+                <td>09:00hr - 17:00hr</td>
+                <td>09:00hr - 17:00hr</td>
+                <td>09:00hr - 17:00hr</td>
+                <td>09:00hr - 17:00hr</td>
+                <td>09:00hr - 17:00hr</td>
+                <td>10:00hr - 14:00hr</td>
+            </tr>
+        </table>
+        
+        <h3>11. Buttons</h3>
+        <p>Conteúdo (54:13 minutos...) estudado do canal: Bro Code</p>
+        
+        <p>Botões. Só prestar atenção abaixo. Alguns estilos serão adicionados depois no CSS, em um arquivo separado;</p>
+        
+        <a href="https://www.google.com/" target="_blank"><button>Clique</button></a>
+        
+        <h3>12. Forms</h3>
+        <p>Conteúdo (59:29 minutos....) estudado do canal: Bro Code</p>
+        
+        <p>Uma parte que acho meio chata, mas é bastante necessário. Alguns pontos importantes a se considerar:</p>
+        <ul>
+            <li><strong>action</strong>: depois de preencher o formulário, para onde enviá-lo? O <strong>action</strong> serve para indicar o local. Normalmente, é pelo backend que se faz toda a lógica.</li>
+            <li><strong>method</strong>: temos o <strong>GET e POST</strong>, onde POST é usado para <strong>informações confidenciais</strong> (username, senha, etc) e GET para <strong>informações não tão sensíveis</strong>;</li>
+            <li><strong>for</strong>: isso é usado normalmente para pessoas com dificuldade visual. Geralmente é o mesmo valor que está dentro da tag;</li>
+            
+            <li>OBS.: se toda vez que formos acessar um <em>forms</em> tivermos que clicar na caixa de texto, pode não ter problema. Mas caso queiramos acessar a caixa de texto ao clicar em, no caso inicial, "username", seu respectivo input precisa ter <strong>o mesmo id que o for da label</strong>;</li>
 
-    <hr>
+            <li><strong>lenght</strong>: no caso, usamos <em>minlenght</em> ou <em>maxlenght</em>. São usados para delimitar o tamanho de dado (no caso, caracteres) colocado pelo <em>user</em>;</li>
+
+            <li><strong>name</strong>: pelo menos no sentido dos <strong><em>radio</em></strong>, caso não queiramos que todos fiquem marcados, agrupamos em um conglomerado, usando o <em>name</em>;</li>
+        </ul>
+
+        <form action="" method="post" enctype="multipart/form-data">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required minlength="6" maxlength="15" placeholder="Spongebob">
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password"><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="SSquarepants@gmail.com"><br>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="9 1234-5678" pattern="[9]{1}[0-9]{4}[0-9]{4}"><br>
+
+            <label for="bday">Birthday:</label>
+            <input type="date" id="bday"><br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="0" max="99" value="1"><br>
+            
+            <label for="title">Title:</label>
+
+            <label for="mr">Mr.:</label>
+            <input type="radio" id="mr" value="Mr." name="title">
+            
+            <label for="ms">MS.:</label>
+            <input type="radio" id="ms" value="Ms." name="title">
+            
+            <label for="phd">Phd:</label>
+            <input type="radio" id="phd" value="Phd" name="title"><br>
+            
+            <label for="payment">Payment</label>
+            <select id="payment">
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Express">Express</option>
+            </select><br>
+
+            <label for="subscribe">Subscribe</label>
+            <input type="checkbox" id="subscribe"><br>
+
+            <label for="comment"></label>
+            <textarea id="comment" rows="3" cols="25"></textarea><br>
+            
+            <label for="file"></label>
+            <input type="file" id="file" accept="image/png, image/jpeg"><br>
+            
+            <input type="reset">
+            <input type="submit">
+        </form>
+        
+        <h3>13. Header and Footers</h3>
+        <p>Conteúdo (01:18:29 minutos.....) estudado do canal: Bro Code</p>
+
+        <p>Nesse caso, são <strong>tags semânticas</strong>. Elas não são mostradas diretamente na tela, mas no código, aparecem;</p>
+        <hr>
+    </main>
+
+    <footer>
+        <p>Tecnicamente, aqui terminamos o conteúdo de HTML. Depois dele, passamos para o CSS. Provável que usaremos esse mesmo arquivo para estilizar, mas não tenho certeza.</p>
+    </footer>
 </body>
 </html>
