@@ -1,19 +1,17 @@
 body {
-    background-color: black;
-}
-
-h1 {
-    color: white;
-}
-
-p {
-    color: white;
+    background-color: slategray;
 }
 
 #ul-test {
     background-color: white;
 }
 
-.uls-change-color {
-    color: mediumorchid;
+#p1 {
+    color: forestgreen;
+}
+#p2 {
+    color: rgb(101, 55, 12);
+}
+#p3 {
+    color: hsl(334, 77%, 36%);
 }
