@@ -19,6 +19,8 @@ body {
     color: hsl(334, 77%, 36%);
 }
 
+/* ======================================================= */
+
 #font-lorem {
     /* font-family: 'Courier New', Courier, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
     Verdana, sans-serif; */
@@ -27,6 +29,8 @@ body {
     font-weight: bold;
     font-style: italic;
 }
+
+/* ======================================================= */
 
 #test-title {
     /* border-style: dashed; */
@@ -54,4 +58,21 @@ body {
     border-top: 6px solid firebrick;
     border-left: 6px dotted black;
     border-right: 6px outset blue;
+}
+
+/* ======================================================= */
+
+#test-shadow {
+    font-size: 3em;
+
+    /* horizontal vertical blur (optional) color, repetir tudo para mais shadows*/
+    text-shadow: 3px 5px 2px red, -3px -5px 2px blue;
+}
+
+#box1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(201, 201, 201);
+
+    box-shadow: 3px 3px 5px green;
 }
