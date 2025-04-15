@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
     <title>INTRO</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
 
         <h3>How does the Internet work?</h3>
         <p>Conteúdo resumido do vídeo: How the Internet Works in 5 Minutes, por Aaron.</p>
-        <ul>
+        <ul id="ul-test" class="uls-change-color">
             <li>Podemos pensar na Internet como um <strong>cabo</strong>, um fio, um <em>wire</em>;</li>
             
             <li>Sendo um cabo, ele está (pelo menos no caso da Internet) debaixo da terra sendo um fio de cobre, por exemplo. Mas também temos os <strong>satélites</strong>, por exemplo;</li>
@@ -42,7 +43,7 @@
         
         <h2>What is HTTP?</h2>
         <p>Conteúdo resumido do vídeo: What is HTTP and Why Web Is Built On It?, por Hooman Mardox.</p>
-        <ul>
+        <ul class="uls-change-color">
             <li>De acordo com o vídeo, HTTP significa <strong>HyperText Transfer Protocol</strong>. O HyperText é possível entender como os <strong><em>links</em></strong> que estão presentes dentro da página;</li>
             
             <li>Então, de forma resumida, HTTP é um protocolo que transfere esses HyperTexts do servidor web para os browsers;</li>
@@ -50,7 +51,7 @@
 
         <h2>What is Domain Name?</h2>
         <p>Conteúdo resumido do vídeo: What Is a Domain Name | Domain Names Explained, por Hostinger Academy.</p>
-        <ul>
+        <ul class="uls-change-color">
             <li>Se procurarmos por endereços IP na Internet, veremos uma baita quantidade de números, como 8.8.8.8, 8.8.8.4, e assim por diante. Mas esses número tem um significado. Para o PC. Para nós, não de cara;</li>
             
             <li>Eles são os <strong>nomes dos sites</strong>. Mas não vamos ficar sabendo de todos os IPs de cabeça, e é para isso que o <strong>DNS</strong> (Domain Name Server) serve. QUando digitamos na barra de pesquisa de algum browser, é enviado uma <em>request</em> para o <em>DNS</em> que sai em busca desse nome. Quando o acha, compara com os endereços já registrados e, se compatíveis, retorna a pesquisa (no caso, vai em direção ao site escolhido);</li>
@@ -58,7 +59,7 @@
 
         <h2>What is Hosting?</h2>
         <p>Conteúdo resumido (esse foi mais do resumido. O conteúdo pode não estar todo aqui, porque estou escrevendo ele em um caderno a parte, até porque o vídeo é <strong>incrível</strong>) do vídeo: How Web Browsers Work, por Tadas Petra.</p>
-        <ul>
+        <ul class="uls-change-color">
             <li>No vídeo, toda a explicação é bem colocada, mas ele menciona a árvore de como o <em>browser</em> funciona, começando na <strong>interface do usuário</strong> até a parte de <strong>networking</strong>, <strong>intérprete de JavaScript</strong>;</li>
             
             <li>Menciona também sobre o <strong>HTML</strong> ter seu <em>parser</em> inciado e depois ser criado uma árvore dele(caso tenha um <strong>CSS</strong> [vou ver ainda], o processo é o mesmo, mas com um <strong>CSS Parser)</strong> e, caso haja outro arquivo, juntarem para formar a <strong>Render Tree</strong>;</li>
@@ -76,7 +77,7 @@
         <h3>1. Introduction to HTML</h3>
         <p>Conteúdo estudado do canal: Bro Code</p>
         
-        <ul>
+        <ul class="uls-change-color">
             <li>HTML significa <strong>Hyper-text Markup Language</strong>. A ideia é que <strong>tags</strong> (essas que estão fazendo o texto ficar em <strong>negrito</strong> ou <em>itálico</em>), também conhecidas como - pasmem - <strong>markups</strong>, são usadas em <em>web browsers</em> para dar <em>display</em> em certos elementos, como por exemplo - pasmem mais uma vez - <strong>todo esse conteúdo</strong>;</li>
             
             <li>Se ainda não deu para entender, imagine que você queira construir uma casa. O HTML seria a <strong>fundação dela</strong>. E aí entramos com a <strong>CSS</strong> (Cascading Style Sheet), que seria o equivalente às <strong>decorações, design de interiores e cores</strong> da casa.</li>
@@ -85,7 +86,7 @@
         <h3>2. HTML Basics</h3>
         <p>Conteúdo (ainda) estudado do canal: Bro Code</p>
         
-        <ul>
+        <ul class="uls-change-color">
             <li>
                 <p><strong>Headings</strong></p>
                 <p>Temos alguns titpos de títulos, que vai do h1 até o h6</p>
@@ -179,7 +180,7 @@
         <h3>3. Hyperlinks</h3>
         <p>Conteúdo (continuando) estudado do canal: Bro Code</p>
         
-        <ul>
+        <ul class="uls-change-color">
             <li>Hyperlinks são referências a dados que podemos seguir clicando em um link, como <a href="https://www.google.com/">esse aqui, que vai direto ao Google</a></li>
 
             <li>Tem também <a href="https://www.google.com/" target="_blank">esse aqui</a>. Ele abre no Google, mas em outra aba;</li>
@@ -192,7 +193,7 @@
         <h3>4. Images</h3>
         <p>Conteúdo (sem parar) estudado do canal: Bro Code</p>
         
-        <ul>
+        <ul class="uls-change-color">
             <li>Aqui vamos começar a introduzir o conceito de <strong>imagens</strong>;</li>
 
             <li>
@@ -205,7 +206,7 @@
         <h3>5. Audio</h3>
         <p>Conteúdo (não acabou) estudado do canal: Bro Code</p>
         
-        <ul>
+        <ul class="uls-change-color">
             <li>Bom, aqui é como comandar o áudio. Uma coisa boa a se perceber é que, caso o <em>browser</em> não tenha compatibilidade com um certo tipo de áudio, colocamos outra tag source abaixo para substituir caso a primeira não exista. Mas é importante usarmos o atributo type para indicar o tipo de áudio que estamos usando;</li>
             <li>
                 <p>Almost a Year Ago (Sting) - John Deley and the 41 Players</p>
@@ -228,7 +229,7 @@
         <h3>6. Video</h3>
         <p>Conteúdo (26 minutos direto de 4 horas, não aguento) estudado do canal: Bro Code</p>
         
-        <ul>
+        <ul class="uls-change-color">
             <li>O mesmo serve para o vídeo (no caso, o que fizemos com o áudio). O que acho que é um diferencial é encapsular o vídeo com uma <em>anchor tag</em>;</li>
             
             <li>
@@ -240,7 +241,7 @@
         <h3>7. Video</h3>
         <p>Conteúdo (agora em 31:25 minutos de 4 horas) estudado do canal: Bro Code</p>
 
-        <ul>
+        <ul class="uls-change-color">
             <li>Esse nós olhamos para a aba em si, a "figurinha" que fica lá em cima. O importante lembrar são as medidas: <strong>96px x 96px</strong>;</li>
         </ul>
 
@@ -248,7 +249,7 @@
         <p>Conteúdo (pulando para 35:02. Curtinha a aula passada) estudado do canal: Bro Code</p>
         
         <p>Vamos ver alguns formatos de textos mais comuns:</p>
-        <ul>
+        <ul class="uls-change-color">
             <li>Texto em normal;</li>
             <li>Texto em <strong>negrito</strong>;</li>
             <li>Texto em <em>itálico</em>;</li>
@@ -263,7 +264,7 @@
         <h3>9. Span & Div</h3>
         <p>Conteúdo (38:27 minutos. <em>Tamo estudando, tamo estudando</em>) estudado do canal: Bro Code</p>
         
-        <ul>
+        <ul class="uls-change-color">
             <li>Primeiro, vamos listar as diferenças entre as duas: <strong>span</strong> é um <strong>contêiner</strong>, mas para propósitos de estilização <strong><em>inline</em></strong>, enquanto a <strong>div</strong> também é um <strong>contêiner</strong>, mas para propósitos de estilização <strong><em>em bloco</em></strong>. Abaixo tem é possível <strong>ver</strong> a diferença;</li>
             
             <li><span style="background-color: tomato;">Esse é um item span;</span></li>
@@ -280,7 +281,7 @@
         <p>Mas agora, vamos comentar sobre os <strong>tipos diferentes de <em>lists</em></strong>.</p>
         
         <h4>Unordered List</h4>
-        <ul>
+        <ul class="uls-change-color">
             <li>Uma de suas características que a difere das outras são as <em><strong>bullet points</strong></em>. Mas só elas, sem nada a mais. Sem valores, algarismos romanos, etc;</li>
             
             <li>Então vamos criar uma lista de compras rapidamente: leite;</li>
@@ -296,7 +297,7 @@
         </ul>
         
         <h4>Ordered List</h4>
-        <ol>
+        <ol class="uls-change-color">
             <li>Para esta, são os <strong>valores</strong>. Precisamos de uma ordem;</li>
             
             <li>Vamos de <strong><em>To Do List</em></strong>:</li>
@@ -331,7 +332,7 @@
         
         <p><strong>Tabelas</strong> foi um conteúdo que eu pulei bastante. Já tenho conhecimento em HTML e CSS, mas resolvi voltar e re-estudar <strong>tudo</strong>, então mesmo que "simples", conhecimento nunca é demais;</p>
         <p>Os elementos que usamos são:</p>
-        <ul>
+        <ul class="uls-change-color">
             <li><strong>table</strong>, para darmos início à tabela;</li>
             <li><strong>tr</strong>, <em>table row</em>, que é onde colocaremos os <strong>elementos da linha</strong>;</li>
             <li><strong>th</strong>, <em>table header</em>, que é onde colocaremos os <strong>títulos na linha</strong>;</li>
@@ -373,7 +374,7 @@
         <p>Conteúdo (59:29 minutos....) estudado do canal: Bro Code</p>
         
         <p>Uma parte que acho meio chata, mas é bastante necessário. Alguns pontos importantes a se considerar:</p>
-        <ul>
+        <ul class="uls-change-color">
             <li><strong>action</strong>: depois de preencher o formulário, para onde enviá-lo? O <strong>action</strong> serve para indicar o local. Normalmente, é pelo backend que se faz toda a lógica.</li>
             <li><strong>method</strong>: temos o <strong>GET e POST</strong>, onde POST é usado para <strong>informações confidenciais</strong> (username, senha, etc) e GET para <strong>informações não tão sensíveis</strong>;</li>
             <li><strong>for</strong>: isso é usado normalmente para pessoas com dificuldade visual. Geralmente é o mesmo valor que está dentro da tag;</li>
@@ -385,7 +386,7 @@
             <li><strong>name</strong>: pelo menos no sentido dos <strong><em>radio</em></strong>, caso não queiramos que todos fiquem marcados, agrupamos em um conglomerado, usando o <em>name</em>;</li>
         </ul>
 
-        <form action="" method="post" enctype="multipart/form-data">
+        <form action="" method="post" enctype="multipart/form-data" class="uls-change-color">
             <label for="username">Username:</label>
             <input type="text" id="username" required minlength="6" maxlength="15" placeholder="Spongebob">
             
