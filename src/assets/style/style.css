@@ -6,6 +6,9 @@ body {
     background-color: white;
 }
 
+.warning {
+    color: rgb(208, 1, 1);
+}
 #p1 {
     color: forestgreen;
 }
@@ -14,4 +17,13 @@ body {
 }
 #p3 {
     color: hsl(334, 77%, 36%);
+}
+
+#font-lorem {
+    /* font-family: 'Courier New', Courier, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Verdana, sans-serif; */
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    font-style: italic;
 }
