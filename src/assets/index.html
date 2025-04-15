@@ -365,9 +365,72 @@
     
     <a href="https://www.google.com/" target="_blank"><button>Clique</button></a>
     
+    <h3>12. Forms</h3>
+    <p>Conteúdo (59:29 minutos....) estudado do canal: Bro Code</p>
     
-    
-    
+    <p>Uma parte que acho meio chata, mas é bastante necessário. Alguns pontos importantes a se considerar:</p>
+    <ul>
+        <li><strong>action</strong>: depois de preencher o formulário, para onde enviá-lo? O <strong>action</strong> serve para indicar o local. Normalmente, é pelo backend que se faz toda a lógica.</li>
+        <li><strong>method</strong>: temos o <strong>GET e POST</strong>, onde POST é usado para <strong>informações confidenciais</strong> (username, senha, etc) e GET para <strong>informações não tão sensíveis</strong>;</li>
+        <li><strong>for</strong>: isso é usado normalmente para pessoas com dificuldade visual. Geralmente é o mesmo valor que está dentro da tag;</li>
+
+        <li>OBS.: se toda vez que formos acessar um <em>forms</em> tivermos que clicar na caixa de texto, pode não ter problema. Mas caso queiramos acessar a caixa de texto ao clicar em, no caso inicial, "username", seu respectivo input precisa ter <strong>o mesmo id que o for da label</strong>;</li>
+
+        <li><strong>lenght</strong>: no caso, usamos <em>minlenght</em> ou <em>maxlenght</em>. São usados para delimitar o tamanho de dado (no caso, caracteres) colocado pelo <em>user</em>;</li>
+
+        <li><strong>name</strong>: pelo menos no sentido dos <strong><em>radio</em></strong>, caso não queiramos que todos fiquem marcados, agrupamos em um conglomerado, usando o <em>name</em>;</li>
+    </ul>
+
+    <form action="" method="post" enctype="multipart/form-data">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required minlength="6" maxlength="15" placeholder="Spongebob">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="SSquarepants@gmail.com"><br>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="9 1234-5678" pattern="[9]{1}[0-9]{4}[0-9]{4}"><br>
+
+        <label for="bday">Birthday:</label>
+        <input type="date" id="bday"><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" min="0" max="99" value="1"><br>
+
+        <label for="title">Title:</label>
+
+        <label for="mr">Mr.:</label>
+        <input type="radio" id="mr" value="Mr." name="title">
+        
+        <label for="ms">MS.:</label>
+        <input type="radio" id="ms" value="Ms." name="title">
+        
+        <label for="phd">Phd:</label>
+        <input type="radio" id="phd" value="Phd" name="title"><br>
+
+        <label for="payment">Payment</label>
+        <select id="payment">
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Express">Express</option>
+        </select><br>
+
+        <label for="subscribe">Subscribe</label>
+        <input type="checkbox" id="subscribe"><br>
+
+        <label for="comment"></label>
+        <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+        <label for="file"></label>
+        <input type="file" id="file" accept="image/png, image/jpeg"><br>
+
+        <input type="reset">
+        <input type="submit">
+    </form>
+
     <hr>
 </body>
 </html>
