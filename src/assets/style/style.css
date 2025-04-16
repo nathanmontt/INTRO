@@ -1,10 +1,76 @@
-body {
-    background-color: slategray;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    list-style-type: none;
+
+    --primary-color: #4062b7;
+    --usual-color: black;
+
+    --usual-size: 1em;
+    --next-usual-size: .5em;
+    --main-font-size: .9em;
 }
 
-#ul-test {
-    background-color: white;
+/* HEADER */
+header {
+    margin: var(--usual-size);
 }
+
+#name-project-header, #slogan-project-header {
+    text-align: center;
+}
+/* ====================== */
+
+/* MAIN */
+main {}
+.container-first {
+    margin: var(--usual-size);
+    border: 2px solid;
+    padding: var(--next-usual-size);
+}
+.container-first .topic-content {
+    border-bottom: 2px solid;
+}
+.container-first .title-content {
+    margin-top: var(--next-usual-size);
+}
+.container-first .studybook {
+    width: 20em;
+    padding: .6em;
+    margin: var(--next-usual-size) 0 var(--next-usual-size) 0;
+    font-size: var(--main-font-size);
+    border-left: 3px solid var(--primary-color);
+}
+.studybook .font-styles {
+    font-style: italic;
+    font-weight: 700;
+}
+.studybook .links {
+    color: var(--usual-color);
+    font-size: var(--main-font-size);
+}
+.studybook .profile-channel {
+    color: var(--usual-color);
+    font-weight: 700;
+}
+.container-first .study-menu-list-holder {
+    border: 2px solid;
+}
+.study-menu-list-holder .study-list{
+    border-bottom: 2px solid;
+    text-indent: 1em;
+    padding: var(--next-usual-size);
+}
+.study-list .specific-style{
+    font-weight: bold;
+}
+.study-menu-list-holder .study-list:nth-child(9){
+    border: none;
+}
+/* ====================== */
+
 
 .warning {
     color: rgb(208, 1, 1);
