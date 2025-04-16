@@ -7,6 +7,7 @@
 
     --primary-color: #4062b7;
     --usual-color: black;
+    --usual-second-color: white;
 
     --usual-size: 1em;
     --next-usual-size: .5em;
@@ -34,7 +35,7 @@ main {}
     border-bottom: 2px solid;
 }
 .container-first .title-content {
-    margin-top: var(--next-usual-size);
+    margin-top: var(--usual-size);
 }
 .container-first .studybook {
     width: 20em;
@@ -51,6 +52,9 @@ main {}
     color: var(--usual-color);
     font-size: var(--main-font-size);
 }
+.links:visited {
+    color: var(--primary-color);
+}
 .studybook .profile-channel {
     color: var(--usual-color);
     font-weight: 700;
@@ -66,9 +70,17 @@ main {}
 .study-list .specific-style{
     font-weight: bold;
 }
-.study-menu-list-holder .study-list:nth-child(9){
+.study-menu-list-holder .study-list:last-child{
     border: none;
 }
+/* ====================== */
+/* CHECKPOINT */
+.checkpoint {
+    padding: var(--usual-size);
+    background-color: var(--primary-color);
+    color: var(--usual-second-color);
+}
+.checkpoint .checkpoint-text{}
 /* ====================== */
 
 
