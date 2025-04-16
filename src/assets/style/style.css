@@ -26,21 +26,21 @@ header {
 
 /* MAIN */
 main {}
-.container-first, .container-second {
+.container-first, .container-second, .container-third {
     height: 40em;
     overflow-y: scroll;
     margin: var(--usual-size);
     border: 2px solid;
     padding: var(--next-usual-size);
 }
-.container-first, .container-second .topic-content {
+.container-first, .container-second, .container-third .topic-content {
     border-bottom: 2px solid;
     background-color: var(--usual-second-color);
 }
-.container-first, .container-second .title-content {
+.container-first, .container-second, .container-third .title-content {
     margin-top: var(--usual-size);
 }
-.container-first, .container-second .studybook {
+.container-first .studybook, .container-second .studybook, .container-third .studybook {
     width: 20em;
     padding: .6em;
     margin: var(--next-usual-size) 0 var(--next-usual-size) 0;
@@ -62,7 +62,7 @@ main {}
     color: var(--usual-color);
     font-weight: 700;
 }
-.container-first, .container-second .study-menu-list-holder {
+.container-first, .container-second, .container-third .study-menu-list-holder {
     border: 2px solid;
 }
 .study-menu-list-holder .study-list{
@@ -76,26 +76,14 @@ main {}
 .study-menu-list-holder .study-list:last-child{
     border: none;
 }
-.container-first, .container-second .study-topic-subtitle {
+.container-first, .container-second, .container-third .study-topic-subtitle {
     margin-top: var(--next-usual-size);
 }
 .study-topic-subtitle .number-topic{
     color: var(--primary-color);
 }
-/* ====================== */
-/* CHECKPOINT */
-.checkpoint {
-    padding: var(--usual-size);
-    background-color: var(--primary-color);
-    color: var(--usual-second-color);
-}
-.checkpoint .checkpoint-text{}
-/* ====================== */
 
-
-.warning {
-    color: rgb(208, 1, 1);
-}
+/* CSS */
 #p1 {
     color: forestgreen;
 }
@@ -105,22 +93,13 @@ main {}
 #p3 {
     color: hsl(334, 77%, 36%);
 }
-
-/* ======================================================= */
-
-#font-lorem {
-    /* font-family: 'Courier New', Courier, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
-    Verdana, sans-serif; */
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.8em;
-    font-weight: bold;
-    font-style: italic;
-}
-
-/* ======================================================= */
-
-#test-title {
-    /* border-style: dashed; */
+#test-small-text {
+    margin: var(--next-usual-size) 0;
+    border: 3px solid darkorange; /* shorthand */
+    border-style: dashed;
+    font-weight: 900;
+    font-size: 1.5em;
+    border-radius: 3px;
     /* border-style: dotted;
     border-style: double;
     border-style: groove;
@@ -133,44 +112,44 @@ main {}
     /* border-style: solid;
     border-width: 3px;
     border-color: darkorange; */
-    
-    border-radius: 3px;
-
-    /* shorthand */
-    border: 3px solid darkorange;
 }
-
 #test-text {
+    margin: var(--next-usual-size) 0;
     border-bottom: 4px solid greenyellow;
     border-top: 6px solid firebrick;
     border-left: 6px dotted black;
     border-right: 6px outset blue;
 }
-
-/* ======================================================= */
-
-#test-shadow {
+.container-display #test-shadow {
     font-size: 3em;
-    
-    /* horizontal vertical blur (optional) color, repetir tudo para mais shadows*/
+    margin-right: var(--next-usual-size);
     text-shadow: 3px 5px 2px red, -3px -5px 2px blue;
 }
-
+.container-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#font-lorem {
+    /* font-family: 'Courier New', Courier, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+    Verdana, sans-serif; */
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    font-style: italic;
+}
 #box1 {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     background-color: rgb(201, 201, 201);
     
     box-shadow: 3px 3px 5px green;
 }
-
-/* ======================================================= */
-
 .box {
     border: 5px solid;
-    font-size: 5em;
-    height: 250px;
-    width: 250px;
+    font-size: 2em;
+    height: 100px;
+    width: 100px;
 }
 #box1-margin {
     background-color: brown;
@@ -179,9 +158,15 @@ main {}
 #box2-margin {
     background-color: darkturquoise;
 }
-
-/* ======================================================= */
-
+/* ====================== */
+/* CHECKPOINT */
+.checkpoint {
+    padding: var(--usual-size);
+    background-color: var(--primary-color);
+    color: var(--usual-second-color);
+}
+.checkpoint .checkpoint-text{}
+/* ====================== */
 #container {
     border: 2px solid;
 }
@@ -197,9 +182,6 @@ main {}
 #container + p {
     background-color: crimson;
 }
-
-/* ======================================================= */
-
 #pseudo::first-letter {
     font-size: 2em;
     font-style: italic;
@@ -207,48 +189,14 @@ main {}
 #lorem-text-pseudo::first-line {
     background-color: saddlebrown;
 }
-
 #lorem-text-pseudo::selection {
     color: green;
     background-color: rgb(65, 65, 65);
 }
-
 #fruit li::before {
-    content: "-> ";
+    /* content: "-> "; */
 }
-
 #fruit > #apple::after {
-    content: " muito bom!!";
+    content: ", muito bom!!";
 }
-#fruit > #banana{}
-#fruit > #orange{}
-
-/* ======================================================= */
-
-/* .pagination {
-    text-align: center;
-}
-
-.pagination a {
-    text-decoration: none;
-    color: black;
-    padding: 8px 15px;
-    display: inline-block;
-} */
-
-/* Dentro da nossa classe pagination, ache toda anchor tag que tenha a classe active */
-/* .pagination a.active {
-    background-color: rgb(1, 172, 1);
-    font-weight: bold;
-    border-radius: 5px;
-} */
-/* Todo o elemento que for hoverado, achar o elemento que não tenha a classe active (que está em hover) */
-/* .pagination a:hover:not(.active) {
-    background-color: rgb(69, 69, 69);
-    border-radius: 5px;
-} */
-
-/* ======================================================= */
-/* ======================================================= */
-/* ======================================================= */
-/* ======================================================= */
+/* ====================== */
