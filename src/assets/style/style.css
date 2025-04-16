@@ -36,21 +36,30 @@ header {
         display: none;
     }
 }
-.container-first, .container-second, .container-third {
+.container-first, .container-second, .container-third, .container-fourth {
     height: 40em;
     overflow-y: scroll;
     margin: var(--usual-size);
     border: 2px solid;
     padding: var(--next-usual-size);
 }
-.container-first, .container-second, .container-third .topic-content {
+.container-first>.topic-content, 
+.container-second>.topic-content,
+.container-third>.topic-content,
+.container-fourth>.topic-content {
     border-bottom: 2px solid;
     background-color: var(--usual-second-color);
 }
-.container-first, .container-second, .container-third .title-content {
+.container-first>.title-content, 
+.container-second>.title-content, 
+.container-third>.title-content,
+.container-fourth>.title-content {
     margin-top: var(--usual-size);
 }
-.container-first .studybook, .container-second .studybook, .container-third .studybook {
+.container-first .studybook, 
+.container-second .studybook, 
+.container-third .studybook
+.container-fourth .studybook {
     width: 20em;
     padding: .6em;
     margin: var(--next-usual-size) 0 var(--next-usual-size) 0;
@@ -74,7 +83,8 @@ header {
 }
 .container-first>.study-menu-list-holder, 
 .container-second>.study-menu-list-holder, 
-.container-third>.study-menu-list-holder {
+.container-third>.study-menu-list-holder
+.container-fourth>.study-menu-list-holder {
     border: 2px solid;
 }
 .study-menu-list-holder .study-list{
@@ -90,7 +100,8 @@ header {
 }
 .container-first>.study-topic-subtitle,
 .container-second>.study-topic-subtitle,
-.container-third>.study-topic-subtitle {
+.container-third>.study-topic-subtitle,
+.container-fourth>.study-topic-subtitle {
     margin-top: var(--next-usual-size);
 }
 .study-topic-subtitle .number-topic{
