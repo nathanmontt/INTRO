@@ -26,21 +26,21 @@ header {
 
 /* MAIN */
 main {}
-.container-first {
+.container-first, .container-second {
     height: 40em;
     overflow-y: scroll;
     margin: var(--usual-size);
     border: 2px solid;
     padding: var(--next-usual-size);
 }
-.container-first .topic-content {
+.container-first, .container-second .topic-content {
     border-bottom: 2px solid;
     background-color: var(--usual-second-color);
 }
-.container-first .title-content {
+.container-first, .container-second .title-content {
     margin-top: var(--usual-size);
 }
-.container-first .studybook {
+.container-first, .container-second .studybook {
     width: 20em;
     padding: .6em;
     margin: var(--next-usual-size) 0 var(--next-usual-size) 0;
@@ -62,7 +62,7 @@ main {}
     color: var(--usual-color);
     font-weight: 700;
 }
-.container-first .study-menu-list-holder {
+.container-first, .container-second .study-menu-list-holder {
     border: 2px solid;
 }
 .study-menu-list-holder .study-list{
@@ -76,7 +76,7 @@ main {}
 .study-menu-list-holder .study-list:last-child{
     border: none;
 }
-.container-first .study-topic-subtitle {
+.container-first, .container-second .study-topic-subtitle {
     margin-top: var(--next-usual-size);
 }
 .study-topic-subtitle .number-topic{
