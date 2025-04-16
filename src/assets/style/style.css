@@ -27,12 +27,15 @@ header {
 /* MAIN */
 main {}
 .container-first {
+    height: 40em;
+    overflow-y: scroll;
     margin: var(--usual-size);
     border: 2px solid;
     padding: var(--next-usual-size);
 }
 .container-first .topic-content {
     border-bottom: 2px solid;
+    background-color: var(--usual-second-color);
 }
 .container-first .title-content {
     margin-top: var(--usual-size);
@@ -72,6 +75,12 @@ main {}
 }
 .study-menu-list-holder .study-list:last-child{
     border: none;
+}
+.container-first .study-topic-subtitle {
+    margin-top: var(--next-usual-size);
+}
+.study-topic-subtitle .number-topic{
+    color: var(--primary-color);
 }
 /* ====================== */
 /* CHECKPOINT */
