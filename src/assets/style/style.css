@@ -8,6 +8,7 @@
     --primary-color: #4062b7;
     --usual-color: black;
     --usual-second-color: white;
+    --obs-color: #d80000;
 
     --usual-size: 1em;
     --next-usual-size: .5em;
@@ -36,6 +37,12 @@ header {
         display: none;
     }
 }
+audio {
+    width: 13em;
+}
+.obs {
+    color: var(--obs-color);
+}
 .container-first, .container-second, .container-third, .container-fourth {
     height: 40em;
     overflow-y: scroll;
@@ -60,7 +67,7 @@ header {
 .container-second .studybook, 
 .container-third .studybook,
 .container-fourth .studybook {
-    width: 20em;
+    width: 15em;
     padding: .6em;
     margin: var(--next-usual-size) 0 var(--next-usual-size) 0;
     font-size: var(--main-font-size);
