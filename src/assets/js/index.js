@@ -60,6 +60,13 @@ let students = 30;
 console.log(`A quantidade de estudantes na sala atualamente é: ${students}`)
 
 /* ============================ */
+
+let username;
+document.getElementById('mySubmit').onclick = function () {
+    username = document.getElementById('myText').value;
+    console.log(username)
+}
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
