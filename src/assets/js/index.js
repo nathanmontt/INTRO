@@ -36,6 +36,29 @@ document.getElementById('personAge').innerHTML = `&rightarrow; Sua idade é: ${p
 document.getElementById('isPersonStudent').innerHTML = `&rightarrow; É um estudante? ${isPersonUniStudent} O tipo da variável isPersonUniStudent é <span class="specific-style">${typeof isPersonUniStudent}</span>;`;
 
 /* ============================ */
+
+let students = 30;
+// Operadores normais
+// students = students + 1;
+// students = students - 1;
+// students = students * 2;
+// students = students / 2;
+
+// students = students ** 2;
+// students = students % 2;
+
+// students += 1;
+// students -= 1;
+// students *= 1;
+// students /= 2;
+// students **= 2;
+// students %= 2;
+
+/* INCREMENTO E DECREMENTO */
+// students++;
+// students--;
+console.log(`A quantidade de estudantes na sala atualamente é: ${students}`)
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
