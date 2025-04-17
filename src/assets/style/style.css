@@ -58,7 +58,7 @@ header {
 }
 .container-first .studybook, 
 .container-second .studybook, 
-.container-third .studybook
+.container-third .studybook,
 .container-fourth .studybook {
     width: 20em;
     padding: .6em;
@@ -83,7 +83,7 @@ header {
 }
 .container-first>.study-menu-list-holder, 
 .container-second>.study-menu-list-holder, 
-.container-third>.study-menu-list-holder
+.container-third>.study-menu-list-holder,
 .container-fourth>.study-menu-list-holder {
     border: 2px solid;
 }
