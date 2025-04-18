@@ -27,7 +27,7 @@ header {
 
 /* MAIN */
 @media screen and (min-width: 768px) {
-    main {
+    .container-display-general {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
@@ -197,20 +197,14 @@ audio {
     background-color: var(--primary-color);
     color: var(--usual-second-color);
 }
-.checkpoint .checkpoint-text{}
+/* .checkpoint .checkpoint-text{} */
 /* ====================== */
 #container {
     border: 2px solid;
 }
-#container p {
-    /* background-color: crimson; */
-}
-#container > p {
-    /* background-color: crimson; */
-}
-#container ~ p {
-    /* background-color: crimson; */
-}
+/* #container p { background-color: crimson; }
+#container > p { background-color: crimson; }
+#container ~ p { background-color: crimson; } */
 #container + p {
     background-color: crimson;
 }
@@ -225,9 +219,7 @@ audio {
     color: green;
     background-color: rgb(65, 65, 65);
 }
-#fruit li::before {
-    /* content: "-> "; */
-}
+/* #fruit li::before { content: "-> "; } */
 #fruit > #apple::after {
     content: ", muito bom!!";
 }
