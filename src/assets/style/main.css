@@ -8,7 +8,7 @@
 
     --primary-color: #4062b7;
     --usual-color: black;
-    --usual-second-color: white;
+    --next-usual-color: white;
     --obs-color: #d80000;
 
     --usual-size: 1em;
@@ -35,6 +35,12 @@ header { margin: var(--usual-size); }
     }
 }
 @media screen and (min-width: 768px) {
+    .container-project-general {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 768px) {
     .checkpoint {
         display: none;
     }
@@ -45,8 +51,9 @@ audio {
 .obs {
     color: var(--obs-color);
 }
-.container-first, .container-second, .container-third, .container-fourth {
-    height: 40em;
+.container-first, .container-second, .container-third, .container-fourth,
+.container-project-first, .container-project-second {
+    height: 41em;
     overflow-y: scroll;
     margin: var(--usual-size);
     border: 2px solid;
@@ -57,7 +64,7 @@ audio {
 .container-third>.topic-content,
 .container-fourth>.topic-content {
     border-bottom: 2px solid;
-    background-color: var(--usual-second-color);
+    background-color: var(--next-usual-color);
 }
 .container-first>.title-content, 
 .container-second>.title-content, 
@@ -197,7 +204,7 @@ audio {
 .checkpoint {
     padding: var(--usual-size);
     background-color: var(--primary-color);
-    color: var(--usual-second-color);
+    color: var(--next-usual-color);
 }
 /* .checkpoint .checkpoint-text{} */
 /* ====================== */
@@ -240,6 +247,12 @@ footer .social-links {
     margin-right: var(--next-usual-size);
 }
 #lin>a, #git>a, #insta>a {
-    color: var(--usual-second-color);
+    color: var(--next-usual-color);
     text-decoration: none;
 }
+
+
+/* ===== PROJETOS ===== */
+
+/* .container-project-first {}
+.container-project-second {} */
