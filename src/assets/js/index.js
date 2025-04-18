@@ -69,13 +69,25 @@ document.getElementById('mySubmit').onclick = function () {
 
 /* ============================ */
 
-let agePerson = window.prompt('Idade:')
-agePerson = Number(agePerson);
-agePerson += 2;
+// let agePerson = window.prompt('Idade:')
+// agePerson = Number(agePerson);
+// agePerson += 2;
 
-console.log(`Sua idade é ${agePerson} e seu tipo é ${typeof agePerson}`);
+// console.log(`Sua idade é ${agePerson} e seu tipo é ${typeof agePerson}`);
 
 /* ============================ */
+
+const PI = 3.14159;
+let radius;
+let circumference;
+document.getElementById('myBtn').onclick = function () {
+    radius = document.getElementById('myTextRadius').value
+    radius = Number(radius);
+    circumference = 2 * PI * radius;
+
+    document.getElementById('response').innerHTML = `O valor da circunferência é ${circumference}cm`;
+}
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
