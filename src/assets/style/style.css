@@ -4,6 +4,7 @@
     padding: 0;
     font-family: "Montserrat", sans-serif;
     list-style-type: none;
+    text-decoration: none;
 
     --primary-color: #4062b7;
     --usual-color: black;
@@ -16,13 +17,14 @@
 }
 
 /* HEADER */
-header {
-    margin: var(--usual-size);
+header { margin: var(--usual-size); }
+/* #name-project-header, #slogan-project-header { text-align: center; } */
+.container-general-header {
+    display: flex;
+    justify-content: space-between;
 }
-
-#name-project-header, #slogan-project-header {
-    text-align: center;
-}
+.projects { color: var(--usual-color); }
+.projects:hover { text-decoration: underline; }
 /* ====================== */
 
 /* MAIN */
