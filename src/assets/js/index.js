@@ -68,6 +68,13 @@ document.getElementById('mySubmit').onclick = function () {
 }
 
 /* ============================ */
+
+let agePerson = window.prompt('Idade:')
+agePerson = Number(agePerson);
+agePerson += 2;
+
+console.log(`Sua idade é ${agePerson} e seu tipo é ${typeof agePerson}`);
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
