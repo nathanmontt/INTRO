@@ -89,6 +89,31 @@ document.getElementById('myBtn').onclick = function () {
 }
 
 /* ============================ */
+
+console.log(Math.PI)
+console.log(Math.E)
+
+let x = 3.21;
+let x2 = 3.91;
+let y = 2;
+let y2 = -2;
+let z;
+
+console.log(`O valor de x arredondado é: ${Math.round(x)}`);
+console.log(`O valor de x2 arredondado pra baixo é: ${Math.floor(x2)}`);
+console.log(`O valor de x arredondado pra cima é: ${Math.ceil(x)}`);
+console.log(`O valor de x2 sem decimal é: ${Math.trunc(x2)}`);
+console.log(`O valor de x2 elevado à x é: ${Math.pow(x2, x)}`);
+console.log(`A raiz quadrada de y é: ${Math.sqrt(y)}`);
+console.log(`O log de y é: ${Math.log(y)}`);
+console.log(`O seno de y é: ${Math.sin(y)}`);
+console.log(`O cosseno de y é: ${Math.cos(y)}`);
+console.log(`A tangente de y é: ${Math.tan(y)}`);
+console.log(`O absoluto de y2 é: ${Math.abs(y2)}`);
+console.log(`O sinal de y2 é: ${Math.sign(y2)}`);
+console.log(`O valor máximo de y2 é: ${Math.max(x,x2,y,y2)}`);
+console.log(`O valor mínimo de y2 é: ${Math.min(x,x2,y,y2)}`);
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
