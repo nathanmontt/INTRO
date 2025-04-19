@@ -115,6 +115,48 @@ console.log(`O valor máximo de y2 é: ${Math.max(x,x2,y,y2)}`);
 console.log(`O valor mínimo de y2 é: ${Math.min(x,x2,y,y2)}`);
 
 /* ============================ */
+
+let time = 14;
+
+if (time < 12) {
+    console.log("Good Morning!")
+} else {
+    console.log("Good Afternoon!")
+}
+
+let isStudent = true;
+
+if (isStudent) {
+    console.log("You are enroled!")
+} else if(!isStudent) {
+    console.log("You aren't enroled!")
+}
+
+const myH3Title = document.getElementById('my-h3-title');
+const driveOrDontTextBox = document.getElementById('drive-or-dont-textbox');
+const btnSub = document.getElementById('mySub');
+const resultElement = document.getElementById('result-element')
+let ageOnePerson;
+
+btnSub.onclick = function () {
+    // Precisamos pegar a idade pela textbox e ARMAZENÁ-LA DENTRO DE UMA VARIÁVEL
+    // Mas lembrando que quando pegamos o valor, ele está em STRING. Para fazermos a verificação com os NÚMEROS, precisamos mudar o tipo da variável para NUMBER
+    ageOnePerson = driveOrDontTextBox.value;
+    ageOnePerson = Number(ageOnePerson);
+
+    if (ageOnePerson == 0) {
+        resultElement.textContent = `Com ${ageOnePerson} anos, você nem nascido é! Sai daqui! Xô!`
+    } else if (ageOnePerson >= 1 && ageOnePerson <=10) {
+        resultElement.textContent = `Com ${ageOnePerson} anos, ainda não tá bom. Pode ir vazando!`
+    } else if (ageOnePerson >= 11 && ageOnePerson <= 17) {
+        resultElement.textContent = `Com ${ageOnePerson} anos, tu tá quase lá!`
+    } else if (ageOnePerson >= 18 && ageOnePerson <= 99) {
+        resultElement.textContent = `Com ${ageOnePerson} anos, agora sim! Já pode ser preso!`
+    } else if (ageOnePerson >= 100) {
+        resultElement.textContent = `Com ${ageOnePerson} anos, virou imortal, é?! Sai daqui, vampiro!`
+    }
+}
+
 /* ============================ */
 /* ============================ */
 /* ============================ */

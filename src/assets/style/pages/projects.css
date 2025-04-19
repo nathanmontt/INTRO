@@ -32,9 +32,9 @@
     justify-content: center;
     align-items: center;
 }
-.container-random-01 .text-random-01 {}
+/* .container-random-01 .text-random-01 {} */
 .container-random-01 #random01 { padding: var(--next-usual-size); }
-.container-random-01 .btn-cta-random-01 {}
+/* .container-random-01 .btn-cta-random-01 {} */
 #explanation-text {
     width: 30em;
     padding: var(--next-usual-size);
