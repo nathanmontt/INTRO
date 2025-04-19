@@ -31,12 +31,20 @@
             <div class="container-project-first">
                 <h1 id="number-change">0</h1>
                 <div class="container-btn-cta">
-                    <button id="decrement-btn">decrementar</button>
-                    <button id="reset-btn">resetar</button>
-                    <button id="increment-btn">incrementar</button>
+                    <button id="decrement-btn" class="btn-cta">decrementar</button>
+                    <button id="reset-btn" class="btn-cta">resetar</button>
+                    <button id="increment-btn" class="btn-cta">incrementar</button>
                 </div>
             </div>
-            <div class="container-project-second"></div>
+
+            <div class="container-project-second">
+                <div class="container-random-01">
+                    <h1 class="text-random-01">Math.random()</h1>
+                    <h1 id="random01">0</h1>
+                    <button id="btn-random-01" class="btn-cta">Gerar</button>
+                </div>
+                <p id="explanation-text">Para aumentarmos a <em>range</em> de valores aleatórios, fazemos <strong>Math.random() * valor</strong>. Para adicionarmos os extremos, 1 e valor, fazemos <strong>(Math.random() * 6) + 1</strong>. Para arredondarmos, fazemos <strong>Math.floor(Math.random() * 6) + 1</strong> (ou ceil).</p>
+            </div>
         </div>
     </main>
 

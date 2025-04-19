@@ -1,3 +1,4 @@
+/* COUNTER */
 const numberChange = document.getElementById('number-change');
 const decrementBtn = document.getElementById('decrement-btn');
 const resetBtn = document.getElementById('reset-btn');
@@ -15,4 +16,12 @@ resetBtn.onclick = function () {
 incrementBtn.onclick = function () {
     count++
     numberChange.textContent = count;
+}
+
+/* RANDOM */
+const random01 = document.getElementById('random01');
+const btnRandom01 = document.getElementById('btn-random-01');
+
+btnRandom01.onclick = function () {
+    random01.textContent = Math.round(Math.random() * 100) + 1;
 }
