@@ -168,6 +168,62 @@ let resultPurch = purchase > 100 ? 'Você ganhou um desconto de 10%!' : 'Os requ
 console.log(resultPurch);
 
 /* ============================ */
+
+let day = "pizza";
+
+switch (day) {
+    case 1:
+        console.log('Domingo');
+        break;
+    case 2:
+        console.log('Segunda');
+        break;
+    case 3:
+        console.log('Terça');
+        break;
+    case 4:
+        console.log('Quarta');
+        break;
+    case 5:
+        console.log('Quinta');
+        break;
+    case 6:
+        console.log('Sexta');
+        break;
+    case 7:
+        console.log('Sábado');
+        break;
+    default:
+        console.log(`${day} não é um dia!`)
+}
+
+
+let testScore = 40;
+let letterGrade;
+
+switch(true) {
+    case testScore >= 90:
+        letterGrade = "A";
+        break;
+    case testScore >= 80:
+        letterGrade = "B";
+        break;
+    case testScore >= 70:
+        letterGrade = "C";
+        break;
+    case testScore >= 60:
+        letterGrade = "D";
+        break;
+    case testScore >= 50:
+        letterGrade = "E";
+        break;
+    case testScore >= 40:
+        letterGrade = "F";
+        break;
+}
+
+console.log(letterGrade)
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
