@@ -1,7 +1,7 @@
 @import url('../main.css');
 
 /* COUNTER */
-.container-project-general .container-project-first {
+.container-project-general .containers {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,21 +21,27 @@
 }
 
 /* GENERATOR */
-.container-random-01 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .container-project-second {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-/* .container-random-01 .text-random-01 {} */
 .container-random-01 #random01 { padding: var(--next-usual-size); }
-/* .container-random-01 .btn-cta-random-01 {} */
 #explanation-text {
-    width: 30em;
+    width: 20em;
     padding: var(--next-usual-size);
+}
+@media screen and (min-width: 1024px) {
+    #explanation-text {
+        width: 30em;
+    }
+}
+
+/* CHECKED */
+#secondMySub {
+    margin-top: var(--next-usual-size);
+}
+.result-texts {
+    width: 10em;
 }
