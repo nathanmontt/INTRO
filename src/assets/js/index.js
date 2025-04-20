@@ -247,6 +247,25 @@ console.log(phoneNumber.padStart(32, "9"));
 console.log(phoneNumber.padEnd(32, "9"));
 
 /* ============================ */
+
+const entireName = "Nathan de Andrade Monteiro da Silva";
+
+// let entireFirstName = entireName.slice(0, 6);
+// console.log(entireFirstName);
+
+// let entireLastName = entireName.slice(10, 17);
+// console.log(entireLastName);
+
+let lastChar = entireName.slice(-5);
+console.log(lastChar);
+
+let entireFirstName = entireName.slice(0, entireName.indexOf(" "));
+console.log(entireFirstName);
+let entireLastName = entireName.slice(entireName.indexOf(" "));
+// let entireLastName = entireName.slice(entireName.indexOf(" ") + 1); aqui é para retirar o espaço
+console.log(entireLastName);
+
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
