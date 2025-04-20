@@ -222,8 +222,34 @@ switch(true) {
         break;
 }
 
-console.log(letterGrade)
+console.log(letterGrade);
 
+/* ============================ */
+
+let userName = "Nathan  ";
+
+console.log(userName.charAt(2));
+console.log(userName.indexOf("a"));
+console.log(userName.lastIndexOf("a"));
+console.log(userName.length);
+console.log(userName.trim());
+console.log(userName.toUpperCase());
+console.log(userName.toLocaleLowerCase());
+console.log(userName.repeat(5));
+console.log(userName.startsWith('N'));
+console.log(userName.endsWith('n'));
+console.log(userName.includes(" "));
+
+let phoneNumber = "21 9-1234-5678"
+
+console.log(phoneNumber.replaceAll("-", ""));
+console.log(phoneNumber.padStart(32, "9"));
+console.log(phoneNumber.padEnd(32, "9"));
+
+/* ============================ */
+/* ============================ */
+/* ============================ */
+/* ============================ */
 /* ============================ */
 /* ============================ */
 /* ============================ */
