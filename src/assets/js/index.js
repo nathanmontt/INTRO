@@ -13,7 +13,7 @@ let price = 10.99;
 console.log(`O preço é de R$${price}`);
 console.log(`price é do tipo: ${typeof price}`);
 
-let gpa = 2.1
+let gpa = 2.1;
 console.log(`Nem sei o que é isso: ${gpa}`);
 console.log(`gpa é do tipo: ${typeof gpa}`);
 
@@ -57,19 +57,19 @@ let students = 30;
 /* INCREMENTO E DECREMENTO */
 // students++;
 // students--;
-console.log(`A quantidade de estudantes na sala atualamente é: ${students}`)
+console.log(`A quantidade de estudantes na sala atualamente é: ${students}`);
 
 /* ============================ */
 
 let username;
 document.getElementById('mySubmit').onclick = function () {
     username = document.getElementById('myText').value;
-    console.log(username)
+    console.log(username);
 }
 
 /* ============================ */
 
-// let agePerson = window.prompt('Idade:')
+// let agePerson = window.prompt('Idade:');
 // agePerson = Number(agePerson);
 // agePerson += 2;
 
@@ -81,7 +81,7 @@ const PI = 3.14159;
 let radius;
 let circumference;
 document.getElementById('myBtn').onclick = function () {
-    radius = document.getElementById('myTextRadius').value
+    radius = document.getElementById('myTextRadius').value;
     radius = Number(radius);
     circumference = 2 * PI * radius;
 
@@ -90,8 +90,8 @@ document.getElementById('myBtn').onclick = function () {
 
 /* ============================ */
 
-console.log(Math.PI)
-console.log(Math.E)
+console.log(Math.PI);
+console.log(Math.E);
 
 let x = 3.21;
 let x2 = 3.91;
@@ -119,23 +119,23 @@ console.log(`O valor mínimo de y2 é: ${Math.min(x,x2,y,y2)}`);
 let time = 14;
 
 if (time < 12) {
-    console.log("Good Morning!")
+    console.log("Good Morning!");
 } else {
-    console.log("Good Afternoon!")
+    console.log("Good Afternoon!");
 }
 
 let isStudent = true;
 
 if (isStudent) {
-    console.log("You are enroled!")
+    console.log("You are enroled!");
 } else if(!isStudent) {
-    console.log("You aren't enroled!")
+    console.log("You aren't enroled!");
 }
 
 const myH3Title = document.getElementById('my-h3-title');
 const driveOrDontTextBox = document.getElementById('drive-or-dont-textbox');
 const btnSub = document.getElementById('mySub');
-const resultElement = document.getElementById('result-element')
+const resultElement = document.getElementById('result-element');
 let ageOnePerson;
 
 btnSub.onclick = function () {
@@ -145,19 +145,28 @@ btnSub.onclick = function () {
     ageOnePerson = Number(ageOnePerson);
 
     if (ageOnePerson == 0) {
-        resultElement.textContent = `Com ${ageOnePerson} anos, você nem nascido é! Sai daqui! Xô!`
+        resultElement.textContent = `Com ${ageOnePerson} anos, você nem nascido é! Sai daqui! Xô!`;
     } else if (ageOnePerson >= 1 && ageOnePerson <=10) {
-        resultElement.textContent = `Com ${ageOnePerson} anos, ainda não tá bom. Pode ir vazando!`
+        resultElement.textContent = `Com ${ageOnePerson} anos, ainda não tá bom. Pode ir vazando!`;
     } else if (ageOnePerson >= 11 && ageOnePerson <= 17) {
-        resultElement.textContent = `Com ${ageOnePerson} anos, tu tá quase lá!`
+        resultElement.textContent = `Com ${ageOnePerson} anos, tu tá quase lá!`;
     } else if (ageOnePerson >= 18 && ageOnePerson <= 99) {
-        resultElement.textContent = `Com ${ageOnePerson} anos, agora sim! Já pode ser preso!`
+        resultElement.textContent = `Com ${ageOnePerson} anos, agora sim! Já pode ser preso!`;
     } else if (ageOnePerson >= 100) {
-        resultElement.textContent = `Com ${ageOnePerson} anos, virou imortal, é?! Sai daqui, vampiro!`
+        resultElement.textContent = `Com ${ageOnePerson} anos, virou imortal, é?! Sai daqui, vampiro!`;
     }
 }
 
 /* ============================ */
+
+let pAge = 25;
+let resultMessage = pAge >= 18 ? "Adulto" : "Menor de idade";
+console.log(resultMessage);
+
+let purchase = 101;
+let resultPurch = purchase > 100 ? 'Você ganhou um desconto de 10%!' : 'Os requisitos para o desconto não foram antendidos!';
+console.log(resultPurch);
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
