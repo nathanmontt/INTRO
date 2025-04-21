@@ -340,6 +340,39 @@ console.log(entireLastName);
 // }
 
 /* ============================ */
+
+// function bDay (person, agePerson) {
+//     console.log(`Feliz Aniversário, ${person}! Hoje você está fazendo ${agePerson} anos!`)
+// }
+
+// bDay("Nathan", 25);
+
+function add (x, y) {
+    let result = x + y;
+    return result;
+}
+function sub (x, y) {
+    let result = x - y;
+    return result;
+}
+function mult (x, y) {
+    let result = x * y;
+    return result;
+}
+function div (x, y) {
+    let result = x / y;
+    return result;
+}
+
+function isEven (number) {
+    return number%2 === 0 ? true : false;
+}
+
+console.log(add(2,3));
+console.log(sub(2,3));
+console.log(mult(2,3));
+console.log(div(2,3));
+console.log(isEven(3));
 /* ============================ */
 /* ============================ */
 /* ============================ */
