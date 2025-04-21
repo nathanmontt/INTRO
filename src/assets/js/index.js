@@ -265,8 +265,39 @@ let entireLastName = entireName.slice(entireName.indexOf(" "));
 // let entireLastName = entireName.slice(entireName.indexOf(" ") + 1); aqui é para retirar o espaço
 console.log(entireLastName);
 
-
 /* ============================ */
+
+// let enterName = window.prompt("Entre com o nome: ");
+
+// Sem method chaining
+
+// enterName = enterName.trim();
+// let letter = enterName.charAt(0)
+// letter = letter.toUpperCase();
+
+// let extraChars = enterName.slice(1);
+// extraChars = extraChars.toLowerCase()
+// enterName = letter + extraChars;
+
+// console.log(enterName);
+
+// Com method chaining
+
+// enterName = enterName.trim().charAt(0).toUpperCase() + enterName.trim().slice(1).replaceAll(" ", "").toLowerCase();
+// console.log(enterName);
+
+/*
+   Primeiro, pegamos o nome;
+   Tiramos todos os espaços em branco;
+   Pegamos o primeiro char;
+   Transformamos ele em upper;
+   
+   Concatemamos com o resto da palavra, já que só fizemos isso com o primeiro char (charAt(0));
+   eliminamos todos os espaços novamente;
+   Damos um slice, já que não queremos a primeira letra mais;
+   Deixamos o resto em lower;
+*/
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
