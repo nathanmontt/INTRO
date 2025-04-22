@@ -587,7 +587,7 @@
                     <li class="study-list">&rightarrow; É uma seção do código que é possível usá-la novamente depois quantas vezes quisermos;</li>
                 </ul>
 
-                <h3 class="title-content">16. Variable Scope</h3>
+                <h3 class="title-content">17. Variable Scope</h3>
                 <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
 
                 <ul class="study-menu-list-holder">
@@ -595,6 +595,25 @@
                     <li class="study-list">&rightarrow; Por exemplo, <span class="specific-style">let x = 1;</span> e <span class="specific-style">let x = 2;</span> estará errado pois não podemos criar uma variável com o mesmo nome;</li>
                     <li class="study-list">&rightarrow; Agora, fazer isso dentro de uma função (no caso, 2 funções com a mesma variável) é possível. Dentro de uma função, chamamos isso de <span class="specific-style">escopo local</span>: se criarmos x e y em 2 funções diferentes e dermos um console.log() em cada uma (console.log(x) na função 1 onde o x não existe e o mesmo para a y), nenhuma saberá da localização da outra, já que o escopo é local;</li>
                     <li class="study-list">&rightarrow; Agora, declarando uma variável de fora de uma função é criar um <span class="specific-style">escopo global</span>, já que ela pode ser acessada de dentro e de fora de funções;</li>
+                </ul>
+
+                <h3 class="title-content">18. Arrays</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É uma variável (quase uma estrutura) que armazena mais de um valor. A forma de fazer isso é simples: <span class="specific-style">[encapsulamos os valores que queremos entre colchetes, separados por vírgulas]</span></li>
+                    <li class="study-list">&rightarrow; Ficaríamos com isso aqui na declaração: <span class="specific-style">let fruits = ["apple", "orange", "banana"]</span></li>
+                    <li class="study-list">&rightarrow; Se dermos um console.log() em "fruits", imprimiríamos todo o array. Caso quiséssemos impirmir apenas um (ou uma quantidade específica), precisaríamos usar um index, dessa forma: <span class="specific-style">console.log(fruits[posiçãoDoElemento]);</span></li>
+                    <li class="study-list">&rightarrow; Podemos também mudar, de forma simples, um elemento de dentro do array. Podemos colocar <span class="specific-style">fruits[posiçãoDoElemento] = novoValor;</span> que ele modificará o valor que já estava presente dentro do array;</li>
+                    <li class="study-list">&rightarrow; Podemos também adicionar, de forma simples, um elemento de dentro do array. Colocando <span class="specific-style">fruits[novaPosiçãoDoElemento] = novoValor;</span> ele adicionará um novo valor dentro do array;</li>
+                    <li class="study-list">&rightarrow; Mas fazer dessa forma é bem primitivo. Por isso, usamos alguns métodos <em>built-in</em> de arrays; <span class="specific-style">.push(valor)</span>. Ele adiciona um novo valor dentro do array <strong>ao final do mesmo</strong>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.push(valor)</span>: adiciona um novo valor dentro do array <strong>ao final do mesmo</strong>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.pop()</span>, que elimina o último elemento do array;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.unshift(valor)</span>, que <strong>adiciona um elemento no início do array</strong>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.shift()</span>, que <strong>elimina um elemento no início do array</strong>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.lenght</span>, que <strong>diz o tamanho do array</strong>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.sort()</span>, que <strong>ordena alfabeticamente o array</strong>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.sort().reverse()</span>, que <strong>inverte o array</strong>;</li>
                 </ul>
             </div>
         </div>

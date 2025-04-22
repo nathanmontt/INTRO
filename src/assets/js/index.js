@@ -376,7 +376,29 @@ console.log(isEven(3));
 
 /* ============================ */
 
+let fruits = ["apple", "orange", "banana", "strawberry", "mirtilo", "grapes"];
+fruits.push("coconut");
+fruits.pop();
+fruits.unshift("mango");
+fruits.shift();
+console.log(fruits.length);
 
+console.log(`Antes de dar .sort(): ${fruits}`);
+
+fruits.sort();
+console.log(`Depois de dar .sort(): ${fruits.sort()}`);
+
+fruits.sort();
+console.log(`Depois de dar .sort().reverse(): ${fruits.sort().reverse()}`);
+
+for (let i=0 ; i<fruits.length ; i++) {
+    console.log(fruits[i]);
+}
+
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+// console.log(fruits[3]);
 
 /* ============================ */
 /* ============================ */
