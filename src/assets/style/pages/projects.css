@@ -45,3 +45,28 @@
 .result-texts {
     width: 10em;
 }
+
+/* CONVERSION */
+
+.container-project-fourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-project-fourth form{
+    text-align: center;
+}
+#title-h1 {
+    margin-bottom: var(--next-usual-size);
+}
+#textbox {
+    margin-bottom: var(--next-usual-size);
+    /* font-size: 1.1em; */
+}
+.btn-test {
+    margin-top: var(--usual-size);
+}
+.mt {
+    margin-top: var(--usual-size);
+}
