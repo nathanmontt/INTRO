@@ -103,3 +103,45 @@ function rollDice() {
     diceResult.textContent = `Dice: ${numDiceRolls.join(', ')}`;
     diceImages.innerHTML = images.join('')
 }
+
+/* PASSWORD */
+
+function generatePassword (lenght, includeLowerCase, includeUpperCase, includeNumbers, includeSymbols) {
+    const lowerCaseChars = "abcdefghijklmnopqrstuvxwyz";
+    const upperCaseChars = "ABCDEFGHIHJKLMNOPQRSTUVXWYZ";
+    const numberChars = "0123456789";
+    const symbolsChars = "!@#$%&^~()_-+=";
+
+    let allowedChars = "";
+    let password = "";
+
+    allowedChars += includeLowerCase ? lowerCaseChars : "";
+    allowedChars += includeUpperCase ? upperCaseChars : "";
+    allowedChars += includeNumbers ? numberChars : "";
+    allowedChars += includeSymbols ? symbolsChars : "";
+
+    if (lenght <= 0) {
+        return "Precisa ser de tamanho maior"
+    }
+    
+    if (allowedChars.length === 0) {
+        return "Precisa ter alguma coisa pelo menos"
+    }
+
+    for (let i=0 ; i<lenght ; i++) {
+        const randomIndex = Math.floor(Math.random() * allowedChars.length);
+        password += allowedChars[randomIndex];
+    }
+
+    return password;
+}
+
+const passwordLenght = 12;
+const includeLowerCase = true;
+const includeUpperCase = true;
+const includeNumbers = true;
+const includeSymbols = true;
+
+const password = generatePassword(passwordLenght, includeLowerCase, includeUpperCase, includeNumbers, includeSymbols);
+
+console.log(`Senha gerada: ${password}`);
