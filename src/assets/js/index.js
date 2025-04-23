@@ -420,8 +420,31 @@ console.log(fruit);
 let foods = [...fruit, ...vegetables, "eggs", "milk"];
 console.log(foods);
 
-
-
 /* ============================ */
+
+const food1 = "pizza";
+const food2 = "hamburguer";
+const food3 = "hot dog";
+const food4 = "sushi";
+const food5 = "ramen";
+
+function openFridge(...foods) {
+    console.log(foods)
+}
+
+openFridge(food1, food2, food3, food4, food5)
+
+
+function sum(...sumNumbers) {
+    let resultSum = 0
+    for (let i=0 ; i<sumNumbers.length ; i++) {
+        resultSum += sumNumbers[i];
+    }
+    return resultSum;
+}
+
+const total = sum(2,3,4,5,6);
+console.log(total)
+
 /* ============================ */
 /* ============================ */
