@@ -401,6 +401,27 @@ for (let i=0 ; i<fruits.length ; i++) {
 // console.log(fruits[3]);
 
 /* ============================ */
+
+let numbers = [1, 2, 3, 4, 5];
+let max = Math.max(...numbers)
+let min = Math.min(...numbers)
+console.log(max);
+console.log(min);
+
+
+let user = "Nathan Monteiro"
+let letters = [...user].join("-");
+console.log(letters);
+
+let fruit = ["apple", "orange", "banana"];
+let vegetables = ["carrots", "celery", "potatoes"];
+console.log(fruit);
+
+let foods = [...fruit, ...vegetables, "eggs", "milk"];
+console.log(foods);
+
+
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
