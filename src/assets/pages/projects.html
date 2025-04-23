@@ -79,11 +79,22 @@
 
                     <input type="radio" name="conversion" id="toCelsius">
                     <label for="toCelsius">Fahrenheit para Celsius</label><br>
-
+                    
                     <button type="button" onclick="convert()" class="btn-cta btn-test">Converter</button>
-
+                    
                     <p id="result" class="mt"></p>
                 </form>
+            </div>
+
+            <div class="container-project-fifth containers">
+                <div id="containerDice">
+                    <h1>Dice Roller</h1>
+                    <label for="numDice">Number of dices</label><br>
+                    <input type="number" name="numDice" id="numOfDice" value="1" min="1"><br>
+                    <button onclick="rollDice()" class="btn-cta">Roll Dice</button>
+                    <div id="diceResult"></div>
+                    <div id="diceImages"></div>
+                </div>
             </div>
         </div>
     </main>

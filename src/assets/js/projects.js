@@ -79,3 +79,27 @@ function convert () {
         result.textContent = "Selecione uma unidade!";
     }
 }
+
+/* ROLL DICE */
+
+function rollDice() {
+    const numOfDice = document.getElementById('numOfDice').value;
+    // let test = numOfDice.value;
+    
+    const diceResult = document.getElementById('diceResult');
+    const diceImages = document.getElementById('diceImages');
+
+    const numDiceRolls = [];
+    const images = [];
+
+    for (let i=0 ; i<numOfDice ; i++) {
+        const value = Math.floor(Math.random() * 6) + 1;
+        // console.log(value);
+
+        numDiceRolls.push(value);
+        images.push(`<img src="../img/${value}.png" class="imgs-test">`);
+    }
+
+    diceResult.textContent = `Dice: ${numDiceRolls.join(', ')}`;
+    diceImages.innerHTML = images.join('')
+}

@@ -70,3 +70,17 @@
 .mt {
     margin-top: var(--usual-size);
 }
+
+
+/* ROLL DICE */
+
+.container-project-fifth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgs-test {
+    width: 3em;
+}
