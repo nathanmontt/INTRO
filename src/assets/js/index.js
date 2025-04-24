@@ -508,15 +508,35 @@ let numbersArray = [1, 2, 3, 4, 5];
 //     console.log(element);
 // }
 
-let fruitsArray = ["apple", "orange", "banana", "coconut"];
+// let fruitsArray = ["apple", "orange", "banana", "coconut"];
 
-fruitsArray.forEach(display);
+// fruitsArray.forEach(display);
 
-function display(element) {
-    console.log(element);
-}
+// function display(element) {
+//     console.log(element);
+// }
 
 /* ============================ */
+
+// const nums = [1,2,3,4,5];
+// const cb = nums.map(cube);
+
+// console.log(cb);
+
+// function cube(el) {
+//     return Math.pow(el, 3);
+// }
+
+const dates = ["2-12-2022", "20-10-2023", "10-01-2000"];
+const formatedDates = dates.map(formatDates);
+
+console.log(formatedDates)
+
+function formatDates(elements) {
+    const parts = elements.split("-");
+    return `${parts[0]}/${parts[1]}/${parts[2]}`;
+}
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
