@@ -447,4 +447,35 @@ const total = sum(2,3,4,5,6);
 console.log(total)
 
 /* ============================ */
+
+// hello(wait);
+
+// function hello (callback) {
+//     console.log("hello");
+//     callback();
+// }
+
+// function leave () {
+//     console.log("leave");
+// }
+
+// function wait () {
+//     console.log("wait");
+// }
+
+// function goodbye () {
+//     console.log("goodbye")
+// }
+
+soma(displayConsole,2,3);
+
+function soma (callback, x, y) {
+    let result = x+y;
+    callback(result);
+}
+function displayConsole (result) {
+    console.log(result)
+}
+
+
 /* ============================ */

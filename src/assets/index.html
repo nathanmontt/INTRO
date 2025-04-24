@@ -79,6 +79,7 @@
             <div class="checkpoint">
                 <p class="checkpoint-text">Com isso, marcamos uma parte do roadmap como concluída! Agora, partimos para a parte seguinte: <span class="specific-style">HTML e CSS</span>. Primeiro, vamos dar início no HTML.</p>
             </div>
+
             <div class="container-second">
                 <h2 class="topic-content">HTML</h2>
                 <h3 class="title-content">1. Introduction to HTML</h3>
@@ -385,6 +386,7 @@
                     <li id="orange" class="study-list">&rightarrow; Laranja</li>
                 </ul>
             </div>
+
             <div class="container-fourth">
                 <h2 class="topic-content">JavaScript</h2>
                 <h3 class="title-content">1. Introduction to JavaScript</h3>
@@ -425,20 +427,22 @@
                 <ul class="study-menu-list-holder">
                     <li class="study-list">&rightarrow; Conteúdo dentro do arquivo JS acessado pelo <span class="specific-style">console.log()</span></li>
                 </ul>
+
                 <h3 class="title-content">3. Accept User Input</h3>
                 <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
             
                 <ul class="study-menu-list-holder">
                     <li class="study-list">&rightarrow; Tem duas maneiras de aceitar o input do user. Vamos usar a segunda abordagem;</li>
-            
+
                     <li>
                         <label for="">Username: </label>
                         <input type="text" id="myText">
                         <button id="mySubmit">Enviar</button>
                     </li>
-            
+
                     <li class="study-list">&rightarrow; Para explicar melhor: quando clicarmos no botão "enviar", vamos executar uma função. Primeiro, criamos uma variável (<span class="specific-style">let username;</span>). Segundo, pegamos o button <span class="specific-style">document.getElementById('mySubmit').onclick = function(){...}</span>. Terceiro, dentro dessa função, vamos fazer o seguinte: <span class="specific-style">quando clicarmos no botão "Enviar", pegamos o conteúdo de dentro da caixa de texto. Fazemos o <em>reassigned</em> da variável username e setar ele igual ao que está dentro da caixa de texto. Para pegar o valor daquele elemento, usamos document.getElementById('myText').value</span></li>
                 </ul>
+
                 <h3 class="title-content">4. Tpe Convertions</h3>
                 <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
                 <ul class="study-menu-list-holder">
@@ -616,7 +620,7 @@
                     <li class="study-list">&rightarrow; <span class="specific-style">.sort().reverse()</span>, que <strong>inverte o array</strong>;</li>
                 </ul>
 
-                <h3 class="title-content">18. Spread Operator (...)</h3>
+                <h3 class="title-content">19. Spread Operator (...)</h3>
                 <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
 
                 <ul class="study-menu-list-holder">
@@ -628,12 +632,21 @@
                     <li class="study-list">&rightarrow; Também é possível criar uma <span class="specific-style">shallow copy</span>, que é uma estrutura diferente, porém com os mesmos elementos que a original. ;</li>
                 </ul>
 
-                <h3 class="title-content">18. Rest Parameters (...)</h3>
+                <h3 class="title-content">20. Rest Parameters (...)</h3>
                 <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
 
                 <ul class="study-menu-list-holder">
                     <li class="study-list">&rightarrow; Aqui vai ser o contrário do anterior: ao invés de separar os elementos de um array em diversos, este <span class="specific-style">junta elementos separados em um array</span>;</li>
                     <li class="study-list">&rightarrow; Como é um parâmetro, imagine que criemos diversas variáveis <strong>const</strong>. Podemos agrupá-las em uma função: <span class="specific-style">function openFridge(...foods) {/* code */}</span>. Quando chamarmos a função: openFridge(colocamosAsVariaveis, deComidaAqui). Tudo isso vai se juntar dentro de um único array;</li>
+                </ul>
+
+                <h3 class="title-content">21. Callbacks</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É uma função passada como argumento por outra função;</li>
+                    <li class="study-list">&rightarrow; A ideia é: temos 2 funções. Queremos garantir que a segunda não seja declarada primeiro que a primeira função. Para isso, fazemos: <span class="specific-style">function nomeFuncao1(nomeFuncao2) {...}</span>. Dentro dessa função, colocamos ao final <strong>callback()</strong>;</li>
+                    <li class="study-list">&rightarrow; E o porque do uso? Bom, imagine uma fila de banco. Nela, temos <strong>100 idosos</strong> e apenas um atendente para guiá-los por todo o processo. Quando cada um chegar ao caixa e contar o que precisa fazer, isso vai aumentar consideravelmente o tempo de espera dos outros atrás dele. Para tentar <strong>dar prioridade na redução do tempo</strong>, o atendente chega para cada um na fila, com um papel, e anota sobre a dificuldade daquela pessoa. Assim, quando chegar no caixa, o atendente não precisará ficar perguntando muita coisa. É assim que as <strong>callback functions</strong> funcionam: elas tomam a frente de <strong>asynchronous operations</strong>, que são operação que tomam muito tempo para se fazer (perguntar o problema da pessoa no caixa), e dizem: <em>vou fazer tal coisa (perguntar o problema) e assim que terminar, outra operação (atender) continua</em>. Ela dá prioridade a operações não passarem na frente de outras;</li>
                 </ul>
             </div>
         </div>
