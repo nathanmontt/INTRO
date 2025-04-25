@@ -548,6 +548,31 @@ function isEven(el) {
 }
 
 /* ============================ */
+
+const prices = [5, 30, 10, 25, 15, 20];
+const totalPrice = prices.reduce(sumPrice);
+
+console.log(totalPrice.toFixed(2));
+
+function sumPrice (accumulator, elements) {
+    return accumulator + elements;
+}
+
+const grades = [75, 50, 90, 80, 65, 95]
+const maxGrades = grades.reduce(getMax);
+const minGrades = grades.reduce(getMin);
+
+console.log(maxGrades);
+console.log(minGrades);
+
+function getMax(accumulator, element) {
+    return Math.max(accumulator, element);
+}
+
+function getMin(accumulator, element) {
+    return Math.min(accumulator, element);
+}
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
