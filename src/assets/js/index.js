@@ -613,6 +613,23 @@ console.log(cubes);
 console.log(even);
 
 /* ============================ */
+
+const person = {
+    firstName: "Patrick",
+    lasName: "Star",
+    age: 30,
+    isEmployed: false,
+    sayHello: function () { console.log("Hellooo!"); },
+    sayBye: () => { console.log("Byeeee!"); }
+};
+
+console.log(person.firstName);
+console.log(person.lasName);
+console.log(person.age);
+console.log(person.isEmployed);
+person.sayHello();
+person.sayBye();
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
