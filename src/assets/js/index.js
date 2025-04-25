@@ -584,13 +584,34 @@ setTimeout(function() {
     console.log("ola")
 }, 3000);
 
-const nmbrs = [1,2,3,4,5,6,7,8,9].map(function (element) {
-    return Math.pow(element,2);
-})
+// const nmbrs = [1,2,3,4,5,6,7,8,9].map(function (element) {
+//     return Math.pow(element,2);
+// });
 
-console.log(nmbrs);
+// console.log(nmbrs);
 
 /* ============================ */
+
+const helloPerson = (nome) => {
+    console.log(`Olá, ${nome}`);
+};
+
+helloPerson("jonas");
+
+
+setTimeout(() => {
+    console.log("eu de novo")
+}, 3000);
+
+const nmbrs = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const sqs = nmbrs.map((element) => { return Math.pow(element, 2); });
+const cubes = nmbrs.map((element) => { return Math.pow(element, 3); });
+const even = nmbrs.filter((element) => { return element%2 === 0; });
+
+console.log(sqs);
+console.log(cubes);
+console.log(even);
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
