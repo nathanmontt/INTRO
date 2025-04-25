@@ -574,6 +574,22 @@ function getMin(accumulator, element) {
 }
 
 /* ============================ */
+
+const hello = function () {
+    console.log('hello');
+}
+
+// setTimeout(hello, 3000);
+setTimeout(function() {
+    console.log("ola")
+}, 3000);
+
+const nmbrs = [1,2,3,4,5,6,7,8,9].map(function (element) {
+    return Math.pow(element,2);
+})
+
+console.log(nmbrs);
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
