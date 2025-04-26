@@ -842,6 +842,39 @@ tuba.swim();
 bird.fly();
 
 /* ============================ */
+
+class Rectangle {
+    constructor(width, height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    set width(newWidth) {
+        if(newWidth > 0) {
+            // Propriedade privada
+            this._width = newWidth;
+        } else {
+            console.error('Número, meu colega. NÚMERO!')
+        }
+    }
+
+    set height(newheight) {
+        if(newheight > 0) {
+            // Propriedade privada
+            this._height = newheight;
+        } else {
+            console.error('Número, meu colega. NÚMERO!')
+        }
+    }
+
+    get width () { return this._width.toFixed(1); }
+    get height () { return this._height.toFixed(1); }
+}
+
+const rectangle = new Rectangle(3, 3);
+console.log(rectangle.width);
+console.log(rectangle.height);
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
