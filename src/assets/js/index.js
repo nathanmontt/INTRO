@@ -580,9 +580,9 @@ const hello = function () {
 }
 
 // setTimeout(hello, 3000);
-setTimeout(function() {
-    console.log("ola")
-}, 3000);
+// setTimeout(function() {
+//     console.log("ola")
+// }, 3000);
 
 // const nmbrs = [1,2,3,4,5,6,7,8,9].map(function (element) {
 //     return Math.pow(element,2);
@@ -599,9 +599,9 @@ const helloPerson = (nome) => {
 helloPerson("jonas");
 
 
-setTimeout(() => {
-    console.log("eu de novo")
-}, 3000);
+// setTimeout(() => {
+//     console.log("eu de novo")
+// }, 3000);
 
 const nmbrs = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const sqs = nmbrs.map((element) => { return Math.pow(element, 2); });
@@ -740,44 +740,110 @@ console.log(User.userCount);
 
 /* ============================ */
 
+// class Animals {
+//     alive = true;
+//     eat() {
+//         console.log(`This ${this.name} is eating`);
+//     }
+//     sleep() {
+//         console.log(`This ${this.name} is sleeping`);
+//     }
+// }
+
+// class Rabbit extends Animals {
+//     name = "Rabbit";
+//     run() {
+//         console.log(`This ${this.name} is running`);
+//     }
+// }
+// class Fish extends Animals {
+//     name = "Fish";
+//     swim() {
+//         console.log(`This ${this.name} is swimming`);
+//     }
+// }
+// class Dog extends Animals {
+//     name = "Dog";
+// }
+
+// const rabbit = new Rabbit();
+// const fish = new Fish();
+// const dog = new Dog();
+
+// console.log(rabbit.alive);
+// rabbit.alive = false;
+// console.log(rabbit.alive);
+
+// rabbit.eat();
+// rabbit.sleep();
+
+// rabbit.run();
+// fish.swim();
+
+/* ============================ */
+
 class Animal {
-    alive = true;
-    eat() {
-        console.log(`This ${this.name} is eating`);
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
     }
-    sleep() {
-        console.log(`This ${this.name} is sleeping`);
+
+    move (speed) {
+        console.log(`The ${this.name} moves at a speed of ${speed} km/h`)
+    }
+}
+
+class Lebre extends Animal {
+    constructor (name, age, runSpeed) {
+        super(name, age);
+        this.runSpeed = runSpeed;
+    }
+
+    run () {
+        console.log(`This ${this.name} can run`);
+        super.move(this.runSpeed);
     }
 }
 
-class Rabbit extends Animal {
-    name = "Rabbit";
-    run() {
-        console.log(`This ${this.name} is running`);
+class Tuba extends Animal {
+    constructor (name, age, swimSpeed) {
+        super(name, age);
+        this.swimSpeed = swimSpeed;
+    }
+    
+    swim () {
+        console.log(`This ${this.name} can swim`);
+        super.move(this.swimSpeed);
     }
 }
-class Fish extends Animal {
-    name = "Fish";
-    swim() {
-        console.log(`This ${this.name} is swimming`);
+
+class Bird extends Animal {
+    constructor (name, age, flySpeed) {
+        super(name, age);
+        this.flySpeed = flySpeed;
+    }
+    
+    fly () {
+        console.log(`This ${this.name} can fly`);
+        super.move(this.flySpeed);
     }
 }
-class Dog extends Animal {
-    name = "Dog";
-}
 
-const rabbit = new Rabbit();
-const fish = new Fish();
-const dog = new Dog();
+const lebre = new Lebre("Lebre", 1, 25)
+const tuba = new Tuba("Tubabão", 2, 10)
+const bird = new Bird("Pássaro", 3, 12)
 
-console.log(rabbit.alive);
-rabbit.alive = false;
-console.log(rabbit.alive);
+console.log(tuba.name)
+console.log(tuba.age)
+console.log(tuba.swimSpeed)
 
-rabbit.eat();
-rabbit.sleep();
+lebre.run();
+tuba.swim();
+bird.fly();
 
-rabbit.run();
-fish.swim();
-
+/* ============================ */
+/* ============================ */
+/* ============================ */
+/* ============================ */
+/* ============================ */
 /* ============================ */
