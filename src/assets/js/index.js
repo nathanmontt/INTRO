@@ -683,6 +683,25 @@ console.log(car3.color);
 car3.drive()
 
 /* ============================ */
+
+class Product {
+    constructor(name, price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    displayProduct () {
+        console.log (`Produto: ${this.name}`);
+        console.log (`Preço: R$${this.price.toFixed(2)}`);
+    }
+}
+
+const prod1 = new Product ("Shirt", 19,99);
+const prod2 = new Product ("Jeans", 39,99);
+const prod3 = new Product ("Bolsa", 1239,99);
+prod1.displayProduct();
+prod2.displayProduct();
+prod3.displayProduct();
 /* ============================ */
 /* ============================ */
 /* ============================ */
