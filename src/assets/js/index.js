@@ -702,6 +702,41 @@ const prod3 = new Product ("Bolsa", 1239,99);
 prod1.displayProduct();
 prod2.displayProduct();
 prod3.displayProduct();
+
 /* ============================ */
+
+class MathUtil {
+    static PI = 3.14159;
+    
+    static getDiameter (radius) {
+        return radius*2;
+    }
+    static getCircunference (radius) {
+        return 2 * this.PI * radius ;
+    }
+    static getArea(radius) {
+        return this.PI * radius * radius ;
+    }
+}
+
+console.log(MathUtil.PI);
+console.log(MathUtil.getCircunference(10));
+console.log(MathUtil.getCircunference(2));
+console.log(MathUtil.getArea(5));
+
+
+class User {
+    static userCount = 0
+    constructor(username) {
+        this.username = username;
+        User.userCount++;
+    }
+}
+
+const user1 = new User ("pessoa1");
+const user2 = new User ("pessoa2");
+console.log(user1.username);
+console.log(User.userCount);
+
 /* ============================ */
 /* ============================ */
