@@ -631,6 +631,21 @@ person.sayHello();
 person.sayBye();
 
 /* ============================ */
+
+const person1 = {
+    name: "mano",
+    favFood: "miojo",
+    sayOla: function () {
+        console.log(`Meu nome é ${this.name}`);
+    },
+    eat: function () {
+        console.log(`${this.name} está comendo ${this.favFood}`);
+    }
+}
+
+person1.sayOla();
+person1.eat();
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
