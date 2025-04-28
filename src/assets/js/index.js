@@ -876,6 +876,56 @@ console.log(rectangle.width);
 console.log(rectangle.height);
 
 /* ============================ */
+
+let a = 1;
+let b = 2;
+console.log(a);
+console.log(b);
+
+[a,b] = [b,a];
+console.log(a);
+console.log(b);
+
+
+const colors = ["red", "green", "blue", "black", "white"];
+console.log(colors);
+[colors[0], colors[4]] = [colors[4], colors[0]];
+console.log(colors);
+
+
+const [firstColor, secondColor, thirdColor, ...extraColors] = colors
+console.log(firstColor);
+console.log(secondColor);
+console.log(thirdColor);
+console.log(extraColors);
+
+const p1 = {
+    firstNameP: "Spongebob",
+    lasNameP: "SquarePantes",
+    ageP: 30,
+    job: "Fry Cook",
+}
+
+const p2 = {
+    firstNameP: "Patrick",
+    lasNameP: "Star",
+    ageP: 40,
+}
+
+const {firstNameP, lasNameP, ageP, job='Unemployed'} = p1;
+console.log(firstNameP);
+console.log(lasNameP);
+console.log(ageP);
+console.log(job);
+
+function displayPerson ({firstNameP, lasNameP, ageP, job}) {
+    console.log(`name: ${firstNameP}`)
+    console.log(`nickname: ${lasNameP}`)
+    console.log(`age: ${ageP}`)
+    console.log(`job: ${job}`)
+}
+
+displayPerson(p2)
 /* ============================ */
 /* ============================ */
 /* ============================ */
