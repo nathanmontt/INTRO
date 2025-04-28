@@ -1103,7 +1103,7 @@ function startTimer () {
 function clearTimer() {
     clearTimeout(timeoutId);
     console.log("fechando")
-}
+} 
 
 /* ============================ */
 /* ============================ */
