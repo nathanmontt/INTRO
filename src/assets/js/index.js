@@ -1082,7 +1082,28 @@ outer();
 
 /* ============================ */
 
+function sayOi () {
+    alert("ola");
+}
 
+// setTimeout(sayOi, 3000)
+
+// const timeoutId = setTimeout(() => alert("Opa"), 3000)
+
+// clearTimeout(timeoutId);
+
+let timeoutId;
+function startTimer () {
+    timeoutId = setTimeout(() => {
+        alert("Fala rapaziada");
+    }, 3000)
+    console.log("ok")
+}
+
+function clearTimer() {
+    clearTimeout(timeoutId);
+    console.log("fechando")
+}
 
 /* ============================ */
 /* ============================ */
