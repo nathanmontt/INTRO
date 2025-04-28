@@ -169,9 +169,9 @@ console.log(resultPurch);
 
 /* ============================ */
 
-let day = "pizza";
+let days = "pizza";
 
-switch (day) {
+switch (days) {
     case 1:
         console.log('Domingo');
         break;
@@ -194,7 +194,7 @@ switch (day) {
         console.log('Sábado');
         break;
     default:
-        console.log(`${day} não é um dia!`)
+        console.log(`${days} não é um dia!`)
 }
 
 
@@ -1040,4 +1040,42 @@ num.sort((a,b) => a - b)
 
 console.log(num)
 
+/* ============================ */
+
+const date = new Date();
+console.log(date);
+// const formatedDate = new Date(2024, 0, 1, 2, 3, 4, 5);
+// console.log(formatedDate);
+
+const year = date.getFullYear();
+const month = date.getMonth();
+const day = date.getDay();
+const hours = date.getHours();
+const minutes = date.getMinutes();
+const seconds = date.getSeconds();
+const mili = date.getMilliseconds();
+
+date.setFullYear(2000)
+console.log(date);
+
+console.log("Tempo separado:");
+console.log(`Ano: ${year}`);
+console.log(`Mês: ${month}`);
+console.log(`Dia da semana: ${day}`);
+console.log(`Hora: ${hours}`);
+console.log(`Minuto: ${minutes}`);
+console.log(`Segundo: ${seconds}`);
+console.log(`Milisegundo: ${mili}`);
+
+/* ============================ */
+
+
+
+/* ============================ */
+/* ============================ */
+/* ============================ */
+/* ============================ */
+/* ============================ */
+/* ============================ */
+/* ============================ */
 /* ============================ */
