@@ -926,7 +926,111 @@ function displayPerson ({firstNameP, lasNameP, ageP, job}) {
 }
 
 displayPerson(p2)
+
+console.log("\n/* ============================ */");
+
+const pP = {
+    fullNameP: 'Nathan Monteiro',
+    aP: 25,
+    isUniStudent: true,
+    hobbies: ["Karate", "Fishing", "Cooking"],
+    address: {
+        street: "Rua Jose Maciel",
+        city: 'Minas Gerais',
+        country: "BH"
+    }
+}
+
+console.log(pP.fullNameP);
+console.log(pP.aP);
+console.log(pP.isUniStudent);
+console.log(pP.hobbies);
+console.log(pP.hobbies[0]);
+console.log(pP.hobbies[1]);
+console.log(pP.hobbies[2]);
+console.log(pP.address);
+console.log(pP.address.city);
+console.log(pP.address.country);
+console.log(pP.address.street);
+
+
+class Person {
+    constructor(name, age, ...address) {
+        this.name = name;
+        this.age = age;
+        this.address = new Address(...address);
+    }
+}
+
+class Address {
+    constructor(street, city, country) {
+        this.street = street;
+        this.city = city;
+        this.country = country;
+    }
+}
+
+const pP1 = new Person ("Nathan Monteiro", 25, "124 Conch Street", "Bikini Bottom", "Int. Waters");
+const pP2 = new Person ("Monteiro Nathan", 25, "128 Conch Street", "Bikini Bottom", "Int. Waters");
+const pP3 = new Person ("NM", 35, "126 Conch Street", "Bikini Bottom", "Int. Waters");
+
+console.log(pP1.name);
+console.log(pP1.age);
+console.log(pP1.address.city);
+console.log(pP1.address.country);
+console.log(pP1.address.street);
+
 /* ============================ */
-/* ============================ */
+
+const fruitsA = [
+    {
+        name: "apple", 
+        color: "red", 
+        calories: 95, 
+    },
+    {
+        name: "orange", 
+        color: "orange", 
+        calories: 45, 
+    },
+    {
+        name: "banana", 
+        color: "yellow", 
+        calories: 109, 
+    },
+    {
+        name: "coconut", 
+        color: "white", 
+        calories: 15, 
+    },
+    {
+        name: "pinapple", 
+        color: "yellow", 
+        calories: 37, 
+    },
+];
+
+fruitsA.push({
+    name: "grapes", color: "purple", calories: 124
+})
+
+fruitsA.pop();
+fruitsA.splice(1,3); //Elimina elementos de um valor, até outro
+
+console.log(fruitsA[0].name)
+console.log(fruitsA[0].color)
+console.log(fruitsA[0].calories)
+
+for (fruits in fruitsA) {
+    console.log(fruitsA[fruits].color);
+    console.log(fruitsA[fruits].name);
+    console.log(fruitsA[fruits].calories);
+    console.log("=======================================\n")
+}
+
+fruitsA.forEach(fruit => {
+    console.log(fruit);
+});
+
 /* ============================ */
 /* ============================ */
