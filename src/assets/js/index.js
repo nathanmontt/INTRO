@@ -1,3 +1,5 @@
+import { PIValue, getCircumference, getArea, getVolume } from "./js/mathUtil.js";
+
 console.log("Hello world");
 // window.alert(`Eu gosto de pizza!`);
 
@@ -175,7 +177,7 @@ switch (days) {
     case 1:
         console.log('Domingo');
         break;
-    case 2:
+        case 2:
         console.log('Segunda');
         break;
     case 3:
@@ -184,18 +186,18 @@ switch (days) {
     case 4:
         console.log('Quarta');
         break;
-    case 5:
-        console.log('Quinta');
+        case 5:
+            console.log('Quinta');
         break;
-    case 6:
+        case 6:
         console.log('Sexta');
         break;
-    case 7:
+        case 7:
         console.log('Sábado');
         break;
     default:
         console.log(`${days} não é um dia!`)
-}
+    }
 
 
 let testScore = 40;
@@ -205,19 +207,19 @@ switch(true) {
     case testScore >= 90:
         letterGrade = "A";
         break;
-    case testScore >= 80:
-        letterGrade = "B";
-        break;
+        case testScore >= 80:
+            letterGrade = "B";
+            break;
     case testScore >= 70:
         letterGrade = "C";
         break;
     case testScore >= 60:
         letterGrade = "D";
         break;
-    case testScore >= 50:
+        case testScore >= 50:
         letterGrade = "E";
         break;
-    case testScore >= 40:
+        case testScore >= 40:
         letterGrade = "F";
         break;
 }
@@ -287,15 +289,15 @@ console.log(entireLastName);
 // console.log(enterName);
 
 /*
-   Primeiro, pegamos o nome;
-   Tiramos todos os espaços em branco;
-   Pegamos o primeiro char;
-   Transformamos ele em upper;
-   
-   Concatemamos com o resto da palavra, já que só fizemos isso com o primeiro char (charAt(0));
-   eliminamos todos os espaços novamente;
-   Damos um slice, já que não queremos a primeira letra mais;
-   Deixamos o resto em lower;
+Primeiro, pegamos o nome;
+Tiramos todos os espaços em branco;
+Pegamos o primeiro char;
+Transformamos ele em upper;
+
+Concatemamos com o resto da palavra, já que só fizemos isso com o primeiro char (charAt(0));
+eliminamos todos os espaços novamente;
+Damos um slice, já que não queremos a primeira letra mais;
+Deixamos o resto em lower;
 */
 
 /* ============================ */
@@ -303,15 +305,15 @@ console.log(entireLastName);
 // let urName = "";
 
 // while (urName === "" || urName === null) {
-//     urName = prompt("Digite seu nome");
-// }
+    //     urName = prompt("Digite seu nome");
+    // }
+    
+    /* ============================ */
 
-/* ============================ */
-
-// const minNum = 1;
-// const maxNum = 10;
-// const answer = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
-
+    // const minNum = 1;
+    // const maxNum = 10;
+    // const answer = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
+    
 // let attempts = 0;
 // let guess;
 // let running = true;
@@ -319,35 +321,35 @@ console.log(entireLastName);
 // console.log(answer);
 
 // while (running) {
-//     guess = prompt(`Guess a number between ${minNum} and ${maxNum}`)
-//     guess = Number(guess);
-
-//     if(isNaN(guess)) {
-//         window.alert("Please enter a number!")
-//     } else if (guess < minNum || guess > maxNum) {
-//         window.alert("Please enter a valid number!")
-//     } else {
-//         attempts++;
-//         if (guess < answer) {
-//             window.alert("TOO LOW. TRY AGAIN!")
-//         } else if (guess > answer) {
-//             window.alert("TOO HIGH. TRY AGAIN!")
-//         } else {
-//             window.alert(`CORRECT! The number was ${answer} and it took you ${attempts} attempts!`);
-//             running = false;
-//         }
-//     }
-// }
-
-/* ============================ */
-
+    //     guess = prompt(`Guess a number between ${minNum} and ${maxNum}`)
+    //     guess = Number(guess);
+    
+    //     if(isNaN(guess)) {
+        //         window.alert("Please enter a number!")
+        //     } else if (guess < minNum || guess > maxNum) {
+            //         window.alert("Please enter a valid number!")
+            //     } else {
+                //         attempts++;
+                //         if (guess < answer) {
+                    //             window.alert("TOO LOW. TRY AGAIN!")
+                    //         } else if (guess > answer) {
+                        //             window.alert("TOO HIGH. TRY AGAIN!")
+                        //         } else {
+                            //             window.alert(`CORRECT! The number was ${answer} and it took you ${attempts} attempts!`);
+                            //             running = false;
+                            //         }
+                            //     }
+                            // }
+                            
+                            /* ============================ */
+                            
 // function bDay (person, agePerson) {
-//     console.log(`Feliz Aniversário, ${person}! Hoje você está fazendo ${agePerson} anos!`)
-// }
+    //     console.log(`Feliz Aniversário, ${person}! Hoje você está fazendo ${agePerson} anos!`)
+    // }
+    
+    // bDay("Nathan", 25);
 
-// bDay("Nathan", 25);
-
-function add (x, y) {
+    function add (x, y) {
     let result = x + y;
     return result;
 }
@@ -451,11 +453,11 @@ console.log(total)
 // hello(wait);
 
 // function hello (callback) {
-//     console.log("hello");
-//     callback();
-// }
-
-// function leave () {
+    //     console.log("hello");
+    //     callback();
+    // }
+    
+    // function leave () {
 //     console.log("leave");
 // }
 
@@ -474,10 +476,10 @@ console.log(total)
 //     callback(result);
 // }
 // function displayConsole (result) {
-//     console.log(result);
-// }
+    //     console.log(result);
+    // }
 
-
+    
 /* ============================ */
 
 let numbersArray = [1, 2, 3, 4, 5];
@@ -489,45 +491,45 @@ let numbersArray = [1, 2, 3, 4, 5];
 // numbersArray.forEach(display);
 
 // function double(element, index, array) {
-//     array[index] = element * 2;
-// }
-
+    //     array[index] = element * 2;
+    // }
+    
 // function triple(element, index, array) {
-//     array[index] = element * 3;
-// }
-
-// function square(element, index, array) {
-//     array[index] = Math.pow(element, 2);
+    //     array[index] = element * 3;
+    // }
+    
+    // function square(element, index, array) {
+        //     array[index] = Math.pow(element, 2);
 // }
 
 // function cube(element, index, array) {
-//     array[index] = Math.pow(element, 3);
-// }
-
-// function display (element) {
-//     console.log(element);
-// }
-
+    //     array[index] = Math.pow(element, 3);
+    // }
+    
+    // function display (element) {
+        //     console.log(element);
+        // }
+        
 // let fruitsArray = ["apple", "orange", "banana", "coconut"];
 
 // fruitsArray.forEach(display);
 
 // function display(element) {
-//     console.log(element);
-// }
-
-/* ============================ */
-
+    //     console.log(element);
+    // }
+    
+    /* ============================ */
+    
 // const nums = [1,2,3,4,5];
 // const cb = nums.map(cube);
 
 // console.log(cb);
 
 // function cube(el) {
-//     return Math.pow(el, 3);
-// }
-
-const dates = ["2-12-2022", "20-10-2023", "10-01-2000"];
+    //     return Math.pow(el, 3);
+    // }
+    
+    const dates = ["2-12-2022", "20-10-2023", "10-01-2000"];
 const formatedDates = dates.map(formatDates);
 
 console.log(formatedDates)
@@ -581,12 +583,12 @@ const hello = function () {
 
 // setTimeout(hello, 3000);
 // setTimeout(function() {
-//     console.log("ola")
-// }, 3000);
-
-// const nmbrs = [1,2,3,4,5,6,7,8,9].map(function (element) {
-//     return Math.pow(element,2);
-// });
+    //     console.log("ola")
+    // }, 3000);
+    
+    // const nmbrs = [1,2,3,4,5,6,7,8,9].map(function (element) {
+        //     return Math.pow(element,2);
+        // });
 
 // console.log(nmbrs);
 
@@ -689,7 +691,7 @@ class Product {
         this.name = name;
         this.price = price;
     }
-
+    
     displayProduct () {
         console.log (`Produto: ${this.name}`);
         console.log (`Preço: R$${this.price.toFixed(2)}`);
@@ -751,19 +753,19 @@ console.log(User.userCount);
 // }
 
 // class Rabbit extends Animals {
-//     name = "Rabbit";
+    //     name = "Rabbit";
 //     run() {
-//         console.log(`This ${this.name} is running`);
-//     }
-// }
-// class Fish extends Animals {
-//     name = "Fish";
-//     swim() {
-//         console.log(`This ${this.name} is swimming`);
-//     }
-// }
-// class Dog extends Animals {
-//     name = "Dog";
+    //         console.log(`This ${this.name} is running`);
+    //     }
+    // }
+    // class Fish extends Animals {
+        //     name = "Fish";
+        //     swim() {
+            //         console.log(`This ${this.name} is swimming`);
+            //     }
+            // }
+            // class Dog extends Animals {
+                //     name = "Dog";
 // }
 
 // const rabbit = new Rabbit();
@@ -787,7 +789,7 @@ class Animal {
         this.name = name;
         this.age = age;
     }
-
+    
     move (speed) {
         console.log(`The ${this.name} moves at a speed of ${speed} km/h`)
     }
@@ -848,7 +850,7 @@ class Rectangle {
         this.width = width;
         this.height = height;
     }
-
+    
     set width(newWidth) {
         if(newWidth > 0) {
             // Propriedade privada
@@ -866,7 +868,7 @@ class Rectangle {
             console.error('Número, meu colega. NÚMERO!')
         }
     }
-
+    
     get width () { return this._width.toFixed(1); }
     get height () { return this._height.toFixed(1); }
 }
@@ -1074,7 +1076,7 @@ function outer () {
     function inner () {
         console.log(message);
     }
-
+    
     inner();
 }
 
@@ -1106,6 +1108,12 @@ function clearTimer() {
 } 
 
 /* ============================ */
+
+console.log(PIValue);
+const circumferenceValue = getCircumference(10);
+
+console.log(circumferenceValue);
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
