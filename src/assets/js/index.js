@@ -1,4 +1,4 @@
-import { PIValue, getCircumference, getArea, getVolume } from "./js/mathUtil.js";
+// import mathUtil from "./js/mathUtil.js";
 
 console.log("Hello world");
 // window.alert(`Eu gosto de pizza!`);
@@ -1109,12 +1109,29 @@ function clearTimer() {
 
 /* ============================ */
 
-console.log(PIValue);
-const circumferenceValue = getCircumference(10);
+// console.log(PIValue);
+// const circumferenceValue = getCircumference(10);
 
-console.log(circumferenceValue);
+// console.log(circumferenceValue);
 
 /* ============================ */
+
+function func1 (callback) {
+    setTimeout(() => {
+        console.log("task 1");
+        callback();
+    }, 3000);
+}
+
+function func2 () {
+    console.log("task 2");
+    console.log("task 3");
+    console.log("task 4");
+}
+
+func1(func2);
+
+
 /* ============================ */
 /* ============================ */
 /* ============================ */
