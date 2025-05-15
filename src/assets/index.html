@@ -825,11 +825,21 @@
 
                 <h3 class="title-content">43. Asynchronous code</h3>
                 <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-
                 <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; A forma síncrona seria executar <strong>linha por linha</strong>, sem pular nenhuma etapa, seguindo uma ordem;</li>
-                    <li class="study-list">&rightarrow; A forma assíncrona seria permitir que operações sejam executadas de forma concorrente sem esperarem. Códigos assíncronos não bloqueiam o <em>flow</em> do projeto;</li>
+                    <li class="study-list">&rightarrow; A forma síncrona seria executar <strong>linha por linha</strong>, sem pular nenhuma etapa, seguindo uma ordem;</li>ncronos não bloqueiam o <em>flow</em> do projeto;</li>
                     <li class="study-list">&rightarrow; Normalmente são encontradas em operações de I/O, <em>fetch</em> de dados;</li>
+                </ul>
+
+                <h3 class="title-content">43. Error Handling</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É um objeto (sim, um objeto) que representa um erro que ocorreu. Normalmente ocorre com <em>input</em> ou na parte de estabelecer um conexão. Mas o porque de precisar desse tratamento? Normalmente, quando um erro ocorre, todo o programa para e espera a correção do mesmo. Há erros que precisam ser corrigidos na hora, porém outros são passíveis de espera;</li>
+                </ul>
+                <p class="space-up"> Para testá-los, usamos 3 tipos de "blocos":</p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; <em><strong>try{}</strong></em>: todo código colocado dentro dos {} é do tipo que poderá causar algum erro futuro;</li>
+                    <li class="study-list">&rightarrow; <em><strong>catch(){}</strong></em>: (o parâmetro dentro é para pegar um <em>error oject</em>, ou seja, <strong>error</strong>) { aqui podemos colocar <strong>console.log(error)</strong> para descobrir qual erro é }</li>
+                    <li class="study-list">&rightarrow; <em><strong>finally{}</strong></em>: todo código colocado dentro dos {} é executado;</li>
                 </ul>
             </div>
         </div>

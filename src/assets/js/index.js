@@ -1116,24 +1116,40 @@ function clearTimer() {
 
 /* ============================ */
 
-function func1 (callback) {
-    setTimeout(() => {
-        console.log("task 1");
-        callback();
-    }, 3000);
-}
+// function func1 (callback) {
+//     setTimeout(() => {
+//         console.log("task 1");
+//         callback();
+//     }, 3000);
+// }
 
-function func2 () {
-    console.log("task 2");
-    console.log("task 3");
-    console.log("task 4");
-}
+// function func2 () {
+//     console.log("task 2");
+//     console.log("task 3");
+//     console.log("task 4");
+// }
 
-func1(func2);
-
+// func1(func2);
 
 /* ============================ */
+
+try {
+    // console.log(xError)
+    if (!xError) {
+        throw new Error("xError não existe");
+    }
+} catch(error) {
+    console.error(error);
+} finally {
+    let a = 2;
+    console.log(a);
+}
+console.log("mas agora chegaste no fim")
+
 /* ============================ */
+
+
+
 /* ============================ */
 /* ============================ */
 /* ============================ */

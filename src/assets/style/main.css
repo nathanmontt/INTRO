@@ -228,9 +228,12 @@ audio {
     color: green;
     background-color: rgb(65, 65, 65);
 }
-/* #fruit li::before { content: "-> "; } */
 #fruit > #apple::after {
     content: ", muito bom!!";
+}
+.container-fourth .space-up {
+    padding-top: var(--usual-size);
+    padding-bottom: var(--next-usual-size);
 }
 /* ====================== */
 /* FOOTER */
@@ -250,9 +253,3 @@ footer .social-links {
     color: var(--next-usual-color);
     text-decoration: none;
 }
-
-
-/* ===== PROJETOS ===== */
-
-/* .container-project-first {}
-.container-project-second {} */
