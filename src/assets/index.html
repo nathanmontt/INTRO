@@ -607,7 +607,7 @@
                 <ul class="study-menu-list-holder">
                     <li class="study-list">&rightarrow; É uma variável (quase uma estrutura) que armazena mais de um valor. A forma de fazer isso é simples: <span class="specific-style">[encapsulamos os valores que queremos entre colchetes, separados por vírgulas]</span></li>
                     <li class="study-list">&rightarrow; Ficaríamos com isso aqui na declaração: <span class="specific-style">let fruits = ["apple", "orange", "banana"]</span></li>
-                    <li class="study-list">&rightarrow; Se dermos um console.log() em "fruits", imprimiríamos todo o array. Caso quiséssemos impirmir apenas um (ou uma quantidade específica), precisaríamos usar um index, dessa forma: <span class="specific-style">console.log(fruits[posiçãoDoElemento]);</span></li>
+                    <li class="study-list">&rightarrow; Se dermos um console.log() em "fruits", imprimiríamos todo o array. Caso quiséssemos imprimir apenas um (ou uma quantidade específica), precisaríamos usar um index, dessa forma: <span class="specific-style">console.log(fruits[posiçãoDoElemento]);</span></li>
                     <li class="study-list">&rightarrow; Podemos também mudar, de forma simples, um elemento de dentro do array. Podemos colocar <span class="specific-style">fruits[posiçãoDoElemento] = novoValor;</span> que ele modificará o valor que já estava presente dentro do array;</li>
                     <li class="study-list">&rightarrow; Podemos também adicionar, de forma simples, um elemento de dentro do array. Colocando <span class="specific-style">fruits[novaPosiçãoDoElemento] = novoValor;</span> ele adicionará um novo valor dentro do array;</li>
                     <li class="study-list">&rightarrow; Mas fazer dessa forma é bem primitivo. Por isso, usamos alguns métodos <em>built-in</em> de arrays; <span class="specific-style">.push(valor)</span>. Ele adiciona um novo valor dentro do array <strong>ao final do mesmo</strong>;</li>
@@ -830,7 +830,7 @@
                     <li class="study-list">&rightarrow; Normalmente são encontradas em operações de I/O, <em>fetch</em> de dados;</li>
                 </ul>
 
-                <h3 class="title-content">43. Error Handling</h3>
+                <h3 class="title-content">44. Error Handling</h3>
                 <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
                 <ul class="study-menu-list-holder">
                     <li class="study-list">&rightarrow; É um objeto (sim, um objeto) que representa um erro que ocorreu. Normalmente ocorre com <em>input</em> ou na parte de estabelecer um conexão. Mas o porque de precisar desse tratamento? Normalmente, quando um erro ocorre, todo o programa para e espera a correção do mesmo. Há erros que precisam ser corrigidos na hora, porém outros são passíveis de espera;</li>
@@ -840,6 +840,21 @@
                     <li class="study-list">&rightarrow; <em><strong>try{}</strong></em>: todo código colocado dentro dos {} é do tipo que poderá causar algum erro futuro;</li>
                     <li class="study-list">&rightarrow; <em><strong>catch(){}</strong></em>: (o parâmetro dentro é para pegar um <em>error oject</em>, ou seja, <strong>error</strong>) { aqui podemos colocar <strong>console.log(error)</strong> para descobrir qual erro é }</li>
                     <li class="study-list">&rightarrow; <em><strong>finally{}</strong></em>: todo código colocado dentro dos {} é executado;</li>
+                </ul>
+
+                <h3 class="title-content">45. DOM</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Aqui entra alguns conceitos sobre DOM (<strong>Document Object Model</strong>);</li>
+                    <li class="study-list">&rightarrow; Sobre os <strong>seletores de elementos</strong>, dizemos que são métodos usados para encontrar e manipular elementos HTML, podendo ser um ou vários;</li>
+                </ul>
+                <p class="space-up"> Para testá-los, usamos 5 tipos:</p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; <em><strong>document.getElementById()</strong></em>: retorna um <em>ELEMENT</em> ou <em>NULL</em>;</li>
+                    <li class="study-list">&rightarrow; <em><strong>document.getElementsClassName()</strong></em>: retorna uma <em>HTML COLLECTION</em>;</li>
+                    <li class="study-list">&rightarrow; <em><strong>document.getElementsByTagName()</strong></em>: retorna uma <em>HTML COLLECTION</em>;</li>
+                    <li class="study-list">&rightarrow; <em><strong>document.querySelector()</strong></em>: retorna o <em>FIRST ELEMENT</em> ou <em>NULL</em>;</li>
+                    <li class="study-list">&rightarrow; <em><strong>document.querySelectorAll()</strong></em>: retorna uma <em>NODELIST</em>;</li>
                 </ul>
             </div>
         </div>
