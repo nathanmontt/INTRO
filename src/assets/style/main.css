@@ -253,3 +253,13 @@ footer .social-links {
     color: var(--next-usual-color);
     text-decoration: none;
 }
+#myButton {
+    background-color: hsl(240, 0%, 52%);
+    border: none;
+    margin: var(--usual-size) 0 var(--usual-size) 0;
+    padding: var(--usual-size);
+    cursor: pointer;
+}
+.big-text {
+    font-size: 1.3em;
+}

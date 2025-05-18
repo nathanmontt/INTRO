@@ -1148,7 +1148,21 @@ console.log("mas agora chegaste no fim")
 
 /* ============================ */
 
+const spaceUp = document.getElementById('myButton');
 
+spaceUp.addEventListener('mouseover', (event) => {
+    event.target.style.backgroundColor = 'black';
+    event.target.style.color = 'white';
+
+    event.target.classList.add('big-text');
+});
+
+spaceUp.addEventListener('mouseout', (event) => {
+    event.target.style.backgroundColor = 'hsl(240, 0%, 52%)';
+    event.target.style.color = 'black';
+
+    event.target.classList.remove('big-text');
+});
 
 /* ============================ */
 /* ============================ */
