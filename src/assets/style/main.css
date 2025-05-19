@@ -263,3 +263,16 @@ footer .social-links {
 .big-text {
     font-size: 1.3em;
 }
+.slide {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+.slider img {
+    width: 100%;
+    display: none;
+}
+img.displaySlide {
+    display: block;
+}

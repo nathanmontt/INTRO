@@ -1165,5 +1165,52 @@ spaceUp.addEventListener('mouseout', (event) => {
 });
 
 /* ============================ */
+
+// Aqui, vamos selecionar todas as classes de .slides que sejam a tag img
+const slides = document.querySelectorAll('.slides img');
+
+// Index da imagem atual
+let slideIndex = 0;
+
+// let intervalId = null;
+
+document.addEventListener('DOMContentLoaded', initializeSlider);
+
+function initializeSlider() {
+    // Verificando se o tamanho da NodeList é > 0
+    if (slides.length > 0) {
+        // Caso seja, vou adicionar a classe displaySlide na imagem que possui o index atual
+        // Preciso adicionar essa linha para poder mover depois essa class de local, entre as imagens
+        slides[slideIndex].classList.add('displaySlide');
+
+        // intervalId = setInterval(nextSlide, 5000);
+    }
+}
+
+function showSlide (index) {
+    if (index >= slides.length) {
+        slideIndex = 0;
+    } else if (index < 0) {
+        slideIndex = slides.length - 1;
+    }
+
+    slides.forEach(element => {
+        element.classList.remove('displaySlide')
+    });
+
+    slides[slideIndex].classList.add('displaySlide');
+}
+
+function prevSlide (index) {
+    slideIndex--;
+    showSlide(slideIndex);
+}
+
+function nextSlide (index) {
+    slideIndex++;
+    showSlide(slideIndex);
+}
+
+
 /* ============================ */
 /* ============================ */
