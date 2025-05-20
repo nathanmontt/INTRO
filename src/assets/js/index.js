@@ -1213,4 +1213,73 @@ function nextSlide (index) {
 
 
 /* ============================ */
+
+// 1. walk the dog
+// 2. clean the kitchen
+// 3. take out the trash
+
+/* Tudo abaixo comentado é callback hell: chamadas assíncronas dentro de outra dentro de outra dentro de outra
+Não queremos isso */
+// function walkTheDog (callback) {
+//     setTimeout(() => {
+//         console.log('You walked the dog!');
+//         callback()
+//     }, 1500)
+// }
+// function cleanTheKitchen (callback) {
+//     setTimeout(() => {
+//         console.log('You cleaned the kitchen!');
+//         callback()
+//     }, 2500)
+// }
+// function takeTrashOut (callback) {
+//     setTimeout(() => {
+//         console.log('You took the trash out!');
+//         callback()
+//     }, 500)
+// }
+
+
+// walkTheDog(() => {
+//     cleanTheKitchen(() => {
+//         takeTrashOut(() => { console.log('Finally, you done!') });
+//     })
+// });
+
+function walkTheDog () {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const dogWalked = true;
+            if (dogWalked) { resolve('You walked the dog!'); }
+            else { reject('You didnt walked the dog!')}
+        }, 1500)
+    })
+}
+function cleanTheKitchen () {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const cleanedKitchen = true;
+            if (cleanedKitchen) { resolve('You cleaned the kitchen!'); }
+            else { reject('You didnt cleaned the kitchen!'); }
+        }, 2500)
+    })
+}
+function takeTrashOut () {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const tookTrash = false;
+            if (tookTrash) { resolve('You took the trash out!'); }
+            else { reject('You didnt took the trash out!'); }
+        }, 500)
+    })
+}
+
+walkTheDog().then((value) => { console.log(value); return cleanTheKitchen(); })
+            .then((value) => { console.log(value); return takeTrashOut(); })
+            .then((value) => { console.log(value); console.log('Finally, you done!') })
+            .catch((error) => console.error(error));
+
+
+/* ============================ */
+/* ============================ */
 /* ============================ */
