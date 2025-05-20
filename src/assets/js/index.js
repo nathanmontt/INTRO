@@ -1274,12 +1274,25 @@ function takeTrashOut () {
     })
 }
 
-walkTheDog().then((value) => { console.log(value); return cleanTheKitchen(); })
-            .then((value) => { console.log(value); return takeTrashOut(); })
-            .then((value) => { console.log(value); console.log('Finally, you done!') })
-            .catch((error) => console.error(error));
+// walkTheDog().then((value) => { console.log(value); return cleanTheKitchen(); })
+//             .then((value) => { console.log(value); return takeTrashOut(); })
+//             .then((value) => { console.log(value); console.log('Finally, you done!') })
+//             .catch((error) => console.error(error));
 
+async function doChores () {
+    const walkTheDogResult = await walkTheDog()
+    console.log(walkTheDogResult);
+    
+    const cleanedKitchenResult = await cleanTheKitchen();
+    console.log(cleanedKitchenResult);
 
+    const takeTrashOutResult = await takeTrashOut();
+    console.log(takeTrashOutResult);
+
+    console.log('Finally!');
+}
+
+doChores();
 /* ============================ */
 /* ============================ */
 /* ============================ */
