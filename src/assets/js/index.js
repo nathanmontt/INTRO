@@ -1293,6 +1293,26 @@ async function doChores () {
 }
 
 doChores();
+
 /* ============================ */
+
+const jsonNames = `["Spongebob", "Patrick", "Squidward", "Sandy"]`;
+const jsonPerson = `{
+    "name": "Spongebob",
+    "age": 20,
+    "isEmployed": true,
+    "hobbies": [
+        "Jellyfishing",
+        "Karate",
+        "Cooking"
+    ]
+}`;
+
+// const jsonString = JSON.stringify(personJson);
+// console.log(jsonString);
+
+const parsedData = JSON.parse(jsonNames);
+console.log(parsedData)
+
 /* ============================ */
 /* ============================ */
