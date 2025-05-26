@@ -903,6 +903,549 @@
                     <li class="study-list">&rightarrow; <strong>Await</strong>: faz uma função <em>async</em> esperar pela em>Promisse</em>;</li>
                     <li class="study-list">&rightarrow; Isso permite que escrevamos <strong>códigos assíncronos de maneira síncrona</strong>;</li>
                 </ul>
+                
+                <h3 class="title-content">49. fetch()</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É uma função usada para fazer <em>HTTP requests</em> para <em>fetch resources</em>;</li>
+                    <li class="study-list">&rightarrow; Escreve-se da seguinte forma: <strong>fetch(url, {options})</strong>;</li>
+                    <li class="study-list">
+                        <input type="text" id="pokemonName" placeholder="Enter a pokemon name">
+                        <button onclick="fetchData()">Fetch pokemon</button><br>
+                        <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
+                    </li>
+                </ul>
+            </div>
+
+            
+            <div class="container-fifth">
+                <h2 class="topic-content">Git & Github</h2>
+                <h3 class="title-content">1. Learn the Basics</h3>
+                <p class="studybook">Conteúdo (iniciei agora. Vamos com calma...) estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; A forma de funcionamento do JavaScript aqui vai ser um pouco diferente. Mas antes, agora de início, começaremos utilizando o <span class="specific-style">console.log()</span>, que serve para dar display no que escrevemos na Dev Tools;</li>
+                    <li class="study-list">Vamos testar o <span class="specific-style">alert</span>, além de testar também a possibilidade de adicionar um elemento dentro de uma tag em algo que está vazio, com <span class="specific-style">textContent</span>;</li>
+                    <li class="study-list" id="myP"></li>
+                </ul>
+                <h3 class="title-content">2. Variables</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+            
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Mantem o mesmo conceito de sempre: <span class="specific-style">é um contêiner que armazena um valor</span>. E para criar uma, em JS, usamos <span class="specific-style">let</span>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">Toda variável precisa ser única</span>. Caso criemos 2 iguais (x, por exemplo), teremos essa mensagem: <span class="specific-style">não é possívl declarar novamente a variável de escopo do bloco 'x'</span>. E para criar uma, em JS, usamos <span class="specific-style">let</span>;</li>
+            
+                    <li class="study-list">&rightarrow; Agora se quisermos saber qual o tipo da variável que temos usamos <span class="specific-style">typeof nome_da_variável;</span> Um exemplo: <br><br>
+                        <span class="specific-style">
+                            let firstName = "James"; <br>
+                            console.log(`Seu nome é: ${firstName}`);<br>
+                            console.log(`firstName é do tipo: ${typeof firstName}`); <br>
+                        </span>
+                        Teremos como saída <span class="specific-style">firstName é do tipo: string</span>;
+                    </li>
+            
+                    <li class="study-list">&rightarrow; Agora, <span class="specific-style">boolean</span>. Nele, temos apenas 2 valores: <span class="specific-style">true ou false</span>. Para testes, vamos demonstrar com as tags em conjunto com JS abaixo;</li>
+                    <li class="study-list obs">OBS.: para fins de deixar arrumado alguns conceitos, não utilizei o <span class="specific-style">textContent</span>, mas sim o <span class="specific-style">innerHTML</span>, e o motivo é simples: no primeiro, tags <span class="specific-style">não funcionam, apenas o conteúdo dentro delas</span>. Por isso foi utilizado a segunda abordagem;</li>
+            
+                    <li class="study-list" id="personName">&rightarrow;</li>
+                    <li class="study-list" id="personAge">&rightarrow; </li>
+                    <li class="study-list" id="isPersonStudent">&rightarrow; </li>
+                </ul>
+            
+            
+                <h3 class="title-content">2. Arithmetic Operators</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+            
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Conteúdo dentro do arquivo JS acessado pelo <span class="specific-style">console.log()</span></li>
+                </ul>
+
+                <h3 class="title-content">3. Accept User Input</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+            
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Tem duas maneiras de aceitar o input do user. Vamos usar a segunda abordagem;</li>
+
+                    <li>
+                        <label for="">Username: </label>
+                        <input type="text" id="myText">
+                        <button id="mySubmit">Enviar</button>
+                    </li>
+
+                    <li class="study-list">&rightarrow; Para explicar melhor: quando clicarmos no botão "enviar", vamos executar uma função. Primeiro, criamos uma variável (<span class="specific-style">let username;</span>). Segundo, pegamos o button <span class="specific-style">document.getElementById('mySubmit').onclick = function(){...}</span>. Terceiro, dentro dessa função, vamos fazer o seguinte: <span class="specific-style">quando clicarmos no botão "Enviar", pegamos o conteúdo de dentro da caixa de texto. Fazemos o <em>reassigned</em> da variável username e setar ele igual ao que está dentro da caixa de texto. Para pegar o valor daquele elemento, usamos document.getElementById('myText').value</span></li>
+                </ul>
+
+                <h3 class="title-content">4. Tpe Convertions</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Imagine que queremos saber a idade de uma pessoa. Mas normalmente, a entrada de dados é dada por strings, então caso queiramos fazer uma conta, string+number não vai dar certo. Então para fazer uma modificação, usamos "let variavel = valor; valor = Number(valor). No caso, é possível colocar como Number(valor), String(valor), Boolean(valor), etc...</li>
+                </ul>
+            
+                <h3 class="title-content">5. Constants</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; São variáveis que não podem ser modificadas depois de colocadas com valor ou declaradas. Como exemplo, vamos fazer algo abaixo:</li>
+                    <li>
+                        <h3 id="myH4">Valor do raio:</h3>
+                        <label for="myTextRadius">Raio</label>
+                        <input type="text" id="myTextRadius">
+                        <button id="myBtn">Enviar</button>
+                        <h3 id="response"></h3>
+                    </li>
+                </ul>
+            
+                <h3 class="title-content">6. Math Object</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É um objeto <em>built-in</em> em JS contendo uma coleção de propriedades e objetos matemáticos;</li>
+                    <li class="study-list">&rightarrow; Por exemplo, em um dos exercícios que fizemos aqui, usamos o valor de <span class="specific-style"><em>PI</em></span>. Com esse métodos pré-prontos, é so usarmos <span class="specific-style">console.log(Math.PI)</span>. Algunn outros exemplos podem ser vistos abaixo:</li>
+
+                    <li class="study-list">&rightarrow; <span class="specific-style">Math.round(valor)</span>. Se tivermos uma variável, por exemplo, <em>x = 3.4233894</em>, usando esse método o valor novo será <em>x = 3</em>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">Math.floor(valor)</span>. Este arredonda para baixo. <em>x = 3.91</em>, teremos <em>x = 3</em>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">Math.ceil(valor)</span>. Este arredonda para cima. <em>x = 3.91</em>, teremos <em>x = 4</em>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">Math.trunc(valor)</span>. Este elimina todo decimal. <em>x = 3.91</em>, teremos <em>x = 3</em>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">Math.pow(valor1, valor2)</span>. Este pega o 1° e o eleva a potência do 2°. <em>x = 3<sup>2</sup></em>, teremos <em>x = 9</em>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">Math.sqrt(valor)</span>. Este faz a raiz quadrada do valor;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">Math.log(valor)</span>. Este acha o log natural do valor;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">Math.sin(valor)</span>. Este acha o seno do valor;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">Math.cos(valor)</span>. Este acha o cosseno do valor;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">Math.tan(valor)</span>. Este acha a tangente do valor;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">Math.abs(valor)</span>. Este acha o valor absoluto;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">Math.sign(valor)</span>. Este acha o sinal do valor (-2. Sinal: -1 // 2. Sinal: 1 // 0. Sinal: 0);</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">Math.max(valor)</span>. Este acha o valor máximo dentre os que foram passados por um parâmetro. <em>let max = Math.max(valor1, valor2, valor3)</em>, teremos o valor mais alto dentre eles. O <span class="specific-style">Math.min(valor)</span> é o contrário;</li>
+                </ul>
+            
+                <h3 class="title-content">7. If Statements</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Bom, se uma condição for <span class="specific-style">true</span>, executamos algo. Caso contrário, outro;</li>
+                    <li>
+                        <h3 id="my-h3-title">Idade</h3>
+                        <input type="text" id="drive-or-dont-textbox">
+                        <button type="submit" id="mySub">Enviar</button>
+                        <p id="result-element"></p>
+                    </li>
+                </ul>
+            
+                <h3 class="title-content">8. Checked Property</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Assim como diversas propriedades presentes no JS existem, hoje veremos a <span class="specific-style">.checked</span>, que veriexecutamos algo. Caso contrário, outro Um exemplo se encontra na página de <a href="pages/projects.html" class="specific-style" target="_blank" style="color: black;">projetos</a>;</li>
+                </ul>
+            
+                <h3 class="title-content">9. Ternary Operator</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Resumindo, podemos diminuir os <span class="specific-style">if</span> usando esse métodos. Como comparação, vamos olhar abaixo:</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">if (normal)</span>
+<pre>
+    if (condição) {
+            Ação caso essa condição seja verdadeira;
+        }
+</pre>
+                    <li class="study-list">&rightarrow; <span class="specific-style">if (ternário) [tudo na mesma linha]</span>
+<pre>
+    Condição ? Faz isso se for verdade : 
+        Caso contrário, faça isso aqui;
+</pre>
+
+                    <li class="study-list">&rightarrow;A ideia do código seria dessa forma: 
+                        <br><span class="specific-style">let pAge = 25; <br> let resultMessage = pAge >= 18 ? "Adulto" : "Menor de idade"; <br> console.log(resultMessage);</span>
+                    </li>
+                </ul>
+                
+                <h3 class="title-content">10. Switches</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; São uma boa alternativa para os if caso haja muitas opções;</li>
+                </ul>
+                
+                <h3 class="title-content">11. String Methods</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; São formas de manipular textos;</li>
+                    
+                    <li class="study-list">&rightarrow; <span class="specific-style">.charAt(index)</span>. Indica onde o caracter representado pelo index está;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.indexOf("char")</span>. Indica a 1° aparição do caracter que queremos;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.lastIndexOf("char")</span>. Indica a última aparição do caracter que queremos;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.lenght</span>. Indica o tamanho da string;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.trim()</span>. Elimina espaços em branco antes e depois da string;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.toUpperCase()</span>. Transforma as letras da string em maiúsculas;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.toLowerCase()</span>. Transforma as letras da string em minúsculas;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.repeat(valor)</span>. Repete a string a quantidade de vezes do valor indicado;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.startsWith("char")</span>. Verifica se a string indicada se inicia com o char correspondente;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.endsWith("char")</span>. Verifica se a string indicada termina com o char correspondente;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.includes("char")</span>. Verifica se a string indicada possui algum espaço em branco;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.replaceAll("o que vai ser substituido", "o que vai substituir")</span>. Verifica se a string indicada possui algum espaço em branco;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.padStart(lenght, o que começa por essa lenght)</span>. Indica o tamanho que essa string deve ser, e indica o que deve iniciar ela para que ela tenha esse tamanho;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.padEnd(lenght, o que começa por essa lenght)</span>. Indica o tamanho que essa string deve ser, e indica o que deve terminar ela para que ela tenha esse tamanho;</li>
+                </ul>
+                
+                <h3 class="title-content">12. String Slicing</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É a criação de uma substring a partir da string original, sem alterá-la. Usamos o método <span class="specific-style">.slice(valor inicial de onde queremos cortar, até onde termina a string que queremos fazer a substring)</span>. Usando um valor positivo, começamos do início e vamos até o fim. Usando um negativo, fazemos o caminho contrário: <span class="specific-style">do fim ao começo</span>;</li>
+                    <li class="study-list">&rightarrow; O problema é que caímos no seguinte: e se houver uma mudança na string? Como esse método é muito estático, se ao invés de "Nathan de Andrade", o nome for mudado para "Nathan Andrade"? Há uma forma de contornar isso: <span class="specific-style">.slice(posição inicial, var.indexOf(primeira ocorrência de espaço em branco))</span> (nos exemplos da Dev Tools é mais fácil de se ver);</li>
+                </ul>
+
+                <h3 class="title-content">13. Method Chaining</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;</li>
+                </ul>
+
+                <h3 class="title-content">14. Strict Equality</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Aqui vai ser só por HTML mesmo;</li>
+
+                    <li class="study-list">&rightarrow; <span class="specific-style">=</span>. Operador de atribuição;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">==</span>. Operador de comparação (entre valores);</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">===</span>. Operador estrito de igualdade(compara se valores e tipos de dados são <strong>iguais</strong>);</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">!=</span>. Operador de desigualdade;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">!==</span>. Operador estrito de desigualdade(compara se valores e tipos de dados são <strong>diferentes</strong>);</li>
+                </ul>
+
+                <h3 class="title-content">15. Iteration Loops</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Temos o <span class="specific-style">while</span> e o <span class="specific-style">for</span>. Para o for (pelo menos pelo exemplo dado em for), podemos usar também o <span class="specific-style">continue</span>. Este faz com que pulemos a iteração desejada. Ou seja, <span class="specific-style">if (i == 13) { continue; }</span> (essa iteração vai ser pulada). Se usarmos o <span class="specific-style">break</span>, saímos do loop;</li>
+                </ul>
+
+                <h3 class="title-content">16. Functions</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É uma seção do código que é possível usá-la novamente depois quantas vezes quisermos;</li>
+                </ul>
+
+                <h3 class="title-content">17. Variable Scope</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Aqui, é como as variáveis serão utilizadas ao decorrer do código;</li>
+                    <li class="study-list">&rightarrow; Por exemplo, <span class="specific-style">let x = 1;</span> e <span class="specific-style">let x = 2;</span> estará errado pois não podemos criar uma variável com o mesmo nome;</li>
+                    <li class="study-list">&rightarrow; Agora, fazer isso dentro de uma função (no caso, 2 funções com a mesma variável) é possível. Dentro de uma função, chamamos isso de <span class="specific-style">escopo local</span>: se criarmos x e y em 2 funções diferentes e dermos um console.log() em cada uma (console.log(x) na função 1 onde o x não existe e o mesmo para a y), nenhuma saberá da localização da outra, já que o escopo é local;</li>
+                    <li class="study-list">&rightarrow; Agora, declarando uma variável de fora de uma função é criar um <span class="specific-style">escopo global</span>, já que ela pode ser acessada de dentro e de fora de funções;</li>
+                </ul>
+
+                <h3 class="title-content">18. Arrays</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É uma variável (quase uma estrutura) que armazena mais de um valor. A forma de fazer isso é simples: <span class="specific-style">[encapsulamos os valores que queremos entre colchetes, separados por vírgulas]</span></li>
+                    <li class="study-list">&rightarrow; Ficaríamos com isso aqui na declaração: <span class="specific-style">let fruits = ["apple", "orange", "banana"]</span></li>
+                    <li class="study-list">&rightarrow; Se dermos um console.log() em "fruits", imprimiríamos todo o array. Caso quiséssemos imprimir apenas um (ou uma quantidade específica), precisaríamos usar um index, dessa forma: <span class="specific-style">console.log(fruits[posiçãoDoElemento]);</span></li>
+                    <li class="study-list">&rightarrow; Podemos também mudar, de forma simples, um elemento de dentro do array. Podemos colocar <span class="specific-style">fruits[posiçãoDoElemento] = novoValor;</span> que ele modificará o valor que já estava presente dentro do array;</li>
+                    <li class="study-list">&rightarrow; Podemos também adicionar, de forma simples, um elemento de dentro do array. Colocando <span class="specific-style">fruits[novaPosiçãoDoElemento] = novoValor;</span> ele adicionará um novo valor dentro do array;</li>
+                    <li class="study-list">&rightarrow; Mas fazer dessa forma é bem primitivo. Por isso, usamos alguns métodos <em>built-in</em> de arrays; <span class="specific-style">.push(valor)</span>. Ele adiciona um novo valor dentro do array <strong>ao final do mesmo</strong>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.push(valor)</span>: adiciona um novo valor dentro do array <strong>ao final do mesmo</strong>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.pop()</span>, que elimina o último elemento do array;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.unshift(valor)</span>, que <strong>adiciona um elemento no início do array</strong>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.shift()</span>, que <strong>elimina um elemento no início do array</strong>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.lenght</span>, que <strong>diz o tamanho do array</strong>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.sort()</span>, que <strong>ordena alfabeticamente o array</strong>;</li>
+                    <li class="study-list">&rightarrow; <span class="specific-style">.sort().reverse()</span>, que <strong>inverte o array</strong>;</li>
+                </ul>
+
+                <h3 class="title-content">19. Spread Operator (...)</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É um operador que permite a expansão de um iterável (um array, string);</li>
+                    <li class="study-list">&rightarrow; Suponhamos que temos um array (let numbers = [1, 2, 3, 4, 5]) e que queiramos achar o maior entre eles. Podemos usar <span class="specific-style">Math.max(numbers)</span>, correto? <strong>Não</strong>, pois o output vai ser <em>NaN</em>. E porque isso acontece?</li>
+                    <li class="study-list">&rightarrow; Esse método não permite um array completo ser utilizado. Mas utilizando os <strong>...</strong>numbers, é possível que tenhamos um output correto, ou seja, vamos dar um <em>unzip</em> nos elementos dentro do array;</li>
+                    <li class="study-list">&rightarrow; Ainda estranho de se ver? Tenta fazer com uma <em>string</em>, dá um console.log() nela que você entende o porquê de usar o termo <em>unzip</em> (ou desempacotar, caso ache melhor);</li>
+                    <li class="study-list">&rightarrow; Para juntá-lo de volta, podemos usar o método <strong>.join("juntarComOQue")</strong>. Exemplo: vamos supôr que estamos usando uma <em>string</em>. Separamos um nome e querermos juntá-lo novamente. Fazemos: <span class="specific-style">let variavel = [...string].join("-")</span>. Aqui estamos juntando com um <strong>-</strong>;</li>
+                    <li class="study-list">&rightarrow; Também é possível criar uma <span class="specific-style">shallow copy</span>, que é uma estrutura diferente, porém com os mesmos elementos que a original. ;</li>
+                </ul>
+
+                <h3 class="title-content">20. Rest Parameters (...)</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Aqui vai ser o contrário do anterior: ao invés de separar os elementos de um array em diversos, este <span class="specific-style">junta elementos separados em um array</span>;</li>
+                    <li class="study-list">&rightarrow; Como é um parâmetro, imagine que criemos diversas variáveis <strong>const</strong>. Podemos agrupá-las em uma função: <span class="specific-style">function openFridge(...foods) {/* code */}</span>. Quando chamarmos a função: openFridge(colocamosAsVariaveis, deComidaAqui). Tudo isso vai se juntar dentro de um único array;</li>
+                </ul>
+
+                <h3 class="title-content">21. Callbacks</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É uma função passada como argumento por outra função;</li>
+                    <li class="study-list">&rightarrow; A ideia é: temos 2 funções. Queremos garantir que a segunda não seja declarada primeiro que a primeira função. Para isso, fazemos: <span class="specific-style">function nomeFuncao1(nomeFuncao2) {...}</span>. Dentro dessa função, colocamos ao final <strong>callback()</strong>;</li>
+                    <li class="study-list">&rightarrow; E o porque do uso? Bom, imagine uma fila de banco. Nela, temos <strong>100 idosos</strong> e apenas um atendente para guiá-los por todo o processo. Quando cada um chegar ao caixa e contar o que precisa fazer, isso vai aumentar consideravelmente o tempo de espera dos outros atrás dele. Para tentar <strong>dar prioridade na redução do tempo</strong>, o atendente chega para cada um na fila, com um papel, e anota sobre a dificuldade daquela pessoa. Assim, quando chegar no caixa, o atendente não precisará ficar perguntando muita coisa. É assim que as <strong>callback functions</strong> funcionam: elas tomam a frente de <strong>asynchronous operations</strong>, que são operação que tomam muito tempo para se fazer (perguntar o problema da pessoa no caixa), e dizem: <em>vou fazer tal coisa (perguntar o problema) e assim que terminar, outra operação (atender) continua</em>. Ela dá prioridade a operações não passarem na frente de outras;</li>
+                </ul>
+
+                <h3 class="title-content">22. forEach()</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É um método usado para iterar sobre os elementos de um array, aplicando uma determinada função sobre cada um;</li>
+                </ul>
+
+                <h3 class="title-content">23. forEach()</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Aceita uma <em>callback</em> e aplica a função em cada elemento do array, porém cria um novo ao final;</li>
+                    <li class="study-list">&rightarrow; Nesse, temos o conceito de <strong>.split()</strong>, algo que não vimos antes. Usamos isso para separar um elemento a cada ponto que quereros dentro dos (). Exemplo: <strong>let dates = ["2-12-2022", "20-10-2023", "10-01-2000"]</strong>. Damos um <strong>dates.split("-")</strong>. Isso significa que a cada traço, separamos a string;</li>
+                </ul>
+
+                <h3 class="title-content">24. filter()</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Cria um novo array filtrando os elementos;</li>
+                </ul>
+
+                <h3 class="title-content">25. reduce()</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Reduz os elementos de um array em um valor único;</li>
+                </ul>
+
+                <h3 class="title-content">26. Function Expressions</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É uma forma de declarar funções como variáveis ou como valores;</li>
+                    <li class="study-list">&rightarrow; Lembrando que não é <strong>delaração de função</strong>, que é um bloco de código reutilizável que performa uma tarefa específica;</li>
+                    <li class="study-list">&rightarrow; A aula mostrou também o conceito da função <strong>setTimeout(callback, time)</strong>, onde temos uma <em>callback</em> e um <em>time</em> que iremos esperar para executar a tal função;</li>
+                    <li class="study-list">&rightarrow; E é daquí que entra a <strong>function expression</strong>: ao invés de criar um bloco de função, podemos usar a função como um <strong>valor</strong>;</li>
+                </ul>
+
+                <h3 class="title-content">27. Arrow Functions</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Um jeito de escrever função mais conciso. Escrevemos da seguinte forma: <strong>(parâmetro) => código</strong>;</li>
+                    <li class="study-list">&rightarrow; Para entender um pouco melhor sobre como uma <em>arrow function</em> é montada: <strong>const hello = (parâmetro, caso haja) => {código aqui};</strong>;</li>
+                </ul>
+
+                <h3 class="title-content">28. JavaScript Objects</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; São uma coleção de propriedades (nome, idade, etc) e/ou métodos (uma função que está dentro do objeto). Eles podem representar objetos do mundo real (lugars, pessoas, produtos) e tem a cara dessa forma (abaixo):</li>
+                    <li class="study-list">&rightarrow; <strong>object = {key: value, function(), ...};</strong></li>
+                    <li class="study-list">&rightarrow; E para acessar os valores, usamos <strong>console.log(nomeDoObjeto.key);</strong></li>
+                </ul>
+
+                <h3 class="title-content">29. this</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É uma referência ao objeto (eu mesmo não entendo como usar direito). Uma possível forma de uso é: <strong>person.name = this.name</strong>. No exemplo dentro da <em>file</em> d oJS, é como trocar o this pelo person1, por exemplo. Vai depender do contexto;</li>
+                    <li class="study-list">&rightarrow; Ahh, .this <strong>não funciona com arrow functions</strong>;</li>
+                </ul>
+
+                <h3 class="title-content">30. Constructors</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É um método especial para definição de propriedades e métodos de objetos;</li>
+                    <li class="study-list">&rightarrow; É pensar em POO (ou OOP, Programação Orientada à Objetos): se criarmos os objetos por si só, por exemplo, <strong>const car1 = {...}</strong>, <strong>const car2 = {...}</strong>, <strong>const car3 = {...}</strong>, não teríamos problema. Mas e se quiséssemos criar um <em>CT</em> de Fórmula 1? Seriam muitos carros. Para isso, o Contructor vem em mente;</li>
+                    <li class="study-list">&rightarrow; Tudo o que precisaríamos fazer era passar dados únicos a esse construtor para que ele criasse automaticamente os objetos;</li>
+                    <li class="study-list">&rightarrow; Usar um constructor é muito útil para, por exemplo, um <strong><em>e-commerce</em></strong>. Mas vamos à forma do mesmo;</li>
+                </ul>
+
+                <h3 class="title-content">31. Classes</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É um ES6 <em>feature</em>, que prevê uma forma mais estruturada e limpa para trabalhar com objetos;</li>
+                    <li class="study-list">&rightarrow; Resumindo, usaremos uma <strong><em>class NomeDaClass {...}</em></strong> ao invés de apenas uma <strong>function</strong>. Lembrando sempre que o nome da <em>class</em> é em <strong>maiúscula</strong>;</li>
+                </ul>
+
+                <h3 class="title-content">32. STATIC</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É uma <em>keyword</em> que define propriedades ou métodos que pertence a uma <em>class</em> ao invés de um objeto criado por aquela classe;</li>
+                    <li class="study-list">&rightarrow; Ou seja: ao inés de criar <strong>const MathUtil = new MathUtil();</strong> para acessar um possível objeto, eu simplesmente posso criar uma <em>static keyword</em> dentro da class da seguinte forma: <strong>static PI = 3.14159</strong> e acessá-la fora da classe da seguinte forma: <strong>console.log(MathUtil.PI)</strong>;</li>
+                    <li class="study-list">&rightarrow; De resumo: <strong>tudo estático pertence a classe em si</strong>!</li>
+                    <li class="study-list">&rightarrow; Se tentarmos acessar a static, não conseguiremos, já que a classe não possui o static como uma propriedade. Temos que usar o nome da CLASSE para acessá-la;</li>
+                </ul>
+
+                <h3 class="title-content">33. Inheritance</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É uma forma de uma nova <em>class</em> herdar métodos e propriedades de outras <em>classes</em> existentes. A sua nomenclatura funciona da seguinte forma, abaixo:</li>
+                    <li class="study-list">&rightarrow; <em>class classNova extends classExistent</em></li>
+                </ul>
+
+                <h3 class="title-content">34. SUPER</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É uma <em>keyword</em> usada para chamar o construtor ou acessar as propriedades e métodos de um <em>parent</em>. É semelhante ao <em>this</em>, sendo este para o <strong>this object</strong> e o <em>super</em> para <strong>the parent</strong>;</li>
+                    <li class="study-list">&rightarrow; O que isso significa é que, de acordo com o vídeo, antes de chamar as  <em>this</em> keywords, caso a <em>class</em>-pai tenha um constructor, é necessário chamar a <strong>super()</strong> keyword;</li>
+                    <li class="study-list">&rightarrow; A ideia aqui é <strong>não se repetir</strong>. Caso 5 sub-classes tenham, por exemplo, nome e idade, para não nos repetirmos em cada uma delas, apenas colocamos as propriedades no <strong>constructor(nome, idade) {...}</strong> e na hora de colocar o super dentro de cada sub-classe, dentro de cada construtor, usamos <strong>super(nome, idade)</strong>;</li>
+                </ul>
+
+                <h3 class="title-content">35. Getters and Setters</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Para <strong>getters</strong>, são métodos especiais que fazem as propriedades serem legíveis para leitura. Para <strong>setters</strong>, são métodos especiais que fazem as propriedades serem legíveis para escrita;</li>
+                </ul>
+
+                <h3 class="title-content">36. Destructuring</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Extrai valores de arrays e objetos e depois armazena eles em variáveis de um jeito de conveninente;</li>
+                    <li class="study-list">&rightarrow; Há 2 formas de fazer isso: <strong>[] para performar o <em>array destricturing</em></strong> ou <strong>{} para performar o <em>object destricturing</em></strong>;</li>
+                    <li class="study-list">&rightarrow; Alguns exemplos pertinentes (dentro do console.log()) são: <strong>array swapping, troca de 2 elementos de um array, atribuir um elemento de array à variáveis, extrair valores de objetos e destructure in function parameters</strong>;</li>
+                </ul>
+
+                <h3 class="title-content">37. Nested Objects</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É a criação de um objeto dentro de outro. Exemplo: <strong>Pessoa{Endereço{}, Info{}, ...}</strong>;</li>
+                </ul>
+
+                <h3 class="title-content">38. sort()</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Organiza os elementos de um array como strings de forma lexicográfica (estudar mais isso, porque não entendi);</li>
+                </ul>
+
+                <h3 class="title-content">39. Date Objects</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; São objetos que contém valores que representam <strong>dia e tempo</strong>. Eles podem ser formatados da forma que quisermos;</li>
+                    <li class="study-list">&rightarrow; Para formatar de uma outra forma, podemos usar: <strong>Date(ano, mes, dia, hora, minuto, segundo, milisegundo)</strong>;</li>
+                </ul>
+
+                <h3 class="title-content">40. Closure</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É uma função definida dentro de outra função. Essa função declarada dentro da funcção-pai tem acesso às variáveis da função na qual dentro ela está;</li>
+                </ul>
+
+                <h3 class="title-content">41. setTimeout()</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Um teste;</li>
+                    <li class="study-list">
+                        <button onclick="startTimer()">START</button>
+                        <button onclick="clearTimer()">CLEAR</button>
+                    </li>
+                </ul>
+
+                <h3 class="title-content">42. ES6 Modules</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; <em>Modules</em> são arquivos externos que contém codigos reutilizáveis que podem ser importados em outros arquivos de JS;</li>
+                    <li class="study-list">&rightarrow; Ou seja, dentro do nosso módulo, tudo o que está lá dentro pode ser reutilizado em outros arquivos, sejam funções ou variáveis;</li>
+                    <li class="study-list">&rightarrow; Para que possamos usar o arquivo com o que queremos exportar, usarmos o <strong>export</strong> para importarmos em quaisquer outros lugares;</li>
+                </ul>
+
+                <h3 class="title-content">43. Asynchronous code</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; A forma síncrona seria executar <strong>linha por linha</strong>, sem pular nenhuma etapa, seguindo uma ordem;</li>ncronos não bloqueiam o <em>flow</em> do projeto;</li>
+                    <li class="study-list">&rightarrow; Normalmente são encontradas em operações de I/O, <em>fetch</em> de dados;</li>
+                </ul>
+
+                <h3 class="title-content">44. Error Handling</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É um objeto (sim, um objeto) que representa um erro que ocorreu. Normalmente ocorre com <em>input</em> ou na parte de estabelecer um conexão. Mas o porque de precisar desse tratamento? Normalmente, quando um erro ocorre, todo o programa para e espera a correção do mesmo. Há erros que precisam ser corrigidos na hora, porém outros são passíveis de espera;</li>
+                </ul>
+                <p class="space-up"> Para testá-los, usamos 3 tipos de "blocos":</p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; <em><strong>try{}</strong></em>: todo código colocado dentro dos {} é do tipo que poderá causar algum erro futuro;</li>
+                    <li class="study-list">&rightarrow; <em><strong>catch(){}</strong></em>: (o parâmetro dentro é para pegar um <em>error oject</em>, ou seja, <strong>error</strong>) { aqui podemos colocar <strong>console.log(error)</strong> para descobrir qual erro é }</li>
+                    <li class="study-list">&rightarrow; <em><strong>finally{}</strong></em>: todo código colocado dentro dos {} é executado;</li>
+                </ul>
+
+                <h3 class="title-content">45. DOM</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Aqui entra alguns conceitos sobre DOM (<strong>Document Object Model</strong>);</li>
+                    <li class="study-list">&rightarrow; Sobre os <strong>seletores de elementos</strong>, dizemos que são métodos usados para encontrar e manipular elementos HTML, podendo ser um ou vários;</li>
+                </ul>
+
+                <p class="space-up"> Para testá-los, usamos 5 tipos:</p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; <em><strong>document.getElementById()</strong></em>: retorna um <em>ELEMENT</em> ou <em>NULL</em>;</li>
+                    <li class="study-list">&rightarrow; <em><strong>document.getElementsClassName()</strong></em>: retorna uma <em>HTML COLLECTION</em>;</li>
+                    <li class="study-list">&rightarrow; <em><strong>document.getElementsByTagName()</strong></em>: retorna uma <em>HTML COLLECTION</em>;</li>
+                    <li class="study-list">&rightarrow; <em><strong>document.querySelector()</strong></em>: retorna o <em>FIRST ELEMENT</em> ou <em>NULL</em>;</li>
+                    <li class="study-list">&rightarrow; <em><strong>document.querySelectorAll()</strong></em>: retorna uma <em>NODELIST</em>;</li>
+                </ul>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Passando um pouco mais para frente, temos as <strong>classList</strong>, que é uma propriedade usada para interagir com uma lista de classes de um elemento (normalmente CSS);</li>
+                </ul>
+                <p class="space-up"> Temos algumas opções (usaremos um button para teste):</p>
+                <button id="myButton">My Button</button>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; <em><strong>.add()</strong></em>: adiciona classe(s) a um determinado elemento;</li>
+                    <li class="study-list">&rightarrow; <em><strong>.remove()</strong></em>: remove classe(s) de um determinado elemento;</li>
+                    <li class="study-list">&rightarrow; <em><strong>.toggle()</strong></em>: funciona como se fosse um interruptor, "adicionando e removendo" classe(s);</li>
+                    <li class="study-list">&rightarrow; <em><strong>.contains('className')</strong></em>: verifica se a <em>className</em> está contida dentro daquele elemento;</li>
+                    <li class="study-list">&rightarrow; <em><strong>.replace('oldClass', 'newClass')</strong></em>: troca a(s) classe(s) de um determinado elemento;</li>
+                </ul>
+
+                <h3 class="title-content">46. Slider</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; Aqui é para tentar entender o conceito de <em>slider</em>;</li>
+                </ul>
+
+                <div class="slider">
+                    <div class="slides">
+                        <img src="img/kitty-1.jpg" alt="Kitty #1" class="slide">
+                        <img src="img/kitty-2.jpg" alt="Kitty #2" class="slide">
+                        <img src="img/kitty-3.jpg" alt="Kitty #3" class="slide">
+                        <img src="img/kitty-4.jpg" alt="Kitty #4" class="slide">
+                        <img src="img/kitty-5.jpg" alt="Kitty #5" class="slide">
+                    </div>
+                    <button class="prev" onclick="prevSlide()">&#10094</button>
+                    <button class="next" onclick="nextSlide()">&#10095</button>
+                </div>
+
+                <h3 class="title-content">47. Promisses</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É um objeto que administra <em>asynchronous operations</em>. Operações que podem tomar um certo tempo, e que não queremos que elas pausem todo o resto dos outros códigos;</li>
+                    <li class="study-list">&rightarrow; A ideia é "prometer retornar um valor", sendo esse valor poder ser aceito ou rejeitado (isso enquanto a tarefa fica em <em>pending</em>, espera);</li>
+                    <li class="study-list">&rightarrow; Para escrever: <strong>new Promisse((resolve, reject) => {asynchronous code})</strong>;</li>
+                </ul>
+
+                <h3 class="title-content">48. Async/Await</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; <strong>Async</strong>: faz uma função retornar uma <em>Promisse</em>;</li>
+                    <li class="study-list">&rightarrow; <strong>Await</strong>: faz uma função <em>async</em> esperar pela em>Promisse</em>;</li>
+                    <li class="study-list">&rightarrow; Isso permite que escrevamos <strong>códigos assíncronos de maneira síncrona</strong>;</li>
+                </ul>
+                
+                <h3 class="title-content">49. fetch()</h3>
+                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
+                <ul class="study-menu-list-holder">
+                    <li class="study-list">&rightarrow; É uma função usada para fazer <em>HTTP requests</em> para <em>fetch resources</em>;</li>
+                    <li class="study-list">&rightarrow; Escreve-se da seguinte forma: <strong>fetch(url, {options})</strong>;</li>
+                    <li class="study-list">
+                        <input type="text" id="pokemonName" placeholder="Enter a pokemon name">
+                        <button onclick="fetchData()">Fetch pokemon</button><br>
+                        <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
