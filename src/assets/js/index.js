@@ -1461,29 +1461,67 @@ const internetContent = [
 
             "&rightarrow; Menciona também sobre o <strong>HTML</strong> ter seu <em>parser</em> inciado e depois ser criado uma árvore dele(caso tenha um <strong>CSS</strong> [vou ver ainda], o processo é o mesmo, mas com um <strong>CSS Parser)</strong> e, caso haja outro arquivo, juntarem para formar a <strong>Render Tree</strong>;"
         ]
-    },
-    {
-        subtitle: '3. What is Domain Name?',
-        desc: 'Conteúdo resumido do vídeo: What is HTTP and Why Web Is Built On It?, por Hooman Mardox.',
-        contentItself: [
-            "Se procurarmos por endereços IP na Internet, veremos uma baita quantidade de números, como 8.8.8.8, 8.8.8.4, e assim por diante. Mas esses número tem um significado. Para o PC. Para nós, não de cara;",
-            "Eles são os nomes dos sites. Mas não vamos ficar sabendo de todos os IPs de cabeça, e é para isso que o DNS (Domain Name Server) serve. QUando digitamos na barra de pesquisa de algum browser, é enviado uma request para o DNS que sai em busca desse nome. Quando o acha, compara com os endereços já registrados e, se compatíveis, retorna a pesquisa (no caso, vai em direção ao site escolhido);"
-        ]
-    },
-    // ...adicione mais blocos conforme necessário
+    }
 ];
 
 // Exemplo para a seção HTML
 const htmlContent = [
     {
         subtitle: '1. Introduction to HTML',
-        desc: 'Conteúdo estudado do canal: Bro Code.',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            "HTML significa Hyper-text Markup Language. A ideia é que tags são usadas em web browsers para dar display em certos elementos.",
-            "Se ainda não deu para entender, imagine que você queira construir uma casa. O HTML seria a fundação dela."
+            "&rightarrow; HTML significa <strong>Hyper-text Markup Language</strong>. A ideia é que <strong>tags</strong> (essas que estão fazendo o texto ficar em <strong>negrito</strong> ou <em>itálico</em>), também conhecidas como - pasmem - <strong>markups</strong>, são usadas em <em>web browsers</em> para dar <em>display</em> em certos elementos, como por exemplo - pasmem mais uma vez - <strong>todo esse conteúdo</strong>;",
+
+            "&rightarrow; Se ainda não deu para entender, imagine que você queira construir uma casa. O HTML seria a <strong>fundação dela</strong>. E aí entramos com a <strong>CSS</strong> (Cascading Style Sheet), que seria o equivalente às <strong>decorações, design de interiores e cores</strong> da casa."
         ]
     },
-    // ...adicione mais blocos conforme necessário
+    {
+        subtitle: '2. HTML Basics',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; Essa parte mostra a quantidade de tags de heading para representar o tamanho do cabeçalho, variando do <strong>h1 ao h6</strong>.;",
+        ]
+    },
+    {
+        subtitle: '3. Pre-format',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; Aqui é como o texto vai se apresentar dentro da tag pre. O que foi colocado (espaço, quebra de linha) é <strong>permanecido</strong>, ao contrário do que seria exatamente nessa li, onde entre esse 1               e esse 2 tem um espaço enorme;"
+        ]
+    },
+    {
+        subtitle: '3. Hyperlinks',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; Hyperlinks são referências a dados que podemos seguir clicando em um link, como <a href=https://www.google.com/>esse aqui, que vai direto ao Google</a>",
+            
+            "&rightarrow; Temos também <a href=https://www.google.com/ target='_blank'>o mesmo link</a>, que abre em outra aba;",
+
+            "&rightarrow; Tem mais um, o <a href=https://www.google.com/ title='Opa, cá estou eu, depois de dar um hover em cima deste link incrível!' target='_blank'>esse</a>. Só dar um <em>hover</em> (passar o mouse por cima) que você vai ver;",
+            
+            "&rightarrow; Como não temos outro arquivo HTML, não faremos a '<em>linkagem</em>' entre eles, mas saiba que existe. O que faremos é mandar um <a href='mailto:test@gmail.com'>email</a>. Ele é falso, mas entra na parte de enviar emails",
+        ]
+    },
+    {
+        subtitle: '4. Images',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; Usamos a tag img para poder adicionar uma imagem ao nosso site. Dentro dela, há 2 tipos de atributos: <strong>src=''</strong>, que indica de qual caminho que a imagem está vindo e <strong>alt=''</strong>, que permite que, caso a imagem não carregue por algum motivo, haja uma descrição para que o usuário entenda o que havia ali;"
+        ]
+    },
+    {
+        subtitle: '5. Audio',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; A seção ensina como controlar o áudio. Algo a se perceber é que, caso o <em>browser</em> não tenha compatibilidade com um certo tipo de áudio, colocamos outra tag <em>source</em> abaixo para substituí-lo caso o primeiro arquivo não exista. Mas é importante usarmos o atributo <em>type</em> para indicar o tipo de áudio que estamos usando;",
+            
+            "&rightarrow; Almost a Year Ago (Sting) - John Deley and the 41 Players <audio controls muted loop> <source src='audio/Almost a Year Ago (Sting) - John Deley and the 41 Players.mp3' type='audio/mpeg'></audio>",
+                    
+            "&rightarrow; Ersatz Bossa (Sting) - John Deley and the 41 Players <audio controls muted loop><source src='audio/Ersatz Bossa (Sting) - John Deley and the 41 Players.mp3' type='audio/mpeg'></audio>",
+                    
+            "&rightarrow; Bluesy Vibes (Sting) - Doug Maxwell_Media Right Productions<audio controls muted loop><source src='audio/Bluesy Vibes (Sting) - Doug Maxwell_Media Right Productions.mp3' type='audio/mpeg'></audio>"
+        ]
+    },
 ];
 
 // Exemplo para a seção CSS
@@ -1532,6 +1570,6 @@ function renderSectionContent(contentArray, containerId) {
 // Exemplo de uso: renderizar a seção Internet ao carregar a página
 document.addEventListener('DOMContentLoaded', () => {
     renderSectionContent(internetContent, 'container-internet');
-    // Para HTML: renderSectionContent(htmlContent, 'container-html');
+    renderSectionContent(htmlContent, 'container-html');
     // Para CSS: renderSectionContent(cssContent, 'container-css');
 });
