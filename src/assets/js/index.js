@@ -1416,11 +1416,50 @@
 // Exemplo para a seção Internet
 const internetContent = [
     {
-        subtitle: '2. What is HTTP?',
-        desc: 'Conteúdo resumido do vídeo: What is HTTP and Why Web Is Built On It?, por Hooman Mardox.',
+        subtitle: '1. How does the Internet work?',
+        desc: 'Conteúdo resumido do vídeo: <a href="https://www.youtube.com/watch?v=7_LPdttKXPc&list=PL3lj-tEZFe119GsMEfGhJlLSOQRQLFBSZ&index=1" target="_blank" class="reference-video">How the Internet Works in 5 Minutes</a>, por <a href="https://www.youtube.com/@AaronTitus" target="_blank" class="channel">Aaron</a>.',
         contentItself: [
-            "De acordo com o vídeo, HTTP significa HyperText Transfer Protocol. O HyperText é possível entender como os links que estão presentes dentro da página;",
-            "Então, de forma resumida, HTTP é um protocolo que transfere esses HyperTexts do servidor web para os browsers;"
+            "&rightarrow; Podemos pensar na Internet como um cabo, um fio;",
+            
+            "&rightarrow; Sendo um cabo, ele está (pelo menos no caso da Internet) debaixo da terra sendo um fio de cobre, por exemplo. Mas também temos os <strong>satélites</strong>, por exemplo;",
+            
+            "&rightarrow; Além disso, temos <strong>'computadores especiais'</strong>, os <strong>servidores</strong>. São eles que estão diretamente conectados aos <em>wires</em>, além de, dentro deles (os <em>servers</em>), termos <em>hardrives</em> que armazenam as <em>web pages</em>;",
+            "&rightarrow; Só que ter apenas isso não faz a comunicação entre tudo acontecer de forma mágia. Precisamos de algo. Com isso, os servidores possuem algo chamado <em>IP</em> (ou <strong>protocolo de Internet</strong>). Se ficar complicado de imaginar, é só pensar em um endereço;",
+            
+            "&rightarrow; O problema é que, se pesquisarmos, por exemplo, <em>endereços de IP</em>, vamos nos deparar com <strong>72.14.205.100</strong>. E o que é esse valor??? Bom, já que não conseguimos entender esse valor, é dado um nome a ele. Esse nós chamamos de <strong>google.com</strong>;",
+            
+            "&rightarrow; E para se comunicar entre si, no caso eu e minha tia, por exemplo? Bom, nossos PC's não são conectados diretamente nos <em>wires</em>, então precisamos de um <em>meio termo</em> para isso. Surge então as <strong>ISPs</strong>, <strong>Internet Service Providers</strong>, ou só <strong>Provedores de Internet</strong> (VIVO, TIM, Claro, e por aí vai...). Mandamos mensagens 'por elas', elas mandam 'pela Internet' e chega até o destino;",
+            
+            "&rightarrow; Lembrando que ela a mensagem não sai inteira do seu PC até o destinatário. Ela é quebrada em <strong><em>packets</em></strong>, ou <strong>pacotes</strong>. No fim, ao ir chegando ao outro cliente (chamamos dessa forma chique mesmo), ela vai se reconstruindo;",
+
+            "&rightarrow; Mas e se eu quiser mandar um email a uma pessoa e, na minha casa, meu pai quiser fazer o mesmo? Meu email não vai colidir com o dele? Na verdade, não. O motivo disso são os <strong>endereços IP</strong> e os <strong>roteadores</strong>. Eles são responsáveis para que isso não ocorra. Para os servidores, eles tem a finalidade de <strong>guiar os pacotes ao seu devido destino</strong>. E como eles fazem isso? Através dos <strong>endereços IP</strong> (são únicos, ok?);"
+        ]
+    },
+    {
+        subtitle: '2. What is HTTP?',
+        desc: 'Conteúdo resumido do vídeo:. <a href="https://www.youtube.com/watch?v=4_-KdOLZWLs&list=PL3lj-tEZFe119GsMEfGhJlLSOQRQLFBSZ&index=7" target="_blank" class="reference-video">What is HTTP and Why Web Is Built On It?</a>, por <a href="https://www.youtube.com/@hoomanmardox" target="_blank" class="channel">Hooman Mardox</a>',
+        contentItself: [
+            "&rightarrow; De acordo com o vídeo, HTTP significa <stron>HyperText Transfer Protocol</strong>. O HyperText é possível entender como os <strong><em>links</em></strong> que estão presentes dentro da página;",
+            
+            "&rightarrow; Então, de forma resumida, HTTP é um protocolo que transfere esses HyperTexts do servidor web para os browsers;"
+        ]
+    },
+    {
+        subtitle: '3. What is Domain Name?',
+        desc: 'Conteúdo resumido do vídeo: <a href="https://www.youtube.com/watch?v=lMHzpBwPuG8&list=PL3lj-tEZFe119GsMEfGhJlLSOQRQLFBSZ&index=2" target="_blank" class="reference-video">What Is a Domain Name | Domain Names Explained</a>, por <a href="https://www.youtube.com/@HostingerAcademy" target="_blank" class="channel">Hostinger Academy</a>.',
+        contentItself: [
+            "&rightarrow; Se procurarmos por endereços IP na Internet, veremos uma baita quantidade de números, como 8.8.8.8, 8.8.8.4, e assim por diante. Mas esses número tem um significado. Para o PC. Para nós, não de cara;",
+            
+            "&rightarrow; Eles são os <strong>nomes dos sites</strong>. Mas não vamos ficar sabendo de todos os IPs de cabeça, e é para isso que o <strong>DNS</strong> (Domain Name Server) serve. QUando digitamos na barra de pesquisa de algum browser, é enviado uma <em>request</em> para o <em>DNS</em> que sai em busca desse nome. Quando o acha, compara com os endereços já registrados e, se compatíveis, retorna a pesquisa (no caso, vai em direção ao site escolhido);"
+        ]
+    },
+    {
+        subtitle: '4. What is Hosting?',
+        desc: 'Conteúdo resumido (um pouco demais) do vídeo: <a href="https://www.youtube.com/watch?v=EoYkl8rwbiM&list=PL3lj-tEZFe119GsMEfGhJlLSOQRQLFBSZ&index=6" target="_blank" class="reference-video">How Web Browsers Work</a>, por <a href="https://www.youtube.com/@tadaspetra" target="_blank" class="channel">Tadas Petra</a>.',
+        contentItself: [
+            "&rightarrow; No vídeo, toda a explicação é bem colocada, mas ele menciona a árvore de como o <em>browser</em> funciona, começando na <strong>interface do usuário</strong> até a parte de <strong>networking</strong>, <strong>intérprete de JavaScript</strong>;",
+
+            "&rightarrow; Menciona também sobre o <strong>HTML</strong> ter seu <em>parser</em> inciado e depois ser criado uma árvore dele(caso tenha um <strong>CSS</strong> [vou ver ainda], o processo é o mesmo, mas com um <strong>CSS Parser)</strong> e, caso haja outro arquivo, juntarem para formar a <strong>Render Tree</strong>;"
         ]
     },
     {
@@ -1430,7 +1469,7 @@ const internetContent = [
             "Se procurarmos por endereços IP na Internet, veremos uma baita quantidade de números, como 8.8.8.8, 8.8.8.4, e assim por diante. Mas esses número tem um significado. Para o PC. Para nós, não de cara;",
             "Eles são os nomes dos sites. Mas não vamos ficar sabendo de todos os IPs de cabeça, e é para isso que o DNS (Domain Name Server) serve. QUando digitamos na barra de pesquisa de algum browser, é enviado uma request para o DNS que sai em busca desse nome. Quando o acha, compara com os endereços já registrados e, se compatíveis, retorna a pesquisa (no caso, vai em direção ao site escolhido);"
         ]
-    }
+    },
     // ...adicione mais blocos conforme necessário
 ];
 
@@ -1463,24 +1502,26 @@ const cssContent = [
 // Função para renderizar qualquer conteúdo (Internet, HTML, CSS, etc.)
 function renderSectionContent(contentArray, containerId) {
     const container = document.getElementById(containerId);
-    // Remove tudo, menos o título (h1)
-    // container.innerHTML = `<h1>${container.querySelector('h1') ? container.querySelector('h1').textContent : ''}</h1>`;
 
     contentArray.forEach(block => {
         // Subtítulo
         const h3 = document.createElement('h3');
-        h3.textContent = block.subtitle;
+        h3.classList.add('subtitle');
+        h3.innerHTML = block.subtitle;
         container.appendChild(h3);
 
         // Descrição
         const p = document.createElement('p');
-        p.textContent = block.desc;
+        p.classList.add('reference-study-link');
+        p.innerHTML = block.desc;
         container.appendChild(p);
 
         // Lista de conteúdo
         const ul = document.createElement('ul');
+        ul.classList.add('holder-list');
         block.contentItself.forEach(item => {
             const li = document.createElement('li');
+            li.classList.add('list-item')
             li.innerHTML = item;
             ul.appendChild(li);
         });

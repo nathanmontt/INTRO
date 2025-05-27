@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta http-equiv="content-type" content="article/html">
+
+    <meta name="description" content="Criado em 2025, o projeto INTRO visa acompanhar o crescimento do desenvolvedor em questão. Trazendo uma estética minimalista, a aplição se torna como um 'tracking' de sobre como os conhecimentos estão sendo adquiridos no dia a dia.">
+    <meta name="keywords" content="site, project, projeto, intro, INTRO, tracking, development, self, self development, self-development, web dev, web development, html, css, js, javascript, study, studies, estudo">
+
     <link rel="shortcut icon" href="favicon/i.png" type="image/x-icon">
-    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="assets/style/main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,70 +21,20 @@
 </head>
 <body>
     <header>
-        <div class="container-general-header">
-            <div class="container-header-slogan">
-                <h1 id="name-project-header">INTRO</h1>
-                <p id="slogan-project-header">desde o início, devagar e sempre</p>
-            </div>
-            <nav>
-                <a href="pages/projects.html" class="projects">projetos</a>
-            </nav>
+        <div class="holder-slogan">
+            <h1 id="project-name">INTRO</h1>
+            <p id="slogan-name">devagar e sempre</p>
         </div>
+        <nav>
+            <a href="assets/pages/projects.html" id="project-link">projetos</a>
+        </nav>
     </header>
 
     <main>
         <div class="container-display-general">
-            <div class="container-first">
-                <h2 class="topic-content">Internet</h2>
-                <h3 class="title-content">How does the Internet work?</h3>
-                <p class="studybook">Conteúdo resumido do vídeo: <span class="font-styles"><a href="https://www.youtube.com/watch?v=7_LPdttKXPc&list=PL3lj-tEZFe119GsMEfGhJlLSOQRQLFBSZ&index=1" target="_blank" class="links">How the Internet Works in 5 Minutes</a></span>, por <a href="https://www.youtube.com/@AaronTitus" target="_blank" class="profile-channel">Aaron</a>.</p>
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; Podemos pensar na Internet como um <span class="specific-style">cabo</span>, um fio, um <em>wire</em>;</li>
-            
-                    <li class="study-list">&rightarrow; Sendo um cabo, ele está (pelo menos no caso da Internet) debaixo da terra sendo um fio de cobre, por exemplo. Mas também temos os <span class="specific-style">satélites</span>, por exemplo;</li>
-            
-                    <li class="study-list">&rightarrow; Além disso, temos <span class="specific-style">computadores especiais</span>, os <span class="specific-style">servidores</span>. São eles que estão diretamente conectados aos <em>wires</em>, além de, dentro deles (os <em>servers</em>), termos <em>hardrives</em> que armazenam as <em>web pages</em>;</li>
-            
-                    <li class="study-list">&rightarrow; Só que ter apenas isso não faz a comunicação entre tudo acontecer de forma mágia. Precisamos de algo. Com isso, os servidores possuem algo chamado <em>IP</em> (ou <span class="specific-style">protocolo de Internet</span>). Se ficar complicado de imaginar, é só pensar em um endereço;</li>
-            
-                    <li class="study-list">&rightarrow; O problema é que, se pesquisarmos, por exemplo, <em>endereços de IP</em>, vamos nos deparar com <span class="specific-style">72.14.205.100</span>. E o que é esse valor??? Bom, já que não conseguimos entender esse valor, é dado um nome a ele. Esse nós chamamos de <span class="specific-style">google.com</span>;</li>
-            
-                    <li class="study-list">&rightarrow; E para se comunicar entre si, no caso eu e minha tia, por exemplo? Bom, nossos PC's não são conectados diretamente nos <em>wires</em>, então precisamos de um <em>meio termo</em> para isso. Surge então as <span class="specific-style">ISPs</span>, <span class="specific-style">Internet Service Providers</span>, ou só <span class="specific-style">Provedores de Internet</span> (VIVO, TIM, Claro, e por aí vai...). Mandamos mensagens "por elas", elas mandam "pela Internet" e chega até o destino;</li>
-            
-                    <li class="study-list">&rightarrow; Lembrando que ela a mensagem não sai inteira do seu PC até o destinatário. Ela é quebrada em <span class="specific-style"><em>packets</em></span>, ou <span class="specific-style">pacotes</span>. No fim, ao ir chegando ao outro cliente (chamamos dessa forma chique mesmo), ela vai se reconstruindo;</li>
-            
-                    <li class="study-list">&rightarrow; Mas e se eu quiser mandar um email a uma pessoa e, na minha casa, meu pai quiser fazer o mesmo? Meu email não vai colidir com o dele??</li>
-            
-                    <li class="study-list">&rightarrow; Na verdade, não. O motivo disso são os <span class="specific-style">endereços IP</span> e os <span class="specific-style">roteadores</span>. Eles são responsáveis para que isso não ocorra. Para os servidores, eles tem a finalidade de <span class="specific-style">guiar os pacotes ao seu devido destino</span>. E como eles fazem isso? Através dos <span class="specific-style">endereços IP</span> (são únicos, ok?);</li>
-                </ul>
-            
-                <h3 class="title-content">What is HTTP?</h3>
-                <p class="studybook">Conteúdo resumido do vídeo: <span class="font-styles"><a href="https://www.youtube.com/watch?v=4_-KdOLZWLs&list=PL3lj-tEZFe119GsMEfGhJlLSOQRQLFBSZ&index=7" target="_blank" class="links">What is HTTP and Why Web Is Built On It?</a></span>, por <a href="https://www.youtube.com/@hoomanmardox" target="_blank" class="profile-channel">Hooman Mardox</a>.</p>
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; De acordo com o vídeo, HTTP significa <span  class="specific-style">HyperText Transfer Protocol</span>. O HyperText é possível entender como os <span class="specific-style"><em>links</em></span> que estão presentes dentro da página;</li>
-            
-                    <li class="study-list">&rightarrow; Então, de forma resumida, HTTP é um protocolo que transfere esses HyperTexts do servidor web para os browsers;</li>
-                </ul>
-                <h3 class="title-content">What is Domain Name?</h3>
-                <p class="studybook">Conteúdo resumido do vídeo: <span class="font-styles"><a href="https://www.youtube.com/watch?v=lMHzpBwPuG8&list=PL3lj-tEZFe119GsMEfGhJlLSOQRQLFBSZ&index=2" target="_blank" class="links">What Is a Domain Name | Domain Names Explained</a></span>, por <a href="https://www.youtube.com/@HostingerAcademy" target="_blank" class="profile-channel">Hostinger Academy</a>.</p>
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; Se procurarmos por endereços IP na Internet, veremos uma baita quantidade de números, como 8.8.8.8, 8.8.8.4, e assim por diante. Mas esses número tem um significado. Para o PC. Para nós, não de cara;</li>
-            
-                    <li class="study-list">&rightarrow; Eles são os <span class="specific-style">nomes dos sites</span>. Mas não vamos ficar sabendo de todos os IPs de cabeça, e é para isso que o <span class="specific-style">DNS</span> (Domain Name Server) serve. QUando digitamos na barra de pesquisa de algum browser, é enviado uma <em>request</em> para o <em>DNS</em> que sai em busca desse nome. Quando o acha, compara com os endereços já registrados e, se compatíveis, retorna a pesquisa (no caso, vai em direção ao site escolhido);</li>
-                </ul>
-                <h3 class="title-content">What is Hosting?</h3>
-                <p class="studybook">Conteúdo resumido (esse foi mais do resumido. O conteúdo pode não estar todo aqui, porque estou escrevendo ele em um caderno a parte, até porque o vídeo é <span class="specific-style">incrível</span>) do vídeo: <span class="font-styles"><a href="https://www.youtube.com/watch?v=EoYkl8rwbiM&list=PL3lj-tEZFe119GsMEfGhJlLSOQRQLFBSZ&index=6" target="_blank" class="links">How Web Browsers Work</a></span>, por <a href="https://www.youtube.com/@tadaspetra" target="_blank" class="profile-channel">Tadas Petra</a>.</p>
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; No vídeo, toda a explicação é bem colocada, mas ele menciona a árvore de como o <em>browser</em> funciona, começando na <span class="specific-style">interface do usuário</span> até a parte de <span class="specific-style">networking</span>, <span class="specific-style">intérprete de JavaScript</span>;</li>
-            
-                    <li class="study-list">&rightarrow; Menciona também sobre o <span class="specific-style">HTML</span> ter seu <em>parser</em> inciado e depois ser criado uma árvore dele(caso tenha um <span class="specific-style">CSS</span> [vou ver ainda], o processo é o mesmo, mas com um <span class="specific-style">CSS Parser)</span> e, caso haja outro arquivo, juntarem para formar a <span class="specific-style">Render Tree</span>;</li>
-            
-                    <li class="study-list">&rightarrow; O vídeo é incível. Assistam!</li>
-                </ul>
-            </div>
-            
-            <div class="checkpoint">
-                <p class="checkpoint-text">Com isso, marcamos uma parte do roadmap como concluída! Agora, partimos para a parte seguinte: <span class="specific-style">HTML e CSS</span>. Primeiro, vamos dar início no HTML.</p>
+            <div id="container-first">
+                <h1 class="title-content">internet</h1>
+                <div id="container-internet"></div>
             </div>
 
             <div class="container-second">
@@ -917,7 +874,6 @@
                 </ul>
             </div>
 
-            
             <div class="container-fifth">
                 <h2 class="topic-content">Git & Github</h2>
                 <h3 class="title-content">1. Learn the Basics</h3>
@@ -1449,9 +1405,7 @@
             </div>
         </div>
 
-        <div id="container-internet">
-            <h1>titulo</h1>
-        </div>
+        
     </main>
     
     <footer>
@@ -1462,7 +1416,7 @@
         </ul>
     </footer>
 
-    <script defer src="js/index.js"></script>
+    <script defer src="assets/js/index.js"></script>
     <script type="module" src="./js/mathUtil.js"></script>
 </body>
 </html>
