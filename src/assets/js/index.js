@@ -1,74 +1,62 @@
-// // import mathUtil from "./js/mathUtil.js";
+'use strict'
 
-// console.log("Hello world");
-// // window.alert(`Eu gosto de pizza!`);
+// import mathUtil from "./js/mathUtil.js";
 
-// document.getElementById('myP').textContent = `Texto teste para adicionar conteúdo por meio de JS`;
+/* ----- VARIABLES ----- */
+let topicVariableAge = 25;
+console.log(`Você tem ${topicVariableAge} anos!`);
+console.log(`A variável topicVariableAge é do tipo: ${typeof topicVariableAge}`);
 
-// /* ============================ */
+let topicVariableprice = 10.99;
+console.log(`O preço é de R$${topicVariableprice}`);
+console.log(`A variável price é do tipo: ${typeof topicVariableprice}`);
 
-// let age = 25;
-// console.log(`Você tem ${age} anos!`);
-// console.log(`age é do tipo: ${typeof age}`);
+let topicVariablegpa = 2.1;
+console.log(`A média final de um estudante qualquer dos EUA é: ${topicVariablegpa}`);
+console.log(`A variável topicVariablegpa é do tipo: ${typeof topicVariablegpa}`);
 
-// let price = 10.99;
-// console.log(`O preço é de R$${price}`);
-// console.log(`price é do tipo: ${typeof price}`);
+let topicVariablefirstName = "James";
+console.log(`Seu nome é: ${topicVariablefirstName}`);
+console.log(`A variável topicVariablefirstName é do tipo: ${typeof topicVariablefirstName}`);
 
-// let gpa = 2.1;
-// console.log(`Nem sei o que é isso: ${gpa}`);
-// console.log(`gpa é do tipo: ${typeof gpa}`);
+let topicVariableonline = false;
+console.log(`Você está online? ${topicVariableonline}`);
+console.log(`A variável topicVariableonline é do tipo: ${typeof topicVariableonline}`);
 
-// let firstName = "James";
-// console.log(`Seu nome é: ${firstName}`);
-// console.log(`firstName é do tipo: ${typeof firstName}`);
+/* ============================================================================================================= */
 
-// let online = false;
-// console.log(`Você está online? ${online}`);
-// console.log(`online é do tipo: ${typeof online}`);
+/* ----- ARITHMETIC OPERATORS ----- */
+let topicAriOperatorsStudents = 30;
+// Operadores normais
+topicAriOperatorsStudents = topicAriOperatorsStudents + 1;
+// topicAriOperatorsStudents = topicAriOperatorsStudents - 1;
+// topicAriOperatorsStudents = topicAriOperatorsStudents * 2;
+// topicAriOperatorsStudents = topicAriOperatorsStudents / 2;
 
-// let fullName = "Nathan Monteiro";
-// let personAge = 25;
-// let isPersonUniStudent = true;
+// topicAriOperatorsStudents = topicAriOperatorsStudents ** 2;
+// topicAriOperatorsStudents = topicAriOperatorsStudents % 2;
 
-// document.getElementById('personName').innerHTML = `&rightarrow; Seu nome é: ${fullName}. O tipo da variável fullName é <span class="specific-style">${typeof fullName}</span>;`;
+// topicAriOperatorsStudents += 1;
+// topicAriOperatorsStudents -= 1;
+// topicAriOperatorsStudents *= 1;
+// topicAriOperatorsStudents /= 2;
+// topicAriOperatorsStudents **= 2;
+// topicAriOperatorsStudents %= 2;
 
-// document.getElementById('personAge').innerHTML = `&rightarrow; Sua idade é: ${personAge} O tipo da variável personAge é <span class="specific-style">${typeof personAge}</span>;`;
+/* INCREMENTO E DECREMENTO */
+topicAriOperatorsStudents++;
+// topicAriOperatorsStudents--;
+console.log(`A quantidade de estudantes na sala atualamente é: ${topicAriOperatorsStudents}`);
 
-// document.getElementById('isPersonStudent').innerHTML = `&rightarrow; É um estudante? ${isPersonUniStudent} O tipo da variável isPersonUniStudent é <span class="specific-style">${typeof isPersonUniStudent}</span>;`;
+/* ============================================================================================================= */
 
-// /* ============================ */
-
-// let students = 30;
-// // Operadores normais
-// // students = students + 1;
-// // students = students - 1;
-// // students = students * 2;
-// // students = students / 2;
-
-// // students = students ** 2;
-// // students = students % 2;
-
-// // students += 1;
-// // students -= 1;
-// // students *= 1;
-// // students /= 2;
-// // students **= 2;
-// // students %= 2;
-
-// /* INCREMENTO E DECREMENTO */
-// // students++;
-// // students--;
-// console.log(`A quantidade de estudantes na sala atualamente é: ${students}`);
-
-// /* ============================ */
-
-// let username;
+/* ----- USER INPUT ----- */
+// let topicUserInputUsername;
 // document.getElementById('mySubmit').onclick = function () {
-//     username = document.getElementById('myText').value;
-//     console.log(username);
+//     topicUserInputUsername = document.getElementById('myText').value;
+//     console.log(topicUserInputUsername);
 // }
-
+    
 // /* ============================ */
 
 // // let agePerson = window.prompt('Idade:');
@@ -1514,12 +1502,25 @@ const htmlContent = [
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
             "&rightarrow; A seção ensina como controlar o áudio. Algo a se perceber é que, caso o <em>browser</em> não tenha compatibilidade com um certo tipo de áudio, colocamos outra tag <em>source</em> abaixo para substituí-lo caso o primeiro arquivo não exista. Mas é importante usarmos o atributo <em>type</em> para indicar o tipo de áudio que estamos usando;",
-            
-            "&rightarrow; Almost a Year Ago (Sting) - John Deley and the 41 Players <audio controls muted loop> <source src='assets/audio/Almost a Year Ago (Sting) - John Deley and the 41 Players.mp3' type='audio/mpeg'></audio>",
-                    
-            "&rightarrow; Ersatz Bossa (Sting) - John Deley and the 41 Players <audio controls muted loop><source src='assets/audio/Ersatz Bossa (Sting) - John Deley and the 41 Players.mp3' type='audio/mpeg'></audio>",
-                    
-            "&rightarrow; Bluesy Vibes (Sting) - Doug Maxwell_Media Right Productions<audio controls muted loop><source src='assets/audio/Bluesy Vibes (Sting) - Doug Maxwell_Media Right Productions.mp3' type='audio/mpeg'></audio>"
+
+            `
+                Almost a Year Ago (Sting) - John Deley and the 41 Players
+                <audio controls muted loop>
+                    <source src='assets/audio/Almost a Year Ago (Sting) - John Deley and the 41 Players.mp3' type='audio/mpeg'>
+                </audio>`,
+
+            `
+                Ersatz Bossa (Sting) - John Deley and the 41 Players
+                <audio controls muted loop>
+                    <source src='assets/audio/Ersatz Bossa (Sting) - John Deley and the 41 Players.mp3' type='audio/mpeg'>
+                </audio>`,
+
+            `
+                Bluesy Vibes (Sting) - Doug Maxwell_Media Right Productions
+                <audio controls muted loop>
+                    <source src='assets/audio/Bluesy Vibes (Sting) - Doug Maxwell_Media Right Productions.mp3' type='audio/mpeg'>
+                </audio>
+            `
         ]
     },
     {
@@ -1568,7 +1569,29 @@ const htmlContent = [
             "&rightarrow; <strong>th</strong>, <em>table header</em>, que é onde colocaremos os <strong>títulos na linha</strong>;",
             "&rightarrow; <strong>td</strong>, <em>table data</em>, que é onde colocaremos os <strong>dados</strong>. Esses dados estarão <strong>alinhados com os th</strong>;",
             
-            "<table border='1'> <tr align='center'><th width='100px'>Seg</th><th width='100px'>Ter</th><th width='100px'>Quar</th><th width='100px'>Quin</th><th width='100px'>Sex</th><th width='100px'>Sáb</th><th width='100px'>Dom</th></tr><tr align='center'><td>X</td><td>9:00 às 17:00</td><td>9:00 às 17:00</td><td>9:00 às 17:00</td><td>9:00 às 17:00</td><td>9:00 às 17:00</td><td>10:00 às 14:00</td></tr></table>"
+            `
+                <table border='1'>
+                    <tr align='center'>
+                        <th width='100px'>Seg</th>
+                        <th width='100px'>Ter</th>
+                        <th width='100px'>Quar</th>
+                        <th width='100px'>Quin</th>
+                        <th width='100px'>Sex</th>
+                        <th width='100px'>Sáb</th>
+                        <th width='100px'>Dom</th>
+                    </tr>
+                    
+                    <tr align='center'>
+                        <td>X</td>
+                        <td>9:00 às 17:00</td>
+                        <td>9:00 às 17:00</td>
+                        <td>9:00 às 17:00</td>
+                        <td>9:00 às 17:00</td>
+                        <td>9:00 às 17:00</td>
+                        <td>10:00 às 14:00</td>
+                    </tr>
+                </table>
+            `
         ]
     },
     {
@@ -1587,7 +1610,52 @@ const htmlContent = [
 
             "&rightarrow; <strong>name</strong>: pelo menos no sentido dos <strong><em>radio</em></strong>, caso não queiramos que todos fiquem marcados, agrupamos em um conglomerado, usando o <em>name</em>;",
 
-            "<form action='' method='post' enctype='multipart/form-data'><label for='username'>Username:</label><input type='text' id='username' required minlength='6' maxlength='15' placeholder='Spongebob' autocomplete='username'><label for='password'>Password:</label><input type='password' id='password' autocomplete='current-password'><br><label for='email'>Email:</label><input type='email' id='email' placeholder='SSquarepants@gmail.com'><br><label for='phone'>Phone Number</label><input type='tel' id='phone' placeholder='9 1234-5678' pattern='[9]{1}[0-9]{4}[0-9]{4}'><br><label for='bday'>Birthday:</label><input type='date' id='bday'><br><label for='quantity'>Quantity:</label><input type='number' id='quantity' min='0' max='99' value='1'><br><label for='title'>Title:</label><label for='mr'>Mr.:</label><input type='radio' id='mr' value='Mr.' name='title'><label for='ms'>MS.:</label><input type='radio' id='ms' value='Ms.' name='title'><label for='phd'>Phd:</label><input type='radio' id='phd' value='Phd' name='title'><br><label for='payment'>Payment</label><select id='payment'><option value='Visa'>Visa</option><option value='Mastercard'>Mastercard</option><option value='Express'>Express</option></select><br><label for='subscribe'>Subscribe</label><input type='checkbox' id='subscribe'><br><label for='comment'></label><textarea id='comment' rows='3' cols='25'></textarea><br><label for='file'></label><input type='file' id='file' accept='image/png, image/jpeg'><br><input type='reset'><input type='submit'></form>"
+            `
+                <form action="" method='post' enctype='multipart/form-data'>
+                    <label for='username'>Username:</label>
+                    <input type='text' id='username' required minlength='6' maxlength='15' placeholder='Spongebob' autocomplete='username'>
+                    
+                    <label for='password'>Password:</label>
+                    <input type='password' id='password' autocomplete='current-password'><br>
+                    
+                    <label for='email'>Email:</label>
+                    <input type='email' id='email' placeholder='SSquarepants@gmail.com'><br>
+                    
+                    <label for='phone'>Phone Number</label>
+                    <input type='tel' id='phone' placeholder='9 1234-5678' pattern='[9]{1}[0-9]{4}[0-9]{4}'><br>
+                    
+                    <label for='bday'>Birthday:</label>
+                    
+                    <input type='date' id='bday'><br>
+                    <label for='quantity'>Quantity:</label><input type='number' id='quantity' min='0' max='99' value='1'><br>
+
+                    <label for='title'>Title:</label>
+                    <label for='mr'>Mr.:</label>
+                    <input type='radio' id='mr' value='Mr.' name='title'>
+                    
+                    <label for='ms'>MS.:</label>
+                    <input type='radio' id='ms' value='Ms.' name='title'>
+                    
+                    <label for='phd'>Phd:</label>
+                    <input type='radio' id='phd' value='Phd' name='title'><br>
+                    
+                    <label for='payment'>Payment</label>
+                    <select id='payment'>
+                        <option value='Visa'>Visa</option>
+                        <option value='Mastercard'>Mastercard</option>
+                        <option value='Express'>Express</option>
+                    </select><br>
+                    
+                    <label for='subscribe'>Subscribe</label>
+                    <input type='checkbox' id='subscribe'><br>
+                    
+                    <label for='comment'></label>
+                    <textarea id='comment' rows='3' cols='25'></textarea><br>
+                    <label for='file'></label>
+                    <input type='file' id='file' accept='image/png, image/jpeg'><br>
+                    <input type='reset'><input type='submit'>
+                    </form>
+                `
         ]
     },
 ];
@@ -1615,10 +1683,44 @@ const cssContent = [
 
 const jsContent = [
     {
-        subtitle: '1. ',
+        subtitle: '1. Variables',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            "&rightarrow; ",
+            "&rightarrow; Continua sendo o mesmo conceito de: <strong>é um contêiner que armazena um valor</strong>. Para criar uma, em javascript, usamos <strong>let, var ou const</strong>. Lembrando que <strong>Toda variável precisa ser única</strong>;",
+    
+            "&rightarrow; Para saber qual o tipo da variável que estamos usando, usamos <strong>typeof nome_da_variável;</strong> O exemplo pode ser visto na <strong>Dev Tools</strong> (acessamos via <strong>Ctrl+i</strong> ou clicando com o botão esquerdo do mouse na tela e indo até <strong>Inspecionar</strong>;",
+    
+            "&rightarrow; Agora, <strong>boolean</strong>. Nele, temos apenas 2 valores: <strong>true ou false</strong>;",
+        ]
+    },
+    {
+        subtitle: '2. Arithmetic Operators',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; Só abrir a <strong>Dev Tools<strong>",
+        ]
+    },
+    {
+        subtitle: '3. Accept User Input',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; É uma forma de aceitar dados via teclado do usuário. Usamos para criar formulários, escrever em caixas de texto, e assim por diante. Como exemplo, podemos usar:",
+            `
+                <li>
+                    <label for="">Username: </label>
+                    <input type="text" id="myText">
+                    <button id="mySubmit">Enviar</button>
+                </li>
+            `,
+            `Para chegarmos ao resultado alvo que queremos, temos de escrever da seguinte forma:`,
+            `
+                let topicUserInputUsername;
+                let topicUserInputButton = document.getElementById('mySubmit');
+                topicUserInputButton.addEventListener('click', function () {
+                    topicUserInputUsername = document.getElementById('myText').value;
+                    console.log(topicUserInputUsername);
+                }
+            `,
         ]
     },
 ];
