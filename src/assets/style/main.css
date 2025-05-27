@@ -281,3 +281,8 @@ footer .social-links {
 img.displaySlide {
     display: block;
 }
+
+#container-internet {
+    border: 10px solid;
+    height: 10em;
+}
