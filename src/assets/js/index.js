@@ -1515,11 +1515,79 @@ const htmlContent = [
         contentItself: [
             "&rightarrow; A seção ensina como controlar o áudio. Algo a se perceber é que, caso o <em>browser</em> não tenha compatibilidade com um certo tipo de áudio, colocamos outra tag <em>source</em> abaixo para substituí-lo caso o primeiro arquivo não exista. Mas é importante usarmos o atributo <em>type</em> para indicar o tipo de áudio que estamos usando;",
             
-            "&rightarrow; Almost a Year Ago (Sting) - John Deley and the 41 Players <audio controls muted loop> <source src='audio/Almost a Year Ago (Sting) - John Deley and the 41 Players.mp3' type='audio/mpeg'></audio>",
+            "&rightarrow; Almost a Year Ago (Sting) - John Deley and the 41 Players <audio controls muted loop> <source src='assets/audio/Almost a Year Ago (Sting) - John Deley and the 41 Players.mp3' type='audio/mpeg'></audio>",
                     
-            "&rightarrow; Ersatz Bossa (Sting) - John Deley and the 41 Players <audio controls muted loop><source src='audio/Ersatz Bossa (Sting) - John Deley and the 41 Players.mp3' type='audio/mpeg'></audio>",
+            "&rightarrow; Ersatz Bossa (Sting) - John Deley and the 41 Players <audio controls muted loop><source src='assets/audio/Ersatz Bossa (Sting) - John Deley and the 41 Players.mp3' type='audio/mpeg'></audio>",
                     
-            "&rightarrow; Bluesy Vibes (Sting) - Doug Maxwell_Media Right Productions<audio controls muted loop><source src='audio/Bluesy Vibes (Sting) - Doug Maxwell_Media Right Productions.mp3' type='audio/mpeg'></audio>"
+            "&rightarrow; Bluesy Vibes (Sting) - Doug Maxwell_Media Right Productions<audio controls muted loop><source src='assets/audio/Bluesy Vibes (Sting) - Doug Maxwell_Media Right Productions.mp3' type='audio/mpeg'></audio>"
+        ]
+    },
+    {
+        subtitle: '6. Video',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; O mesmo serve para o vídeo (no caso, o que fizemos com o áudio). O diferencial é encapsular o vídeo com uma <em>anchor tag</em>;</li>",
+        ]
+    },
+    {
+        subtitle: '7. Favicon',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; Esse nós olhamos para a aba em si, a 'figurinha' que fica lá em cima. O importante lembrar são as medidas: <strong>96px X 96px</strong>;",
+        ]
+    },
+    {
+        subtitle: '8. Text Formating',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; Esse nós olhamos para a aba em si, a 'figurinha' que fica lá em cima. O importante lembrar são as medidas: <strong>96px X 96px</strong>;",
+            "&rightarrow; Texto em normal;",
+            "&rightarrow; Texto em <strong>negrito</strong>;",
+            "&rightarrow; Texto em <em>itálico</em>;",
+            "&rightarrow; Texto em <u>underline</u>;",
+            "&rightarrow; Texto em <del>deletado</del>;",
+            "&rightarrow; Texto em <small>pequeno</small>;",
+            "&rightarrow; Texto em <sub>sub</sub>;",
+            "&rightarrow; Texto em <sup>sup</sup>;",
+            "&rightarrow; Texto em <mark>grifado</mark>;",
+        ]
+    },
+    {
+        subtitle: '9; Span & Div',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; Primeiro, vamos listar as diferenças entre as duas: <strong>span</strong> é um <strong>contêiner</strong>, mas para propósitos de estilização <em>inline</em>, enquanto a <strong>div</strong> também é um <strong>contêiner</strong>, mas para propósitos de estilização <strong>em bloco</strong>;"
+        ]
+    },
+    {
+        subtitle: '10; Tables',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; <strong>table</strong>, para darmos início à tabela;",
+            "&rightarrow; <strong>tr</strong>, <em>table row</em>, que é onde colocaremos os <strong>elementos da linha</strong>;",
+            "&rightarrow; <strong>th</strong>, <em>table header</em>, que é onde colocaremos os <strong>títulos na linha</strong>;",
+            "&rightarrow; <strong>td</strong>, <em>table data</em>, que é onde colocaremos os <strong>dados</strong>. Esses dados estarão <strong>alinhados com os th</strong>;",
+            
+            "<table border='1'> <tr align='center'><th width='100px'>Seg</th><th width='100px'>Ter</th><th width='100px'>Quar</th><th width='100px'>Quin</th><th width='100px'>Sex</th><th width='100px'>Sáb</th><th width='100px'>Dom</th></tr><tr align='center'><td>X</td><td>9:00 às 17:00</td><td>9:00 às 17:00</td><td>9:00 às 17:00</td><td>9:00 às 17:00</td><td>9:00 às 17:00</td><td>10:00 às 14:00</td></tr></table>"
+        ]
+    },
+    {
+        subtitle: '11; Form',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; <strong>action</strong>: depois de preencher o formulário, para onde enviá-lo? O <strong>action</strong> serve para indicar o local. Normalmente, é pelo backend que se faz toda a lógica.",
+            
+            "&rightarrow; <strong>method</strong>: temos o <strong>GET e POST</strong>, onde POST é usado para <strong>informações confidenciais</strong> (username, senha, etc) e GET para <strong>informações não tão sensíveis</strong>;",
+            
+            "&rightarrow; <strong>for</strong>: isso é usado normalmente para pessoas com dificuldade visual. Geralmente é o mesmo valor que está dentro da tag;",
+            
+            "&rightarrow; OBS.: se toda vez que formos acessar um <em>forms</em> tivermos que clicar na caixa de texto, pode não ter problema. Mas caso queiramos acessar a caixa de texto ao clicar em, no caso inicial, 'username', seu respectivo input precisa ter <strong>o mesmo id que o for da label</strong>;",
+            
+            "&rightarrow; <strong>lenght</strong>: no caso, usamos <em>minlenght</em> ou <em>maxlenght</em>. São usados para delimitar o tamanho de dado (no caso, caracteres) colocado pelo <em>user</em>;",
+
+            "&rightarrow; <strong>name</strong>: pelo menos no sentido dos <strong><em>radio</em></strong>, caso não queiramos que todos fiquem marcados, agrupamos em um conglomerado, usando o <em>name</em>;",
+
+            "<form action='' method='post' enctype='multipart/form-data'><label for='username'>Username:</label><input type='text' id='username' required minlength='6' maxlength='15' placeholder='Spongebob' autocomplete='username'><label for='password'>Password:</label><input type='password' id='password' autocomplete='current-password'><br><label for='email'>Email:</label><input type='email' id='email' placeholder='SSquarepants@gmail.com'><br><label for='phone'>Phone Number</label><input type='tel' id='phone' placeholder='9 1234-5678' pattern='[9]{1}[0-9]{4}[0-9]{4}'><br><label for='bday'>Birthday:</label><input type='date' id='bday'><br><label for='quantity'>Quantity:</label><input type='number' id='quantity' min='0' max='99' value='1'><br><label for='title'>Title:</label><label for='mr'>Mr.:</label><input type='radio' id='mr' value='Mr.' name='title'><label for='ms'>MS.:</label><input type='radio' id='ms' value='Ms.' name='title'><label for='phd'>Phd:</label><input type='radio' id='phd' value='Phd' name='title'><br><label for='payment'>Payment</label><select id='payment'><option value='Visa'>Visa</option><option value='Mastercard'>Mastercard</option><option value='Express'>Express</option></select><br><label for='subscribe'>Subscribe</label><input type='checkbox' id='subscribe'><br><label for='comment'></label><textarea id='comment' rows='3' cols='25'></textarea><br><label for='file'></label><input type='file' id='file' accept='image/png, image/jpeg'><br><input type='reset'><input type='submit'></form>"
         ]
     },
 ];
@@ -1528,13 +1596,31 @@ const htmlContent = [
 const cssContent = [
     {
         subtitle: '1. Introduction to CSS',
-        desc: 'Conteúdo estudado do canal: Bro Code.',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            "CSS significa Cascading Style Sheets. Serve para estilizar elementos HTML.",
-            "Você pode mudar cores, fontes, espaçamentos, etc."
+            "&rightarrow; Para alguns pontos importantes, vamos estar usando <strong>class e id</strong> para podermos separar alguns pontos do conteúdo.",
+            "<span id='p1'>&rightarrow; Cor 1</span>",
+            "<span id='p2'>&rightarrow; Cor 2</span>",
+            "<span id='p3'>&rightarrow; Cor 3</span>",
         ]
     },
-    // ...adicione mais blocos conforme necessário
+    {
+        subtitle: '2. Searching',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; Muito do conteúdo de CSS é importante para estilização e existe uma gama de conteúdo na internet para aprender. Para principais temas (visão pessoal), o importante é lembrar de <strong>class e id, animations e transitions, pseudo-classes, pseudo-elementos, display (flexbox e grid), positions</strong>, além dos diversos outros."
+        ]
+    },
+];
+
+const jsContent = [
+    {
+        subtitle: '1. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; ",
+        ]
+    },
 ];
 
 // Função para renderizar qualquer conteúdo (Internet, HTML, CSS, etc.)
@@ -1571,5 +1657,6 @@ function renderSectionContent(contentArray, containerId) {
 document.addEventListener('DOMContentLoaded', () => {
     renderSectionContent(internetContent, 'container-internet');
     renderSectionContent(htmlContent, 'container-html');
-    // Para CSS: renderSectionContent(cssContent, 'container-css');
+    renderSectionContent(cssContent, 'container-css');
+    renderSectionContent(jsContent, 'container-js');
 });
