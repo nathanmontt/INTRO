@@ -30,13 +30,13 @@
     let topicVariableIsPersonUniStudent = true;
 
     const getTopicVarPersonFullNameFromHtml = document.getElementById('topicVariableFullName');
-    getTopicVarPersonFullNameFromHtml.innerHTML = `&rightarrow; Seu nome é: ${topicVariableFullName}. O tipo da variável fullName é <span class="specific-style">${typeof topicVariableFullName}</span>; <br>`;
+    getTopicVarPersonFullNameFromHtml.innerHTML = `&rightarrow; Seu nome é: ${topicVariableFullName}. O tipo da variável fullName é <strong>${typeof topicVariableFullName}</strong>; <br>`;
 
     const getTopicVarPersonAge = document.getElementById('topicVariablePersonAge');
-    getTopicVarPersonAge.innerHTML = `&rightarrow; Sua idade é: ${topicVariablePersonAge} O tipo da variável topicVariablePersonAge é <span class="specific-style">${typeof topicVariablePersonAge}</span>; <br>`;
+    getTopicVarPersonAge.innerHTML = `&rightarrow; Sua idade é: ${topicVariablePersonAge} O tipo da variável topicVariablePersonAge é <strong>${typeof topicVariablePersonAge}</strong>; <br>`;
 
     const getTopicIsPersonStudent = document.getElementById('topicVariableIsPersonUniStudent');
-    getTopicIsPersonStudent.innerHTML = `&rightarrow; É um estudante? ${topicVariableIsPersonUniStudent} O tipo da variável topicVariableIsPersonUniStudent é <span class="specific-style">${typeof topicVariableIsPersonUniStudent}</span>;`;
+    getTopicIsPersonStudent.innerHTML = `&rightarrow; É um estudante? ${topicVariableIsPersonUniStudent} O tipo da variável topicVariableIsPersonUniStudent é <strong>${typeof topicVariableIsPersonUniStudent}</strong>;`;
 }
 
 /* ======================================================================================= */
@@ -178,404 +178,357 @@
 
 /* ======================================================================================= */
 
-//     /* ============================ */
+/* ----- ITERATION LOOP ----- */
+{
+    let variable2 = 2;
+    if (variable2 === 1) {
+        const topicIterationMinNum = 1;
+        const topicIterationMaxNum = 10;
+        const topicIterationAnswer = Math.floor(Math.random() * (topicIterationMaxNum - topicIterationMinNum + 1)) + topicIterationMinNum;
+        console.log(topicIterationAnswer);
+            
+        let topicIterationAttempts = 0;
+        let topicIterationGuess;
+        let topicIterationRunning = true;
 
-//     // const minNum = 1;
-//     // const maxNum = 10;
-//     // const answer = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
-    
-// // let attempts = 0;
-// // let guess;
-// // let running = true;
+        while (topicIterationRunning) {
+            topicIterationGuess = prompt(`Guess a number between ${topicIterationMinNum} and ${topicIterationMaxNum}`)
+            topicIterationGuess = Number(topicIterationGuess);
 
-// // console.log(answer);
+            if(isNaN(topicIterationGuess)) {
+                window.alert("Please enter a number!")
+            } else if (topicIterationGuess < topicIterationMinNum || topicIterationGuess > topicIterationMaxNum) {
+                window.alert("Please enter a valid number!")
+            } else {
+                topicIterationAttempts++;
+                if (topicIterationGuess < topicIterationAnswer) {
+                    window.alert("TOO LOW. TRY AGAIN!")
+                } else if (topicIterationGuess > topicIterationAnswer) {
+                    window.alert("TOO HIGH. TRY AGAIN!")
+                } else {
+                    window.alert(`CORRECT! The number was ${topicIterationAnswer} and it took you ${topicIterationAttempts} attempts!`);
+                    topicIterationRunning = false;
+                }
+            }
+        }
+    }
+}
 
-// // while (running) {
-//     //     guess = prompt(`Guess a number between ${minNum} and ${maxNum}`)
-//     //     guess = Number(guess);
-    
-//     //     if(isNaN(guess)) {
-//         //         window.alert("Please enter a number!")
-//         //     } else if (guess < minNum || guess > maxNum) {
-//             //         window.alert("Please enter a valid number!")
-//             //     } else {
-//                 //         attempts++;
-//                 //         if (guess < answer) {
-//                     //             window.alert("TOO LOW. TRY AGAIN!")
-//                     //         } else if (guess > answer) {
-//                         //             window.alert("TOO HIGH. TRY AGAIN!")
-//                         //         } else {
-//                             //             window.alert(`CORRECT! The number was ${answer} and it took you ${attempts} attempts!`);
-//                             //             running = false;
-//                             //         }
-//                             //     }
-//                             // }
-                            
-//                             /* ============================ */
-                            
-// // function bDay (person, agePerson) {
-//     //     console.log(`Feliz Aniversário, ${person}! Hoje você está fazendo ${agePerson} anos!`)
-//     // }
-    
-//     // bDay("Nathan", 25);
+/* ======================================================================================= */
 
-//     function add (x, y) {
-//     let result = x + y;
-//     return result;
-// }
-// function sub (x, y) {
-//     let result = x - y;
-//     return result;
-// }
-// function mult (x, y) {
-//     let result = x * y;
-//     return result;
-// }
-// function div (x, y) {
-//     let result = x / y;
-//     return result;
-// }
+/* ----- FUNCTION ----- */
+{
+    function topicFunctionBirthday (person, agePerson) {
+        console.log(`Feliz Aniversário, ${person}! Hoje você está fazendo ${agePerson} anos!`)
+    }
+    topicFunctionBirthday("Nathan", 25);
 
-// function isEven (number) {
-//     return number%2 === 0 ? true : false;
-// }
+    function topicFunctionAdd (x, y) {
+        let result = x + y;
+        return result;
+    }
+    function topicFunctionSub (x, y) {
+        let result = x - y;
+        return result;
+    }
+    function topicFunctionMult (x, y) {
+        let result = x * y;
+        return result;
+    }
+    function topicFunctionDiv (x, y) {
+        let result = x / y;
+        return result;
+    }
+    function topicFunctionIsEven (number) {
+        return number%2 === 0 ? true : false;
+    }
 
-// console.log(add(2,3));
-// console.log(sub(2,3));
-// console.log(mult(2,3));
-// console.log(div(2,3));
-// console.log(isEven(3));
+    console.log(topicFunctionAdd(2,3));
+    console.log(topicFunctionSub(2,3));
+    console.log(topicFunctionMult(2,3));
+    console.log(topicFunctionDiv(2,3));
+    console.log(topicFunctionIsEven(3));
+}
 
-// /* ============================ */
+/* ======================================================================================= */
 
-// let fruits = ["apple", "orange", "banana", "strawberry", "mirtilo", "grapes"];
-// fruits.push("coconut");
-// fruits.pop();
-// fruits.unshift("mango");
-// fruits.shift();
-// console.log(fruits.length);
+/* ----- ARRAYS ----- */
+{
+    let topicArraysFruits = ["Apple", "Orange", "Banana", "Strawberry", "Mirtilo", "Grapes"];
+    topicArraysFruits.push("Coconut");
+    topicArraysFruits.pop();
+    topicArraysFruits.unshift("Mango");
+    topicArraysFruits.shift();
+    console.log(topicArraysFruits.length);
 
-// console.log(`Antes de dar .sort(): ${fruits}`);
+    console.log(`Antes de dar .sort(): ${topicArraysFruits}`);
 
-// fruits.sort();
-// console.log(`Depois de dar .sort(): ${fruits.sort()}`);
+    topicArraysFruits.sort();
+    console.log(`Depois de dar .sort(): ${topicArraysFruits.sort()}`);
 
-// fruits.sort();
-// console.log(`Depois de dar .sort().reverse(): ${fruits.sort().reverse()}`);
+    topicArraysFruits.sort();
+    console.log(`Depois de dar .sort().reverse(): ${topicArraysFruits.sort().reverse()}`);
 
-// for (let i=0 ; i<fruits.length ; i++) {
-//     console.log(fruits[i]);
-// }
+    for (let i=0 ; i<topicArraysFruits.length ; i++) {
+        console.log(topicArraysFruits[i]);
+    }
 
-// console.log(fruits[0]);
-// console.log(fruits[1]);
-// console.log(fruits[2]);
-// console.log(fruits[3]);
+    console.log(topicArraysFruits[0]);
+    console.log(topicArraysFruits[1]);
+    console.log(topicArraysFruits[2]);
+    console.log(topicArraysFruits[3]);
+}
 
-// /* ============================ */
+/* ======================================================================================= */
 
-// let numbers = [1, 2, 3, 4, 5];
-// let max = Math.max(...numbers)
-// let min = Math.min(...numbers)
-// console.log(max);
-// console.log(min);
-
-
-// let user = "Nathan Monteiro"
-// let letters = [...user].join("-");
-// console.log(letters);
-
-// let fruit = ["apple", "orange", "banana"];
-// let vegetables = ["carrots", "celery", "potatoes"];
-// console.log(fruit);
-
-// let foods = [...fruit, ...vegetables, "eggs", "milk"];
-// console.log(foods);
-
-// /* ============================ */
-
-// const food1 = "pizza";
-// const food2 = "hamburguer";
-// const food3 = "hot dog";
-// const food4 = "sushi";
-// const food5 = "ramen";
-
-// function openFridge(...foods) {
-//     console.log(foods)
-// }
-
-// openFridge(food1, food2, food3, food4, food5)
+/* ----- SPREAD ----- */
+{
+    let topicSpreadNumbers = [1, 2, 3, 4, 5];
+    let topicSpreadMax = Math.max(...topicSpreadNumbers)
+    let topicSpreadMin = Math.min(...topicSpreadNumbers)
+    console.log(topicSpreadMax);
+    console.log(topicSpreadMin);
 
 
-// function sum(...sumNumbers) {
-//     let resultSum = 0
-//     for (let i=0 ; i<sumNumbers.length ; i++) {
-//         resultSum += sumNumbers[i];
-//     }
-//     return resultSum;
-// }
+    let topicSpreadUser = "Nathan Monteiro"
+    let topicSpreadLetters = [...topicSpreadUser].join("-");
+    console.log(topicSpreadLetters);
 
-// const total = sum(2,3,4,5,6);
-// console.log(total)
+    let topicSpreadFruit = ["Apple", "Orange", "Banana"];
+    let topicSpreadVegetables = ["Carrots", "Celery", "Potatoes"];
+    console.log(topicSpreadFruit);
 
-// /* ============================ */
+    let topicSpreadFoods = [...topicSpreadFruit, ...topicSpreadVegetables, "Eggs", "Milk"];
+    console.log(topicSpreadFoods);
+}
 
-// // hello(wait);
+/* ======================================================================================= */
 
-// // function hello (callback) {
-//     //     console.log("hello");
-//     //     callback();
-//     // }
-    
-//     // function leave () {
-// //     console.log("leave");
-// // }
+/* ----- REST ----- */
+{
+    const topicRestFood1 = "pizza";
+    const topicRestFood2 = "hamburguer";
+    const topicRestFood3 = "hot dog";
+    const topicRestFood4 = "sushi";
+    const topicRestFood5 = "ramen";
 
-// // function wait () {
-// //     console.log("wait");
-// // }
+    function topicRestOpenFridge(...foods) {
+        console.log(foods)
+    }
 
-// // function goodbye () {
-// //     console.log("goodbye")
-// // }
+    topicRestOpenFridge(
+        topicRestFood1, 
+        topicRestFood2, 
+        topicRestFood3, 
+        topicRestFood4, 
+        topicRestFood5
+    )
 
-// // soma(displayConsole,2,3);
 
-// // function soma (callback, x, y) {
-// //     let result = x+y;
-// //     callback(result);
-// // }
-// // function displayConsole (result) {
-//     //     console.log(result);
-//     // }
+    function topicRestSum(...sumNumbers) {
+        let resultSum = 0
+        for (let i=0 ; i<sumNumbers.length ; i++) {
+            resultSum += sumNumbers[i];
+        }
+        return resultSum;
+    }
 
-    
-// /* ============================ */
+    const topicRestTotal = topicRestSum(2,3,4,5,6);
+    console.log(topicRestTotal)
+}
 
-// let numbersArray = [1, 2, 3, 4, 5];
+/* ======================================================================================= */
 
-// // numbersArray.forEach(double);
-// // numbersArray.forEach(triple);
-// // numbersArray.forEach(square);
-// // numbersArray.forEach(cube);
-// // numbersArray.forEach(display);
+/* ----- CALLBACK ----- */
+{
+    topicCallbackHello(topicCallbackWait);
 
-// // function double(element, index, array) {
-//     //     array[index] = element * 2;
-//     // }
-    
-// // function triple(element, index, array) {
-//     //     array[index] = element * 3;
-//     // }
-    
-//     // function square(element, index, array) {
-//         //     array[index] = Math.pow(element, 2);
-// // }
-
-// // function cube(element, index, array) {
-//     //     array[index] = Math.pow(element, 3);
-//     // }
-    
-//     // function display (element) {
-//         //     console.log(element);
-//         // }
+    function topicCallbackHello (callback) {
+        console.log("hello");
+        callback();
+    }
         
-// // let fruitsArray = ["apple", "orange", "banana", "coconut"];
+    function topicCallbackLeave () { console.log("leave"); }
+    function topicCallbackWait () { console.log("wait"); }
+    function topicCallbackGoodbye () { console.log("goodbye"); }
 
-// // fruitsArray.forEach(display);
+    topicCallbackSoma(topicCallbackDisplayResults, 2, 3);
 
-// // function display(element) {
-//     //     console.log(element);
-//     // }
-    
-//     /* ============================ */
-    
-// // const nums = [1,2,3,4,5];
-// // const cb = nums.map(cube);
+    function topicCallbackSoma (callback, x, y) {
+        let result = x+y;
+        callback(result);
+    }
+    function topicCallbackDisplayResults (result) {
+        console.log(result);
+    }
+}
 
-// // console.log(cb);
+/* ======================================================================================= */
 
-// // function cube(el) {
-//     //     return Math.pow(el, 3);
-//     // }
-    
-//     const dates = ["2-12-2022", "20-10-2023", "10-01-2000"];
-// const formatedDates = dates.map(formatDates);
+/* ----- FOREACH() ----- */
+{
+    let topicForEachnumbersArray = [1, 2, 3, 4, 5];
+    topicForEachnumbersArray.forEach(topicForEachDouble);
+    topicForEachnumbersArray.forEach(topicForEachTriple);
+    topicForEachnumbersArray.forEach(topicForEachSquare);
+    topicForEachnumbersArray.forEach(topicForEachCube);
+    topicForEachnumbersArray.forEach(topicForEachDisplay);
 
-// console.log(formatedDates)
+    function topicForEachDouble(element, index, array) { array[index] = element * 2; }
+    function topicForEachTriple(element, index, array) { array[index] = element * 3; }
+    function topicForEachSquare(element, index, array) { array[index] = Math.pow(element, 2); }
+    function topicForEachCube(element, index, array) { array[index] = Math.pow(element, 3); }
+    function topicForEachDisplay (element) { console.log(element); }
 
-// function formatDates(elements) {
-//     const parts = elements.split("-");
-//     return `${parts[0]}/${parts[1]}/${parts[2]}`;
-// }
+    let topicForEachFruitsArray = ["Apple", "Orange", "Banana", "Coconut"];
 
-// /* ============================ */
+    topicForEachFruitsArray.forEach(display);
 
-// let n = [1,2,3,4,5,6,7];
-// let evenNums = n.filter(isEven);
-// console.log(evenNums);
+    function display(element) { console.log(element); }
+}
 
-// function isEven(el) {
-//     return el%2 === 0;
-// }
+/* ======================================================================================= */
 
-// /* ============================ */
+/* ----- FILTER ----- */
+{
+    let topicFilterN = [1,2,3,4,5,6,7];
+    let topicFilterEvenNums = topicFilterN.filter(topicFilterIsEven);
+    console.log(topicFilterEvenNums);
 
-// const prices = [5, 30, 10, 25, 15, 20];
-// const totalPrice = prices.reduce(sumPrice);
+    function topicFilterIsEven(el) { return el%2 === 0; }
+}
 
-// console.log(totalPrice.toFixed(2));
+/* ======================================================================================= */
 
-// function sumPrice (accumulator, elements) {
-//     return accumulator + elements;
-// }
+/* ----- REDUCE ----- */
+{
+    const topicReducePrices = [5, 30, 10, 25, 15, 20];
+    const topicReduceTotalPrice = topicReducePrices.reduce(topicReduceSumPrice);
 
-// const grades = [75, 50, 90, 80, 65, 95]
-// const maxGrades = grades.reduce(getMax);
-// const minGrades = grades.reduce(getMin);
+    console.log(topicReduceTotalPrice.toFixed(2));
 
-// console.log(maxGrades);
-// console.log(minGrades);
+    function topicReduceSumPrice (accumulator, elements) {
+        return accumulator + elements;
+    }
 
-// function getMax(accumulator, element) {
-//     return Math.max(accumulator, element);
-// }
+    const topicReduceGrades = [75, 50, 90, 80, 65, 95]
+    const topicReduceMaxGrades = topicReduceGrades.reduce(topicReduceMinGradesGetMax);
+    const topicReduceMinGrades = topicReduceGrades.reduce(topicReduceMinGradesGetMin);
 
-// function getMin(accumulator, element) {
-//     return Math.min(accumulator, element);
-// }
+    console.log(topicReduceMaxGrades);
+    console.log(topicReduceMinGrades);
 
-// /* ============================ */
+    function topicReduceMinGradesGetMax(accumulator, element) { return Math.max(accumulator, element); }
 
-// const hello = function () {
-//     console.log('hello');
-// }
+    function topicReduceMinGradesGetMin(accumulator, element) { return Math.min(accumulator, element); }
+}
 
-// // setTimeout(hello, 3000);
-// // setTimeout(function() {
-//     //     console.log("ola")
-//     // }, 3000);
-    
-//     // const nmbrs = [1,2,3,4,5,6,7,8,9].map(function (element) {
-//         //     return Math.pow(element,2);
-//         // });
+/* ======================================================================================= */
 
-// // console.log(nmbrs);
+/* ----- OBJECTS ----- */
+{
+    const topicObjectPerson = {
+        topicObjectFirstName: "Nathan",
+        topicObjectLastName: "Monteiro",
+        topicObjectAge: 30,
+        topicObjectIsEmployed: false,
+        topicObjectSayHello: function () { console.log("Hellooo!"); },
+        topicObjectSayBye: () => { console.log("Byeeee!"); }
+    };
 
-// /* ============================ */
+    console.log(topicObjectPerson.topicObjectFirstName);
+    console.log(topicObjectPerson.topicObjectLastName);
+    console.log(topicObjectPerson.topicObjectAge);
+    console.log(topicObjectPerson.topicObjectIsEmployed);
+    topicObjectPerson.topicObjectSayHello();
+    topicObjectPerson.topicObjectSayBye();
+}
 
-// const helloPerson = (nome) => {
-//     console.log(`Olá, ${nome}`);
-// };
+/* ======================================================================================= */
 
-// helloPerson("jonas");
+/* ----- THIS ----- */
+{
+    const topicThisPerson = {
+        topicThisName: "mano",
+        topicThisFavoriteFood: "miojo",
+        topicThisSayOla: function () {
+            console.log(`Meu nome é ${this.topicThisName}`);
+        },
+        topicThisEat: function () {
+            console.log(`${this.topicThisName} está comendo ${this.topicThisFavoriteFood}`);
+        }
+    }
 
+    topicThisPerson.topicThisSayOla();
+    topicThisPerson.topicThisEat();
+}
 
-// // setTimeout(() => {
-// //     console.log("eu de novo")
-// // }, 3000);
+/* ======================================================================================= */
 
-// const nmbrs = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-// const sqs = nmbrs.map((element) => { return Math.pow(element, 2); });
-// const cubes = nmbrs.map((element) => { return Math.pow(element, 3); });
-// const even = nmbrs.filter((element) => { return element%2 === 0; });
+/* ----- CONSTRUCTORS ----- */
+{
+    function topicConstructorsCar (make, model, year, color) {
+        this.make = make,
+        this.model = model,
+        this.year = year,
+        this.color = color,
+        this.drive = function () {
+            console.log(`Voce dirige ${this.model}`);
+        }
+    }
 
-// console.log(sqs);
-// console.log(cubes);
-// console.log(even);
+    const topicConstructorsCarCar1 = new topicConstructorsCar ("Ford", "Mustang", 2025, "Black");
+    console.log(topicConstructorsCarCar1);
+    console.log(topicConstructorsCarCar1.make);
+    console.log(topicConstructorsCarCar1.model);
+    console.log(topicConstructorsCarCar1.year);
+    console.log(topicConstructorsCarCar1.color);
+    topicConstructorsCarCar1.drive()
 
-// /* ============================ */
+    const topicConstructorsCarCar2 = new topicConstructorsCar ("Chevrolet", "Camaro", 2021, "Blue");
+    console.log(topicConstructorsCarCar2);
+    console.log(topicConstructorsCarCar2.make);
+    console.log(topicConstructorsCarCar2.model);
+    console.log(topicConstructorsCarCar2.year);
+    console.log(topicConstructorsCarCar2.color);
+    topicConstructorsCarCar2.drive()
 
-// const person = {
-//     firstName: "Patrick",
-//     lasName: "Star",
-//     age: 30,
-//     isEmployed: false,
-//     sayHello: function () { console.log("Hellooo!"); },
-//     sayBye: () => { console.log("Byeeee!"); }
-// };
+    const topicConstructorsCarCar3 = new topicConstructorsCar ("Dodge", "Charger", 2024, "Green");
+    console.log(topicConstructorsCarCar3);
+    console.log(topicConstructorsCarCar3.make);
+    console.log(topicConstructorsCarCar3.model);
+    console.log(topicConstructorsCarCar3.year);
+    console.log(topicConstructorsCarCar3.color);
+    topicConstructorsCarCar3.drive()
+}
 
-// console.log(person.firstName);
-// console.log(person.lasName);
-// console.log(person.age);
-// console.log(person.isEmployed);
-// person.sayHello();
-// person.sayBye();
+/* ======================================================================================= */
 
-// /* ============================ */
+/* ----- CLASSES ----- */
+{
+    class topicClassesProduct {
+        constructor(name, price) {
+            this.name = name;
+            this.price = price;
+        }
+        
+        topicClassesDisplayProduct () {
+            console.log (`Produto: ${this.name}`);
+            console.log (`Preço: R$${this.price.toFixed(2)}`);
+        }
+    }
 
-// const person1 = {
-//     name: "mano",
-//     favFood: "miojo",
-//     sayOla: function () {
-//         console.log(`Meu nome é ${this.name}`);
-//     },
-//     eat: function () {
-//         console.log(`${this.name} está comendo ${this.favFood}`);
-//     }
-// }
+    const topicClassesProd1 = new topicClassesProduct ("Shirt", 19,99);
+    const topicClassesProd2 = new topicClassesProduct ("Jeans", 39,99);
+    const topicClassesProd3 = new topicClassesProduct ("Bolsa", 1239,99);
+    topicClassesProd1.topicClassesDisplayProduct();
+    topicClassesProd2.topicClassesDisplayProduct();
+    topicClassesProd3.topicClassesDisplayProduct();
+}
 
-// person1.sayOla();
-// person1.eat();
+/* ======================================================================================= */
 
-// /* ============================ */
-
-// function Car (make, model, year, color) {
-//     this.make = make,
-//     this.model = model,
-//     this.year = year,
-//     this.color = color,
-//     this.drive = function () {
-//         console.log(`Voce dirige ${this.model}`);
-//     }
-// }
-
-// const car1 = new Car ("Ford", "Mustang", 2025, "Black");
-// console.log(car1);
-// console.log(car1.make);
-// console.log(car1.model);
-// console.log(car1.year);
-// console.log(car1.color);
-// car1.drive()
-
-// const car2 = new Car ("Chevrolet", "Camaro", 2021, "Blue");
-// console.log(car2);
-// console.log(car2.make);
-// console.log(car2.model);
-// console.log(car2.year);
-// console.log(car2.color);
-// car2.drive()
-
-// const car3 = new Car ("Dodge", "Charger", 2024, "Green");
-// console.log(car3);
-// console.log(car3.make);
-// console.log(car3.model);
-// console.log(car3.year);
-// console.log(car3.color);
-// car3.drive()
-
-// /* ============================ */
-
-// class Product {
-//     constructor(name, price) {
-//         this.name = name;
-//         this.price = price;
-//     }
-    
-//     displayProduct () {
-//         console.log (`Produto: ${this.name}`);
-//         console.log (`Preço: R$${this.price.toFixed(2)}`);
-//     }
-// }
-
-// const prod1 = new Product ("Shirt", 19,99);
-// const prod2 = new Product ("Jeans", 39,99);
-// const prod3 = new Product ("Bolsa", 1239,99);
-// prod1.displayProduct();
-// prod2.displayProduct();
-// prod3.displayProduct();
-
-// /* ============================ */
+/* ----- ARRAYS ----- */
 
 // class MathUtil {
 //     static PI = 3.14159;
@@ -1409,7 +1362,7 @@ const htmlContent = [
         subtitle: '6. Video',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            "&rightarrow; O mesmo serve para o vídeo (no caso, o que fizemos com o áudio). O diferencial é encapsular o vídeo com uma <em>anchor tag</em>;</li>",
+            "&rightarrow; O mesmo serve para o vídeo (no caso, o que fizemos com o áudio). O diferencial é encapsular o vídeo com uma <em>anchor tag</em>;",
         ]
     },
     {
@@ -1668,7 +1621,354 @@ topicUserInputButton.addEventListener('click', function () {
         ]
     },
     {
-        subtitle: '7. Method Chaining',
+        subtitle: '8. Iteration Loops',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; Temos o <strong>while</strong> e o <strong>for</strong>. Para o for (pelo menos pelo exemplo dado em for), podemos usar também o <strong>continue</strong>. Este faz com que pulemos a iteração desejada. Ou seja, <strong>if (i == 13) { continue; }</strong> (essa iteração vai ser pulada). Se usarmos o <strong>break</strong>, saímos do loop;`,
+        ]
+    },
+    {
+        subtitle: '9. Functions',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É uma seção do código que é possível usá-la novamente depois quantas vezes quisermos;`,
+        ]
+    },
+    {
+        subtitle: '10. Variable Scope',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; Aqui, é como as variáveis serão utilizadas ao decorrer do código;`,
+            `&rightarrow; Por exemplo, <strong>let x = 1;</strong> e <strong>let x = 2;</strong> estará errado pois não podemos criar uma variável com o mesmo nome;`,
+            `&rightarrow; Agora, fazer isso dentro de uma função (no caso, 2 funções com a mesma variável) é possível. Dentro de uma função, chamamos isso de <strong>escopo local</strong>: se criarmos x e y em 2 funções diferentes e dermos um console.log() em cada uma (console.log(x) na função 1 onde o x não existe e o mesmo para a y), nenhuma saberá da localização da outra, já que o escopo é local;`,
+            `&rightarrow; Agora, declarando uma variável de fora de uma função é criar um <strong>escopo global</strong>, já que ela pode ser acessada de dentro e de fora de funções;`,
+        ]
+    },
+    {
+        subtitle: '11. Arrays',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É uma variável (quase uma estrutura) que armazena mais de um valor. A forma de fazer isso é simples: <strong>[encapsulamos os valores que queremos entre colchetes, separados por vírgulas]</strong>`,
+
+            `&rightarrow; Ficaríamos com isso aqui na declaração: <strong>let fruits = ["apple", "orange", "banana"]</strong>`,
+
+            `&rightarrow; Se dermos um console.log() em "fruits", imprimiríamos todo o array. Caso quiséssemos imprimir apenas um (ou uma quantidade específica), precisaríamos usar um index, dessa forma: <strong>console.log(fruits[posiçãoDoElemento]);</strong>`,
+
+            `&rightarrow; Podemos também mudar, de forma simples, um elemento de dentro do array. Podemos colocar <strong>fruits[posiçãoDoElemento] = novoValor;</strong> que ele modificará o valor que já estava presente dentro do array;`,
+
+            `&rightarrow; Podemos também adicionar, de forma simples, um elemento de dentro do array. Colocando <strong>fruits[novaPosiçãoDoElemento] = novoValor;</strong> ele adicionará um novo valor dentro do array;`,
+
+            `&rightarrow; Mas fazer dessa forma é bem primitivo. Por isso, usamos alguns métodos <em>built-in</em> de arrays; <strong>.push(valor)</strong>. Ele adiciona um novo valor dentro do array <strong>ao final do mesmo</strong>;`,
+
+            `&rightarrow; <strong>.push(valor)</strong>: adiciona um novo valor dentro do array <strong>ao final do mesmo</strong>;`,
+            
+            `&rightarrow; <strong>.pop()</strong>, que elimina o último elemento do array;`,
+
+            `&rightarrow; <strong>.unshift(valor)</strong>, que <strong>adiciona um elemento no início do array</strong>;`,
+
+            `&rightarrow; <strong>.shift()</strong>, que <strong>elimina um elemento no início do array</strong>;`,
+
+            `&rightarrow; <strong>.lenght</strong>, que <strong>diz o tamanho do array</strong>;`,
+
+            `&rightarrow; <strong>.sort()</strong>, que <strong>ordena alfabeticamente o array</strong>;`,
+
+            `&rightarrow; <strong>.sort().reverse()</strong>, que <strong>inverte o array</strong>;`,
+        ]
+    },
+    {
+        subtitle: '12. Spread Operator',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É um operador que permite a expansão de um iterável (um array, string);`,
+            
+            `&rightarrow; Suponhamos que temos um array (let numbers = [1, 2, 3, 4, 5]) e que queiramos achar o maior entre eles. Podemos usar <strong">Math.max(numbers)</strong>, correto? <strong>Não</strong>, pois o output vai ser <em>NaN</em>. E porque isso acontece?`,
+            
+            `&rightarrow; Esse método não permite um array completo ser utilizado. Mas utilizando os <strong>...</strong>numbers, é possível que tenhamos um output correto, ou seja, vamos dar um <em>unzip</em> nos elementos dentro do array;`,
+            
+            `&rightarrow; Ainda estranho de se ver? Tenta fazer com uma <em>string</em>, dá um console.log() nela que você entende o porquê de usar o termo <em>unzip</em> (ou desempacotar, caso ache melhor);`,
+            
+            `&rightarrow; Para juntá-lo de volta, podemos usar o método <strong>.join("juntarComOQue")</strong>. Exemplo: vamos supôr que estamos usando uma <em>string</em>. Separamos um nome e querermos juntá-lo novamente. Fazemos: <strong">let variavel = [...string].join("-")</strong>. Aqui estamos juntando com um <strong>-</strong>;`,
+            
+            `&rightarrow; Também é possível criar uma <strong">shallow copy</strong>, que é uma estrutura diferente, porém com os mesmos elementos que a original;`,
+        ]
+    },
+    {
+        subtitle: '13. Rest Parameters',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; Aqui vai ser o contrário do anterior: ao invés de separar os elementos de um array em diversos, este <strong>junta elementos separados em um array</strong>;`,
+            `&rightarrow; Como é um parâmetro, imagine que criemos diversas variáveis <strong>const</strong>. Podemos agrupá-las em uma função: <strong>function openFridge(...foods) {/* code */}</strong>. Quando chamarmos a função: openFridge(colocamosAsVariaveis, deComidaAqui). Tudo isso vai se juntar dentro de um único array;`,
+        ]
+    },
+    {
+        subtitle: '14. Callbacks',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É uma função passada como argumento por outra função;`,
+
+            `&rightarrow; A ideia é: temos 2 funções. Queremos garantir que a segunda não seja declarada primeiro que a primeira função. Para isso, fazemos: <strong>function nomeFuncao1(nomeFuncao2) {...}</strong>. Dentro dessa função, colocamos ao final <strong>callback()</strong>;`,
+
+            `&rightarrow; E o porque do uso? Bom, imagine uma fila de banco. Nela, temos <strong>100 idosos</strong> e apenas um atendente para guiá-los por todo o processo. Quando cada um chegar ao caixa e contar o que precisa fazer, isso vai aumentar consideravelmente o tempo de espera dos outros atrás dele. Para tentar <strong>dar prioridade na redução do tempo</strong>, o atendente chega para cada um na fila, com um papel, e anota sobre a dificuldade daquela pessoa. Assim, quando chegar no caixa, o atendente não precisará ficar perguntando muita coisa. É assim que as <strong>callback functions</strong> funcionam: elas tomam a frente de <strong>asynchronous operations</strong>, que são operação que tomam muito tempo para se fazer (perguntar o problema da pessoa no caixa), e dizem: <em>vou fazer tal coisa (perguntar o problema) e assim que terminar, outra operação (atender) continua</em>. Ela dá prioridade a operações não passarem na frente de outras;`,
+        ]
+    },
+    {
+        subtitle: '15. forEach()',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É um método usado para iterar sobre os elementos de um array, aplicando uma determinada função sobre cada um;`,
+        ]
+    },
+    {
+        subtitle: '16. filter()',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; Cria um novo array filtrando os elementos;`,
+        ]
+    },
+    {
+        subtitle: '17. reduce()',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; Reduz os elementos de um array em um valor único;`,
+        ]
+    },
+    {
+        subtitle: '18. Function Expressions',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É uma forma de declarar funções como variáveis ou como valores;`,
+            
+            `&rightarrow; Lembrando que não é <strong>delaração de função</strong>, que é um bloco de código reutilizável que performa uma tarefa específica;`,
+            
+            `&rightarrow; A aula mostrou também o conceito da função <strong>setTimeout(callback, time)</strong>, onde temos uma <em>callback</em> e um <em>time</em> que iremos esperar para executar a tal função;`,
+            
+            `&rightarrow; E é daquí que entra a <strong>function expression</strong>: ao invés de criar um bloco de função, podemos usar a função como um <strong>valor</strong>;`,
+        ]
+    },
+    {
+        subtitle: '19. Arrow Functions',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; Um jeito de escrever função mais conciso. Escrevemos da seguinte forma: <strong>(parâmetro) => código</strong>;`,
+            `&rightarrow; Para entender um pouco melhor sobre como uma <em>arrow function</em> é montada: <strong>const hello = (parâmetro, caso haja) => {código aqui};</strong>;`,
+        ]
+    },
+    {
+        subtitle: '20. JavaScript Objects',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; São uma coleção de propriedades (nome, idade, etc) e/ou métodos (uma função que está dentro do objeto). Eles podem representar objetos do mundo real (lugars, pessoas, produtos) e tem a cara dessa forma (abaixo):`,
+            `&rightarrow; <strong>object = {key: value, function(), ...};</strong>`,
+            `&rightarrow; E para acessar os valores, usamos <strong>console.log(nomeDoObjeto.key);</strong>`,
+        ]
+    },
+    {
+        subtitle: '21. this',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É uma referência ao objeto (eu mesmo não entendo como usar direito). Uma possível forma de uso é: <strong>person.name = this.name</strong>. No exemplo dentro da <em>file</em> d oJS, é como trocar o this pelo person1, por exemplo. Vai depender do contexto;`,
+            `&rightarrow; Ahh, .this <strong>não funciona com arrow functions</strong>;`,
+        ]
+    },
+    {
+        subtitle: '23. Constructors',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É um método especial para definição de propriedades e métodos de objetos;`,
+            
+            `&rightarrow; É pensar em POO (ou OOP, Programação Orientada à Objetos): se criarmos os objetos por si só, por exemplo, <strong>const car1 = {...}</strong>, <strong>const car2 = {...}</strong>, <strong>const car3 = {...}</strong>, não teríamos problema. Mas e se quiséssemos criar um <em>CT</em> de Fórmula 1? Seriam muitos carros. Para isso, o Contructor vem em mente;`,
+
+            `&rightarrow; Tudo o que precisaríamos fazer era passar dados únicos a esse construtor para que ele criasse automaticamente os objetos;`,
+
+            `&rightarrow; Usar um constructor é muito útil para, por exemplo, um <em>e-commerce</em>. Mas vamos à forma do mesmo;`,
+        ]
+    },
+    {
+        subtitle: '24. Classes',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É um ES6 <em>feature</em>, que prevê uma forma mais estruturada e limpa para trabalhar com objetos;`,
+
+            `&rightarrow; Resumindo, usaremos uma <strong><em>class NomeDaClass {...}</em></strong> ao invés de apenas uma <strong>function</strong>. Lembrando sempre que o nome da <em>class</em> é em <strong>maiúscula</strong>;`,
+        ]
+    },
+    {
+        subtitle: '25. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '26. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '27. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '28. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '29. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '30. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '31. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '32. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '33. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '34. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '35. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '36. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '37. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '38. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '39. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '40. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '41. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '42. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '43. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '44. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '45. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '46. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '47. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '48. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '49. ',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+        ]
+    },
+    {
+        subtitle: '50. ',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
             `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
