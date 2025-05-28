@@ -3,157 +3,181 @@
 // import mathUtil from "./js/mathUtil.js";
 
 /* ----- VARIABLES ----- */
-let topicVariableAge = 25;
-console.log(`Você tem ${topicVariableAge} anos!`);
-console.log(`A variável topicVariableAge é do tipo: ${typeof topicVariableAge}`);
+{   
+    let topicVariableAge = 25;
+    console.log(`Você tem ${topicVariableAge} anos!`);
+    console.log(`A variável topicVariableAge é do tipo: ${typeof topicVariableAge}`);
 
-let topicVariableprice = 10.99;
-console.log(`O preço é de R$${topicVariableprice}`);
-console.log(`A variável price é do tipo: ${typeof topicVariableprice}`);
+    let topicVariableprice = 10.99;
+    console.log(`O preço é de R$${topicVariableprice}`);
+    console.log(`A variável price é do tipo: ${typeof topicVariableprice}`);
 
-let topicVariablegpa = 2.1;
-console.log(`A média final de um estudante qualquer dos EUA é: ${topicVariablegpa}`);
-console.log(`A variável topicVariablegpa é do tipo: ${typeof topicVariablegpa}`);
+    let topicVariablegpa = 2.1;
+    console.log(`A média final de um estudante qualquer dos EUA é: ${topicVariablegpa}`);
+    console.log(`A variável topicVariablegpa é do tipo: ${typeof topicVariablegpa}`);
 
-let topicVariablefirstName = "James";
-console.log(`Seu nome é: ${topicVariablefirstName}`);
-console.log(`A variável topicVariablefirstName é do tipo: ${typeof topicVariablefirstName}`);
+    let topicVariablefirstName = "James";
+    console.log(`Seu nome é: ${topicVariablefirstName}`);
+    console.log(`A variável topicVariablefirstName é do tipo: ${typeof topicVariablefirstName}`);
 
-let topicVariableonline = false;
-console.log(`Você está online? ${topicVariableonline}`);
-console.log(`A variável topicVariableonline é do tipo: ${typeof topicVariableonline}`);
-
-
-let topicVariableFullName = "Nathan Monteiro";
-let topicVariablePersonAge = 25;
-let topicVariableIsPersonUniStudent = true;
-
-const getTopicVarPersonFullNameFromHtml = document.getElementById('topicVariableFullName');
-getTopicVarPersonFullNameFromHtml.innerHTML = `&rightarrow; Seu nome é: ${topicVariableFullName}. O tipo da variável fullName é <span class="specific-style">${typeof topicVariableFullName}</span>; <br>`;
-
-const getTopicVarPersonAge = document.getElementById('topicVariablePersonAge');
-getTopicVarPersonAge.innerHTML = `&rightarrow; Sua idade é: ${topicVariablePersonAge} O tipo da variável topicVariablePersonAge é <span class="specific-style">${typeof topicVariablePersonAge}</span>; <br>`;
-
-const getTopicIsPersonStudent = document.getElementById('topicVariableIsPersonUniStudent');
-getTopicIsPersonStudent.innerHTML = `&rightarrow; É um estudante? ${topicVariableIsPersonUniStudent} O tipo da variável topicVariableIsPersonUniStudent é <span class="specific-style">${typeof topicVariableIsPersonUniStudent}</span>;`;
+    let topicVariableonline = false;
+    console.log(`Você está online? ${topicVariableonline}`);
+    console.log(`A variável topicVariableonline é do tipo: ${typeof topicVariableonline}`);
 
 
-/* ============================================================================================================= */
+    let topicVariableFullName = "Nathan Monteiro";
+    let topicVariablePersonAge = 25;
+    let topicVariableIsPersonUniStudent = true;
+
+    const getTopicVarPersonFullNameFromHtml = document.getElementById('topicVariableFullName');
+    getTopicVarPersonFullNameFromHtml.innerHTML = `&rightarrow; Seu nome é: ${topicVariableFullName}. O tipo da variável fullName é <span class="specific-style">${typeof topicVariableFullName}</span>; <br>`;
+
+    const getTopicVarPersonAge = document.getElementById('topicVariablePersonAge');
+    getTopicVarPersonAge.innerHTML = `&rightarrow; Sua idade é: ${topicVariablePersonAge} O tipo da variável topicVariablePersonAge é <span class="specific-style">${typeof topicVariablePersonAge}</span>; <br>`;
+
+    const getTopicIsPersonStudent = document.getElementById('topicVariableIsPersonUniStudent');
+    getTopicIsPersonStudent.innerHTML = `&rightarrow; É um estudante? ${topicVariableIsPersonUniStudent} O tipo da variável topicVariableIsPersonUniStudent é <span class="specific-style">${typeof topicVariableIsPersonUniStudent}</span>;`;
+}
+
+/* ======================================================================================= */
 
 /* ----- ARITHMETIC OPERATORS ----- */
+{
+    let topicAriOperatorsStudents = 30;
+    // Operadores normais
+    topicAriOperatorsStudents = topicAriOperatorsStudents + 1;
+    // topicAriOperatorsStudents = topicAriOperatorsStudents - 1;
+    // topicAriOperatorsStudents = topicAriOperatorsStudents * 2;
+    // topicAriOperatorsStudents = topicAriOperatorsStudents / 2;
 
-let topicAriOperatorsStudents = 30;
-// Operadores normais
-topicAriOperatorsStudents = topicAriOperatorsStudents + 1;
-// topicAriOperatorsStudents = topicAriOperatorsStudents - 1;
-// topicAriOperatorsStudents = topicAriOperatorsStudents * 2;
-// topicAriOperatorsStudents = topicAriOperatorsStudents / 2;
+    // topicAriOperatorsStudents = topicAriOperatorsStudents ** 2;
+    // topicAriOperatorsStudents = topicAriOperatorsStudents % 2;
 
-// topicAriOperatorsStudents = topicAriOperatorsStudents ** 2;
-// topicAriOperatorsStudents = topicAriOperatorsStudents % 2;
+    // topicAriOperatorsStudents += 1;
+    // topicAriOperatorsStudents -= 1;
+    // topicAriOperatorsStudents *= 1;
+    // topicAriOperatorsStudents /= 2;
+    // topicAriOperatorsStudents **= 2;
+    // topicAriOperatorsStudents %= 2;
 
-// topicAriOperatorsStudents += 1;
-// topicAriOperatorsStudents -= 1;
-// topicAriOperatorsStudents *= 1;
-// topicAriOperatorsStudents /= 2;
-// topicAriOperatorsStudents **= 2;
-// topicAriOperatorsStudents %= 2;
+    /* INCREMENTO E DECREMENTO */
+    topicAriOperatorsStudents++;
+    // topicAriOperatorsStudents--;
+    console.log(`A quantidade de estudantes na sala atualamente é: ${topicAriOperatorsStudents}`);
+}
 
-/* INCREMENTO E DECREMENTO */
-topicAriOperatorsStudents++;
-// topicAriOperatorsStudents--;
-console.log(`A quantidade de estudantes na sala atualamente é: ${topicAriOperatorsStudents}`);
+/* ======================================================================================= */
 
-/* ============================================================================================================= */
+/* ----- USER INPUT ----- */
+{
+    let topicUserInputUsername;
+    let topicUserInputBtnCta = document.getElementById('topicUserInputBtnCta');
+    topicUserInputBtnCta.onclick = function () {
+        topicUserInputUsername = document.getElementById('topicUserInputmyText').value;
+        console.log(topicUserInputUsername);
+    }
+}
+
+/* ======================================================================================= */
 
 /* ----- MATH OBJECTS ----- */
-const topicMathObjPI = Math.PI;
-const topicMathObjE = Math.E;
-console.log(topicMathObjPI);
-console.log(topicMathObjE);
+{
+    const topicMathObjPI = Math.PI;
+    const topicMathObjE = Math.E;
+    console.log(topicMathObjPI);
+    console.log(topicMathObjE);
 
-let topicMathObjx = 3.21;
-let topicMathObjx2 = 3.91;
-let topicMathObjy = 2;
-let topicMathObjy2 = -2;
-let topicMathObjz;
+    let topicMathObjx = 3.21;
+    let topicMathObjx2 = 3.91;
+    let topicMathObjy = 2;
+    let topicMathObjy2 = -2;
+    let topicMathObjz;
 
-console.log(`O valor de topicMathObjx arredondado é: ${Math.round(topicMathObjx)}`);
-console.log(`O valor de topicMathObjx2 arredondado pra baixo é: ${Math.floor(topicMathObjx2)}`);
-console.log(`O valor de topicMathObjx arredondado pra cima é: ${Math.ceil(topicMathObjx)}`);
-console.log(`O valor de topicMathObjx2 sem decimal é: ${Math.trunc(topicMathObjx2)}`);
-console.log(`O valor de topicMathObjx2 elevado à topicMathObjx é: ${Math.pow(topicMathObjx2, topicMathObjx)}`);
-console.log(`A raiz quadrada de topicMathObjy é: ${Math.sqrt(topicMathObjy)}`);
-console.log(`O log de topicMathObjy é: ${Math.log(topicMathObjy)}`);
-console.log(`O seno de topicMathObjy é: ${Math.sin(topicMathObjy)}`);
-console.log(`O cosseno de topicMathObjy é: ${Math.cos(topicMathObjy)}`);
-console.log(`A tangente de topicMathObjy é: ${Math.tan(topicMathObjy)}`);
-console.log(`O absoluto de topicMathObjy2 é: ${Math.abs(topicMathObjy2)}`);
-console.log(`O sinal de topicMathObjy2 é: ${Math.sign(topicMathObjy2)}`);
-console.log(`O valor máximo de topicMathObjy2 é: ${Math.max(topicMathObjx,topicMathObjx2,topicMathObjy,topicMathObjy2)}`);
-console.log(`O valor mínimo de topicMathObjy2 é: ${Math.min(topicMathObjx,topicMathObjx2,topicMathObjy,topicMathObjy2)}`);
+    console.log(`O valor de topicMathObjx arredondado é: ${Math.round(topicMathObjx)}`);
+    console.log(`O valor de topicMathObjx2 arredondado pra baixo é: ${Math.floor(topicMathObjx2)}`);
+    console.log(`O valor de topicMathObjx arredondado pra cima é: ${Math.ceil(topicMathObjx)}`);
+    console.log(`O valor de topicMathObjx2 sem decimal é: ${Math.trunc(topicMathObjx2)}`);
+    console.log(`O valor de topicMathObjx2 elevado à topicMathObjx é: ${Math.pow(topicMathObjx2, topicMathObjx)}`);
+    console.log(`A raiz quadrada de topicMathObjy é: ${Math.sqrt(topicMathObjy)}`);
+    console.log(`O log de topicMathObjy é: ${Math.log(topicMathObjy)}`);
+    console.log(`O seno de topicMathObjy é: ${Math.sin(topicMathObjy)}`);
+    console.log(`O cosseno de topicMathObjy é: ${Math.cos(topicMathObjy)}`);
+    console.log(`A tangente de topicMathObjy é: ${Math.tan(topicMathObjy)}`);
+    console.log(`O absoluto de topicMathObjy2 é: ${Math.abs(topicMathObjy2)}`);
+    console.log(`O sinal de topicMathObjy2 é: ${Math.sign(topicMathObjy2)}`);
+    console.log(`O valor máximo de topicMathObjy2 é: ${Math.max(topicMathObjx,topicMathObjx2,topicMathObjy,topicMathObjy2)}`);
+    console.log(`O valor mínimo de topicMathObjy2 é: ${Math.min(topicMathObjx,topicMathObjx2,topicMathObjy,topicMathObjy2)}`);
+}
 
-/* ============================================================================================================= */
+/* ======================================================================================= */
 
 /* ----- STRING METHODS ----- */
-// const entireName = "Nathan de Andrade Monteiro da Silva";
+{
+    const topicStringMethodEntireName = "Nathan de Andrade Monteiro da Silva";
 
-// // let entireFirstName = entireName.slice(0, 6);
-// // console.log(entireFirstName);
+    // first name
+    let topicStringMethodEntireFirstNameFirstAttempt = topicStringMethodEntireName.slice(0, 6);
+    console.log(topicStringMethodEntireFirstNameFirstAttempt);
 
-// // let entireLastName = entireName.slice(10, 17);
-// // console.log(entireLastName);
+    let topicStringMethodEntireFirstNameSecAttempt = topicStringMethodEntireName.slice(0, topicStringMethodEntireName.indexOf(" "));
+    console.log(topicStringMethodEntireFirstNameSecAttempt);
 
-// let lastChar = entireName.slice(-5);
-// console.log(lastChar);
+    // last name
+    let topicStringMethodEntireLastNameFirstAttempt = topicStringMethodEntireName.slice(10, 17);
+    console.log(topicStringMethodEntireLastNameFirstAttempt);
 
-// let entireFirstName = entireName.slice(0, entireName.indexOf(" "));
-// console.log(entireFirstName);
-// let entireLastName = entireName.slice(entireName.indexOf(" "));
-// // let entireLastName = entireName.slice(entireName.indexOf(" ") + 1); aqui é para retirar o espaço
-// console.log(entireLastName);
+    let topicStringMethodEntireLastNameSecAttempt = topicStringMethodEntireName.slice(topicStringMethodEntireName.indexOf(" "));
+    console.log(topicStringMethodEntireLastNameSecAttempt);
 
-// /* ============================ */
+    let topicStringMethodEntireLastNameThirdAttempt = topicStringMethodEntireName.slice(topicStringMethodEntireName.indexOf(" ") + 1);
+    console.log(topicStringMethodEntireLastNameThirdAttempt);
 
-// // let enterName = window.prompt("Entre com o nome: ");
+    let lastChar = topicStringMethodEntireName.slice(-5);
+    console.log(lastChar);
+}
 
-// // Sem method chaining
+/* ======================================================================================= */
 
-// // enterName = enterName.trim();
-// // let letter = enterName.charAt(0)
-// // letter = letter.toUpperCase();
+/* ----- METHOD CHAINING ----- */
+{
+    // Para poder testar, troque o valor de variable para 1
+    let variable = 0;
 
-// // let extraChars = enterName.slice(1);
-// // extraChars = extraChars.toLowerCase()
-// // enterName = letter + extraChars;
+    if (variable === 1) {
+        let topicMethodChainingEnterName = window.prompt("Entre com o nome: ");
 
-// // console.log(enterName);
+        /* -- sem method chaining -- */
+        topicMethodChainingEnterName = topicMethodChainingEnterName.trim();
+        let topicMethodChainingLetter = topicMethodChainingEnterName.charAt(0)
+        topicMethodChainingLetter = topicMethodChainingLetter.toUpperCase();
+        
+        let topicMethodChainingExtraChars = topicMethodChainingEnterName.slice(1);
+        topicMethodChainingExtraChars = topicMethodChainingExtraChars.toLowerCase()
+        topicMethodChainingEnterName = letter + topicMethodChainingExtraChars;
+        console.log(topicMethodChainingEnterName);
+        
+        
+        /* -- com method chaining -- */
+        
+        topicMethodChainingEnterName = topicMethodChainingEnterName.trim().charAt(0).toUpperCase() + topicMethodChainingEnterName.trim().slice(1).replaceAll(" ", "").toLowerCase();
+        console.log(topicMethodChainingEnterName);
+    }
 
-// // Com method chaining
+    /*
+        Primeiro, pegamos o nome;
+        Tiramos todos os espaços em branco;
+        Pegamos o primeiro char;
+        Transformamos ele em upper;
 
-// // enterName = enterName.trim().charAt(0).toUpperCase() + enterName.trim().slice(1).replaceAll(" ", "").toLowerCase();
-// // console.log(enterName);
+        Concatemamos com o resto da palavra, já que só fizemos isso com o primeiro char (charAt(0));
+        eliminamos todos os espaços novamente;
+        Damos um slice, já que não queremos a primeira letra mais;
+        Deixamos o resto em lower;
+    */
+}
 
-// /*
-// Primeiro, pegamos o nome;
-// Tiramos todos os espaços em branco;
-// Pegamos o primeiro char;
-// Transformamos ele em upper;
+/* ======================================================================================= */
 
-// Concatemamos com o resto da palavra, já que só fizemos isso com o primeiro char (charAt(0));
-// eliminamos todos os espaços novamente;
-// Damos um slice, já que não queremos a primeira letra mais;
-// Deixamos o resto em lower;
-// */
-
-// /* ============================ */
-
-// // let urName = "";
-
-// // while (urName === "" || urName === null) {
-//     //     urName = prompt("Digite seu nome");
-//     // }
-    
 //     /* ============================ */
 
 //     // const minNum = 1;
@@ -1613,6 +1637,41 @@ topicUserInputButton.addEventListener('click', function () {
             "&rightarrow; <strong>Math.abs(valor)</strong>. Este acha o valor absoluto;",
             "&rightarrow; <strong>Math.sign(valor)</strong>. Este acha o sinal do valor (-2. Sinal: -1 // 2. Sinal: 1 // 0. Sinal: 0);",
             "&rightarrow; <strong>Math.max(valor)</strong>. Este acha o valor máximo dentre os que foram passados por um parâmetro. <em>let max = Math.max(valor1, valor2, valor3)</em>, teremos o valor mais alto dentre eles. O <strong>Math.min(valor)</strong> é o contrário;",
+        ]
+    },
+    {
+        subtitle: '6. String Methods',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; <strong>.charAt(index)</strong>. Indica onde o caracter representado pelo index está;",
+            `&rightarrow; <strong>.indexOf("char")</strong>. Indica a 1° aparição do caracter que queremos;`,
+            `&rightarrow; <strong>.lastIndexOf("char")</strong>. Indica a última aparição do caracter que queremos;`,
+            "&rightarrow; <strong>.lenght</strong>. Indica o tamanho da string;",
+            "&rightarrow; <strong>.trim()</strong>. Elimina espaços em branco antes e depois da string;",
+            "&rightarrow; <strong>.toUpperCase()</strong>. Transforma as letras da string em maiúsculas;",
+            "&rightarrow; <strong>.toLowerCase()</strong>. Transforma as letras da string em minúsculas;",
+            "&rightarrow; <strong>.repeat(valor)</strong>. Repete a string a quantidade de vezes do valor indicado;",
+            `&rightarrow; <strong>.startsWith("char")</strong>. Verifica se a string indicada se inicia com o char correspondente;`,
+            `&rightarrow; <strong>.endsWith("char")</strong>. Verifica se a string indicada termina com o char correspondente;`,
+            `&rightarrow; <strong>.includes("char")</strong>. Verifica se a string indicada possui algum espaço em branco;`,
+            `&rightarrow; <strong>.replaceAll("o que vai ser substituido", "o que vai substituir")</strong>. Verifica se a string indicada possui algum espaço em branco;",
+            "&rightarrow; <strong>.padStart(lenght, o que começa por essa lenght)</strong>. Indica o tamanho que essa string deve ser, e indica o que deve iniciar ela para que ela tenha esse tamanho;`,
+            "&rightarrow; <strong>.padEnd(lenght, o que começa por essa lenght)</strong>. Indica o tamanho que essa string deve ser, e indica o que deve terminar ela para que ela tenha esse tamanho;"
+        ]
+    },
+    {
+        subtitle: '7. String Slicing',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; É a criação de uma substring a partir da string original, sem alterá-la. Usamos o método <strong>.slice(valor inicial de onde queremos cortar, até onde termina a string que queremos fazer a substring)</strong>. Usando um valor positivo, começamos do início e vamos até o fim. Usando um negativo, fazemos o caminho contrário: <strong>do fim ao começo</strong>;",
+            `&rightarrow; O problema é que caímos no seguinte: e se houver uma mudança na string? Como esse método é muito estático, se ao invés de "Nathan de Andrade", o nome for mudado para "Nathan Andrade"? Há uma forma de contornar isso: <strong>.slice(posição inicial, var.indexOf(primeira ocorrência de espaço em branco))</strong> (nos exemplos da Dev Tools é mais fácil de se ver);`,
+        ]
+    },
+    {
+        subtitle: '7. Method Chaining',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
         ]
     },
 ];
