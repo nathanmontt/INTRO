@@ -44,6 +44,32 @@ header {
 
 
 /* ----- MAIN ----- */
+/* mini projects */
+#mini-projects {
+    margin: var(--main-size);
+    padding: var(--sec-size);
+    height: 30em;
+    border: var(--border-content-size) solid;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+#mini-projects .title {
+    margin: 0 0 var(--sec-size) 0;
+}
+#mini-projects .container-display-mini-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-right: 5px solid #4062b7;
+}
+#container-variables, #container-user-input {
+    padding: var(--main-size);
+    margin-right: var(--sec-size);
+    border: 2px solid;
+}
+
+#container-variables > .holder-variable-title,
+#container-user-input > .holder-user-input-title {}
+
 #container-first, #container-second, #container-third, #container-fourth {
     margin: var(--main-size);
     padding: var(--sec-size);

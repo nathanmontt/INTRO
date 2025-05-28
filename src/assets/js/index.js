@@ -23,9 +23,25 @@ let topicVariableonline = false;
 console.log(`Você está online? ${topicVariableonline}`);
 console.log(`A variável topicVariableonline é do tipo: ${typeof topicVariableonline}`);
 
+
+let topicVariableFullName = "Nathan Monteiro";
+let topicVariablePersonAge = 25;
+let topicVariableIsPersonUniStudent = true;
+
+const getTopicVarPersonFullNameFromHtml = document.getElementById('topicVariableFullName');
+getTopicVarPersonFullNameFromHtml.innerHTML = `&rightarrow; Seu nome é: ${topicVariableFullName}. O tipo da variável fullName é <span class="specific-style">${typeof topicVariableFullName}</span>; <br>`;
+
+const getTopicVarPersonAge = document.getElementById('topicVariablePersonAge');
+getTopicVarPersonAge.innerHTML = `&rightarrow; Sua idade é: ${topicVariablePersonAge} O tipo da variável topicVariablePersonAge é <span class="specific-style">${typeof topicVariablePersonAge}</span>; <br>`;
+
+const getTopicIsPersonStudent = document.getElementById('topicVariableIsPersonUniStudent');
+getTopicIsPersonStudent.innerHTML = `&rightarrow; É um estudante? ${topicVariableIsPersonUniStudent} O tipo da variável topicVariableIsPersonUniStudent é <span class="specific-style">${typeof topicVariableIsPersonUniStudent}</span>;`;
+
+
 /* ============================================================================================================= */
 
 /* ----- ARITHMETIC OPERATORS ----- */
+
 let topicAriOperatorsStudents = 30;
 // Operadores normais
 topicAriOperatorsStudents = topicAriOperatorsStudents + 1;
@@ -50,194 +66,36 @@ console.log(`A quantidade de estudantes na sala atualamente é: ${topicAriOperat
 
 /* ============================================================================================================= */
 
-/* ----- USER INPUT ----- */
-// let topicUserInputUsername;
-// document.getElementById('mySubmit').onclick = function () {
-//     topicUserInputUsername = document.getElementById('myText').value;
-//     console.log(topicUserInputUsername);
-// }
-    
-// /* ============================ */
+/* ----- MATH OBJECTS ----- */
+const topicMathObjPI = Math.PI;
+const topicMathObjE = Math.E;
+console.log(topicMathObjPI);
+console.log(topicMathObjE);
 
-// // let agePerson = window.prompt('Idade:');
-// // agePerson = Number(agePerson);
-// // agePerson += 2;
+let topicMathObjx = 3.21;
+let topicMathObjx2 = 3.91;
+let topicMathObjy = 2;
+let topicMathObjy2 = -2;
+let topicMathObjz;
 
-// // console.log(`Sua idade é ${agePerson} e seu tipo é ${typeof agePerson}`);
+console.log(`O valor de topicMathObjx arredondado é: ${Math.round(topicMathObjx)}`);
+console.log(`O valor de topicMathObjx2 arredondado pra baixo é: ${Math.floor(topicMathObjx2)}`);
+console.log(`O valor de topicMathObjx arredondado pra cima é: ${Math.ceil(topicMathObjx)}`);
+console.log(`O valor de topicMathObjx2 sem decimal é: ${Math.trunc(topicMathObjx2)}`);
+console.log(`O valor de topicMathObjx2 elevado à topicMathObjx é: ${Math.pow(topicMathObjx2, topicMathObjx)}`);
+console.log(`A raiz quadrada de topicMathObjy é: ${Math.sqrt(topicMathObjy)}`);
+console.log(`O log de topicMathObjy é: ${Math.log(topicMathObjy)}`);
+console.log(`O seno de topicMathObjy é: ${Math.sin(topicMathObjy)}`);
+console.log(`O cosseno de topicMathObjy é: ${Math.cos(topicMathObjy)}`);
+console.log(`A tangente de topicMathObjy é: ${Math.tan(topicMathObjy)}`);
+console.log(`O absoluto de topicMathObjy2 é: ${Math.abs(topicMathObjy2)}`);
+console.log(`O sinal de topicMathObjy2 é: ${Math.sign(topicMathObjy2)}`);
+console.log(`O valor máximo de topicMathObjy2 é: ${Math.max(topicMathObjx,topicMathObjx2,topicMathObjy,topicMathObjy2)}`);
+console.log(`O valor mínimo de topicMathObjy2 é: ${Math.min(topicMathObjx,topicMathObjx2,topicMathObjy,topicMathObjy2)}`);
 
-// /* ============================ */
+/* ============================================================================================================= */
 
-// const PI = 3.14159;
-// let radius;
-// let circumference;
-// document.getElementById('myBtn').onclick = function () {
-//     radius = document.getElementById('myTextRadius').value;
-//     radius = Number(radius);
-//     circumference = 2 * PI * radius;
-
-//     document.getElementById('response').innerHTML = `O valor da circunferência é ${circumference}cm`;
-// }
-
-// /* ============================ */
-
-// console.log(Math.PI);
-// console.log(Math.E);
-
-// let x = 3.21;
-// let x2 = 3.91;
-// let y = 2;
-// let y2 = -2;
-// let z;
-
-// console.log(`O valor de x arredondado é: ${Math.round(x)}`);
-// console.log(`O valor de x2 arredondado pra baixo é: ${Math.floor(x2)}`);
-// console.log(`O valor de x arredondado pra cima é: ${Math.ceil(x)}`);
-// console.log(`O valor de x2 sem decimal é: ${Math.trunc(x2)}`);
-// console.log(`O valor de x2 elevado à x é: ${Math.pow(x2, x)}`);
-// console.log(`A raiz quadrada de y é: ${Math.sqrt(y)}`);
-// console.log(`O log de y é: ${Math.log(y)}`);
-// console.log(`O seno de y é: ${Math.sin(y)}`);
-// console.log(`O cosseno de y é: ${Math.cos(y)}`);
-// console.log(`A tangente de y é: ${Math.tan(y)}`);
-// console.log(`O absoluto de y2 é: ${Math.abs(y2)}`);
-// console.log(`O sinal de y2 é: ${Math.sign(y2)}`);
-// console.log(`O valor máximo de y2 é: ${Math.max(x,x2,y,y2)}`);
-// console.log(`O valor mínimo de y2 é: ${Math.min(x,x2,y,y2)}`);
-
-// /* ============================ */
-
-// let time = 14;
-
-// if (time < 12) {
-//     console.log("Good Morning!");
-// } else {
-//     console.log("Good Afternoon!");
-// }
-
-// let isStudent = true;
-
-// if (isStudent) {
-//     console.log("You are enroled!");
-// } else if(!isStudent) {
-//     console.log("You aren't enroled!");
-// }
-
-// const myH3Title = document.getElementById('my-h3-title');
-// const driveOrDontTextBox = document.getElementById('drive-or-dont-textbox');
-// const btnSub = document.getElementById('mySub');
-// const resultElement = document.getElementById('result-element');
-// let ageOnePerson;
-
-// btnSub.onclick = function () {
-//     // Precisamos pegar a idade pela textbox e ARMAZENÁ-LA DENTRO DE UMA VARIÁVEL
-//     // Mas lembrando que quando pegamos o valor, ele está em STRING. Para fazermos a verificação com os NÚMEROS, precisamos mudar o tipo da variável para NUMBER
-//     ageOnePerson = driveOrDontTextBox.value;
-//     ageOnePerson = Number(ageOnePerson);
-
-//     if (ageOnePerson == 0) {
-//         resultElement.textContent = `Com ${ageOnePerson} anos, você nem nascido é! Sai daqui! Xô!`;
-//     } else if (ageOnePerson >= 1 && ageOnePerson <=10) {
-//         resultElement.textContent = `Com ${ageOnePerson} anos, ainda não tá bom. Pode ir vazando!`;
-//     } else if (ageOnePerson >= 11 && ageOnePerson <= 17) {
-//         resultElement.textContent = `Com ${ageOnePerson} anos, tu tá quase lá!`;
-//     } else if (ageOnePerson >= 18 && ageOnePerson <= 99) {
-//         resultElement.textContent = `Com ${ageOnePerson} anos, agora sim! Já pode ser preso!`;
-//     } else if (ageOnePerson >= 100) {
-//         resultElement.textContent = `Com ${ageOnePerson} anos, virou imortal, é?! Sai daqui, vampiro!`;
-//     }
-// }
-
-// /* ============================ */
-
-// let pAge = 25;
-// let resultMessage = pAge >= 18 ? "Adulto" : "Menor de idade";
-// console.log(resultMessage);
-
-// let purchase = 101;
-// let resultPurch = purchase > 100 ? 'Você ganhou um desconto de 10%!' : 'Os requisitos para o desconto não foram antendidos!';
-// console.log(resultPurch);
-
-// /* ============================ */
-
-// let days = "pizza";
-
-// switch (days) {
-//     case 1:
-//         console.log('Domingo');
-//         break;
-//         case 2:
-//         console.log('Segunda');
-//         break;
-//     case 3:
-//         console.log('Terça');
-//         break;
-//     case 4:
-//         console.log('Quarta');
-//         break;
-//         case 5:
-//             console.log('Quinta');
-//         break;
-//         case 6:
-//         console.log('Sexta');
-//         break;
-//         case 7:
-//         console.log('Sábado');
-//         break;
-//     default:
-//         console.log(`${days} não é um dia!`)
-//     }
-
-
-// let testScore = 40;
-// let letterGrade;
-
-// switch(true) {
-//     case testScore >= 90:
-//         letterGrade = "A";
-//         break;
-//         case testScore >= 80:
-//             letterGrade = "B";
-//             break;
-//     case testScore >= 70:
-//         letterGrade = "C";
-//         break;
-//     case testScore >= 60:
-//         letterGrade = "D";
-//         break;
-//         case testScore >= 50:
-//         letterGrade = "E";
-//         break;
-//         case testScore >= 40:
-//         letterGrade = "F";
-//         break;
-// }
-
-// console.log(letterGrade);
-
-// /* ============================ */
-
-// let userName = "Nathan  ";
-
-// console.log(userName.charAt(2));
-// console.log(userName.indexOf("a"));
-// console.log(userName.lastIndexOf("a"));
-// console.log(userName.length);
-// console.log(userName.trim());
-// console.log(userName.toUpperCase());
-// console.log(userName.toLocaleLowerCase());
-// console.log(userName.repeat(5));
-// console.log(userName.startsWith('N'));
-// console.log(userName.endsWith('n'));
-// console.log(userName.includes(" "));
-
-// let phoneNumber = "21 9-1234-5678"
-
-// console.log(phoneNumber.replaceAll("-", ""));
-// console.log(phoneNumber.padStart(32, "9"));
-// console.log(phoneNumber.padEnd(32, "9"));
-
-// /* ============================ */
-
+/* ----- STRING METHODS ----- */
 // const entireName = "Nathan de Andrade Monteiro da Silva";
 
 // // let entireFirstName = entireName.slice(0, 6);
@@ -1686,7 +1544,7 @@ const jsContent = [
         subtitle: '1. Variables',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            "&rightarrow; Continua sendo o mesmo conceito de: <strong>é um contêiner que armazena um valor</strong>. Para criar uma, em javascript, usamos <strong>let, var ou const</strong>. Lembrando que <strong>Toda variável precisa ser única</strong>;",
+            "&rightarrow; Continua sendo o mesmo conceito de: <strong>é um contêiner que armazena um valor</strong>. Para criar uma, em javascript, usamos <strong>let, var ou const</strong>. Lembrando que <strong>Toda variável precisa ser única</strong> (sua declaração, pelo menos), principalmente as <strong>const</const>;",
     
             "&rightarrow; Para saber qual o tipo da variável que estamos usando, usamos <strong>typeof nome_da_variável;</strong> O exemplo pode ser visto na <strong>Dev Tools</strong> (acessamos via <strong>Ctrl+i</strong> ou clicando com o botão esquerdo do mouse na tela e indo até <strong>Inspecionar</strong>;",
     
@@ -1712,15 +1570,49 @@ const jsContent = [
                     <button id="mySubmit">Enviar</button>
                 </li>
             `,
-            `Para chegarmos ao resultado alvo que queremos, temos de escrever da seguinte forma:`,
+            `&rightarrow; Para chegarmos ao resultado alvo que queremos, temos de escrever da seguinte forma:`,
             `
-                let topicUserInputUsername;
-                let topicUserInputButton = document.getElementById('mySubmit');
-                topicUserInputButton.addEventListener('click', function () {
-                    topicUserInputUsername = document.getElementById('myText').value;
-                    console.log(topicUserInputUsername);
-                }
+            <pre>let topicUserInputUsername;
+let topicUserInputButton = document.getElementById('mySubmit');
+topicUserInputButton.addEventListener('click', function () {
+    topicUserInputUsername = document.getElementById('myText').value;
+    console.log(topicUserInputUsername);
+}</pre>
             `,
+        ]
+    },
+    {
+        subtitle: '4. Type Convertions',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; Imagine que queremos saber a idade de uma pessoa. Mas normalmente, a entrada de dados é dada por strings, então caso queiramos fazer uma conta, string+number não vai dar certo. Então para fazer uma modificação, podemos usar:",
+            
+            `<pre>
+<strong>let variavel = valor;
+    valor = Number(valor);</strong></pre> 
+            No caso, é possível colocar como Number(valor), String(valor), Boolean(valor), etc...`,
+        ]
+    },
+    {
+        subtitle: '5. Math Objects',
+        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            "&rightarrow; É um objeto <em>built-in</em> em JS contendo uma coleção de propriedades e objetos matemáticos;",
+            "&rightarrow; Por exemplo, em um dos exercícios que fizemos aqui, usamos o valor de <strong><em>PI</em></strong>. Com esse métodos pré-prontos, é so usarmos <strong>console.log(Math.PI)</strong>. Algunn outros exemplos podem ser vistos abaixo:",
+
+            "&rightarrow; <strong>Math.round(valor)</strong>. Se tivermos uma variável, por exemplo, <em>x = 3.4233894</em>, usando esse método o valor novo será <em>x = 3</em>;",
+            "&rightarrow; <strong>Math.floor(valor)</strong>. Este arredonda para baixo. <em>x = 3.91</em>, teremos <em>x = 3</em>;",
+            "&rightarrow; <strong>Math.ceil(valor)</strong>. Este arredonda para cima. <em>x = 3.91</em>, teremos <em>x = 4</em>;",
+            "&rightarrow; <strong>Math.trunc(valor)</strong>. Este elimina todo decimal. <em>x = 3.91</em>, teremos <em>x = 3</em>;",
+            "&rightarrow; <strong>Math.pow(valor1, valor2)</strong>. Este pega o 1° e o eleva a potência do 2°. <em>x = 3<sup>2</sup></em>, teremos <em>x = 9</em>;",
+            "&rightarrow; <strong>Math.sqrt(valor)</strong>. Este faz a raiz quadrada do valor;",
+            "&rightarrow; <strong>Math.log(valor)</strong>. Este acha o log natural do valor;",
+            "&rightarrow; <strong>Math.sin(valor)</strong>. Este acha o seno do valor;",
+            "&rightarrow; <strong>Math.cos(valor)</strong>. Este acha o cosseno do valor;",
+            "&rightarrow; <strong>Math.tan(valor)</strong>. Este acha a tangente do valor;",
+            "&rightarrow; <strong>Math.abs(valor)</strong>. Este acha o valor absoluto;",
+            "&rightarrow; <strong>Math.sign(valor)</strong>. Este acha o sinal do valor (-2. Sinal: -1 // 2. Sinal: 1 // 0. Sinal: 0);",
+            "&rightarrow; <strong>Math.max(valor)</strong>. Este acha o valor máximo dentre os que foram passados por um parâmetro. <em>let max = Math.max(valor1, valor2, valor3)</em>, teremos o valor mais alto dentre eles. O <strong>Math.min(valor)</strong> é o contrário;",
         ]
     },
 ];
