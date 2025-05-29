@@ -38,7 +38,7 @@
     const getTopicIsPersonStudent = document.getElementById('topicVariableIsPersonUniStudent');
     getTopicIsPersonStudent.innerHTML = `&rightarrow; É um estudante? ${topicVariableIsPersonUniStudent} O tipo da variável topicVariableIsPersonUniStudent é <strong>${typeof topicVariableIsPersonUniStudent}</strong>;`;
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- ARITHMETIC OPERATORS ----- */
@@ -65,7 +65,7 @@
     // topicAriOperatorsStudents--;
     console.log(`A quantidade de estudantes na sala atualamente é: ${topicAriOperatorsStudents}`);
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- USER INPUT ----- */
@@ -77,7 +77,7 @@
         console.log(topicUserInputUsername);
     }
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- MATH OBJECTS ----- */
@@ -108,7 +108,7 @@
     console.log(`O valor máximo de topicMathObjy2 é: ${Math.max(topicMathObjx,topicMathObjx2,topicMathObjy,topicMathObjy2)}`);
     console.log(`O valor mínimo de topicMathObjy2 é: ${Math.min(topicMathObjx,topicMathObjx2,topicMathObjy,topicMathObjy2)}`);
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- STRING METHODS ----- */
@@ -135,7 +135,7 @@
     let lastChar = topicStringMethodEntireName.slice(-5);
     console.log(lastChar);
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- METHOD CHAINING ----- */
@@ -175,7 +175,7 @@
         Deixamos o resto em lower;
     */
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- ITERATION LOOP ----- */
@@ -213,7 +213,7 @@
         }
     }
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- FUNCTION ----- */
@@ -249,7 +249,7 @@
     console.log(topicFunctionDiv(2,3));
     console.log(topicFunctionIsEven(3));
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- ARRAYS ----- */
@@ -278,7 +278,7 @@
     console.log(topicArraysFruits[2]);
     console.log(topicArraysFruits[3]);
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- SPREAD ----- */
@@ -301,7 +301,7 @@
     let topicSpreadFoods = [...topicSpreadFruit, ...topicSpreadVegetables, "Eggs", "Milk"];
     console.log(topicSpreadFoods);
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- REST ----- */
@@ -336,7 +336,7 @@
     const topicRestTotal = topicRestSum(2,3,4,5,6);
     console.log(topicRestTotal)
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- CALLBACK ----- */
@@ -362,7 +362,7 @@
         console.log(result);
     }
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- FOREACH() ----- */
@@ -386,7 +386,7 @@
 
     function display(element) { console.log(element); }
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- FILTER ----- */
@@ -397,7 +397,7 @@
 
     function topicFilterIsEven(el) { return el%2 === 0; }
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- REDUCE ----- */
@@ -422,7 +422,7 @@
 
     function topicReduceMinGradesGetMin(accumulator, element) { return Math.min(accumulator, element); }
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- OBJECTS ----- */
@@ -443,7 +443,7 @@
     topicObjectPerson.topicObjectSayHello();
     topicObjectPerson.topicObjectSayBye();
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- THIS ----- */
@@ -462,12 +462,12 @@
     topicThisPerson.topicThisSayOla();
     topicThisPerson.topicThisEat();
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- CONSTRUCTORS ----- */
 {
-    function topicConstructorsCar (make, model, year, color) {
+    function TopicConstructorsCar (make, model, year, color) {
         this.make = make,
         this.model = model,
         this.year = year,
@@ -477,7 +477,7 @@
         }
     }
 
-    const topicConstructorsCarCar1 = new topicConstructorsCar ("Ford", "Mustang", 2025, "Black");
+    const topicConstructorsCarCar1 = new TopicConstructorsCar ("Ford", "Mustang", 2025, "Black");
     console.log(topicConstructorsCarCar1);
     console.log(topicConstructorsCarCar1.make);
     console.log(topicConstructorsCarCar1.model);
@@ -485,7 +485,7 @@
     console.log(topicConstructorsCarCar1.color);
     topicConstructorsCarCar1.drive()
 
-    const topicConstructorsCarCar2 = new topicConstructorsCar ("Chevrolet", "Camaro", 2021, "Blue");
+    const topicConstructorsCarCar2 = new TopicConstructorsCar ("Chevrolet", "Camaro", 2021, "Blue");
     console.log(topicConstructorsCarCar2);
     console.log(topicConstructorsCarCar2.make);
     console.log(topicConstructorsCarCar2.model);
@@ -493,7 +493,7 @@
     console.log(topicConstructorsCarCar2.color);
     topicConstructorsCarCar2.drive()
 
-    const topicConstructorsCarCar3 = new topicConstructorsCar ("Dodge", "Charger", 2024, "Green");
+    const topicConstructorsCarCar3 = new TopicConstructorsCar ("Dodge", "Charger", 2024, "Green");
     console.log(topicConstructorsCarCar3);
     console.log(topicConstructorsCarCar3.make);
     console.log(topicConstructorsCarCar3.model);
@@ -501,12 +501,12 @@
     console.log(topicConstructorsCarCar3.color);
     topicConstructorsCarCar3.drive()
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- CLASSES ----- */
 {
-    class topicClassesProduct {
+    class TopicClassesProduct {
         constructor(name, price) {
             this.name = name;
             this.price = price;
@@ -518,604 +518,553 @@
         }
     }
 
-    const topicClassesProd1 = new topicClassesProduct ("Shirt", 19,99);
-    const topicClassesProd2 = new topicClassesProduct ("Jeans", 39,99);
-    const topicClassesProd3 = new topicClassesProduct ("Bolsa", 1239,99);
+    const topicClassesProd1 = new TopicClassesProduct ("Shirt", 19,99);
+    const topicClassesProd2 = new TopicClassesProduct ("Jeans", 39,99);
+    const topicClassesProd3 = new TopicClassesProduct ("Bolsa", 1239,99);
     topicClassesProd1.topicClassesDisplayProduct();
     topicClassesProd2.topicClassesDisplayProduct();
     topicClassesProd3.topicClassesDisplayProduct();
 }
-
+console.log('/* ======================= */');
 /* ======================================================================================= */
 
-/* ----- ARRAYS ----- */
-
-// class MathUtil {
-//     static PI = 3.14159;
-    
-//     static getDiameter (radius) {
-//         return radius*2;
-//     }
-//     static getCircunference (radius) {
-//         return 2 * this.PI * radius ;
-//     }
-//     static getArea(radius) {
-//         return this.PI * radius * radius ;
-//     }
-// }
-
-// console.log(MathUtil.PI);
-// console.log(MathUtil.getCircunference(10));
-// console.log(MathUtil.getCircunference(2));
-// console.log(MathUtil.getArea(5));
-
-
-// class User {
-//     static userCount = 0
-//     constructor(username) {
-//         this.username = username;
-//         User.userCount++;
-//     }
-// }
-
-// const user1 = new User ("pessoa1");
-// const user2 = new User ("pessoa2");
-// console.log(user1.username);
-// console.log(User.userCount);
-
-// /* ============================ */
-
-// // class Animals {
-// //     alive = true;
-// //     eat() {
-// //         console.log(`This ${this.name} is eating`);
-// //     }
-// //     sleep() {
-// //         console.log(`This ${this.name} is sleeping`);
-// //     }
-// // }
-
-// // class Rabbit extends Animals {
-//     //     name = "Rabbit";
-// //     run() {
-//     //         console.log(`This ${this.name} is running`);
-//     //     }
-//     // }
-//     // class Fish extends Animals {
-//         //     name = "Fish";
-//         //     swim() {
-//             //         console.log(`This ${this.name} is swimming`);
-//             //     }
-//             // }
-//             // class Dog extends Animals {
-//                 //     name = "Dog";
-// // }
-
-// // const rabbit = new Rabbit();
-// // const fish = new Fish();
-// // const dog = new Dog();
-
-// // console.log(rabbit.alive);
-// // rabbit.alive = false;
-// // console.log(rabbit.alive);
-
-// // rabbit.eat();
-// // rabbit.sleep();
-
-// // rabbit.run();
-// // fish.swim();
-
-// /* ============================ */
-
-// class Animal {
-//     constructor(name, age) {
-//         this.name = name;
-//         this.age = age;
-//     }
-    
-//     move (speed) {
-//         console.log(`The ${this.name} moves at a speed of ${speed} km/h`)
-//     }
-// }
-
-// class Lebre extends Animal {
-//     constructor (name, age, runSpeed) {
-//         super(name, age);
-//         this.runSpeed = runSpeed;
-//     }
-
-//     run () {
-//         console.log(`This ${this.name} can run`);
-//         super.move(this.runSpeed);
-//     }
-// }
-
-// class Tuba extends Animal {
-//     constructor (name, age, swimSpeed) {
-//         super(name, age);
-//         this.swimSpeed = swimSpeed;
-//     }
-    
-//     swim () {
-//         console.log(`This ${this.name} can swim`);
-//         super.move(this.swimSpeed);
-//     }
-// }
-
-// class Bird extends Animal {
-//     constructor (name, age, flySpeed) {
-//         super(name, age);
-//         this.flySpeed = flySpeed;
-//     }
-    
-//     fly () {
-//         console.log(`This ${this.name} can fly`);
-//         super.move(this.flySpeed);
-//     }
-// }
-
-// const lebre = new Lebre("Lebre", 1, 25)
-// const tuba = new Tuba("Tubabão", 2, 10)
-// const bird = new Bird("Pássaro", 3, 12)
-
-// console.log(tuba.name)
-// console.log(tuba.age)
-// console.log(tuba.swimSpeed)
-
-// lebre.run();
-// tuba.swim();
-// bird.fly();
-
-// /* ============================ */
-
-// class Rectangle {
-//     constructor(width, height) {
-//         this.width = width;
-//         this.height = height;
-//     }
-    
-//     set width(newWidth) {
-//         if(newWidth > 0) {
-//             // Propriedade privada
-//             this._width = newWidth;
-//         } else {
-//             console.error('Número, meu colega. NÚMERO!')
-//         }
-//     }
-
-//     set height(newheight) {
-//         if(newheight > 0) {
-//             // Propriedade privada
-//             this._height = newheight;
-//         } else {
-//             console.error('Número, meu colega. NÚMERO!')
-//         }
-//     }
-    
-//     get width () { return this._width.toFixed(1); }
-//     get height () { return this._height.toFixed(1); }
-// }
-
-// const rectangle = new Rectangle(3, 3);
-// console.log(rectangle.width);
-// console.log(rectangle.height);
-
-// /* ============================ */
-
-// let a = 1;
-// let b = 2;
-// console.log(a);
-// console.log(b);
-
-// [a,b] = [b,a];
-// console.log(a);
-// console.log(b);
-
-
-// const colors = ["red", "green", "blue", "black", "white"];
-// console.log(colors);
-// [colors[0], colors[4]] = [colors[4], colors[0]];
-// console.log(colors);
-
-
-// const [firstColor, secondColor, thirdColor, ...extraColors] = colors
-// console.log(firstColor);
-// console.log(secondColor);
-// console.log(thirdColor);
-// console.log(extraColors);
-
-// const p1 = {
-//     firstNameP: "Spongebob",
-//     lasNameP: "SquarePantes",
-//     ageP: 30,
-//     job: "Fry Cook",
-// }
-
-// const p2 = {
-//     firstNameP: "Patrick",
-//     lasNameP: "Star",
-//     ageP: 40,
-// }
-
-// const {firstNameP, lasNameP, ageP, job='Unemployed'} = p1;
-// console.log(firstNameP);
-// console.log(lasNameP);
-// console.log(ageP);
-// console.log(job);
-
-// function displayPerson ({firstNameP, lasNameP, ageP, job}) {
-//     console.log(`name: ${firstNameP}`)
-//     console.log(`nickname: ${lasNameP}`)
-//     console.log(`age: ${ageP}`)
-//     console.log(`job: ${job}`)
-// }
-
-// displayPerson(p2)
-
-// console.log("\n/* ============================ */");
-
-// const pP = {
-//     fullNameP: 'Nathan Monteiro',
-//     aP: 25,
-//     isUniStudent: true,
-//     hobbies: ["Karate", "Fishing", "Cooking"],
-//     address: {
-//         street: "Rua Jose Maciel",
-//         city: 'Minas Gerais',
-//         country: "BH"
-//     }
-// }
-
-// console.log(pP.fullNameP);
-// console.log(pP.aP);
-// console.log(pP.isUniStudent);
-// console.log(pP.hobbies);
-// console.log(pP.hobbies[0]);
-// console.log(pP.hobbies[1]);
-// console.log(pP.hobbies[2]);
-// console.log(pP.address);
-// console.log(pP.address.city);
-// console.log(pP.address.country);
-// console.log(pP.address.street);
-
-
-// class Person {
-//     constructor(name, age, ...address) {
-//         this.name = name;
-//         this.age = age;
-//         this.address = new Address(...address);
-//     }
-// }
-
-// class Address {
-//     constructor(street, city, country) {
-//         this.street = street;
-//         this.city = city;
-//         this.country = country;
-//     }
-// }
-
-// const pP1 = new Person ("Nathan Monteiro", 25, "124 Conch Street", "Bikini Bottom", "Int. Waters");
-// const pP2 = new Person ("Monteiro Nathan", 25, "128 Conch Street", "Bikini Bottom", "Int. Waters");
-// const pP3 = new Person ("NM", 35, "126 Conch Street", "Bikini Bottom", "Int. Waters");
-
-// console.log(pP1.name);
-// console.log(pP1.age);
-// console.log(pP1.address.city);
-// console.log(pP1.address.country);
-// console.log(pP1.address.street);
-
-// /* ============================ */
-
-// const fruitsA = [
-//     {
-//         name: "apple", 
-//         color: "red", 
-//         calories: 95, 
-//     },
-//     {
-//         name: "orange", 
-//         color: "orange", 
-//         calories: 45, 
-//     },
-//     {
-//         name: "banana", 
-//         color: "yellow", 
-//         calories: 109, 
-//     },
-//     {
-//         name: "coconut", 
-//         color: "white", 
-//         calories: 15, 
-//     },
-//     {
-//         name: "pinapple", 
-//         color: "yellow", 
-//         calories: 37, 
-//     },
-// ];
-
-// fruitsA.push({
-//     name: "grapes", color: "purple", calories: 124
-// })
-
-// fruitsA.pop();
-// fruitsA.splice(1,3); //Elimina elementos de um valor, até outro
-
-// console.log(fruitsA[0].name)
-// console.log(fruitsA[0].color)
-// console.log(fruitsA[0].calories)
-
-// for (fruits in fruitsA) {
-//     console.log(fruitsA[fruits].color);
-//     console.log(fruitsA[fruits].name);
-//     console.log(fruitsA[fruits].calories);
-//     console.log("=======================================\n")
-// }
-
-// fruitsA.forEach(fruit => {
-//     console.log(fruit);
-// });
-
-// /* ============================ */
-
-// let num = [1,4,2,34,253,1,56,6,78,9,6,54.0];
-
-// num.sort((a,b) => a - b)
-
-// console.log(num)
-
-// /* ============================ */
-
-// const date = new Date();
-// console.log(date);
-// // const formatedDate = new Date(2024, 0, 1, 2, 3, 4, 5);
-// // console.log(formatedDate);
-
-// const year = date.getFullYear();
-// const month = date.getMonth();
-// const day = date.getDay();
-// const hours = date.getHours();
-// const minutes = date.getMinutes();
-// const seconds = date.getSeconds();
-// const mili = date.getMilliseconds();
-
-// date.setFullYear(2000)
-// console.log(date);
-
-// console.log("Tempo separado:");
-// console.log(`Ano: ${year}`);
-// console.log(`Mês: ${month}`);
-// console.log(`Dia da semana: ${day}`);
-// console.log(`Hora: ${hours}`);
-// console.log(`Minuto: ${minutes}`);
-// console.log(`Segundo: ${seconds}`);
-// console.log(`Milisegundo: ${mili}`);
-
-// /* ============================ */
-
-// function outer () {
-//     let message = "hello"
-//     function inner () {
-//         console.log(message);
-//     }
-    
-//     inner();
-// }
-
-// outer();
-
-// /* ============================ */
-
-// function sayOi () {
-//     alert("ola");
-// }
-
-// // setTimeout(sayOi, 3000)
-
-// // const timeoutId = setTimeout(() => alert("Opa"), 3000)
-
-// // clearTimeout(timeoutId);
-
-// let timeoutId;
-// function startTimer () {
-//     timeoutId = setTimeout(() => {
-//         alert("Fala rapaziada");
-//     }, 3000)
-//     console.log("ok")
-// }
-
-// function clearTimer() {
-//     clearTimeout(timeoutId);
-//     console.log("fechando")
-// } 
-
-// /* ============================ */
-
-// // console.log(PIValue);
-// // const circumferenceValue = getCircumference(10);
-
-// // console.log(circumferenceValue);
-
-// /* ============================ */
-
-// // function func1 (callback) {
-// //     setTimeout(() => {
-// //         console.log("task 1");
-// //         callback();
-// //     }, 3000);
-// // }
-
-// // function func2 () {
-// //     console.log("task 2");
-// //     console.log("task 3");
-// //     console.log("task 4");
-// // }
-
-// // func1(func2);
-
-// /* ============================ */
-
-// try {
-//     // console.log(xError)
-//     if (!xError) {
-//         throw new Error("xError não existe");
-//     }
-// } catch(error) {
-//     console.error(error);
-// } finally {
-//     let a = 2;
-//     console.log(a);
-// }
-// console.log("mas agora chegaste no fim")
-
-// /* ============================ */
-
-// const spaceUp = document.getElementById('myButton');
-
-// spaceUp.addEventListener('mouseover', (event) => {
-//     event.target.style.backgroundColor = 'black';
-//     event.target.style.color = 'white';
-
-//     event.target.classList.add('big-text');
-// });
-
-// spaceUp.addEventListener('mouseout', (event) => {
-//     event.target.style.backgroundColor = 'hsl(240, 0%, 52%)';
-//     event.target.style.color = 'black';
-
-//     event.target.classList.remove('big-text');
-// });
-
-// /* ============================ */
-
-// // Aqui, vamos selecionar todas as classes de .slides que sejam a tag img
-// const slides = document.querySelectorAll('.slides img');
-
-// // Index da imagem atual
-// let slideIndex = 0;
-
-// // let intervalId = null;
-
-// document.addEventListener('DOMContentLoaded', initializeSlider);
-
-// function initializeSlider() {
-//     // Verificando se o tamanho da NodeList é > 0
-//     if (slides.length > 0) {
-//         // Caso seja, vou adicionar a classe displaySlide na imagem que possui o index atual
-//         // Preciso adicionar essa linha para poder mover depois essa class de local, entre as imagens
-//         slides[slideIndex].classList.add('displaySlide');
-
-//         // intervalId = setInterval(nextSlide, 5000);
-//     }
-// }
-
-// function showSlide (index) {
-//     if (index >= slides.length) {
-//         slideIndex = 0;
-//     } else if (index < 0) {
-//         slideIndex = slides.length - 1;
-//     }
-
-//     slides.forEach(element => {
-//         element.classList.remove('displaySlide')
-//     });
-
-//     slides[slideIndex].classList.add('displaySlide');
-// }
-
-// function prevSlide (index) {
-//     slideIndex--;
-//     showSlide(slideIndex);
-// }
-
-// function nextSlide (index) {
-//     slideIndex++;
-//     showSlide(slideIndex);
-// }
-
-
-// /* ============================ */
-
-// // 1. walk the dog
-// // 2. clean the kitchen
-// // 3. take out the trash
-
-// /* Tudo abaixo comentado é callback hell: chamadas assíncronas dentro de outra dentro de outra dentro de outra
-// Não queremos isso */
-// // function walkTheDog (callback) {
-// //     setTimeout(() => {
-// //         console.log('You walked the dog!');
-// //         callback()
-// //     }, 1500)
-// // }
-// // function cleanTheKitchen (callback) {
-// //     setTimeout(() => {
-// //         console.log('You cleaned the kitchen!');
-// //         callback()
-// //     }, 2500)
-// // }
-// // function takeTrashOut (callback) {
-// //     setTimeout(() => {
-// //         console.log('You took the trash out!');
-// //         callback()
-// //     }, 500)
-// // }
-
-
-// // walkTheDog(() => {
-// //     cleanTheKitchen(() => {
-// //         takeTrashOut(() => { console.log('Finally, you done!') });
-// //     })
-// // });
-
-// function walkTheDog () {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             const dogWalked = true;
-//             if (dogWalked) { resolve('You walked the dog!'); }
-//             else { reject('You didnt walked the dog!')}
-//         }, 1500)
-//     })
-// }
-// function cleanTheKitchen () {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             const cleanedKitchen = true;
-//             if (cleanedKitchen) { resolve('You cleaned the kitchen!'); }
-//             else { reject('You didnt cleaned the kitchen!'); }
-//         }, 2500)
-//     })
-// }
-// function takeTrashOut () {
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             const tookTrash = false;
-//             if (tookTrash) { resolve('You took the trash out!'); }
-//             else { reject('You didnt took the trash out!'); }
-//         }, 500)
-//     })
-// }
-
-// // walkTheDog().then((value) => { console.log(value); return cleanTheKitchen(); })
-// //             .then((value) => { console.log(value); return takeTrashOut(); })
-// //             .then((value) => { console.log(value); console.log('Finally, you done!') })
-// //             .catch((error) => console.error(error));
-
-// async function doChores () {
-//     const walkTheDogResult = await walkTheDog()
-//     console.log(walkTheDogResult);
-    
-//     const cleanedKitchenResult = await cleanTheKitchen();
-//     console.log(cleanedKitchenResult);
-
-//     const takeTrashOutResult = await takeTrashOut();
-//     console.log(takeTrashOutResult);
-
-//     console.log('Finally!');
-// }
-
-// doChores();
+/* ----- STATIC ----- */
+{
+    class TopicStaticMathUtil {
+        static PI = 3.14159;
+        
+        static getDiameter (radius) {
+            return radius*2;
+        }
+        static getCircunference (radius) {
+            return 2 * this.PI * radius ;
+        }
+        static getArea(radius) {
+            return this.PI * radius * radius ;
+        }
+    }
+
+    console.log(TopicStaticMathUtil.PI);
+    console.log(TopicStaticMathUtil.getCircunference(10));
+    console.log(TopicStaticMathUtil.getCircunference(2));
+    console.log(TopicStaticMathUtil.getArea(5));
+}
+console.log('/* ======================= */');
+/* ======================================================================================= */
+
+/* ----- INHERITANCE ----- */
+{
+    class TopicInheritanceUser {
+        static topicInheritanceUserUserCount = 0
+        constructor(username) {
+            this.username = username;
+            TopicInheritanceUser.topicInheritanceUserUserCount++;
+        }
+    }
+
+    const topicInheritanceUser1 = new TopicInheritanceUser ("Pessoa1");
+    const topicInheritanceUser2 = new TopicInheritanceUser ("Pessoa2");
+    console.log(topicInheritanceUser1.username);
+    console.log(topicInheritanceUser2.topicInheritanceUserUserCount);
+
+    class TopicInheritanceAnimals {
+        topicInheritanceAlive = true;
+        topicInheritanceEat() { console.log(`This ${this.name} is eating`); }
+        topicInheritanceSleep() { console.log(`This ${this.name} is sleeping`); }
+    }
+
+    class TopicInheritanceRabbit extends TopicInheritanceAnimals {
+        name = "Rabbit";
+        run() { console.log(`This ${this.name} is running`); }
+    }
+    class TopicInheritanceFish extends TopicInheritanceAnimals {
+        name = "Fish";
+        swim() { console.log(`This ${this.name} is swimming`); }
+    }
+    class TopicInheritanceDog extends TopicInheritanceAnimals { name = "Dog"; }
+
+    const topicInheritanceRabbitAnimal = new TopicInheritanceRabbit();
+    const topicInheritanceFishAnimal = new TopicInheritanceFish();
+    const topicInheritanceDogAnimal = new TopicInheritanceDog();
+
+    console.log(topicInheritanceRabbitAnimal.topicInheritanceAlive);
+    topicInheritanceRabbitAnimal.topicInheritanceAlive = false;
+    console.log(topicInheritanceRabbitAnimal.topicInheritanceAlive);
+
+    topicInheritanceRabbitAnimal.topicInheritanceEat();
+    topicInheritanceRabbitAnimal.topicInheritanceSleep();
+
+    topicInheritanceRabbitAnimal.run();
+    topicInheritanceFishAnimal.swim();
+}
+console.log('/* ======================= */');
+/* ======================================================================================= */
+
+/* ----- SUPER ----- */
+{
+    class TopicSuperAnimal {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        
+        move (speed) { console.log(`The ${this.name} moves at a speed of ${speed} km/h`); }
+    }
+
+    class topicSuperLebre extends TopicSuperAnimal {
+        constructor (name, age, runSpeed) {
+            super(name, age);
+            this.runSpeed = runSpeed;
+        }
+
+        run () {
+            console.log(`This ${this.name} can run`);
+            super.move(this.runSpeed);
+        }
+    }
+
+    class topicSuperShark extends TopicSuperAnimal {
+        constructor (name, age, swimSpeed) {
+            super(name, age);
+            this.swimSpeed = swimSpeed;
+        }
+        
+        swim () {
+            console.log(`This ${this.name} can swim`);
+            super.move(this.swimSpeed);
+        }
+    }
+
+    class topicSuperBird extends TopicSuperAnimal {
+        constructor (name, age, flySpeed) {
+            super(name, age);
+            this.flySpeed = flySpeed;
+        }
+        
+        fly () {
+            console.log(`This ${this.name} can fly`);
+            super.move(this.flySpeed);
+        }
+    }
+
+    const lebre = new topicSuperLebre("Lebre", 1, 25)
+    const shark = new topicSuperShark("Tubabão", 2, 10)
+    const bird = new topicSuperBird("Pássaro", 3, 12)
+
+    console.log(shark.name)
+    console.log(shark.age)
+    console.log(shark.swimSpeed)
+
+    lebre.run();
+    shark.swim();
+    bird.fly();
+}
+console.log('/* ======================= */');
+/* ======================================================================================= */
+
+/* ----- GET/SET ----- */
+{
+    class TopicGetSetRectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+        
+        set width(newWidth) {
+            if(newWidth > 0) {
+                // Propriedade privada
+                this._width = newWidth;
+            } else {
+                console.error('Número, meu colega. NÚMERO!')
+            }
+        }
+
+        set height(newheight) {
+            if(newheight > 0) {
+                // Propriedade privada
+                this._height = newheight;
+            } else {
+                console.error('Número, meu colega. NÚMERO!')
+            }
+        }
+        
+        get width () { return this._width.toFixed(1); }
+        get height () { return this._height.toFixed(1); }
+    }
+
+    const topicGetSetRectangle = new TopicGetSetRectangle(3, 3);
+    console.log(topicGetSetRectangle.width);
+    console.log(topicGetSetRectangle.height);
+}
+console.log('/* ======================= */');
+/* ======================================================================================= */
+
+/* ----- DESTRUCTURING ----- */
+{
+    let topicDestructuringA = 1;
+    let topicDestructuringB = 2;
+    console.log(topicDestructuringA);
+    console.log(topicDestructuringB);
+
+    [topicDestructuringA,topicDestructuringB] = [topicDestructuringB,topicDestructuringA];
+    console.log(topicDestructuringA);
+    console.log(topicDestructuringB);
+
+
+    const topicDestructuringColors = ["Red", "Green", "Blue", "Black", "White"];
+    console.log(topicDestructuringColors);
+
+    [topicDestructuringColors[0], topicDestructuringColors[4]] = [topicDestructuringColors[4], topicDestructuringColors[0]];
+    console.log(topicDestructuringColors);
+
+    const [
+        topicDestructuringFirstColor, topicDestructuringSecondColor, 
+        topicDestructuringThirdColor, ...topicDestructuringExtraColors
+    ] = topicDestructuringColors;
+    console.log(topicDestructuringFirstColor);
+    console.log(topicDestructuringSecondColor);
+    console.log(topicDestructuringThirdColor);
+    console.log(topicDestructuringExtraColors);
+
+    const topicDestructuringPerson1 = {
+        topicDestructuringFirstNamePerson1: "SpodASngebob",
+        topicDestructuringLastNamePerson1: "SquarePantes",
+        topicDestructuringAgePerson1: 30,
+        topicDestructuringJobPerson1: "Fry Cook",
+    }
+
+    const topicDestructuringPerson2 = {
+        topicDestructuringFirstNamePerson2: "Patrick",
+        topicDestructuringLastNamePerson2: "Star",
+        topicDestructuringAgePerson2: 40,
+    }
+
+    const {
+        topicDestructuringFirstNamePerson1, topicDestructuringLastNamePerson1, 
+        topicDestructuringAgePerson1, topicDestructuringJobPerson1='Unemployed'
+    } = topicDestructuringPerson1;
+
+    console.log(`Primeiro Nome da Pessoa 1: ${topicDestructuringFirstNamePerson1}`);
+    console.log(`Último Nome da Pessoa 1: ${topicDestructuringLastNamePerson1}`);
+    console.log(`Idade da Pessoa 1: ${topicDestructuringAgePerson1}`);
+    console.log(`Profissão da Pessoa 1: ${topicDestructuringJobPerson1}`);
+
+    function displayPerson2 ( { topicDestructuringFirstNamePerson2, topicDestructuringLastNamePerson2, topicDestructuringAgePerson2, topicDestructuringJobPerson2 }) {
+        console.log(`Primeiro Nome da Pessoa 2: ${topicDestructuringFirstNamePerson2}`);
+        console.log(`Último Nome da Pessoa 2: ${topicDestructuringLastNamePerson2}`);
+        console.log(`Idade da Pessoa 2: ${topicDestructuringAgePerson2}`);
+        console.log(`Profissão da Pessoa 2: ${topicDestructuringJobPerson2}`);
+    }
+
+    displayPerson2(topicDestructuringPerson2)
+
+    console.log("\n PRÒXIMO EXEMPLO PARA DESTRUCTURING ");
+
+    const topicDestructuringPerson3 = {
+        topicDestructuringFullNamePerson3: 'Nathan Monteiro',
+        topicDestructuringAgePerson3: 25,
+        topicDestructuringIsUniStudentPerson3: true,
+        topicDestructuringHobbiesPerson3: ["Karate", "Fishing", "Cooking"],
+        topicDestructuringAddressPerson3: {
+            street: "Rua Jose Maciel",
+            city: 'Minas Gerais',
+            country: "BH"
+        }
+    }
+
+    console.log(topicDestructuringPerson3.topicDestructuringFullNamePerson3);
+    console.log(topicDestructuringPerson3.topicDestructuringAgePerson3);
+    console.log(topicDestructuringPerson3.topicDestructuringIsUniStudentPerson3);
+    console.log(topicDestructuringPerson3.topicDestructuringHobbiesPerson3);
+    console.log(topicDestructuringPerson3.topicDestructuringHobbiesPerson3[0]);
+    console.log(topicDestructuringPerson3.topicDestructuringHobbiesPerson3[1]);
+    console.log(topicDestructuringPerson3.topicDestructuringHobbiesPerson3[2]);
+    console.log(topicDestructuringPerson3.topicDestructuringAddressPerson3);
+    console.log(topicDestructuringPerson3.topicDestructuringAddressPerson3.street);
+    console.log(topicDestructuringPerson3.topicDestructuringAddressPerson3.city);
+    console.log(topicDestructuringPerson3.topicDestructuringAddressPerson3.country);
+
+
+    class TopicDestructuringPerson4 {
+        constructor(name, age, ...address) {
+            this.name = name;
+            this.age = age;
+            this.address = new TopicDestructuringAddressPerson4(...address);
+        }
+    }
+
+    class TopicDestructuringAddressPerson4 {
+        constructor(street, city, country) {
+            this.street = street;
+            this.city = city;
+            this.country = country;
+        }
+    }
+
+    const topicDestructuringPerson4_1 = new TopicDestructuringPerson4 ("Nathan Monteiro", 25, "124 Conch Street", "Bikini Bottom", "Int. Waters");
+    const topicDestructuringPerson4_2 = new TopicDestructuringPerson4 ("Monteiro Nathan", 25, "128 Conch Street", "Bikini Bottom", "Int. Waters");
+    const topicDestructuringPerson4_3 = new TopicDestructuringPerson4 ("NM", 35, "126 Conch Street", "Bikini Bottom", "Int. Waters");
+
+    function topicDestructuringDisplayPeopleValue () {
+        console.log(`Nome da Pessoa 4.1: ${topicDestructuringPerson4_1.name}`);
+        console.log(`Idade da Pessoa 4.1: ${topicDestructuringPerson4_1.age}`);
+        console.log(`Cidade da Pessoa 4.1: ${topicDestructuringPerson4_1.address.city}`);
+        console.log(`País da Pessoa 4.1: ${topicDestructuringPerson4_1.address.country}`);
+        console.log(`Rua da Pessoa 4.1: ${topicDestructuringPerson4_1.address.street}`);
+        
+        console.log(`Nome da Pessoa 4.2: ${topicDestructuringPerson4_2.name}`);
+        console.log(`Idade da Pessoa 4.2: ${topicDestructuringPerson4_2.age}`);
+        console.log(`Cidade da Pessoa 4.2: ${topicDestructuringPerson4_2.address.city}`);
+        console.log(`País da Pessoa 4.2: ${topicDestructuringPerson4_2.address.country}`);
+        console.log(`Rua da Pessoa 4.2: ${topicDestructuringPerson4_2.address.street}`);
+
+        console.log(`Nome da Pessoa 4.3: ${topicDestructuringPerson4_3.name}`);
+        console.log(`Idade da Pessoa 4.3: ${topicDestructuringPerson4_3.age}`);
+        console.log(`Cidade da Pessoa 4.3: ${topicDestructuringPerson4_3.address.city}`);
+        console.log(`País da Pessoa 4.3: ${topicDestructuringPerson4_3.address.country}`);
+        console.log(`Rua da Pessoa 4.3: ${topicDestructuringPerson4_3.address.street}`);
+    }
+
+    topicDestructuringDisplayPeopleValue();
+}
+console.log('/* ======================= */');
+/* ======================================================================================= */
+
+/* ----- SORT ----- */
+{
+    let topicSortNum = [1, 4, 2, 34, 253, 1, 56, 6, 78, 9, 6, 54.0];
+    topicSortNum.sort((a,b) => a - b)
+
+    console.log(topicSortNum)
+}
+console.log('/* ======================= */');
+/* ======================================================================================= */
+
+/* ----- DATE ----- */
+{
+    const topicDate = new Date();
+    console.log(topicDate);
+    // const topicFormatedDate = new Date(2024, 0, 1, 2, 3, 4, 5);
+    // console.log(topicFormatedDate);
+
+    const topicDateYear = topicDate.getFullYear();
+    const topicDateMonth = topicDate.getMonth();
+    const topicDateDay = topicDate.getDay();
+    const topicDateHours = topicDate.getHours();
+    const topicDateMinutes = topicDate.getMinutes();
+    const topicDateSeconds = topicDate.getSeconds();
+    const topicDateMiliseconds = topicDate.getMilliseconds();
+
+    topicDate.setFullYear(2000)
+    console.log(topicDate);
+
+    console.log("Tempo separado:");
+    console.log(`Ano: ${topicDateYear}`);
+    console.log(`Mês: ${topicDateMonth}`);
+    console.log(`Dia da semana: ${topicDateDay}`);
+    console.log(`Hora: ${topicDateHours}`);
+    console.log(`Minuto: ${topicDateMinutes}`);
+    console.log(`Segundo: ${topicDateSeconds}`);
+    console.log(`Milisegundo: ${topicDateMiliseconds}`);
+}
+console.log('/* ======================= */');
+/* ======================================================================================= */
+
+/* ----- SETTIMEOUT ----- */
+{
+    function sayOi () {
+        alert("ola");
+    }
+
+    // setTimeout(sayOi, 3000)
+    // const timeoutId = setTimeout(() => alert("Opa"), 3000)
+    // clearTimeout(timeoutId);
+
+    let timeoutId;
+    function startTimer () {
+        timeoutId = setTimeout(() => {
+            alert("Fala rapaziada");
+        }, 3000)
+        console.log("ok")
+    }
+
+    function clearTimer() {
+        clearTimeout(timeoutId);
+        console.log("fechando")
+    }
+}
+console.log('/* ======================= */');
+/* ======================================================================================= */
+
+/* ----- TRYCATCH ----- */
+{
+    try {
+        console.log(xError)
+        if (!xError) {
+            throw new Error("xError não existe");
+        }
+    } catch(error) {
+        console.error(error);
+    } finally {
+        let a = 2;
+        console.log(a);
+    }
+    console.log("Com finally, chegaste no fim")
+}
+console.log('/* ======================= */');
+/* ======================================================================================= */
+
+/* ----- DOM ----- */
+{
+    const topicDOMSpaceUp = document.getElementById('topicDOMMyButton');
+
+    topicDOMSpaceUp.addEventListener('mouseover', (event) => {
+        event.target.style.backgroundColor = 'black';
+        event.target.style.color = 'white';
+
+        event.target.classList.add('big-text');
+    });
+
+    topicDOMSpaceUp.addEventListener('mouseout', (event) => {
+        event.target.style.backgroundColor = 'hsl(240, 0%, 52%)';
+        event.target.style.color = 'black';
+
+        event.target.classList.remove('big-text');
+    });
+}
+console.log('/* ======================= */');
+/* ======================================================================================= */
+
+/* ----- SLIDER ----- */
+// Aqui, vamos selecionar todas as classes de .slides que sejam a tag img
+const slides = document.querySelectorAll('.slides img');
+
+// Index da imagem atual
+let slideIndex = 0;
+
+// let intervalId = null;
+
+document.addEventListener('DOMContentLoaded', initializeSlider);
+
+function initializeSlider() {
+    // Verificando se o tamanho da NodeList é > 0
+    if (slides.length > 0) {
+        // Caso seja, vou adicionar a classe displaySlide na imagem que possui o index atual
+        // Preciso adicionar essa linha para poder mover depois essa class de local, entre as imagens
+        slides[slideIndex].classList.add('displaySlide');
+
+        // intervalId = setInterval(nextSlide, 5000);
+    }
+}
+
+function showSlide (index) {
+    if (index >= slides.length) {
+        slideIndex = 0;
+    } else if (index < 0) {
+        slideIndex = slides.length - 1;
+    }
+
+    slides.forEach(element => {
+        element.classList.remove('displaySlide')
+    });
+
+    slides[slideIndex].classList.add('displaySlide');
+}
+
+function prevSlide () {
+    slideIndex--;
+    showSlide(slideIndex);
+}
+
+function nextSlide (index) {
+    slideIndex++;
+    showSlide(slideIndex);
+}
+console.log('/* ======================= */');
+/* ======================================================================================= */
+
+/* ----- CALLBACKHELL ----- */
+
+{    
+    // 1. walk the dog
+    // 2. clean the kitchen
+    // 3. take out the trash
+
+    /* Tudo abaixo comentado é callback hell: chamadas assíncronas dentro de outra dentro de outra dentro de outra
+    Não queremos isso */
+    // function walkTheDog (callback) {
+    //     setTimeout(() => {
+    //         console.log('You walked the dog!');
+    //         callback()
+    //     }, 1500)
+    // }
+    // function cleanTheKitchen (callback) {
+    //     setTimeout(() => {
+    //         console.log('You cleaned the kitchen!');
+    //         callback()
+    //     }, 2500)
+    // }
+    // function takeTrashOut (callback) {
+    //     setTimeout(() => {
+    //         console.log('You took the trash out!');
+    //         callback()
+    //     }, 500)
+    // }
+
+    // walkTheDog(() => {
+    //     cleanTheKitchen(() => {
+    //         takeTrashOut(() => { console.log('Finally, you done!') });
+    //     })
+    // });
+
+    function walkTheDog () {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const dogWalked = true;
+                if (dogWalked) { resolve('You walked the dog!'); }
+                else { reject('You didnt walked the dog!')}
+            }, 1500)
+        })
+    }
+    function cleanTheKitchen () {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const cleanedKitchen = true;
+                if (cleanedKitchen) { resolve('You cleaned the kitchen!'); }
+                else { reject('You didnt cleaned the kitchen!'); }
+            }, 2500)
+        })
+    }
+    function takeTrashOut () {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                const tookTrash = false;
+                if (tookTrash) { resolve('You took the trash out!'); }
+                else { reject('You didnt took the trash out!'); }
+            }, 500)
+        })
+    }
+
+    // walkTheDog().then((value) => { console.log(value); return cleanTheKitchen(); })
+    //             .then((value) => { console.log(value); return takeTrashOut(); })
+    //             .then((value) => { console.log(value); console.log('Finally, you done!') })
+    //             .catch((error) => console.error(error));
+
+    async function doChores () {
+        const walkTheDogResult = await walkTheDog()
+        console.log(walkTheDogResult);
+        
+        const cleanedKitchenResult = await cleanTheKitchen();
+        console.log(cleanedKitchenResult);
+
+        const takeTrashOutResult = await takeTrashOut();
+        console.log(takeTrashOutResult);
+
+        console.log('Finally!');
+    }
+
+    doChores();
+}
 
 // /* ============================ */
 
@@ -1793,94 +1742,130 @@ topicUserInputButton.addEventListener('click', function () {
         ]
     },
     {
-        subtitle: '25. ',
+        subtitle: '25. STATIC',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; É uma <em>keyword</em> que define propriedades ou métodos que pertence a uma <em>class</em> ao invés de um objeto criado por aquela classe;`,
+            
+            `&rightarrow; Ou seja: ao inés de criar <strong>const MathUtil = new MathUtil();</strong> para acessar um possível objeto, eu simplesmente posso criar uma <em>static keyword</em> dentro da class da seguinte forma: <strong>static PI = 3.14159</strong> e acessá-la fora da classe da seguinte forma: <strong>console.log(MathUtil.PI)</strong>;`,
+            
+            `&rightarrow; De resumo: <strong>tudo estático pertence a classe em si</strong>!`,
+            
+            `&rightarrow; Se tentarmos acessar a static, não conseguiremos, já que a classe não possui o static como uma propriedade. Temos que usar o nome da CLASSE para acessá-la;`,
         ]
     },
     {
-        subtitle: '26. ',
+        subtitle: '26. Inheritance',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; É uma forma de uma nova <em>class</em> herdar métodos e propriedades de outras <em>classes</em> existentes. A sua nomenclatura funciona da seguinte forma, abaixo:`,
+            `&rightarrow; <em>class classNova extends classExistent</em>`,
         ]
     },
     {
-        subtitle: '27. ',
+        subtitle: '27. SUPER',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; É uma <em>keyword</em> usada para chamar o construtor ou acessar as propriedades e métodos de um <em>parent</em>. É semelhante ao <em>this</em>, sendo este para o <strong>this object</strong> e o <em>super</em> para <strong>the parent</strong>;`,
+            
+            `&rightarrow; O que isso significa é que, de acordo com o vídeo, antes de chamar as  <em>this</em> keywords, caso a <em>class</em>-pai tenha um constructor, é necessário chamar a <strong>super()</strong> keyword;`,
+            
+            `&rightarrow; A ideia aqui é <strong>não se repetir</strong>. Caso 5 sub-classes tenham, por exemplo, nome e idade, para não nos repetirmos em cada uma delas, apenas colocamos as propriedades no <strong>constructor(nome, idade) {...}</strong> e na hora de colocar o super dentro de cada sub-classe, dentro de cada construtor, usamos <strong>super(nome, idade)</strong>;`,
         ]
     },
     {
-        subtitle: '28. ',
+        subtitle: '28. Getters and Setters',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; Para <strong>getters</strong>, são métodos especiais que fazem as propriedades serem legíveis para leitura. Para <strong>setters</strong>, são métodos especiais que fazem as propriedades serem legíveis para escrita;`,
         ]
     },
     {
-        subtitle: '29. ',
+        subtitle: '29. Destructuring',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; Extrai valores de arrays e objetos e depois armazena eles em variáveis de um jeito de conveninente;`,
+            `&rightarrow; Há 2 formas de fazer isso: <strong>[] para performar o <em>array destricturing</em></strong> ou <strong>{} para performar o <em>object destricturing</em></strong>;`,
+            `&rightarrow; Alguns exemplos pertinentes (dentro do console.log()) são: <strong>array swapping, troca de 2 elementos de um array, atribuir um elemento de array à variáveis, extrair valores de objetos e destructure in function parameters</strong>;`
         ]
     },
     {
-        subtitle: '30. ',
+        subtitle: '30. Nested Objects',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; É a criação de um objeto dentro de outro. Exemplo: <strong>Pessoa{Endereço{}, Info{}, ...}</strong>;`,
         ]
     },
     {
-        subtitle: '31. ',
+        subtitle: '31. sort()',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; Organiza os elementos de um array como strings de forma lexicográfica (estudar mais isso, porque não entendi);`,
         ]
     },
     {
-        subtitle: '32. ',
+        subtitle: '32. Date Objects',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; São objetos que contém valores que representam <strong>dia e tempo</strong>. Eles podem ser formatados da forma que quisermos;`,
+            `&rightarrow; Para formatar de uma outra forma, podemos usar: <strong>Date(ano, mes, dia, hora, minuto, segundo, milisegundo)</strong>;`,
         ]
     },
     {
-        subtitle: '33. ',
+        subtitle: '33. Closure',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; É uma função definida dentro de outra função. Essa função declarada dentro da funcção-pai tem acesso às variáveis da função na qual dentro ela está;`,
         ]
     },
     {
-        subtitle: '34. ',
+        subtitle: '34. ES6 Module',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; <em>Modules</em> são arquivos externos que contém codigos reutilizáveis que podem ser importados em outros arquivos de JS;`,
+
+            `&rightarrow; Ou seja, dentro do nosso módulo, tudo o que está lá dentro pode ser reutilizado em outros arquivos, sejam funções ou variáveis;`,
+
+            `&rightarrow; Para que possamos usar o arquivo com o que queremos exportar, usarmos o <strong>export</strong> para importarmos em quaisquer outros lugares;`,
         ]
     },
     {
-        subtitle: '35. ',
+        subtitle: '35. Asynchronous code',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; A forma síncrona seria executar <strong>linha por linha</strong>, sem pular nenhuma etapa, seguindo uma ordem;`,
+            `&rightarrow; Síncronos não bloqueiam o <em>flow</em> do projeto;`,
+            `&rightarrow; Normalmente são encontradas em operações de I/O, <em>fetch</em> de dados;`,
         ]
     },
     {
-        subtitle: '36. ',
+        subtitle: '36. Error Handling',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; É um objeto (sim, um objeto) que representa um erro que ocorreu. Normalmente ocorre com <em>input</em> ou na parte de estabelecer um conexão. Mas o porque de precisar desse tratamento? Normalmente, quando um erro ocorre, todo o programa para e espera a correção do mesmo. Há erros que precisam ser corrigidos na hora, porém outros são passíveis de espera;`,
+            
+            `&rightarrow; <em><strong>try{}</strong></em>: todo código colocado dentro dos {} é do tipo que poderá causar algum erro futuro;`,
+            `&rightarrow; <em><strong>catch(){}</strong></em>: (o parâmetro dentro é para pegar um <em>error oject</em>, ou seja, <strong>error</strong>) { aqui podemos colocar <strong>console.log(error)</strong> para descobrir qual erro é }`,
+            `&rightarrow; <em><strong>finally{}</strong></em>: todo código colocado dentro dos {} é executado;`,
         ]
     },
     {
-        subtitle: '37. ',
+        subtitle: '37. DOM',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; 5 tipos:`,
+            `&rightarrow; <em><strong>document.getElementById()</strong></em>: retorna um <em>ELEMENT</em> ou <em>NULL</em>;`,
+            `&rightarrow; <em><strong>document.getElementsClassName()</strong></em>: retorna uma <em>HTML COLLECTION</em>;`,
+            `&rightarrow; <em><strong>document.getElementsByTagName()</strong></em>: retorna uma <em>HTML COLLECTION</em>;`,
+            `&rightarrow; <em><strong>document.querySelector()</strong></em>: retorna o <em>FIRST ELEMENT</em> ou <em>NULL</em>;`,
+            `&rightarrow; <em><strong>document.querySelectorAll()</strong></em>: retorna uma <em>NODELIST</em>;`,
+            
+            `&rightarrow; Passando um pouco mais para frente, temos as <strong>classList</strong>, que é uma propriedade usada para interagir com uma lista de classes de um elemento (normalmente CSS);`,
+            `&rightarrow; <em><strong>.add()</strong></em>: adiciona classe(s) a um determinado elemento;`,
+            `&rightarrow; <em><strong>.remove()</strong></em>: remove classe(s) de um determinado elemento;`,
+            `&rightarrow; <em><strong>.toggle()</strong></em>: funciona como se fosse um interruptor, "adicionando e removendo" classe(s);`,
+            `&rightarrow; <em><strong>.contains('className')</strong></em>: verifica se a <em>className</em> está contida dentro daquele elemento;`,
+            `&rightarrow; <em><strong>.replace('oldClass', 'newClass')</strong></em>: troca a(s) classe(s) de um determinado elemento;`,
         ]
     },
     {

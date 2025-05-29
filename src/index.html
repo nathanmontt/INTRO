@@ -53,118 +53,6 @@
             </div>
 
             <div class="container-fourth">
-                
-                <h3 class="title-content">32. STATIC</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; É uma <em>keyword</em> que define propriedades ou métodos que pertence a uma <em>class</em> ao invés de um objeto criado por aquela classe;</li>
-                    <li class="study-list">&rightarrow; Ou seja: ao inés de criar <strong>const MathUtil = new MathUtil();</strong> para acessar um possível objeto, eu simplesmente posso criar uma <em>static keyword</em> dentro da class da seguinte forma: <strong>static PI = 3.14159</strong> e acessá-la fora da classe da seguinte forma: <strong>console.log(MathUtil.PI)</strong>;</li>
-                    <li class="study-list">&rightarrow; De resumo: <strong>tudo estático pertence a classe em si</strong>!</li>
-                    <li class="study-list">&rightarrow; Se tentarmos acessar a static, não conseguiremos, já que a classe não possui o static como uma propriedade. Temos que usar o nome da CLASSE para acessá-la;</li>
-                </ul>
-
-                <h3 class="title-content">33. Inheritance</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; É uma forma de uma nova <em>class</em> herdar métodos e propriedades de outras <em>classes</em> existentes. A sua nomenclatura funciona da seguinte forma, abaixo:</li>
-                    <li class="study-list">&rightarrow; <em>class classNova extends classExistent</em></li>
-                </ul>
-
-                <h3 class="title-content">34. SUPER</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; É uma <em>keyword</em> usada para chamar o construtor ou acessar as propriedades e métodos de um <em>parent</em>. É semelhante ao <em>this</em>, sendo este para o <strong>this object</strong> e o <em>super</em> para <strong>the parent</strong>;</li>
-                    <li class="study-list">&rightarrow; O que isso significa é que, de acordo com o vídeo, antes de chamar as  <em>this</em> keywords, caso a <em>class</em>-pai tenha um constructor, é necessário chamar a <strong>super()</strong> keyword;</li>
-                    <li class="study-list">&rightarrow; A ideia aqui é <strong>não se repetir</strong>. Caso 5 sub-classes tenham, por exemplo, nome e idade, para não nos repetirmos em cada uma delas, apenas colocamos as propriedades no <strong>constructor(nome, idade) {...}</strong> e na hora de colocar o super dentro de cada sub-classe, dentro de cada construtor, usamos <strong>super(nome, idade)</strong>;</li>
-                </ul>
-
-                <h3 class="title-content">35. Getters and Setters</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; Para <strong>getters</strong>, são métodos especiais que fazem as propriedades serem legíveis para leitura. Para <strong>setters</strong>, são métodos especiais que fazem as propriedades serem legíveis para escrita;</li>
-                </ul>
-
-                <h3 class="title-content">36. Destructuring</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; Extrai valores de arrays e objetos e depois armazena eles em variáveis de um jeito de conveninente;</li>
-                    <li class="study-list">&rightarrow; Há 2 formas de fazer isso: <strong>[] para performar o <em>array destricturing</em></strong> ou <strong>{} para performar o <em>object destricturing</em></strong>;</li>
-                    <li class="study-list">&rightarrow; Alguns exemplos pertinentes (dentro do console.log()) são: <strong>array swapping, troca de 2 elementos de um array, atribuir um elemento de array à variáveis, extrair valores de objetos e destructure in function parameters</strong>;</li>
-                </ul>
-
-                <h3 class="title-content">37. Nested Objects</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; É a criação de um objeto dentro de outro. Exemplo: <strong>Pessoa{Endereço{}, Info{}, ...}</strong>;</li>
-                </ul>
-
-                <h3 class="title-content">38. sort()</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; Organiza os elementos de um array como strings de forma lexicográfica (estudar mais isso, porque não entendi);</li>
-                </ul>
-
-                <h3 class="title-content">39. Date Objects</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; São objetos que contém valores que representam <strong>dia e tempo</strong>. Eles podem ser formatados da forma que quisermos;</li>
-                    <li class="study-list">&rightarrow; Para formatar de uma outra forma, podemos usar: <strong>Date(ano, mes, dia, hora, minuto, segundo, milisegundo)</strong>;</li>
-                </ul>
-
-                <h3 class="title-content">40. Closure</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; É uma função definida dentro de outra função. Essa função declarada dentro da funcção-pai tem acesso às variáveis da função na qual dentro ela está;</li>
-                </ul>
-
-                <h3 class="title-content">41. setTimeout()</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; Um teste;</li>
-                    <li class="study-list">
-                        <button onclick="startTimer()">START</button>
-                        <button onclick="clearTimer()">CLEAR</button>
-                    </li>
-                </ul>
-
-                <h3 class="title-content">42. ES6 Modules</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; <em>Modules</em> são arquivos externos que contém codigos reutilizáveis que podem ser importados em outros arquivos de JS;</li>
-                    <li class="study-list">&rightarrow; Ou seja, dentro do nosso módulo, tudo o que está lá dentro pode ser reutilizado em outros arquivos, sejam funções ou variáveis;</li>
-                    <li class="study-list">&rightarrow; Para que possamos usar o arquivo com o que queremos exportar, usarmos o <strong>export</strong> para importarmos em quaisquer outros lugares;</li>
-                </ul>
-
-                <h3 class="title-content">43. Asynchronous code</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; A forma síncrona seria executar <strong>linha por linha</strong>, sem pular nenhuma etapa, seguindo uma ordem;</li>ncronos não bloqueiam o <em>flow</em> do projeto;</li>
-                    <li class="study-list">&rightarrow; Normalmente são encontradas em operações de I/O, <em>fetch</em> de dados;</li>
-                </ul>
-
-                <h3 class="title-content">44. Error Handling</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; É um objeto (sim, um objeto) que representa um erro que ocorreu. Normalmente ocorre com <em>input</em> ou na parte de estabelecer um conexão. Mas o porque de precisar desse tratamento? Normalmente, quando um erro ocorre, todo o programa para e espera a correção do mesmo. Há erros que precisam ser corrigidos na hora, porém outros são passíveis de espera;</li>
-                </ul>
-                <p class="space-up"> Para testá-los, usamos 3 tipos de "blocos":</p>
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; <em><strong>try{}</strong></em>: todo código colocado dentro dos {} é do tipo que poderá causar algum erro futuro;</li>
-                    <li class="study-list">&rightarrow; <em><strong>catch(){}</strong></em>: (o parâmetro dentro é para pegar um <em>error oject</em>, ou seja, <strong>error</strong>) { aqui podemos colocar <strong>console.log(error)</strong> para descobrir qual erro é }</li>
-                    <li class="study-list">&rightarrow; <em><strong>finally{}</strong></em>: todo código colocado dentro dos {} é executado;</li>
-                </ul>
-
                 <h3 class="title-content">45. DOM</h3>
                 <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
                 <ul class="study-menu-list-holder">
@@ -184,7 +72,7 @@
                     <li class="study-list">&rightarrow; Passando um pouco mais para frente, temos as <strong>classList</strong>, que é uma propriedade usada para interagir com uma lista de classes de um elemento (normalmente CSS);</li>
                 </ul>
                 <p class="space-up"> Temos algumas opções (usaremos um button para teste):</p>
-                <button id="myButton">My Button</button>
+                
                 <ul class="study-menu-list-holder">
                     <li class="study-list">&rightarrow; <em><strong>.add()</strong></em>: adiciona classe(s) a um determinado elemento;</li>
                     <li class="study-list">&rightarrow; <em><strong>.remove()</strong></em>: remove classe(s) de um determinado elemento;</li>
@@ -199,17 +87,7 @@
                     <li class="study-list">&rightarrow; Aqui é para tentar entender o conceito de <em>slider</em>;</li>
                 </ul>
 
-                <div class="slider">
-                    <div class="slides">
-                        <img src="img/kitty-1.jpg" alt="Kitty #1" class="slide">
-                        <img src="img/kitty-2.jpg" alt="Kitty #2" class="slide">
-                        <img src="img/kitty-3.jpg" alt="Kitty #3" class="slide">
-                        <img src="img/kitty-4.jpg" alt="Kitty #4" class="slide">
-                        <img src="img/kitty-5.jpg" alt="Kitty #5" class="slide">
-                    </div>
-                    <button class="prev" onclick="prevSlide()">&#10094</button>
-                    <button class="next" onclick="nextSlide()">&#10095</button>
-                </div>
+                
 
                 <h3 class="title-content">47. Promisses</h3>
                 <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
@@ -246,7 +124,7 @@
             <div class="container-display-mini-projects">
                 <div id="container-variables">
                     <div class="holder-variable-title">
-                        <h3>Variables Exercises</h3>
+                        <h3>Variables Exercise</h3>
                     </div>
                     <span id="topicVariableFullName"></span>
                     <span id="topicVariablePersonAge"></span>
@@ -254,11 +132,40 @@
                 </div>
                 <div id="container-user-input">
                     <div class="holder-user-input-title">
-                        <h3>Variables Exercises</h3>
+                        <h3>Variables Exercise</h3>
                     </div>
                     <label for="">Username: </label>
                     <input type="text" id="topicUserInputmyText">
                     <button id="topicUserInputBtnCta">Enviar</button>
+                </div>
+                <div id="container-setTimeOut">
+                    <div class="holder-setTimeOut-title">
+                        <h3>setTimeOut Exercise</h3>
+                    </div>
+                    <button onclick="startTimer()">START</button>
+                    <button onclick="clearTimer()">CLEAR</button>
+                </div>
+                <div id="container-DOM">
+                    <div class="holder-DOM-title">
+                        <h3>DOM Exercise</h3>
+                    </div>
+                    <button id="topicDOMMyButton">My Button</button>
+                </div>
+                <div id="container-slider">
+                    <div class="holder-slider-title">
+                        <h3>Slider Exercise</h3>
+                    </div>
+                    <div class="slider">
+                        <div class="slides">
+                            <img src="assets/img/kitty-1.jpg" alt="Kitty #1" class="slide">
+                            <img src="assets/img/kitty-2.jpg" alt="Kitty #2" class="slide">
+                            <img src="assets/img/kitty-3.jpg" alt="Kitty #3" class="slide">
+                            <img src="assets/img/kitty-4.jpg" alt="Kitty #4" class="slide">
+                            <img src="assets/img/kitty-5.jpg" alt="Kitty #5" class="slide">
+                        </div>
+                        <button class="prev" onclick="prevSlide()">&#10094</button>
+                        <button class="next" onclick="nextSlide()">&#10095</button>
+                    </div>
                 </div>
             </div>
         </div>
