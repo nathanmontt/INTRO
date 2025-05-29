@@ -50,6 +50,7 @@ header {
     justify-content: space-between;
     margin: var(--main-size);
 }
+
 .holder-slogan #slogan-name { text-indent: 1em; }
 #project-link { color: var(--usual-color); }
 #project-link:hover { text-decoration: underline; }
@@ -68,7 +69,7 @@ header {
 #mini-projects .title {
     margin: 0 0 var(--sec-size) 0;
 }
-/* #mini-projects .container-display-mini-projects {} */
+
 #container-variables, #container-user-input, #container-setTimeOut,
 #container-DOM, #container-slider, #container-fetch {
     padding: var(--main-size);
@@ -79,7 +80,8 @@ header {
 /* #container-variables > .holder-variable-title,
 #container-user-input > .holder-user-input-title {} */
 
-#container-first, #container-second, #container-third, #container-fourth, #container-fifth  {
+#container-first, #container-second, #container-third, #container-fourth, #container-fifth,
+#container-sixth {
     margin: var(--main-size);
     padding: var(--sec-size);
     height: var(--block-content-hight);
@@ -92,7 +94,8 @@ header {
 #container-second .title-content,
 #container-third .title-content, 
 #container-fourth .title-content,
-#container-fifth .title-content {
+#container-fifth .title-content,
+#container-sixth .title-content {
     border-bottom: 2px solid var(--main);
 }
 
@@ -100,7 +103,8 @@ header {
 #container-html .reference-study-link,
 #container-css .reference-study-link,
 #container-js .reference-study-link,
-#container-git-github .reference-study-link {
+#container-git-github .reference-study-link, 
+#container-npm .reference-study-link {
     padding: var(--sec-size);
     margin: var(--sec-size) 0;
     font-size: var(--thir-size);
@@ -113,7 +117,8 @@ header {
 #container-html .subtitle,
 #container-css .subtitle,
 #container-js .subtitle, 
-#container-git-github .subtitle {
+#container-git-github .subtitle,
+#container-npm .subtitle {
     margin-top: var(--sec-size);
 }
 
@@ -121,15 +126,17 @@ header {
 #container-html .holder-list,
 #container-css .holder-list, 
 #container-js .holder-list,
-#container-git-github .holder-list {
+#container-git-github .holder-list,
+#container-npm .holder-list {
     border: 2px solid;
 }
 
 #container-internet .list-item,
 #container-html .list-item,
-#container-css .list-item, 
-#container-js .list-item, 
-#container-git-github .list-item {
+#container-css .list-item,
+#container-js .list-item,
+#container-git-github .list-item,
+#container-npm .list-item {
     padding: var(--sec-size);
     text-indent: 1em;
     border-bottom: 2px solid;

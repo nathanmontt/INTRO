@@ -1834,7 +1834,17 @@ const gitGithubContent = [
             "&rightarrow; <strong>git push</strong> serve para você 'jogar' os arquivos locais no repositório online. Na primeira vez, usa-se <strong>gitr push -u origin main</strong>, indicando que aqueles arquivos vão para a branch main;",
         ]
     },
-    
+];
+
+const npmContent = [
+    {
+        subtitle: '1. ',
+        desc: 'Conteúdo estudado do <a href="https://roadmap.sh/git-github" class="channel" target="_blank">roadmap.sh</a>',
+        contentItself: [
+            `&rightarrow; É um <strong>pacote de gerenciamento para Node.js</strong> criado em 2009 como um projeto <em>open source</em> para ajudar devs de JS a compartilhar <em>packaged modules</em> de código. No geral, é um gerenciador de pacotes Javascript (palavras ditas por <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">esse cara</a>);`,
+            `&rightarrow; Primeiro, instalar o <strong>node.js</strong>;`,
+        ]
+    },
 ];
 
 function renderSectionContent(contentArray, containerId) {
@@ -1873,4 +1883,5 @@ document.addEventListener('DOMContentLoaded', () => {
     renderSectionContent(cssContent, 'container-css');
     renderSectionContent(jsContent, 'container-js');
     renderSectionContent(gitGithubContent, 'container-git-github');
+    renderSectionContent(npmContent, 'container-npm');
 });
