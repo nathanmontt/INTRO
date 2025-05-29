@@ -52,70 +52,9 @@
                 <div id="container-js"></div>
             </div>
 
-            <div class="container-fourth">
-                <h3 class="title-content">45. DOM</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; Aqui entra alguns conceitos sobre DOM (<strong>Document Object Model</strong>);</li>
-                    <li class="study-list">&rightarrow; Sobre os <strong>seletores de elementos</strong>, dizemos que são métodos usados para encontrar e manipular elementos HTML, podendo ser um ou vários;</li>
-                </ul>
-
-                <p class="space-up"> Para testá-los, usamos 5 tipos:</p>
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; <em><strong>document.getElementById()</strong></em>: retorna um <em>ELEMENT</em> ou <em>NULL</em>;</li>
-                    <li class="study-list">&rightarrow; <em><strong>document.getElementsClassName()</strong></em>: retorna uma <em>HTML COLLECTION</em>;</li>
-                    <li class="study-list">&rightarrow; <em><strong>document.getElementsByTagName()</strong></em>: retorna uma <em>HTML COLLECTION</em>;</li>
-                    <li class="study-list">&rightarrow; <em><strong>document.querySelector()</strong></em>: retorna o <em>FIRST ELEMENT</em> ou <em>NULL</em>;</li>
-                    <li class="study-list">&rightarrow; <em><strong>document.querySelectorAll()</strong></em>: retorna uma <em>NODELIST</em>;</li>
-                </ul>
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; Passando um pouco mais para frente, temos as <strong>classList</strong>, que é uma propriedade usada para interagir com uma lista de classes de um elemento (normalmente CSS);</li>
-                </ul>
-                <p class="space-up"> Temos algumas opções (usaremos um button para teste):</p>
-                
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; <em><strong>.add()</strong></em>: adiciona classe(s) a um determinado elemento;</li>
-                    <li class="study-list">&rightarrow; <em><strong>.remove()</strong></em>: remove classe(s) de um determinado elemento;</li>
-                    <li class="study-list">&rightarrow; <em><strong>.toggle()</strong></em>: funciona como se fosse um interruptor, "adicionando e removendo" classe(s);</li>
-                    <li class="study-list">&rightarrow; <em><strong>.contains('className')</strong></em>: verifica se a <em>className</em> está contida dentro daquele elemento;</li>
-                    <li class="study-list">&rightarrow; <em><strong>.replace('oldClass', 'newClass')</strong></em>: troca a(s) classe(s) de um determinado elemento;</li>
-                </ul>
-
-                <h3 class="title-content">46. Slider</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; Aqui é para tentar entender o conceito de <em>slider</em>;</li>
-                </ul>
-
-                
-
-                <h3 class="title-content">47. Promisses</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; É um objeto que administra <em>asynchronous operations</em>. Operações que podem tomar um certo tempo, e que não queremos que elas pausem todo o resto dos outros códigos;</li>
-                    <li class="study-list">&rightarrow; A ideia é "prometer retornar um valor", sendo esse valor poder ser aceito ou rejeitado (isso enquanto a tarefa fica em <em>pending</em>, espera);</li>
-                    <li class="study-list">&rightarrow; Para escrever: <strong>new Promisse((resolve, reject) => {asynchronous code})</strong>;</li>
-                </ul>
-
-                <h3 class="title-content">48. Async/Await</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; <strong>Async</strong>: faz uma função retornar uma <em>Promisse</em>;</li>
-                    <li class="study-list">&rightarrow; <strong>Await</strong>: faz uma função <em>async</em> esperar pela em>Promisse</em>;</li>
-                    <li class="study-list">&rightarrow; Isso permite que escrevamos <strong>códigos assíncronos de maneira síncrona</strong>;</li>
-                </ul>
-                
-                <h3 class="title-content">49. fetch()</h3>
-                <p class="studybook">Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="profile-channel" target="_blank">Bro Code</a></p>
-                <ul class="study-menu-list-holder">
-                    <li class="study-list">&rightarrow; É uma função usada para fazer <em>HTTP requests</em> para <em>fetch resources</em>;</li>
-                    <li class="study-list">&rightarrow; Escreve-se da seguinte forma: <strong>fetch(url, {options})</strong>;</li>
-                    <li class="study-list">
-                        <input type="text" id="pokemonName" placeholder="Enter a pokemon name">
-                        <button onclick="fetchData()">Fetch pokemon</button><br>
-                        <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
-                    </li>
-                </ul>
+            <div id="container-fifth">
+                <h1 class="title-content">git/github</h1>
+                <div id="container-git-github"></div>
             </div>
         </div>
 
@@ -165,6 +104,14 @@
                         </div>
                         <button class="prev" onclick="prevSlide()">&#10094</button>
                         <button class="next" onclick="nextSlide()">&#10095</button>
+                    </div>
+                </div>
+                <div id="container-fetch">
+                    <div class="holder-fetch-title">
+                        <h3>fetch Exercise</h3>
+                        <input type="text" id="pokemonName" placeholder="Enter a pokemon name">
+                        <button onclick="fetchData()">Fetch pokemon</button><br>
+                        <img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
                     </div>
                 </div>
             </div>

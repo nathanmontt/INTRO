@@ -39,7 +39,7 @@
 }
 @media screen and (min-width: 768px) {
     #container-variables, #container-user-input, #container-setTimeOut,
-    #container-DOM, #container-slider {
+    #container-DOM, #container-slider, #container-fetch {
         margin-right: var(--sec-size);
     }
 }
@@ -70,7 +70,7 @@ header {
 }
 /* #mini-projects .container-display-mini-projects {} */
 #container-variables, #container-user-input, #container-setTimeOut,
-#container-DOM, #container-slider {
+#container-DOM, #container-slider, #container-fetch {
     padding: var(--main-size);
     margin-bottom: var(--sec-size);
     border: 2px solid;
@@ -79,7 +79,7 @@ header {
 /* #container-variables > .holder-variable-title,
 #container-user-input > .holder-user-input-title {} */
 
-#container-first, #container-second, #container-third, #container-fourth {
+#container-first, #container-second, #container-third, #container-fourth, #container-fifth  {
     margin: var(--main-size);
     padding: var(--sec-size);
     height: var(--block-content-hight);
@@ -91,14 +91,16 @@ header {
 #container-first .title-content,
 #container-second .title-content,
 #container-third .title-content, 
-#container-fourth .title-content {
+#container-fourth .title-content,
+#container-fifth .title-content {
     border-bottom: 2px solid var(--main);
 }
 
 #container-internet .reference-study-link, 
 #container-html .reference-study-link,
 #container-css .reference-study-link,
-#container-js .reference-study-link {
+#container-js .reference-study-link,
+#container-git-github .reference-study-link {
     padding: var(--sec-size);
     margin: var(--sec-size) 0;
     font-size: var(--thir-size);
@@ -110,21 +112,24 @@ header {
 #container-internet .subtitle, 
 #container-html .subtitle,
 #container-css .subtitle,
-#container-js .subtitle {
+#container-js .subtitle, 
+#container-git-github .subtitle {
     margin-top: var(--sec-size);
 }
 
 #container-internet .holder-list,
 #container-html .holder-list,
 #container-css .holder-list, 
-#container-js .holder-list {
+#container-js .holder-list,
+#container-git-github .holder-list {
     border: 2px solid;
 }
 
 #container-internet .list-item,
 #container-html .list-item,
 #container-css .list-item, 
-#container-js .list-item {
+#container-js .list-item, 
+#container-git-github .list-item {
     padding: var(--sec-size);
     text-indent: 1em;
     border-bottom: 2px solid;
@@ -155,7 +160,7 @@ footer .social-links {
     color: var(--main);
     text-decoration: none;
 }
-#myButton {
+#topicDOMMyButton {
     background-color: hsl(240, 0%, 52%);
     border: none;
     margin: var(--main-size) 0 var(--main-size) 0;

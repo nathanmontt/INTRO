@@ -984,7 +984,6 @@ console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- CALLBACKHELL ----- */
-
 {    
     // 1. walk the dog
     // 2. clean the kitchen
@@ -1065,127 +1064,57 @@ console.log('/* ======================= */');
 
     doChores();
 }
+console.log('/* ======================= */');
+/* ======================================================================================= */
 
-// /* ============================ */
+/* ----- JSON ----- */
+{
+    const jsonNames = `["Spongebob", "Patrick", "Squidward", "Sandy"]`;
+    const jsonPerson = `{
+        "name": "Spongebob",
+        "age": 20,
+        "isEmployed": true,
+        "hobbies": [
+            "Jellyfishing",
+            "Karate",
+            "Cooking"
+        ]
+    }`;
 
-// const jsonNames = `["Spongebob", "Patrick", "Squidward", "Sandy"]`;
-// const jsonPerson = `{
-//     "name": "Spongebob",
-//     "age": 20,
-//     "isEmployed": true,
-//     "hobbies": [
-//         "Jellyfishing",
-//         "Karate",
-//         "Cooking"
-//     ]
-// }`;
+    // const jsonString = JSON.stringify(personJson);
+    // console.log(jsonString);
 
-// // const jsonString = JSON.stringify(personJson);
-// // console.log(jsonString);
+    const parsedData = JSON.parse(jsonNames);
+    console.log(parsedData);
+}
+console.log('/* ======================= */');
+/* ======================================================================================= */
 
-// const parsedData = JSON.parse(jsonNames);
-// console.log(parsedData)
+/* ----- FETCH ----- */
+async function fetchData() {
+    try {
+        const pokemonName = document.getElementById('pokemonName').value.toLowerCase();
 
-// /* ============================ */
+        const response = await fetch (`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
 
-// // fetch("https://pokeapi.co/api/v2/pokemon/ditto")
-// //     .then (
-// //         response => {
-// //             if (!response.ok) {
-// //                 throw new Error("Could not fetch resource");
-// //             }
-// //             return response.json();
-// //         }
-// //     )
-// //     .then (
-// //         data => console.log(data.name)
-// //     )
-// //     .catch (error => console.error(error))
+        if (!response.ok) { throw new Error("Could not fetch"); }
 
-// async function fetchData() {
-//     try {
-//         const pokemonName = document.getElementById('pokemonName').value.toLowerCase();
+        const data = await response.json();
+        const pokemonSprite = data.sprites.front_default;
+        const imgElement = document.getElementById('pokemonSprite');
 
-//         const response = await fetch (`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+        imgElement.src = pokemonSprite;
+        imgElement.style.display = "block";
+    } catch (error) {
+        console.error(error)
+    }
+}
+console.log('/* ======================= */');
 
-//         if (!response.ok) { throw new Error("Could not fetch"); }
 
-//         const data = await response.json();
-//         const pokemonSprite = data.sprites.front_default;
-//         const imgElement = document.getElementById('pokemonSprite');
+/* ======================================================================================= */
+/* ----- criação do conteúdo dinâmico ----- */
 
-//         imgElement.src = pokemonSprite;
-//         imgElement.style.display = "block";
-//     } catch (error) {
-//         console.error(error)
-//     }
-// }
-
-/* ============================ */
-
-// const internetContent = [
-//     {
-//         titleActualContent: '2. What is HTTP?',
-//         descActualContent: 'Conteúdo resumido do vídeo: What is HTTP and Why Web Is Built On It?, por Hooman Mardox.',
-//         contentItself: [
-//             "De acordo com o vídeo, HTTP significa HyperText Transfer Protocol. O HyperText é possível entender como os links que estão presentes dentro da página;", 
-//             "Então, de forma resumida, HTTP é um protocolo que transfere esses HyperTexts do servidor web para os browsers;"
-//         ]
-//     },
-//     {
-//         titleActualContent: '3. What is Domain Name?',
-//         descActualContent: 'Conteúdo resumido do vídeo: What is HTTP and Why Web Is Built On It?, por Hooman Mardox.',
-//         contentItself: [
-//             "Se procurarmos por endereços IP na Internet, veremos uma baita quantidade de números, como 8.8.8.8, 8.8.8.4, e assim por diante. Mas esses número tem um significado. Para o PC. Para nós, não de cara;", 
-            
-//             "Eles são os nomes dos sites. Mas não vamos ficar sabendo de todos os IPs de cabeça, e é para isso que o DNS (Domain Name Server) serve. QUando digitamos na barra de pesquisa de algum browser, é enviado uma request para o DNS que sai em busca desse nome. Quando o acha, compara com os endereços já registrados e, se compatíveis, retorna a pesquisa (no caso, vai em direção ao site escolhido);"
-//         ]
-//     },
-// ]
-
-// // INTERNET CONTENT
-// const containerInternet = document.getElementById('container-internet');
-// const containerContentFirst = document.createElement('div');
-// containerContentFirst.setAttribute('id', 'container-content-first');
-
-// function renderInternetContent(internetContent) {
-//     // Parte inicial
-//     const internetTitle = document.createElement('h3');
-//     const internetDesc = document.createElement('p');
-
-//     internetTitle.innerHTML = `${internetContent.titleActualContent}`;
-//     internetDesc.innerHTML = `${internetContent.descActualContent}`;
-
-//     containerContentFirst.append(internetTitle, internetDesc);
-
-//     console.log(containerContentFirst)
-    
-//     // Parte de conteúdo
-//     const internetUL = document.createElement('ul');
-//     internetContent.contentItself.forEach((el) => {
-//         const internetLI = document.createElement('li');
-//         internetLI.innerHTML = el;
-//         internetUL.append(internetLI);
-//     });
-    
-//     containerContentFirst.append(internetUL);
-//     containerInternet.append(containerContentFirst);
-
-//     return containerContentFirst;
-// }
-
-// function renderAllContent () {
-//     internetContent.forEach((el) => {
-//         const internetGeneral = renderInternetContent(el);
-//         containerContentFirst.appendChild(internetGeneral);
-//     });
-// }
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     renderInternetContent();
-// });
-
-// Exemplo para a seção Internet
 const internetContent = [
     {
         subtitle: '1. How does the Internet work?',
@@ -1236,7 +1165,6 @@ const internetContent = [
     }
 ];
 
-// Exemplo para a seção HTML
 const htmlContent = [
     {
         subtitle: '1. Introduction to HTML',
@@ -1444,7 +1372,6 @@ const htmlContent = [
     },
 ];
 
-// Exemplo para a seção CSS
 const cssContent = [
     {
         subtitle: '1. Introduction to CSS',
@@ -1869,99 +1796,47 @@ topicUserInputButton.addEventListener('click', function () {
         ]
     },
     {
-        subtitle: '38. ',
+        subtitle: '38. Promisses',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; É um objeto que administra <em>asynchronous operations</em>. Operações que podem tomar um certo tempo, e que não queremos que elas pausem todo o resto dos outros códigos;`,
+            `&rightarrow; A ideia é "prometer retornar um valor", sendo esse valor poder ser aceito ou rejeitado (isso enquanto a tarefa fica em <em>pending</em>, espera);`,
+            `&rightarrow; Para escrever: <strong>new Promisse((resolve, reject) => {asynchronous code})</strong>;`,
         ]
     },
     {
-        subtitle: '39. ',
+        subtitle: '39. Async/Await',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; <strong>Async</strong>: faz uma função retornar uma <em>Promisse</em>;`,
+            `&rightarrow; <strong>Await</strong>: faz uma função <em>async</em> esperar pela em>Promisse</em>;`,
+            `&rightarrow; Isso permite que escrevamos <strong>códigos assíncronos de maneira síncrona</strong>;`,
         ]
     },
     {
-        subtitle: '40. ',
+        subtitle: '40. fetch(url, {options})',
         desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
-        ]
-    },
-    {
-        subtitle: '41. ',
-        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
-        contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
-        ]
-    },
-    {
-        subtitle: '42. ',
-        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
-        contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
-        ]
-    },
-    {
-        subtitle: '43. ',
-        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
-        contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
-        ]
-    },
-    {
-        subtitle: '44. ',
-        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
-        contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
-        ]
-    },
-    {
-        subtitle: '45. ',
-        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
-        contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
-        ]
-    },
-    {
-        subtitle: '46. ',
-        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
-        contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
-        ]
-    },
-    {
-        subtitle: '47. ',
-        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
-        contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
-        ]
-    },
-    {
-        subtitle: '48. ',
-        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
-        contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
-        ]
-    },
-    {
-        subtitle: '49. ',
-        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
-        contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
-        ]
-    },
-    {
-        subtitle: '50. ',
-        desc: 'Conteúdo estudado do canal: <a href="https://www.youtube.com/@BroCodez" class="channel" target="_blank">Bro Code</a>',
-        contentItself: [
-            `&rightarrow; É a forma de chamar um método atrás do outro em uma única linha;`,
+            `&rightarrow; É uma função usada para fazer <em>HTTP requests</em> para <em>fetch resources</em>;`,
         ]
     },
 ];
 
-// Função para renderizar qualquer conteúdo (Internet, HTML, CSS, etc.)
+const gitGithubContent = [
+    {
+        subtitle: '1. Início e Fim',
+        desc: 'Conteúdo estudado do <a href="https://roadmap.sh/git-github" class="channel" target="_blank">roadmap.sh</a>',
+        contentItself: [
+            "&rightarrow; Todo o <em>roadmap</em> é bastante válido, mas a grande maioria dos comandos podem ser aprendidos na prática quando o usuário for construir um simples projeto. Por exemplo:;",
+            "&rightarrow; <strong>git init</strong> é para iniciar um repositório (local). Ou seja, crie uma pasta para seu projeto e, dentro dela clique com o botão direito do mouse e selecione a opção 'Open Git Bash Here' e escreva 'git init'`;",
+            "&rightarrow; <strong>git add .</strong> é para adicionar os arquivos depois de você ter criado o repositório online para que eles sejam enviados para lá. O . é para todos os arquivos modificados (eu acho), mas caso queira adiconar um específico, só escrever o caminho do(s) arquivo(s);",
+            "&rightarrow; <strong>git commit -m 'Comentário'</strong> é para descrever o que aconteceu nas modificações mais recentes que você deu o git add;",
+            "&rightarrow; <strong>git push</strong> serve para você 'jogar' os arquivos locais no repositório online. Na primeira vez, usa-se <strong>gitr push -u origin main</strong>, indicando que aqueles arquivos vão para a branch main;",
+        ]
+    },
+    
+];
+
 function renderSectionContent(contentArray, containerId) {
     const container = document.getElementById(containerId);
 
@@ -1997,4 +1872,5 @@ document.addEventListener('DOMContentLoaded', () => {
     renderSectionContent(htmlContent, 'container-html');
     renderSectionContent(cssContent, 'container-css');
     renderSectionContent(jsContent, 'container-js');
+    renderSectionContent(gitGithubContent, 'container-git-github');
 });
