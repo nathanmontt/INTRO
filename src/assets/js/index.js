@@ -1110,9 +1110,28 @@ async function fetchData() {
     }
 }
 console.log('/* ======================= */');
-
-
 /* ======================================================================================= */
+
+/* ----- teste mini projeto ----- */
+
+const inputTeste = document.getElementById('teste');
+let countTeste = document.getElementById('count');
+let c = 0
+
+inputTeste.addEventListener('keydown', (keyPressEvent) => {
+    if (keyPressEvent.key) {
+        console.log(c);
+        c++;
+        countTeste.innerHTML = `${c}/250`;
+    }
+});
+
+// do {
+//     c++
+//     countTeste.innerHTML = `${c}/250`;
+//     console.log(countTeste);
+// } while (inputTeste.length <= 250);
+
 /* ----- criação do conteúdo dinâmico ----- */
 
 const internetContent = [
