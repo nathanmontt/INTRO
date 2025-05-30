@@ -1112,28 +1112,7 @@ async function fetchData() {
 console.log('/* ======================= */');
 /* ======================================================================================= */
 
-/* ----- teste mini projeto ----- */
-
-const inputTeste = document.getElementById('teste');
-let countTeste = document.getElementById('count');
-let c = 0
-
-inputTeste.addEventListener('keydown', (keyPressEvent) => {
-    if (keyPressEvent.key) {
-        console.log(c);
-        c++;
-        countTeste.innerHTML = `${c}/250`;
-    }
-});
-
-// do {
-//     c++
-//     countTeste.innerHTML = `${c}/250`;
-//     console.log(countTeste);
-// } while (inputTeste.length <= 250);
-
 /* ----- criação do conteúdo dinâmico ----- */
-
 const internetContent = [
     {
         subtitle: '1. How does the Internet work?',
@@ -1862,6 +1841,10 @@ const npmContent = [
         contentItself: [
             `&rightarrow; É um <strong>pacote de gerenciamento para Node.js</strong> criado em 2009 como um projeto <em>open source</em> para ajudar devs de JS a compartilhar <em>packaged modules</em> de código. No geral, é um gerenciador de pacotes Javascript (palavras ditas por <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">esse cara</a>);`,
             `&rightarrow; Primeiro, instalar o <strong>node.js</strong>;`,
+            `&rightarrow; Depois de instalado, verificamos a versão do npm, com <strong>npm -v</strong> ou <strong>npm --version</strong>;`,
+            `&rightarrow; Podemos ver as um "manual" dos comandos, com <strong>npm</strong> ou <strong>npm help</strong>;`,
+            `<span class="obs">&rightarrow; Abrindo pelo Git Bash, para limpar a tela, usamos <strong>Ctrl+L</strong>;</span>`,
+            `&rightarrow; Podemos ver as um "manual" dos comandos, com <strong>npm</strong> ou <strong>npm help</strong>;`,
         ]
     },
 ];
