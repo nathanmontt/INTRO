@@ -1839,7 +1839,7 @@ const npmContent = [
         subtitle: '1. general concepts',
         desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
         contentItself: [
-            `&rightarrow; É um <strong>pacote de gerenciamento para Node.js</strong> criado em 2009 como um projeto <em>open source</em> para ajudar devs de JS a compartilhar <em>packaged modules</em> de código. No geral, é um gerenciador de pacotes Javascript (palavras ditas por <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">esse cara</a>);`,
+            `&rightarrow; É um <strong>pacote de gerenciamento para Node.js</strong> criado em 2009 como um projeto <em>open source</em> para ajudar devs de JS a compartilhar <em>packaged modules</em> de código. No geral, é um gerenciador de pacotes Javascript (palavras ditas por <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="npm-link" target="_blank">esse cara</a>);`,
             `&rightarrow; Primeiro, instalar o <strong>node.js</strong>;`,
             `&rightarrow; Depois de instalado, verificamos a versão do npm, com <strong>npm -v</strong> ou <strong>npm --version</strong>;`,
             `&rightarrow; Podemos ver as um "manual" dos comandos, com <strong>npm</strong> ou <strong>npm help</strong>;`,
@@ -1871,6 +1871,21 @@ const npmContent = [
         desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
         contentItself: [
             `&rightarrow; Agora, caso queiramos modificar alguma informação do arquivo .json de forma <strong>default</strong>, ou seja, assim que usarmos o comando anterior (<strong>npm init --yes</strong> ou <strong>npm init -y</strong>), queremos que o license por exemplo seja MIT, usamos o seguinte comando para conseguir tal feito: <strong>npm config set init-nomeDoQueQueremosMudar "novoValor"</strong>;`,
+            
+            `&rightarrow; Agora, caso queiramos verificar qual é o valor <em>default</em> no package.json, usamos <strong>npm get init-nomeDoQueQueremosVerificar</strong> (pode usar antes do get config);`,
+            
+            `<span class="obs">&rightarrow; Para mexer no nome do autor, não usamos apenas author ou name, para não dar comflito com o nome do app. Usamos <strong>author-name</strong>;</span>;`,
+        ]
+    },
+    {
+        subtitle: '5. installing modules',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; Agora, vamos para a instalação de módulos. Usaremos a biblioteca <a href="https://lodash.com/" class="npm-link" target="_blank">Lodash</a>, que nos dá algumas <em>utility functions</em>, por exemplo. Para fazermos a instalação, usamos <strong>npm install lodash</strong>`,
+
+            `&rightarrow; Agora, depois de instalada, em um arquivo do <strong>mesmo nome que está na package.json</strong>, toda vez que instalamos um <em>module</em> e queremos utilizá-lo dentro de uma aplicação, setamos uma variável da seguinte forma: <strong>const nomeVar = require('nome-do-modulo');</strong>`,
+
+            `<span class="obs">&rightarrow; Caso não queiramos abirir um <em>live-server</em> toda vez, dentro do Gitbash, usamos <strong>node nomeDoArquivo.js</strong>;`,
         ]
     },
 ];

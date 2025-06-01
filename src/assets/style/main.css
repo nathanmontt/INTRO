@@ -196,6 +196,10 @@ img.displaySlide {
 .npm-init {
     width: 15em;
 }
+.npm-link {
+    font-weight: bold;
+    color: #4062b7;
+}
 @media screen and (min-width: 768px) {
     .npm-init {
         width: 20em;
