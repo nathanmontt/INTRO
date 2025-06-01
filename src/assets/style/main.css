@@ -44,6 +44,7 @@
     }
 }
 
+
 /* ----- HEADER ----- */
 header {
     display: flex;
@@ -189,4 +190,32 @@ footer .social-links {
 }
 img.displaySlide {
     display: block;
+}
+
+/* npm */
+.npm-init {
+    width: 15em;
+}
+@media screen and (min-width: 768px) {
+    .npm-init {
+        width: 20em;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .npm-init {
+        width: 25em;
+    }
+}
+.npm-init-configs {
+    width: 15em;
+}
+@media screen and (min-width: 768px) {
+    .npm-init-configs {
+        width: 20em;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .npm-init-configs {
+        width: 25em;
+    }
 }

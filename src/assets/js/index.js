@@ -1423,12 +1423,12 @@ const jsContent = [
             `,
             `&rightarrow; Para chegarmos ao resultado alvo que queremos, temos de escrever da seguinte forma:`,
             `
-            <pre>let topicUserInputUsername;
-let topicUserInputButton = document.getElementById('mySubmit');
-topicUserInputButton.addEventListener('click', function () {
-    topicUserInputUsername = document.getElementById('myText').value;
-    console.log(topicUserInputUsername);
-}</pre>
+            let topicUserInputUsername;
+            let topicUserInputButton = document.getElementById('mySubmit');
+            topicUserInputButton.addEventListener('click', function () {
+            topicUserInputUsername = document.getElementById('myText').value;
+            console.log(topicUserInputUsername);
+            }
             `,
         ]
     },
@@ -1836,8 +1836,8 @@ const gitGithubContent = [
 
 const npmContent = [
     {
-        subtitle: '1. ',
-        desc: 'Conteúdo estudado do <a href="https://roadmap.sh/git-github" class="channel" target="_blank">roadmap.sh</a>',
+        subtitle: '1. general concepts',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
         contentItself: [
             `&rightarrow; É um <strong>pacote de gerenciamento para Node.js</strong> criado em 2009 como um projeto <em>open source</em> para ajudar devs de JS a compartilhar <em>packaged modules</em> de código. No geral, é um gerenciador de pacotes Javascript (palavras ditas por <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">esse cara</a>);`,
             `&rightarrow; Primeiro, instalar o <strong>node.js</strong>;`,
@@ -1845,6 +1845,32 @@ const npmContent = [
             `&rightarrow; Podemos ver as um "manual" dos comandos, com <strong>npm</strong> ou <strong>npm help</strong>;`,
             `<span class="obs">&rightarrow; Abrindo pelo Git Bash, para limpar a tela, usamos <strong>Ctrl+L</strong>;</span>`,
             `&rightarrow; Podemos ver as um "manual" dos comandos, com <strong>npm</strong> ou <strong>npm help</strong>;`,
+        ]
+    },
+    {
+        subtitle: '2. Package.json File',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; Esse é o arquivo mais importante, semelhante à uma documentação. Aqui tem a informação da aplicação, nome, autor, versão, etc. Mas essa não é a principal parte: aqui armazena toda as <strong>dependências da sua aplicação</strong>. Como assim? <strong>módulos</strong>, por exemplo. Ou seja, se sua aplicação roda em <strong>express.js</strong>, então é necessário dizer no arquivo que a sua aplicação usa <strong>express.js</strong>. Usa-se caso seja necessário movê-la de algum lugar;`,
+            `&rightarrow; Também é possível criar scripts. Podemos criá-la com <strong>npm init</strong>;`,
+        ]
+    },
+    {
+        subtitle: '3. npm init',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; Abrindo o git bash, damos um <em>npm init</em>;`,
+            `&rightarrow; Nele nos depararemos com a seguinte imagem: <img class="npm-init" src="assets/img/npm/npm-init.png">;`,
+            `&rightarrow; O nome entre parênteses é o nome do nosso package.json. Caso não queira modificar, apenas apertar ENTER e seguir em frente;`,
+            `&rightarrow; Após isso, adicionamos algumas informações e ficamos com a seguinte imagem: <img class="npm-init-configs" src="assets/img/npm/npm-init-configs.png">;`,
+            `&rightarrow; Mas se não quisermos fazer todo esse processo, de ENTER, escrever nomes, etc, podemos simplesmente digitar <strong>npm init --yes</strong>, que vai simplesmente <strong>eliminar todo o processo da imagem acima e criar um arquivo .json para nós</strong>. No caso, vai ser criado com tudo o que a gente não definiu antes (keywords, a <em>license</em> vai ser a ISC, que ele recomenda no início);`,
+        ]
+    },
+    {
+        subtitle: '4. npm config',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; Agora, caso queiramos modificar alguma informação do arquivo .json de forma <strong>default</strong>, ou seja, assim que usarmos o comando anterior (<strong>npm init --yes</strong> ou <strong>npm init -y</strong>), queremos que o license por exemplo seja MIT, usamos o seguinte comando para conseguir tal feito: <strong>npm config set init-nomeDoQueQueremosMudar "novoValor"</strong>;`,
         ]
     },
 ];
