@@ -1840,10 +1840,15 @@ const npmContent = [
         desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
         contentItself: [
             `&rightarrow; É um <strong>pacote de gerenciamento para Node.js</strong> criado em 2009 como um projeto <em>open source</em> para ajudar devs de JS a compartilhar <em>packaged modules</em> de código. No geral, é um gerenciador de pacotes Javascript (palavras ditas por <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="npm-link" target="_blank">esse cara</a>);`,
+            
             `&rightarrow; Primeiro, instalar o <strong>node.js</strong>;`,
+            
             `&rightarrow; Depois de instalado, verificamos a versão do npm, com <strong>npm -v</strong> ou <strong>npm --version</strong>;`,
+            
             `&rightarrow; Podemos ver as um "manual" dos comandos, com <strong>npm</strong> ou <strong>npm help</strong>;`,
+            
             `<span class="obs">&rightarrow; Abrindo pelo Git Bash, para limpar a tela, usamos <strong>Ctrl+L</strong>;</span>`,
+            
             `&rightarrow; Podemos ver as um "manual" dos comandos, com <strong>npm</strong> ou <strong>npm help</strong>;`,
         ]
     },
@@ -1852,6 +1857,7 @@ const npmContent = [
         desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
         contentItself: [
             `&rightarrow; Esse é o arquivo mais importante, semelhante à uma documentação. Aqui tem a informação da aplicação, nome, autor, versão, etc. Mas essa não é a principal parte: aqui armazena toda as <strong>dependências da sua aplicação</strong>. Como assim? <strong>módulos</strong>, por exemplo. Ou seja, se sua aplicação roda em <strong>express.js</strong>, então é necessário dizer no arquivo que a sua aplicação usa <strong>express.js</strong>. Usa-se caso seja necessário movê-la de algum lugar;`,
+            
             `&rightarrow; Também é possível criar scripts. Podemos criá-la com <strong>npm init</strong>;`,
         ]
     },
@@ -1860,9 +1866,13 @@ const npmContent = [
         desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
         contentItself: [
             `&rightarrow; Abrindo o git bash, damos um <em>npm init</em>;`,
+            
             `&rightarrow; Nele nos depararemos com a seguinte imagem: <img class="npm-init" src="assets/img/npm/npm-init.png">;`,
+            
             `&rightarrow; O nome entre parênteses é o nome do nosso package.json. Caso não queira modificar, apenas apertar ENTER e seguir em frente;`,
+            
             `&rightarrow; Após isso, adicionamos algumas informações e ficamos com a seguinte imagem: <img class="npm-init-configs" src="assets/img/npm/npm-init-configs.png">;`,
+            
             `&rightarrow; Mas se não quisermos fazer todo esse processo, de ENTER, escrever nomes, etc, podemos simplesmente digitar <strong>npm init --yes</strong>, que vai simplesmente <strong>eliminar todo o processo da imagem acima e criar um arquivo .json para nós</strong>. No caso, vai ser criado com tudo o que a gente não definiu antes (keywords, a <em>license</em> vai ser a ISC, que ele recomenda no início);`,
         ]
     },
@@ -1878,14 +1888,62 @@ const npmContent = [
         ]
     },
     {
-        subtitle: '5. installing modules',
+        subtitle: '5. installing packages',
         desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
         contentItself: [
-            `&rightarrow; Agora, vamos para a instalação de módulos. Usaremos a biblioteca <a href="https://lodash.com/" class="npm-link" target="_blank">Lodash</a>, que nos dá algumas <em>utility functions</em>, por exemplo. Para fazermos a instalação, usamos <strong>npm install lodash</strong>`,
+            `&rightarrow; Agora, vamos para a instalação de módulos. Usaremos a biblioteca <a href="https://lodash.com/" class="npm-link" target="_blank">Lodash</a>, que nos dá algumas <em>utility functions</em>, por exemplo. Para fazermos a instalação, usamos <strong>npm install lodash</strong>;`,
 
             `&rightarrow; Agora, depois de instalada, em um arquivo do <strong>mesmo nome que está na package.json</strong>, toda vez que instalamos um <em>module</em> e queremos utilizá-lo dentro de uma aplicação, setamos uma variável da seguinte forma: <strong>const nomeVar = require('nome-do-modulo');</strong>`,
 
             `<span class="obs">&rightarrow; Caso não queiramos abirir um <em>live-server</em> toda vez, dentro do Gitbash, usamos <strong>node nomeDoArquivo.js</strong>;`,
+        ]
+    },
+    {
+        subtitle: '6. uninstalling modules',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; Só fazer o contrário: <strong>npm uninstall lodash</strong>, ou usar <strong>npm remove lodash --seHouverPackagesBaixadosSeparademente</strong>, <strong>npm rm lodash</strong>, <strong>npm un lodash</strong>;`,
+        ]
+    },
+    {
+        subtitle: '7. uninstalling module versions',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; Vamos dizer que queiramos instalar uma versão mais recente. Fazemos <strong>npm install lodash@versãoMaisRecente</strong>;`,
+        ]
+    },
+    {
+        subtitle: '8. updating latest version',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; Vamos dizer que queiramos atualizar para uma versão mais recente. Fazemos <strong>npm update lodash</strong>;`,
+        ]
+    },
+    {
+        subtitle: '9. global modules',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; Usamos isso para não precisar ficar instalando toda hora. No caso, o módulo global fica instalado na máquina, não nos arquivos em si. Fazemos <strong>npm install -g nodemon</strong>. Usamos o -g para global. Para saber onde está instalado, usamos <strong>npm root -g</strong>;`,
+            
+            `&rightarrow; Para remover, é a mesma coisa que o tópico 7. Só lembrar de usar o -g no fim;`,
+        ]
+    },
+    {
+        subtitle: '9. listing packages',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; Para listarmos os packages que estamos usando no projeto, fazemos <strong>npm list</strong>;`,
+            
+            `&rightarrow; Caso um dos packages seja muito grande, com muitas outras pendências, para listarmos apenas "os nomes" dos packages, fazemos <strong>npm list --depth 0</strong>;`,
+
+            `<span class="obs">&rightarrow; Lembrar de trocar o "test" por "start" e colocar o nome do arquivo.js;`,
+        ]
+    },
+    {
+        subtitle: '10. running packages',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=jHDhaSSKmB0" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; Para usar os packages que estamos usando no projeto, fazemos <strong>npm run nomeDoArquivoQueColocamosNoPackage.json</strong>;`,
         ]
     },
 ];
