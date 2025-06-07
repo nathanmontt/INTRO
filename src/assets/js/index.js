@@ -1996,16 +1996,29 @@ const vueContent = [
         ]
     },
     {
-        subtitle: '4. Why Vue.js?',
+        subtitle: '4. Vue Cpmponents',
         desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA&list=PL3lj-tEZFe12ClY0AuixDHY_KRCwU-C55&index=2" class="channel" target="_blank">Traversy Media</a>',
         contentItself: [
-            `&rightarrow; O motivo para o uso do Vue.js são alguns:
+            `&rightarrow; O que são esses <strong>components</strong>? São pedaços de códigos que podem ser jogados em diferentes partes de código. Podemos separar isso em 3 partes:
             <ul style="text-indent:2em;">
-                <li>&bullet; Simplicidade e Acessibilidade;</li>
-                <li>&bullet; Flexibilidade;</li>
-                <li>&bullet; Performance e Tamanho;</li>
-                <li>&bullet; Arquitetura <em>Component-based</em>;</li>
-                <li>&bullet; Comunidade Ativa e Ecossistema Rico;</li>
+                <li>&bullet; Lógica: a parte JS (fica dentro das script tags). Aqui definidos estados, dados, métodos, eventos, etc;</li>
+                <li>&bullet; Saída Template: aqui entra o HTML. Também podemos incluir elementos dinâmicos (variáveis, loops, condicionais) chamados de <strong>directives</strong>;</li>
+                <li>&bullet; Style: as CSS. O diferencial daqui é que ela pode ser <strong>scoped</strong>, ou seja, <strong>o estilo vai ser direcionado especificamente àquele component</strong>;</li>
+            </ul>`,
+
+            `&rightarrow; Para montar os components, temos 2 formas: <strong>Options API</strong>, que é o modo tradicional, e <strong>Composition API</strong>`
+        ]
+    },
+    {
+        subtitle: '5. Getting setup',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA&list=PL3lj-tEZFe12ClY0AuixDHY_KRCwU-C55&index=2" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; Há formas diferentes de fazer isso:
+            <ul style="text-indent:2em;">
+                <li>&bullet; CDN;</li>
+                <li>&bullet; Vue CLI (não é mais recomendado);</li>
+                <li>&bullet; Create Vue: usa o <em>web server</em> e a ferramenta de frontend Vite;</li>
+                <li>&bullet; Nuxt.js: uma <em>meta framework</em>, assim como para o React o Next.js;</li>
             </ul>`,
         ]
     },
