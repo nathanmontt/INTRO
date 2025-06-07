@@ -1948,6 +1948,69 @@ const npmContent = [
     },
 ];
 
+const vueContent = [
+    {
+        subtitle: '1. What is Vue.js?',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA&list=PL3lj-tEZFe12ClY0AuixDHY_KRCwU-C55&index=2" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; É uma <em>framework</em> de JS progressiva usada para <em>buildar</em> UI's ou <strong>SPAs</strong> (<em>Single Page Applications</em>). É feita para ser simples, flexível e incrementavelmente adaptativa, ou seja, é possível começar pequeno e depois escalar para algo maior;`,
+
+            `&rightarrow; Para pré-requisitos, é importante saber:
+                <ul style="text-indent:2em;">
+                    <li>&bullet; Fundamentos de JavaScript (loops, arrays, objects, functions);</li>
+                    <li>&bullet; Eventos e DOM;</li>
+                    <li>&bullet; Fetch API e HTTP Básico;</li>
+                    <li>&bullet; <em>Arrow Functions</em>, Arrays <em>Methods</em>, Destructuring;</li>
+                    <li>&bullet; npm;</li>
+                </ul>
+            `,
+        ]
+    },
+    {
+        subtitle: '2. The Role of Frontend Frameworks',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA&list=PL3lj-tEZFe12ClY0AuixDHY_KRCwU-C55&index=2" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; O motivo para o uso de frameworks (React, Angula, Vue) são alguns. O primeiro e principal é uma <strong>UX/UI Aprimorada</strong>, onde é fácil de criar UIs que são dinâmicas e interativas. Isso aparece um pouco no quesito <strong>tempo</strong>. Com JS puro, é possível, mas pode ficar mais confuso;`,
+
+            `&rightarrow; Outros pontos a se levarem consideração são:
+            <ul style="text-indent:2em;">
+                <li>&bullet; <strong>UX/UI Aprimorada</strong>: é fácil de criar UIs que são dinâmicas e interativas;</li>
+                <li>&bullet; <strong><em>Components</em></strong>: seria quebrar o UI em componentes que possuam seus próprios estados e propriedades;</li>
+                <li>&bullet; <strong>Perfomance</strong>: possuem diversos <em>features</em>;</li>
+                <li>&bullet; <strong>Modularidade</strong>: permite que os devs "quebrem" as aplicações em componentes menores e reutilizáveis;</li>
+            </ul>`,
+        ]
+    },
+    {
+        subtitle: '3. Why Vue.js?',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA&list=PL3lj-tEZFe12ClY0AuixDHY_KRCwU-C55&index=2" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; O motivo para o uso do Vue.js são alguns:
+            <ul style="text-indent:2em;">
+                <li>&bullet; Simplicidade e Acessibilidade;</li>
+                <li>&bullet; Flexibilidade;</li>
+                <li>&bullet; Performance e Tamanho;</li>
+                <li>&bullet; Arquitetura <em>Component-based</em>;</li>
+                <li>&bullet; Comunidade Ativa e Ecossistema Rico;</li>
+            </ul>`,
+        ]
+    },
+    {
+        subtitle: '4. Why Vue.js?',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA&list=PL3lj-tEZFe12ClY0AuixDHY_KRCwU-C55&index=2" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; O motivo para o uso do Vue.js são alguns:
+            <ul style="text-indent:2em;">
+                <li>&bullet; Simplicidade e Acessibilidade;</li>
+                <li>&bullet; Flexibilidade;</li>
+                <li>&bullet; Performance e Tamanho;</li>
+                <li>&bullet; Arquitetura <em>Component-based</em>;</li>
+                <li>&bullet; Comunidade Ativa e Ecossistema Rico;</li>
+            </ul>`,
+        ]
+    },
+];
+
 function renderSectionContent(contentArray, containerId) {
     const container = document.getElementById(containerId);
 
@@ -1985,4 +2048,5 @@ document.addEventListener('DOMContentLoaded', () => {
     renderSectionContent(jsContent, 'container-js');
     renderSectionContent(gitGithubContent, 'container-git-github');
     renderSectionContent(npmContent, 'container-npm');
+    renderSectionContent(vueContent, 'container-vue');
 });

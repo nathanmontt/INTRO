@@ -56,7 +56,6 @@ header {
 #project-link { color: var(--usual-color); }
 #project-link:hover { text-decoration: underline; }
 
-
 /* ----- MAIN ----- */
 /* mini projects */
 #mini-projects {
@@ -82,7 +81,7 @@ header {
 #container-user-input > .holder-user-input-title {} */
 
 #container-first, #container-second, #container-third, #container-fourth, #container-fifth,
-#container-sixth {
+#container-sixth, #container-seventh {
     margin: var(--main-size);
     padding: var(--sec-size);
     height: var(--block-content-hight);
@@ -96,7 +95,8 @@ header {
 #container-third .title-content, 
 #container-fourth .title-content,
 #container-fifth .title-content,
-#container-sixth .title-content {
+#container-sixth .title-content,
+#container-seventh .title-content {
     border-bottom: 2px solid var(--main);
 }
 
@@ -105,7 +105,8 @@ header {
 #container-css .reference-study-link,
 #container-js .reference-study-link,
 #container-git-github .reference-study-link, 
-#container-npm .reference-study-link {
+#container-npm .reference-study-link,
+#container-vue .reference-study-link {
     padding: var(--sec-size);
     margin: var(--sec-size) 0;
     font-size: var(--thir-size);
@@ -119,7 +120,8 @@ header {
 #container-css .subtitle,
 #container-js .subtitle, 
 #container-git-github .subtitle,
-#container-npm .subtitle {
+#container-npm .subtitle,
+#container-vue .subtitle {
     margin-top: var(--sec-size);
 }
 
@@ -128,7 +130,8 @@ header {
 #container-css .holder-list, 
 #container-js .holder-list,
 #container-git-github .holder-list,
-#container-npm .holder-list {
+#container-npm .holder-list,
+#container-vue .holder-list {
     border: 2px solid;
 }
 
@@ -137,7 +140,8 @@ header {
 #container-css .list-item,
 #container-js .list-item,
 #container-git-github .list-item,
-#container-npm .list-item {
+#container-npm .list-item,
+#container-vue .list-item {
     padding: var(--sec-size);
     text-indent: 1em;
     border-bottom: 2px solid;
