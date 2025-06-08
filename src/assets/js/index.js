@@ -2022,6 +2022,20 @@ const vueContent = [
             </ul>`,
         ]
     },
+    {
+        subtitle: '6. Creating a Vue project',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA&list=PL3lj-tEZFe12ClY0AuixDHY_KRCwU-C55&index=2" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; Para criar um projeto Vue, fazemos:
+            <ul style="text-indent:2em;">
+                <li>&bullet; Pelo CMD, vamos até onde queremos colocar pasta do projeto;</li>
+                <li>&bullet; Depois, digitamos <strong>npm create vue@latest vue-study</strong>, onde o último nome é referente ao nome da pasta do projeto;</li>
+                <li>&bullet; Depois seguimos as instruções do que queremos dentro do nosso projeto como dependências;</li>
+                <li>&bullet; Depois digitamos o comando <strong>cd vue-study</strong>;</li>
+                <li>&bullet; Depois digitamos o comando <strong>code .</strong>, que é para abrir o arquivo dentro do VSCode;</li>
+            </ul>`,
+        ]
+    },
 ];
 
 function renderSectionContent(contentArray, containerId) {
