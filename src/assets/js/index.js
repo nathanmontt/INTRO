@@ -2036,6 +2036,17 @@ const vueContent = [
             </ul>`,
         ]
     },
+    {
+        subtitle: '7. Vue Fundamentals',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA&list=PL3lj-tEZFe12ClY0AuixDHY_KRCwU-C55&index=2" class="channel" target="_blank">Traversy Media</a>',
+        contentItself: [
+            `&rightarrow; Para início de projeto, vamos começar usando Vue por uma CDN;`,
+
+            `&rightarrow; Primeiro, precisamos criar um método para inicializar nossa aplicação Vue. Usamos: <strong>const {o que queremos importar, nesse caso, createApp } = Vue;</strong>;`,
+
+            `&rightarrow; Ou seja, vamos importar o método <strong>createApp</strong> da biblioteca Vue (de início, não precisaremos saber como inicializar o = Vue, porém mais a frente, vamos entender como);`,
+        ]
+    },
 ];
 
 function renderSectionContent(contentArray, containerId) {
