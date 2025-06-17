@@ -2046,14 +2046,22 @@ const vueContent = [
         ]
     },
     {
-        subtitle: '7. Vue Fundamentals',
-        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA&list=PL3lj-tEZFe12ClY0AuixDHY_KRCwU-C55&index=2" class="channel" target="_blank">Traversy Media</a>',
+        subtitle: '7. Project Structure',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
         contentItself: [
-            `&rightarrow; Para início de projeto, vamos começar usando Vue por uma CDN;`,
+            `&rightarrow; Sobre os arquivos presentes dentro do projeto:
+            <ul style="text-indent:3em; margin-top:.3em;">
+                <li>&bullet; <strong>package.json</strong>: aqui contém as dependências e os scripts necessários para os projetos, como o <strong>serve</strong>, para rodar a aplicação, <strong>build</strong>, para montar a aplicação, e <strong>lint</strong>, para consertar qualquer <em>linting</em> na aplicação;</li>
+                <li>&bullet; <strong>package-lock.json</strong>: aqui contém a consistência das instalações de dependências;</li>
+                <li>&bullet; <strong>App.vue</strong>: o .vue é onde especificamos que ali contém arquivos HTML, CSS e JS que corresponde a uma pequena porção do que é mostrado na aplicação: nosso componente;</li>
+            </ul>`,
 
-            `&rightarrow; Primeiro, precisamos criar um método para inicializar nossa aplicação Vue. Usamos: <strong>const {o que queremos importar, nesse caso, createApp } = Vue;</strong>;`,
-
-            `&rightarrow; Ou seja, vamos importar o método <strong>createApp</strong> da biblioteca Vue (de início, não precisaremos saber como inicializar o = Vue, porém mais a frente, vamos entender como);`,
+            `&rightarrow; Sobre as pastas presentes dentro do projeto:
+            <ul style="text-indent:3em; margin-top:.3em;">
+                <li>&bullet; <strong>node_modules</strong>: aqui, é onde todas as dependências estão instaladas;</li>
+                <li>&bullet; <strong>public</strong>: aqui, é onde os <em>static assets</em> ficam quando queremos colocar a aplicação <em>live</em>. a consistência das instalações de dependências;</li>
+                <li>&bullet; <strong>src</strong>: aqui é onde a mágia resde. Começando com o arquivo <strong>main.js</strong>. Nela, especificamos o <em>root component</em>, <strong>App</strong> e o elemento DOM que será controlado pelo Vue que, no nosso caso, seria a div com o id de #app, que está dentro do arquivo html;</li>
+            </ul>`,
         ]
     },
 ];
