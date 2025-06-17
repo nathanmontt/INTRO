@@ -2016,7 +2016,7 @@ const vueContent = [
             `&rightarrow; Há formas diferentes de fazer isso:
             <ul style="text-indent:2em;">
                 <li>&bullet; CDN;</li>
-                <li>&bullet; Vue CLI (não é mais recomendado);</li>
+                <li>&bullet; Vue CLI (usarei para <em>single pages</em>, para testes);</li>
                 <li>&bullet; Create Vue: usa o <em>web server</em> e a ferramenta de frontend Vite;</li>
                 <li>&bullet; Nuxt.js: uma <em>meta framework</em>, assim como para o React o Next.js;</li>
             </ul>`,
@@ -2024,15 +2024,24 @@ const vueContent = [
     },
     {
         subtitle: '6. Creating a Vue project',
-        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA&list=PL3lj-tEZFe12ClY0AuixDHY_KRCwU-C55&index=2" class="channel" target="_blank">Traversy Media</a>',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA&list=PL3lj-tEZFe12ClY0AuixDHY_KRCwU-C55&index=2" class="channel" target="_blank">Traversy Media</a> e <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
         contentItself: [
-            `&rightarrow; Para criar um projeto Vue, fazemos:
+            `&rightarrow; Para criar um projeto Vue, temos algumas forma. Pelo Create Vue, fazemos:
             <ul style="text-indent:2em;">
                 <li>&bullet; Pelo CMD, vamos até onde queremos colocar pasta do projeto;</li>
                 <li>&bullet; Depois, digitamos <strong>npm create vue@latest vue-study</strong>, onde o último nome é referente ao nome da pasta do projeto;</li>
                 <li>&bullet; Depois seguimos as instruções do que queremos dentro do nosso projeto como dependências;</li>
                 <li>&bullet; Depois digitamos o comando <strong>cd vue-study</strong>;</li>
                 <li>&bullet; Depois digitamos o comando <strong>code .</strong>, que é para abrir o arquivo dentro do VSCode;</li>
+            </ul>`,
+
+            `&rightarrow; Pelo Vue CLI, fazemos:
+            <ul style="text-indent:2em;">
+                <li>&bullet; Usar os comandos do site <a href="https://cli.vuejs.org/" target="_blank">Vue CLI</a>;</li>
+                <li>&bullet; Depois, digitamos <strong>npm create vue@latest vue-study</strong>, onde o último nome é referente ao nome da pasta do projeto;</li>
+                <li>&bullet; Depois, usamos a opção de Vue 3 (vai aparecer no CMD);</li>
+                <li>&bullet; Depois, para rodar o projeto, usamos <strong>cd caminhoAteAPasta </strong>;</li>
+                <li>&bullet; Depois, para rodar o projeto, usamos <strong>npm run serve</strong>;</li>
             </ul>`,
         ]
     },
