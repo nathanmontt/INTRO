@@ -2064,6 +2064,28 @@ const vueContent = [
             </ul>`,
         ]
     },
+    {
+        subtitle: '8. Single File Component',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
+        contentItself: [
+            `&rightarrow; Dentro do script, temos uma parte onde exportamos dados. Essa parte é responsável por exportá-los de forma que possamos usar dentro do nosso template. Para exportar os dados que querermos, usamos uma função chamada <strong>data() { return { object },}</strong>. Se precisarmos usar um nome, por exemplo, o object = <strong>name: 'Nathan',</strong>. Essa função, data(), <strong>retorn um objeto que representa um dado qque pode ser usado pelo template!</strong>;`,
+        ]
+    },
+    {
+        subtitle: '9. Binding text',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
+        contentItself: [
+            `&rightarrow; Aqui é onde usamos a <em>mustache syntax</em> em Vue. Colocamos {{ propriedade correspondente ao que está dentro da função data }}. Também chamado de <strong><em>text interpolation</em></strong>;`,
+            `&rightarrow; Outra forma de <em>bindar</em> texto em Vue é usando <strong><em>directives</em></strong>. Elas são um atributo especial de HTML e, em Vue, cada directive inicia-se com v-texto. Fazemos:<br>"<strong>< div v-text="nomeDaPropriedade">< /div></strong>;"`,
+        ]
+    },
+    {
+        subtitle: '10. ',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
+        contentItself: [
+            `&rightarrow; ;`,
+        ]
+    },
 ];
 
 function renderSectionContent(contentArray, containerId) {
