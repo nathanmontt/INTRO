@@ -2080,10 +2080,12 @@ const vueContent = [
         ]
     },
     {
-        subtitle: '10. ',
+        subtitle: '10. Vinculando o HTML',
         desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
         contentItself: [
-            `&rightarrow; ;`,
+            `&rightarrow; O problema das abordagens anteriores é que apenas <em>binda</em> o texto na sua mais pura forma. Normalemnte precisaremos mostras o HTML real no UI (com tags de bold, legenda, etc).;`,
+            `&rightarrow; Para resolvermos isso, podemos usar a <strong>v-html directive</strong>;`,
+            `&rightarrow; O detalhe aqui é: <strong>só devemos usar o v-html em elementos que confiamos!</strong>. Usar com <strong>third party applications</strong> pode levar à questões de segurança;`,
         ]
     },
 ];
