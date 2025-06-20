@@ -2080,12 +2080,20 @@ const vueContent = [
         ]
     },
     {
-        subtitle: '10. Vinculando o HTML',
+        subtitle: '10. Binding HTML',
         desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
         contentItself: [
             `&rightarrow; O problema das abordagens anteriores é que apenas <em>binda</em> o texto na sua mais pura forma. Normalemnte precisaremos mostras o HTML real no UI (com tags de bold, legenda, etc).;`,
             `&rightarrow; Para resolvermos isso, podemos usar a <strong>v-html directive</strong>;`,
             `&rightarrow; O detalhe aqui é: <strong>só devemos usar o v-html em elementos que confiamos!</strong>. Usar com <strong>third party applications</strong> pode levar à questões de segurança;`,
+        ]
+    },
+    {
+        subtitle: '11. Binding attributes',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
+        contentItself: [
+            `&rightarrow; É possível <em>bindar</em> atributos HTML como class, id, bolean. Mas não podemos usar o {{}}, mas sim o <strong>v-bind</strong>. Para class, usamos <strong>v-bind:class="nomeDaClass</strong>. Para id, o mesmo, mas com :id="..."";`,
+            `&rightarrow; Para resolvermos isso, podemos usar a <strong>v-html directive</strong>;`,
         ]
     },
 ];
