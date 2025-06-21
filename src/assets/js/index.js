@@ -2096,6 +2096,13 @@ const vueContent = [
             `&rightarrow; Para resolvermos isso, podemos usar a <strong>v-html directive</strong>;`,
         ]
     },
+    {
+        subtitle: '12. Binding classes',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
+        contentItself: [
+            `&rightarrow; É a forma de mudar a classe de um elemento dinamicamente através de um dado;`,
+        ]
+    },
 ];
 
 function renderSectionContent(contentArray, containerId) {
