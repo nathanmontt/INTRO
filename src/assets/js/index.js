@@ -2132,8 +2132,10 @@ const vueContent = [
                 
                 <li>&bullet; <strong>v-bind</strong>: usado para <em>bindar</em>, atrelar, um pedaço de dado à um atributo. É possível escrever <strong>v-bind:attribute="data"</strong> ou <strong>:attribute="data"</strong>;</li>
                 
-                <li>&bullet; <strong>v-bind</strong>: ;</li>
+                <li>&bullet; <strong>v-on</strong>: Usamos para eventos. Para utilizar ao seu máximo, usamos, dentro da função data, ao invés do return, o <strong>methods</strong>. Para acessar algum valor do return, usamos <strong>this.oValor</strong>. A shorthand para isso, ao invés de usar toda a diretiva disso, é escrevendo <strong>@click</strong>, por exemplo;</li>
             </ul>`,
+
+            `&rightarrow; E isso seria tudo relacionado à <strong>Options API</strong>;`,
         ]
     },
 ];
