@@ -2103,6 +2103,22 @@ const vueContent = [
             `&rightarrow; É a forma de mudar a classe de um elemento dinamicamente através de um dado;`,
         ]
     },
+    {
+        subtitle: '13. Binding styles',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
+        contentItself: [
+            `&rightarrow; Aqui, utilizamos <em>objects</em>;`,
+            `&rightarrow; Na parte de adição de dados, fazemos <strong>v-bind:style="{ aqui dentro colocamos os <em>key-value pairs</em>, além de separar por vírgula ainda é possível escrever 'dessa-forma' };"</strong>`,
+            `&rightarrow; Também podemos colocar vários estilos dentro de um <em>object</em> dentro da própria tag;`,
+        ]
+    },
+    {
+        subtitle: '14. Back to 0',
+        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
+        contentItself: [
+            `&rightarrow; Aqui, voltei para o canal do auto que fica na descrição. Me perdi um pouco sobre qual seria a melhor opção para seguir, então resolvi voltar e seguir a que o roadmap sugeriu;`,
+        ]
+    },
 ];
 
 function renderSectionContent(contentArray, containerId) {
