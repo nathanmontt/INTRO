@@ -26,10 +26,8 @@ Para esse tópico, muitas outras linguagens serão adicionada. Mas de início, a
 - **CSS**
 - **JavaScript**
 
-Ao longo, serão adicionadas outras, como:
+Ao longo, serão estudadas outras tecnologias, como:
 - **Tailwind**
-- **React**
-- **Angular**
 - **Vue**
 - entre outros...
 
