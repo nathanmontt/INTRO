@@ -2119,6 +2119,23 @@ const vueContent = [
             `&rightarrow; Aqui, voltei para o canal do auto que fica na descrição. Me perdi um pouco sobre qual seria a melhor opção para seguir, então resolvi voltar e seguir a que o roadmap sugeriu;`,
         ]
     },
+    {
+        subtitle: '15. Directives',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA" class="channel" target="_blank">Transversy Media</a>',
+        contentItself: [
+            `&rightarrow; Avançando, vamos para as <em><strong>directives</strong></em>. É uma forma de deixar com que o template se torne mais dinâmicos;`,
+            `&rightarrow; Começamos com:`,
+            `<ul style="text-indent:3em; margin-top:.3em;">
+                <li>&bullet; <strong>v-if</strong>: é o if, mas com um v na frente (basicamente). O <strong>v-else</strong> é colocado apenas com ele mesmo, e o <strong>v-else-if</strong>="vem como a prerrogativa de que se algo não aconteceu, então faça isso aqu";</li>
+                
+                <li>&bullet; <strong>v-for</strong>: é o for, mas com o v na frente (também). Podemos, dentro da função <em>data</em> criar um return com um array e iterar por ele. Usamos como um <strong>for in</strong</strong>, ou seja, <strong>for item in itens</strong>. Vai ficar um <strong>v-for="item in item"</strong>;</li>
+                
+                <li>&bullet; <strong>v-bind</strong>: usado para <em>bindar</em>, atrelar, um pedaço de dado à um atributo. É possível escrever <strong>v-bind:attribute="data"</strong> ou <strong>:attribute="data"</strong>;</li>
+                
+                <li>&bullet; <strong>v-bind</strong>: ;</li>
+            </ul>`,
+        ]
+    },
 ];
 
 function renderSectionContent(contentArray, containerId) {
