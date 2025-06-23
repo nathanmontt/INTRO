@@ -2138,6 +2138,25 @@ const vueContent = [
             `&rightarrow; E isso seria tudo relacionado à <strong>Options API</strong>;`,
         ]
     },
+    {
+        subtitle: '16. Composition API - Long and Short Form',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA" class="channel" target="_blank">Transversy Media</a>',
+        contentItself: [
+            `&rightarrow; Avançando, vamos para o tipo de escrita da aplicação. Começaremos com a Composition API, a forma extensa;`,
+            
+            `&rightarrow; Para o Composition API, usamos, ao invés da função data(), <strong>setup()</strong>. Dessa forma, podemos usar as variáveis da forma que usamos em JavaScript;`,
+            
+            `&rightarrow; Mas para usarmos de forma reativa, colocamos dentro de uma função chamada <strong>ref()</strong> (precisamos importar primeiro);`,
+            
+            `&rightarrow; Para usarmos o ref(), cololcar da seguinte forma: <strong>const name = ref(['John', 'Mary', 'Pedro']);</strong>;`,
+            
+            `&rightarrow; Para acessar os valores, não usamos a <em>keyword this</em>, mas sim o <strong>NomeDaVariável.value</strong>;</strong>;`,
+
+            `&rightarrow; Para usar a forma mais curta, tiramos a função <strong>export default</strong> e usamos apenas a tag script;`,
+
+            `&rightarrow; E isso seria tudo relacionado à <strong>Composition API</strong>;`,
+        ]
+    },
 ];
 
 function renderSectionContent(contentArray, containerId) {
