@@ -2010,151 +2010,15 @@ const vueContent = [
         ]
     },
     {
-        subtitle: '5. Getting setup',
-        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA&list=PL3lj-tEZFe12ClY0AuixDHY_KRCwU-C55&index=2" class="channel" target="_blank">Traversy Media</a>',
+        subtitle: '5. Component in Depth',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
         contentItself: [
-            `&rightarrow; Há formas diferentes de fazer isso:
-            <ul style="text-indent:2em;">
-                <li>&bullet; CDN;</li>
-                <li>&bullet; Vue CLI (usarei para <em>single pages</em>, para testes);</li>
-                <li>&bullet; Create Vue: usa o <em>web server</em> e a ferramenta de frontend Vite;</li>
-                <li>&bullet; Nuxt.js: uma <em>meta framework</em>, assim como para o React o Next.js;</li>
-            </ul>`,
-        ]
-    },
-    {
-        subtitle: '6. Creating a Vue project',
-        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA&list=PL3lj-tEZFe12ClY0AuixDHY_KRCwU-C55&index=2" class="channel" target="_blank">Traversy Media</a> e <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
-        contentItself: [
-            `&rightarrow; Para criar um projeto Vue, temos algumas forma. Pelo Create Vue, fazemos:
-            <ul style="text-indent:2em;">
-                <li>&bullet; Pelo CMD, vamos até onde queremos colocar pasta do projeto;</li>
-                <li>&bullet; Depois, digitamos <strong>npm create vue@latest vue-study</strong>, onde o último nome é referente ao nome da pasta do projeto;</li>
-                <li>&bullet; Depois seguimos as instruções do que queremos dentro do nosso projeto como dependências;</li>
-                <li>&bullet; Depois digitamos o comando <strong>cd vue-study</strong>;</li>
-                <li>&bullet; Depois digitamos o comando <strong>code .</strong>, que é para abrir o arquivo dentro do VSCode;</li>
-            </ul>`,
-
-            `&rightarrow; Pelo Vue CLI, fazemos:
-            <ul style="text-indent:2em;">
-                <li>&bullet; Usar os comandos do site <a href="https://cli.vuejs.org/" target="_blank">Vue CLI</a>;</li>
-                <li>&bullet; Depois, digitamos <strong>npm create vue@latest vue-study</strong>, onde o último nome é referente ao nome da pasta do projeto;</li>
-                <li>&bullet; Depois, usamos a opção de Vue 3 (vai aparecer no CMD);</li>
-                <li>&bullet; Depois, para rodar o projeto, usamos <strong>cd caminhoAteAPasta </strong>;</li>
-                <li>&bullet; Depois, para rodar o projeto, usamos <strong>npm run serve</strong>;</li>
-            </ul>`,
-        ]
-    },
-    {
-        subtitle: '7. Project Structure',
-        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
-        contentItself: [
-            `&rightarrow; Sobre os arquivos presentes dentro do projeto:
-            <ul style="text-indent:3em; margin-top:.3em;">
-                <li>&bullet; <strong>package.json</strong>: aqui contém as dependências e os scripts necessários para os projetos, como o <strong>serve</strong>, para rodar a aplicação, <strong>build</strong>, para montar a aplicação, e <strong>lint</strong>, para consertar qualquer <em>linting</em> na aplicação;</li>
-                <li>&bullet; <strong>package-lock.json</strong>: aqui contém a consistência das instalações de dependências;</li>
-                <li>&bullet; <strong>App.vue</strong>: o .vue é onde especificamos que ali contém arquivos HTML, CSS e JS que corresponde a uma pequena porção do que é mostrado na aplicação: nosso componente;</li>
-            </ul>`,
-
-            `&rightarrow; Sobre as pastas presentes dentro do projeto:
-            <ul style="text-indent:3em; margin-top:.3em;">
-                <li>&bullet; <strong>node_modules</strong>: aqui, é onde todas as dependências estão instaladas;</li>
-                <li>&bullet; <strong>public</strong>: aqui, é onde os <em>static assets</em> ficam quando queremos colocar a aplicação <em>live</em>. a consistência das instalações de dependências;</li>
-                <li>&bullet; <strong>src</strong>: aqui é onde a mágia resde. Começando com o arquivo <strong>main.js</strong>. Nela, especificamos o <em>root component</em>, <strong>App</strong> e o elemento DOM que será controlado pelo Vue que, no nosso caso, seria a div com o id de #app, que está dentro do arquivo html;</li>
-            </ul>`,
-        ]
-    },
-    {
-        subtitle: '8. Single File Component',
-        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
-        contentItself: [
-            `&rightarrow; Dentro do script, temos uma parte onde exportamos dados. Essa parte é responsável por exportá-los de forma que possamos usar dentro do nosso template. Para exportar os dados que querermos, usamos uma função chamada <strong>data() { return { object },}</strong>. Se precisarmos usar um nome, por exemplo, o object = <strong>name: 'Nathan',</strong>. Essa função, data(), <strong>retorn um objeto que representa um dado qque pode ser usado pelo template!</strong>;`,
-        ]
-    },
-    {
-        subtitle: '9. Binding text',
-        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
-        contentItself: [
-            `&rightarrow; Aqui é onde usamos a <em>mustache syntax</em> em Vue. Colocamos {{ propriedade correspondente ao que está dentro da função data }}. Também chamado de <strong><em>text interpolation</em></strong>;`,
-            `&rightarrow; Outra forma de <em>bindar</em> texto em Vue é usando <strong><em>directives</em></strong>. Elas são um atributo especial de HTML e, em Vue, cada directive inicia-se com v-texto. Fazemos:<br>"<strong>< div v-text="nomeDaPropriedade">< /div></strong>;"`,
-        ]
-    },
-    {
-        subtitle: '10. Binding HTML',
-        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
-        contentItself: [
-            `&rightarrow; O problema das abordagens anteriores é que apenas <em>binda</em> o texto na sua mais pura forma. Normalemnte precisaremos mostras o HTML real no UI (com tags de bold, legenda, etc).;`,
-            `&rightarrow; Para resolvermos isso, podemos usar a <strong>v-html directive</strong>;`,
-            `&rightarrow; O detalhe aqui é: <strong>só devemos usar o v-html em elementos que confiamos!</strong>. Usar com <strong>third party applications</strong> pode levar à questões de segurança;`,
-        ]
-    },
-    {
-        subtitle: '11. Binding attributes',
-        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
-        contentItself: [
-            `&rightarrow; É possível <em>bindar</em> atributos HTML como class, id, bolean. Mas não podemos usar o {{}}, mas sim o <strong>v-bind</strong>. Para class, usamos <strong>v-bind:class="nomeDaClass</strong>. Para id, o mesmo, mas com :id="..."";`,
-            `&rightarrow; Para resolvermos isso, podemos usar a <strong>v-html directive</strong>;`,
-        ]
-    },
-    {
-        subtitle: '12. Binding classes',
-        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
-        contentItself: [
-            `&rightarrow; É a forma de mudar a classe de um elemento dinamicamente através de um dado;`,
-        ]
-    },
-    {
-        subtitle: '13. Binding styles',
-        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
-        contentItself: [
-            `&rightarrow; Aqui, utilizamos <em>objects</em>;`,
-            `&rightarrow; Na parte de adição de dados, fazemos <strong>v-bind:style="{ aqui dentro colocamos os <em>key-value pairs</em>, além de separar por vírgula ainda é possível escrever 'dessa-forma' };"</strong>`,
-            `&rightarrow; Também podemos colocar vários estilos dentro de um <em>object</em> dentro da própria tag;`,
-        ]
-    },
-    {
-        subtitle: '14. Back to 0',
-        desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/@Codevolution" class="channel" target="_blank">Codevolution</a>',
-        contentItself: [
-            `&rightarrow; Aqui, voltei para o canal do auto que fica na descrição. Me perdi um pouco sobre qual seria a melhor opção para seguir, então resolvi voltar e seguir a que o roadmap sugeriu;`,
-        ]
-    },
-    {
-        subtitle: '15. Directives',
-        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA" class="channel" target="_blank">Transversy Media</a>',
-        contentItself: [
-            `&rightarrow; Avançando, vamos para as <em><strong>directives</strong></em>. É uma forma de deixar com que o template se torne mais dinâmicos;`,
-            `&rightarrow; Começamos com:`,
-            `<ul style="text-indent:3em; margin-top:.3em;">
-                <li>&bullet; <strong>v-if</strong>: é o if, mas com um v na frente (basicamente). O <strong>v-else</strong> é colocado apenas com ele mesmo, e o <strong>v-else-if</strong>="vem como a prerrogativa de que se algo não aconteceu, então faça isso aqu";</li>
-                
-                <li>&bullet; <strong>v-for</strong>: é o for, mas com o v na frente (também). Podemos, dentro da função <em>data</em> criar um return com um array e iterar por ele. Usamos como um <strong>for in</strong</strong>, ou seja, <strong>for item in itens</strong>. Vai ficar um <strong>v-for="item in item"</strong>;</li>
-                
-                <li>&bullet; <strong>v-bind</strong>: usado para <em>bindar</em>, atrelar, um pedaço de dado à um atributo. É possível escrever <strong>v-bind:attribute="data"</strong> ou <strong>:attribute="data"</strong>;</li>
-                
-                <li>&bullet; <strong>v-on</strong>: Usamos para eventos. Para utilizar ao seu máximo, usamos, dentro da função data, ao invés do return, o <strong>methods</strong>. Para acessar algum valor do return, usamos <strong>this.oValor</strong>. A shorthand para isso, ao invés de usar toda a diretiva disso, é escrevendo <strong>@click</strong>, por exemplo;</li>
-            </ul>`,
-
-            `&rightarrow; E isso seria tudo relacionado à <strong>Options API</strong>;`,
-        ]
-    },
-    {
-        subtitle: '16. Composition API - Long and Short Form',
-        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA" class="channel" target="_blank">Transversy Media</a>',
-        contentItself: [
-            `&rightarrow; Avançando, vamos para o tipo de escrita da aplicação. Começaremos com a Composition API, a forma extensa;`,
+            `&rightarrow; No vídeo, foi mostrado, com a forma mais básica, <strong>como importar um <em>component</em> para o arquivo principal, App.vue</strong>;`,
             
-            `&rightarrow; Para o Composition API, usamos, ao invés da função data(), <strong>setup()</strong>. Dessa forma, podemos usar as variáveis da forma que usamos em JavaScript;`,
+            `&rightarrow; Primeiro, obviamente, seguindo a estrutura das pastas, colocamos um <em>component</em> dentro da pasta <em>compoments</em>. Logo em seguida, o adicionamos dentro do arq. principal como uma <em>tag</em>, exatamente como uma, mas como uma <em>closing tag</em>;`,
             
-            `&rightarrow; Mas para usarmos de forma reativa, colocamos dentro de uma função chamada <strong>ref()</strong> (precisamos importar primeiro);`,
-            
-            `&rightarrow; Para usarmos o ref(), cololcar da seguinte forma: <strong>const name = ref(['John', 'Mary', 'Pedro']);</strong>;`,
-            
-            `&rightarrow; Para acessar os valores, não usamos a <em>keyword this</em>, mas sim o <strong>NomeDaVariável.value</strong>;</strong>;`,
+            `&rightarrow; Mas antes de importar direto como uma tag HTML, usamos o <strong>import nomeDoComponent from ./caminho/da/pasta/atéOArquivo.vue</strong>;`,
 
-            `&rightarrow; Para usar a forma mais curta, tiramos a função <strong>export default</strong> e usamos apenas a tag script;`,
-
-            `&rightarrow; E isso seria tudo relacionado à <strong>Composition API</strong>;`,
         ]
     },
 ];
