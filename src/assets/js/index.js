@@ -1996,7 +1996,7 @@ const vueContent = [
         ]
     },
     {
-        subtitle: '4. Vue Cpmponents',
+        subtitle: '4. Vue Components',
         desc: 'Conteúdo estudado do canal <a href="https://www.youtube.com/watch?v=VeNfHj6MhgA&list=PL3lj-tEZFe12ClY0AuixDHY_KRCwU-C55&index=2" class="channel" target="_blank">Traversy Media</a>',
         contentItself: [
             `&rightarrow; O que são esses <strong>components</strong>? São pedaços de códigos que podem ser jogados em diferentes partes de código. Podemos separar isso em 3 partes:
@@ -2018,7 +2018,26 @@ const vueContent = [
             `&rightarrow; Primeiro, obviamente, seguindo a estrutura das pastas, colocamos um <em>component</em> dentro da pasta <em>compoments</em>. Logo em seguida, o adicionamos dentro do arq. principal como uma <em>tag</em>, exatamente como uma, mas como uma <em>closing tag</em>;`,
             
             `&rightarrow; Mas antes de importar direto como uma tag HTML, usamos o <strong>import nomeDoComponent from ./caminho/da/pasta/atéOArquivo.vue</strong>;`,
-
+            
+            `&rightarrow; É possível adicionar um <em>component</em> dentro de outro <em>component</em>. Fazemos normalmente, mas apenas importamos ele dentro do 1° <em>child component</em> e deste dentro do <em>main archive</em>;`,
+        ]
+    },
+    {
+        subtitle: '6. Text Interpolation',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
+        contentItself: [
+            `&rightarrow; A sintaxe usada é <strong>{{ data }}</strong>;`,
+        ]
+    },
+    {
+        subtitle: '7. Attribute Binding',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
+        contentItself: [
+            `&rightarrow; É uma forma de direcionar os atribuitos à dados nas instâncias do Vue. Escrevemos da seguinte forma:`,
+            `<ul">
+                <li>&bullet; Forma antiga: <strong>v-bind:attribute</strong>;</li>
+                <li>&bullet; Forma nova: <strong>:attribute</strong>;</li>
+            </ul>`,
         ]
     },
 ];
