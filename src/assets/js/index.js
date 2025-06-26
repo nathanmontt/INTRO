@@ -2042,6 +2042,18 @@ const vueContent = [
             `&rightarrow; Também é possível usar de forma mais dinâmica. Ao invés de declararmos diversas variáveis e colocarmos elas em cada v:bind, podemos criar um objeto e chamá-lo por completo. Exemplo: vamos supor que temos uma imagem. Normalmente, ela são compostas por um <strong>src</strong>, <strong>alt</strong> e, para caber melhor, uma <strong>width</strong> e <strong>height</strong>. Em vez de fazermos <strong>const imgSrc = "link"; const imgAlt = "Lorem ipsum"</strong>, e etc, podemos fazer <strong>const imageInfo = {src: "link", alt: "lorem", width: valor, etc... }</strong>`,
         ]
     },
+    {
+        subtitle: '8. Styling in Depth',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
+        contentItself: [
+            `&rightarrow; Vamos começar com os tipos diferentes de estilos:`,
+            `<ul">
+                <li>&bullet; <strong>Global</strong>: tudo dentro do componente de estilo poderá ser refletido em todos os outros componentes que tivermos. Ou seja, quando importamos o arquivo para a main e quisermos colocar uma classe que apareça no global, essa classe e seus valores serão refletidas também nele;</li>
+
+                <li>&bullet; <strong>Local</strong>: usamos, dentro da tag style, o <em>scoped</em>;</li>
+            </ul>`,
+        ]
+    },
 ];
 
 function renderSectionContent(contentArray, containerId) {
