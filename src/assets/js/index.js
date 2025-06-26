@@ -2054,6 +2054,38 @@ const vueContent = [
             </ul>`,
         ]
     },
+    {
+        subtitle: '9. Event Handlers in Vue',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
+        contentItself: [
+            `&rightarrow; Vamos supor que tenhamos um programa que, ao clicarmos em um botão, ele aumente uma contagem. Então: <strong>let count = 0;</strong>. Dentro do template, usamos dentro de uma <strong>tag p</strong> o <em>text interpolation</em> {{ count }} e uma tag <em>button</em> para incrementar;`,
+
+            `&rightarrow; Como conectar a funcionalidade do botão para incrementar ou decrementar a contagem? Usamos 2 formas:`,
+            `<ul">
+                <li>&bullet; <strong>v-on:event="nomeFuncao"</strong>;</li>
+                <li>&bullet; <strong>@event="nomeFuncao"</strong>;</li>
+            </ul>`,
+
+            `&rightarrow; Mas o evento ainda não vai funcionar. Porque? Porque ainda falta <strong>reatividade</strong>. E o que seria isso: Seria quando a framework automaticamente atualiza a UI quando a informação por trás dela muda. E como fazemos isso? Usando <strong>reactive() ou ref()</strong>;`,
+            
+            `&rightarrow; Antes: <strong>import {ref} from 'vue';</strong>. Assim, conseguimos usar. Depois, no count, fazemos: <strong>let count = ref(0)</strong>;`,
+
+            `&rightarrow; E usando com função? Precisaríamos usar <strong>.value</strong>. Então: <strong>let count = ref(0)</strong> e <strong>function increaseValue() { count.value++; }</strong>;`,
+
+            `&rightarrow; E quando precisarmos usar com passagem de parâmetros? Normalmente: ao invés de usar apenas o nome da função dentro do @click="função", colocamos o parâmetro dentro: @click="função(parametro)";`,
+        ]
+    },
+    {
+        subtitle: '10. ',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
+        contentItself: [
+            `&rightarrow; ;`,
+
+            `<ul">
+                <li>&bullet; <strong>/strong>;</li>
+            </ul>`,
+        ]
+    },
 ];
 
 function renderSectionContent(contentArray, containerId) {
