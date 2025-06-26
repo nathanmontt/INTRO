@@ -2038,6 +2038,8 @@ const vueContent = [
                 <li>&bullet; Forma antiga: <strong>v-bind:attribute</strong>;</li>
                 <li>&bullet; Forma nova: <strong>:attribute</strong>;</li>
             </ul>`,
+
+            `&rightarrow; Também é possível usar de forma mais dinâmica. Ao invés de declararmos diversas variáveis e colocarmos elas em cada v:bind, podemos criar um objeto e chamá-lo por completo. Exemplo: vamos supor que temos uma imagem. Normalmente, ela são compostas por um <strong>src</strong>, <strong>alt</strong> e, para caber melhor, uma <strong>width</strong> e <strong>height</strong>. Em vez de fazermos <strong>const imgSrc = "link"; const imgAlt = "Lorem ipsum"</strong>, e etc, podemos fazer <strong>const imageInfo = {src: "link", alt: "lorem", width: valor, etc... }</strong>`,
         ]
     },
 ];
