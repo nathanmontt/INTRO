@@ -2076,14 +2076,11 @@ const vueContent = [
         ]
     },
     {
-        subtitle: '10. ',
+        subtitle: '10. Computed Properties',
         desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
         contentItself: [
-            `&rightarrow; ;`,
-
-            `<ul">
-                <li>&bullet; <strong>/strong>;</li>
-            </ul>`,
+            `&rightarrow; É uma variável especial que automaticamente se atualiza quando os dados em que ela depende muda;`,
+            `&rightarrow; De acordo com a documentação, é uma variável especial para operações "grandes" e que, se colocarmos elas no template, ficariam enormes, servem para diminuir essa carga. Normalmente são usadas para operações grandes;`,
         ]
     },
 ];
