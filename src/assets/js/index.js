@@ -2083,6 +2083,26 @@ const vueContent = [
             `&rightarrow; De acordo com a documentação, é uma variável especial para operações "grandes" e que, se colocarmos elas no template, ficariam enormes, servem para diminuir essa carga. Normalmente são usadas para operações grandes;`,
         ]
     },
+    {
+        subtitle: '11. Conditional Rendering',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
+        contentItself: [
+            `&rightarrow; É a habilidade de mostrar ou esconder certos elementos dependendo da ação do usuário. Usamos:`,
+            `<ul">
+                <li>&bullet; <strong>v-if</strong>;</li>
+                <li>&bullet; <strong>v-else-if</strong>;</li>
+                <li>&bullet; <strong>v-else</strong>;</li>
+                <li>&bullet; <strong>v-show</strong>: alterna a visibilidade do elemento baseado na verdade provida. É como se fosse o <em><strong>toggle method</strong></em> em JS;</li>
+            </ul>`,
+        ]
+    },
+    {
+        subtitle: '12. v-for',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
+        contentItself: [
+            `&rightarrow; `,
+        ]
+    },
 ];
 
 function renderSectionContent(contentArray, containerId) {
