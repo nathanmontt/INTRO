@@ -2100,7 +2100,8 @@ const vueContent = [
         subtitle: '12. v-for',
         desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
         contentItself: [
-            `&rightarrow; `,
+            `&rightarrow; Assim como o for "normal". o v-for é usado para iterar um array ou um objeto;`,
+            `&rightarrow; A forma de escrita é da seguinte forma: <strong>v-for="(key, index) in arrayName :key='index'"</strong>, sendo o index opcional. Isso seria uma forma básica;`,
         ]
     },
 ];
