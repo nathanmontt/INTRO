@@ -2111,6 +2111,14 @@ const vueContent = [
             `&rightarrow; É uma diretiva que assegura a <strong><em>two-way data binding</em></strong> (é uma forma de manter sincronizado as mudanças no código, sem precisar ficar adicionando código extra demais) em um <em>input</em>, <em>textarea</em> ou <em>select element</em>. Aumenta a conexão entre os dados dos componente e do input, permitindo mudanças;`,
         ]
     },
+    {
+        subtitle: '13. ref vs reactive',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
+        contentItself: [
+            `&rightarrow; É um conteúdo que foi pulado, então voltamos a vê-lo;`,
+            `&rightarrow; Um serve pra "um" valor, e o outro, para vários. O <strong>ref</strong> é como um copo: você pode colocar um líquido por vez. Para ver o que tem dentro, levantamos o copo (usando o .value). Já o <strong>reactive</strong> é uma estante com várias caixas: a estante é o obejto. Pegamos elas sem o .value e é ótima para agrupar vários pertences (dentro das caixas), como nome, idade, id;`,
+        ]
+    },
 ];
 
 function renderSectionContent(contentArray, containerId) {
