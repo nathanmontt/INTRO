@@ -2104,6 +2104,13 @@ const vueContent = [
             `&rightarrow; A forma de escrita é da seguinte forma: <strong>v-for="(key, index) in arrayName :key='index'"</strong>, sendo o index opcional. Isso seria uma forma básica;`,
         ]
     },
+    {
+        subtitle: '12. v-model',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
+        contentItself: [
+            `&rightarrow; É uma diretiva que assegura a <strong><em>two-way data binding</em></strong> (é uma forma de manter sincronizado as mudanças no código, sem precisar ficar adicionando código extra demais) em um <em>input</em>, <em>textarea</em> ou <em>select element</em>. Aumenta a conexão entre os dados dos componente e do input, permitindo mudanças;`,
+        ]
+    },
 ];
 
 function renderSectionContent(contentArray, containerId) {
