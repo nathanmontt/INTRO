@@ -2131,7 +2131,7 @@ const vueContent = [
         subtitle: '15. Props',
         desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
         contentItself: [
-            `&rightarrow; Abreviação de properties, é o modo de passar dados de um componente pai para um componente filho. Colocamos, dentro da tag que chamamos no App.vue, uma key:value pair e chamamos no arquivo filho. Esse seria uma forma estática de chamar. A forma dinâmica de chamar seria declarar as variáveis dentro do arquivo-pai e usarmos um v-bind ou apenas o :eColocamosUmNomeQualquerAqui="eChamamosNossaVariável". A forma de chamar no arquivo-filho depois é a mesma coisa: <strong>const props = defineProps(['var1', 'var2'])</strong>;`,
+            `&rightarrow; Abreviação de properties, é o modo de passar dados de um componente pai para um componente filho. Colocamos, dentro da tag que chamamos no App.vue, uma key:value pair e chamamos no arquivo filho. Esse seria uma forma estática de chamar. A forma dinâmica de chamar seria declarar as variáveis dentro do arquivo-pai e usarmos um v-bind ou apenas o <strong>:colocandoNomeQualquer="chamandoVariável"</strong>. A forma de chamar no arquivo-filho depois é a mesma coisa: <strong>const props = defineProps(['var1', 'var2'])</strong>;`,
             `&rightarrow; Aliás, os valores de props são <strong>imutáveis</strong>;`,
         ]
     },
@@ -2146,13 +2146,13 @@ const vueContent = [
             `&rightarrow; Temos formas diferentes de usar o slot: o <strong>original</strong>, só colocando a tag em um arquivo e escrevendo e colocando outro dentro da main, as <strong>fallback / default content</strong>, onde o conteúdo de dentro do arquivo filho só vai aparecer se o conteúdo do arquivo pai der problema, e os <strong>named slots</strong>, que é uma forma de atribuir um nome específico a um slot. Para o úlitmo, como podemos ter diversos nomes, podemos chamar usando a diretiva <strong>v-slots:slotName</strong> ou apenas uma <strong>#slotName</strong>. Lembrando que, fazendo dessa última forma, <strong>temos que usar outro template</strong>;`,
         ]
     },
-    {
-        subtitle: '16. ',
-        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
-        contentItself: [
-            `&rightarrow; ;`,
-        ]
-    },
+    // {
+    //     subtitle: '16. ',
+    //     desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
+    //     contentItself: [
+    //         `&rightarrow; ;`,
+    //     ]
+    // },
 ];
 
 function renderSectionContent(contentArray, containerId) {

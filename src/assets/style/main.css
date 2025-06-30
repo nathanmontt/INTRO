@@ -227,3 +227,11 @@ img.displaySlide {
         width: 25em;
     }
 }
+
+.stop {
+    text-align: center;
+    font-size: 2em;
+    padding: .5em;
+    font-weight: 900;
+    color: #d80000;
+}
