@@ -2119,6 +2119,40 @@ const vueContent = [
             `&rightarrow; Um serve pra "um" valor, e o outro, para vários. O <strong>ref</strong> é como um copo: você pode colocar um líquido por vez. Para ver o que tem dentro, levantamos o copo (usando o .value). Já o <strong>reactive</strong> é uma estante com várias caixas: a estante é o obejto. Pegamos elas sem o .value e é ótima para agrupar vários pertences (dentro das caixas), como nome, idade, id;`,
         ]
     },
+    {
+        subtitle: '14. v-once e v-pre',
+        desc: 'Conteúdo estudado do site <a href="https://roadmap.sh/vue" class="channel" target="_blank">roadmap.sh</a>',
+        contentItself: [
+            `&rightarrow; Aqui, a diretiva v-once indica que o HTML vai ser renderizado uma única vez, ou seja, se quisermos mudar seu valor, não será mais possível;`,
+            `&rightarrow; O v-pre funciona da mesma forma que o a tag pre em HTML puro;`,
+        ]
+    },
+    {
+        subtitle: '15. Props',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
+        contentItself: [
+            `&rightarrow; Abreviação de properties, é o modo de passar dados de um componente pai para um componente filho. Colocamos, dentro da tag que chamamos no App.vue, uma key:value pair e chamamos no arquivo filho. Esse seria uma forma estática de chamar. A forma dinâmica de chamar seria declarar as variáveis dentro do arquivo-pai e usarmos um v-bind ou apenas o :eColocamosUmNomeQualquerAqui="eChamamosNossaVariável". A forma de chamar no arquivo-filho depois é a mesma coisa: <strong>const props = defineProps(['var1', 'var2'])</strong>;`,
+            `&rightarrow; Aliás, os valores de props são <strong>imutáveis</strong>;`,
+        ]
+    },
+    {
+        subtitle: '15. Slots',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
+        contentItself: [
+            `&rightarrow; É um espaço em um componente onde podemos colocar algumas coisas. Ele nos permite criar componentes reutilizáveis que podem aceitar diferentes conteúdos enquanto mantém uma estrutura consistente;`,
+
+            `&rightarrow; A forma de chamar o component também vai ser diferente. Usaremos a tag do arquivo, mas não com uma <em>auto closing tag</em>, e sim com uma closing tag inteiramente dele;`,
+
+            `&rightarrow; Temos formas diferentes de usar o slot: o <strong>original</strong>, só colocando a tag em um arquivo e escrevendo e colocando outro dentro da main, as <strong>fallback / default content</strong>, onde o conteúdo de dentro do arquivo filho só vai aparecer se o conteúdo do arquivo pai der problema, e os <strong>named slots</strong>, que é uma forma de atribuir um nome específico a um slot. Para o úlitmo, como podemos ter diversos nomes, podemos chamar usando a diretiva <strong>v-slots:slotName</strong> ou apenas uma <strong>#slotName</strong>. Lembrando que, fazendo dessa última forma, <strong>temos que usar outro template</strong>;`,
+        ]
+    },
+    {
+        subtitle: '16. ',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
+        contentItself: [
+            `&rightarrow; ;`,
+        ]
+    },
 ];
 
 function renderSectionContent(contentArray, containerId) {
