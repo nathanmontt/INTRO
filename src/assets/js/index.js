@@ -2157,10 +2157,24 @@ const vueContent = [
 
 const cssArchContent = [
     {
-        subtitle: '1. ',
-        desc: 'Conteúdo estudado do canal <a href="" class="channel" target="_blank"></a>',
+        subtitle: '1. OOCSS',
+        desc: 'Conteúdo estudado do artigo <a href="https://snipcart.com/blog/organize-css-modular-architecture" class="channel" target="_blank">How to Organize Your CSS with a Modular Architecture (OOCSS, BEM, SMACSS)</a>',
         contentItself: [
-            `&rightarrow; ;`,
+            `&rightarrow; <strong>Object Oriented CSS</strong>, ou <strong>CSS Orientado à Objetos</strong>, estata que interfaces devem ser feitas de múltiplos componentes e que estes devem ser reutilizado o máximo possível, focando também na flexibilidade. Isso por si só já entra também em certos princípios, como <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" class="channel" target="_blank">DRY</a>, Consistência, um dos principais do UX;`,
+        ]
+    },
+    {
+        subtitle: '2. BEM',
+        desc: 'Conteúdo estudado do artigo <a href="https://snipcart.com/blog/organize-css-modular-architecture" class="channel" target="_blank">How to Organize Your CSS with a Modular Architecture (OOCSS, BEM, SMACSS)</a>',
+        contentItself: [
+            `&rightarrow; <strong>Box, Model and Modifier</strong>. Aqui é usado mais convenção de nomes, onde usamos o pai como a box (="media") e o filho como os modificadores (="media__title", ="media__paragraph"), e nunca outro tipo de ação. Exemplo: um botão de erro não terá a classe "red", mas sim "error";`,
+        ]
+    },
+    {
+        subtitle: '2. SMACSS',
+        desc: 'Conteúdo estudado do artigo <a href="https://snipcart.com/blog/organize-css-modular-architecture" class="channel" target="_blank">How to Organize Your CSS with a Modular Architecture (OOCSS, BEM, SMACSS)</a>',
+        contentItself: [
+            `&rightarrow; <strong>Scalable and Modular Architecture for CSS</strong>, ou <strong>Arquitetura Modular e Escalável para CSS</strong>. Normalmente é usada para projetos grandes Aqui é usado mais convenção de nomes, onde usamos o pai como a box (="media") e o filho como os modificadores (="media__title", ="media__paragraph"), e nunca outro tipo de ação. Exemplo: um botão de erro não terá a classe "red", mas sim "error";`,
         ]
     },
 ]
