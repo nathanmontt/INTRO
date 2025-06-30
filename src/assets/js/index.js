@@ -2155,6 +2155,16 @@ const vueContent = [
     // },
 ];
 
+const cssArchContent = [
+    {
+        subtitle: '1. ',
+        desc: 'Conteúdo estudado do canal <a href="" class="channel" target="_blank"></a>',
+        contentItself: [
+            `&rightarrow; ;`,
+        ]
+    },
+]
+
 function renderSectionContent(contentArray, containerId) {
     const container = document.getElementById(containerId);
 
@@ -2193,4 +2203,5 @@ document.addEventListener('DOMContentLoaded', () => {
     renderSectionContent(gitGithubContent, 'container-git-github');
     renderSectionContent(npmContent, 'container-npm');
     renderSectionContent(vueContent, 'container-vue');
+    renderSectionContent(cssArchContent, 'container-archi');
 });

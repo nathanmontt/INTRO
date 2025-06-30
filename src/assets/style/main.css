@@ -81,7 +81,7 @@ header {
 #container-user-input > .holder-user-input-title {} */
 
 #container-first, #container-second, #container-third, #container-fourth, #container-fifth,
-#container-sixth, #container-seventh {
+#container-sixth, #container-seventh, #container-eighth {
     margin: var(--main-size);
     padding: var(--sec-size);
     height: var(--block-content-hight);
@@ -96,7 +96,8 @@ header {
 #container-fourth .title-content,
 #container-fifth .title-content,
 #container-sixth .title-content,
-#container-seventh .title-content {
+#container-seventh .title-content, 
+#container-eighth .title-content {
     border-bottom: 2px solid var(--main);
 }
 
@@ -106,7 +107,8 @@ header {
 #container-js .reference-study-link,
 #container-git-github .reference-study-link, 
 #container-npm .reference-study-link,
-#container-vue .reference-study-link {
+#container-vue .reference-study-link,
+#container-archi .reference-study-link {
     padding: var(--sec-size);
     margin: var(--sec-size) 0;
     font-size: var(--thir-size);
@@ -121,7 +123,8 @@ header {
 #container-js .subtitle, 
 #container-git-github .subtitle,
 #container-npm .subtitle,
-#container-vue .subtitle {
+#container-vue .subtitle,
+#container-archi .subtitle {
     margin-top: var(--sec-size);
 }
 
@@ -131,7 +134,8 @@ header {
 #container-js .holder-list,
 #container-git-github .holder-list,
 #container-npm .holder-list,
-#container-vue .holder-list {
+#container-vue .holder-list,
+#container-archi .holder-list {
     border: 2px solid;
 }
 
@@ -141,7 +145,8 @@ header {
 #container-js .list-item,
 #container-git-github .list-item,
 #container-npm .list-item,
-#container-vue .list-item {
+#container-vue .list-item,
+#container-archi .list-item {
     padding: var(--sec-size);
     text-indent: 1em;
     border-bottom: 2px solid;
