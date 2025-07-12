@@ -1113,6 +1113,9 @@ console.log('/* ======================= */');
 /* ======================================================================================= */
 
 /* ----- criação do conteúdo dinâmico ----- */
+const explrProject = `<a href="https://github.com/nathanmontt/EXPLR" target="_blank">neste link</a>`;
+
+
 const internetContent = [
     {
         subtitle: '1. How does the Internet work?',
@@ -2136,7 +2139,7 @@ const vueContent = [
         ]
     },
     {
-        subtitle: '15. Slots',
+        subtitle: '16. Slots',
         desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
         contentItself: [
             `&rightarrow; É um espaço em um componente onde podemos colocar algumas coisas. Ele nos permite criar componentes reutilizáveis que podem aceitar diferentes conteúdos enquanto mantém uma estrutura consistente;`,
@@ -2146,13 +2149,13 @@ const vueContent = [
             `&rightarrow; Temos formas diferentes de usar o slot: o <strong>original</strong>, só colocando a tag em um arquivo e escrevendo e colocando outro dentro da main, as <strong>fallback / default content</strong>, onde o conteúdo de dentro do arquivo filho só vai aparecer se o conteúdo do arquivo pai der problema, e os <strong>named slots</strong>, que é uma forma de atribuir um nome específico a um slot. Para o úlitmo, como podemos ter diversos nomes, podemos chamar usando a diretiva <strong>v-slots:slotName</strong> ou apenas uma <strong>#slotName</strong>. Lembrando que, fazendo dessa última forma, <strong>temos que usar outro template</strong>;`,
         ]
     },
-    // {
-    //     subtitle: '16. ',
-    //     desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
-    //     contentItself: [
-    //         `&rightarrow; ;`,
-    //     ]
-    // },
+    {
+        subtitle: '17. Provide/Inject',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=pgWZLS75Nmo&t=16s" class="channel" target="_blank">Master Vue.js Composition API: Build 10 Stunning Projects for Real-world Expertise!</a>',
+        contentItself: [
+            `&rightarrow; (<strong>Essa parte está sendo adicionada devido ao projeto pessoal meu, ${explrProject}</strong>). É uma forma de passar o estado do componente sem precisar usar props. É usado para passar dados, propriedades, objetos, do componente-pai para os componentes-filhos;`,
+        ]
+    },
 ];
 
 const cssArchContent = [
