@@ -2187,7 +2187,8 @@ const reactContent = [
         subtitle: '1. What is React?',
         desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=CgkZ7MvWUAA" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; ;`,
+            `&rightarrow; É uma biblioteca (não um framework) usada para fazer aplicações web. Da mesma forma que o vue.js, React utiliza componentes, que podem ser reutilizados em qualquer parte da aplicação;`,
+            `&rightarrow; Sobre a organização, é bastante semelhante à vue.js;`,
         ]
     },
 ]
