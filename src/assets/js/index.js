@@ -2182,6 +2182,16 @@ const cssArchContent = [
     },
 ]
 
+const reactContent = [
+    {
+        subtitle: '1. What is React?',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=CgkZ7MvWUAA" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; ;`,
+        ]
+    },
+]
+
 function renderSectionContent(contentArray, containerId) {
     const container = document.getElementById(containerId);
 
@@ -2221,4 +2231,5 @@ document.addEventListener('DOMContentLoaded', () => {
     renderSectionContent(npmContent, 'container-npm');
     renderSectionContent(vueContent, 'container-vue');
     renderSectionContent(cssArchContent, 'container-archi');
+    renderSectionContent(reactContent, 'container-react');
 });
