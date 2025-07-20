@@ -2209,7 +2209,7 @@ const reactContent = [
         ]
     },
     {
-        subtitle: '3. Styling in React?',
+        subtitle: '3. Styling in React',
         desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=CgkZ7MvWUAA" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
             `&rightarrow; Temos 3 formas:
@@ -2221,6 +2221,17 @@ const reactContent = [
                 
                 <li>&bullet; <strong>Inline</strong>: nesse caso, criamos uma variável, como const style = { e aqui dentro, colocamos o key:value das variáveis (e usamos o camel case, nada de border-radius, mas borderRadius: "value",). }. Depois, chamamos da mesma forma de cima: style={ styles };</li>
             </ul>`,
+        ]
+    },
+    {
+        subtitle: '4. props in React',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=CgkZ7MvWUAA" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; São propriedas de <em>read-only</em> que são compartilhadas entre componentes (da mesma forma que vue.js). Pra que uma função possa aceitar props, dentro dos parâmetros dela, colocamos: <strong>function FuncName (props) { e aqui dentro, acessamos com o ., ou seja, props.name }</strong>. Onde queremos colocar o valor, usamos o key=value pairs, ou seja, name = "value"; `,
+            
+            `&rightarrow; Caso queiramos salvar valores que não sejam strings, colocamos { aqui dentro }. Valores booleanos não são mostrados diretamente no DOM. Usamos operador ternário; `,
+            
+            `&rightarrow; Para casos de debug, usamos propTypes, que serve para verificarmos a veracidade do tipo do prop que estamos passando. Declaramos <strong>funcName.propTypes = { name: PropTypes.string.isRequired }</strong> fora da função e antes do export. MAS ISSO NÃO EXISTE MAIS!; `,
         ]
     },
 ]
