@@ -2202,6 +2202,10 @@ const reactContent = [
             `&rightarrow; O diferencial disso tudo é a forma com que os componentes são arrumados. Em vue.js, é possível colocar uma tag abaixo da outra diretamente, no caso, <em>self-closing</em> tags. Mas em React a história é outra. Sem nome nas tags, encapsulamos as <em>component created tags</em> dentro dos símbolos das tags, de abrir e fechar;`,
             
             `&rightarrow; Outro ponto são os códigos JS. O convencional é colocar ele dentro da função, mas acima do return(). E para mostrar isso dentro do nosso HTML, usamos também o <strong>text interpolation</strong>, mas diferentemente do vue.js, usamos apenas { um par de chaves, e não 2, como de costume no outro framework };`,
+
+            `&rightarrow; Outro ponto importante é no quesito do uso de classes para CSS. Claro que será usado Tailwind para estilos futuramente, mas ainda sim. A forma de acessar o estilo não é com "class", já que isso está reservado para POO. Usamos "className='nomdeDaClasse';";`,
+
+            `&rightarrow; Mais um ponto: importar elementos. Para imagens, em vue.js, havia a possibilidade de chamar de forma dinâmica, ou seja, caso alguma coisa mudasse na imagem, era necessário apenas poucas mudanças. Em React, é a mesma coisa. Pegando o exemplo de src da tag img, podemos usar <strong>src={nomeDaVariavelDaImagem}</strong> e lá em cima, importamos ela, com <strong>import {nomeDaVariavelDaImagem} from './caminho/da/imagem'</strong>;`,
         ]
     },
 ]
