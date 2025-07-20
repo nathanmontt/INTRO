@@ -2208,6 +2208,21 @@ const reactContent = [
             `&rightarrow; Mais um ponto: importar elementos. Para imagens, em vue.js, havia a possibilidade de chamar de forma dinâmica, ou seja, caso alguma coisa mudasse na imagem, era necessário apenas poucas mudanças. Em React, é a mesma coisa. Pegando o exemplo de src da tag img, podemos usar <strong>src={nomeDaVariavelDaImagem}</strong> e lá em cima, importamos ela, com <strong>import {nomeDaVariavelDaImagem} from './caminho/da/imagem'</strong>;`,
         ]
     },
+    {
+        subtitle: '3. Styling in React?',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=CgkZ7MvWUAA" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; Temos 3 formas:
+            <ul>
+                <li>&bullet; <strong>External</strong>: CSS externo, como de 
+                costume;</li>
+                
+                <li>&bullet; <strong>Module</strong>: esse, para mim, é novo. Criamos um componente (Button.jsx, por exemplo). Criamos uma CSS dedicada a ele, uma module (Button.module.css). Depois, importamos ela dentro do componente (import styles from './Button.module.css';). Depois, dentro de alguma tag, usamos { e chamamos style.button }, que é o nome da classe que está la dentro do module. Normalmente usamos para estilos únicos;</li>
+                
+                <li>&bullet; <strong>Inline</strong>: nesse caso, criamos uma variável, como const style = { e aqui dentro, colocamos o key:value das variáveis (e usamos o camel case, nada de border-radius, mas borderRadius: "value",). }. Depois, chamamos da mesma forma de cima: style={ styles };</li>
+            </ul>`,
+        ]
+    },
 ]
 
 function renderSectionContent(contentArray, containerId) {
