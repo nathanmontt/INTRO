@@ -2191,6 +2191,19 @@ const reactContent = [
             `&rightarrow; Sobre a organização, é bastante semelhante à vue.js;`,
         ]
     },
+    {
+        subtitle: '2. React Environment',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=CgkZ7MvWUAA" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; Diferente do vue.js, não precisamos separar as seções dentro do arquivo com tags como template, script e style. Declaramos uma function com o nome dela (normalmente com o nome do próprio componente) e ao fim exportamos com export default nomeDoArquivo.;`,
+            
+            `&rightarrow; Agora dentro da function, nós precisamos <strong>retornar o que escrevermos dentro da função</strong>. Mas e o conteúdo? Bom, usamos: return(aqui colocamos TODO O NOSSO HTML), e dentro do nosso App.jsx, dentro também do return(colocamos a tag do componenent); e pronto;`,
+
+            `&rightarrow; O diferencial disso tudo é a forma com que os componentes são arrumados. Em vue.js, é possível colocar uma tag abaixo da outra diretamente, no caso, <em>self-closing</em> tags. Mas em React a história é outra. Sem nome nas tags, encapsulamos as <em>component created tags</em> dentro dos símbolos das tags, de abrir e fechar;`,
+            
+            `&rightarrow; Outro ponto são os códigos JS. O convencional é colocar ele dentro da função, mas acima do return(). E para mostrar isso dentro do nosso HTML, usamos também o <strong>text interpolation</strong>, mas diferentemente do vue.js, usamos apenas { um par de chaves, e não 2, como de costume no outro framework };`,
+        ]
+    },
 ]
 
 function renderSectionContent(contentArray, containerId) {
