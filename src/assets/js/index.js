@@ -2241,6 +2241,13 @@ const reactContent = [
             `&rightarrow; Podemos usar um const varName = arrayName.map(el => li>el.key). Mas a tag li PRECISA ter uma key, então escrevemos key={el.id}, por exemplo; `,
         ]
     },
+    {
+        subtitle: '6. Event Handling in React',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=CgkZ7MvWUAA" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; Com event handling, por exemplo, clicking events, caso eles possuam algum parâmetro, na hora da chamada, usamos também uma arrow function, como: {() => clickEventFunc("parameterValue")}; `,
+        ]
+    },
 ]
 
 function renderSectionContent(contentArray, containerId) {
