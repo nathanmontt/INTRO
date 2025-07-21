@@ -2234,6 +2234,13 @@ const reactContent = [
             `&rightarrow; Para casos de debug, usamos propTypes, que serve para verificarmos a veracidade do tipo do prop que estamos passando. Declaramos <strong>funcName.propTypes = { name: PropTypes.string.isRequired }</strong> fora da função e antes do export. MAS ISSO NÃO EXISTE MAIS!; `,
         ]
     },
+    {
+        subtitle: '5. Rendering items in React',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=CgkZ7MvWUAA" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; Podemos usar um const varName = arrayName.map(el => li>el.key). Mas a tag li PRECISA ter uma key, então escrevemos key={el.id}, por exemplo; `,
+        ]
+    },
 ]
 
 function renderSectionContent(contentArray, containerId) {
