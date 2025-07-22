@@ -2248,6 +2248,26 @@ const reactContent = [
             `&rightarrow; Com event handling, por exemplo, clicking events, caso eles possuam algum parâmetro, na hora da chamada, usamos também uma arrow function, como: {() => clickEventFunc("parameterValue")}; `,
         ]
     },
+    {
+        subtitle: '7. useState in React',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=CgkZ7MvWUAA" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; É uma função especial que permite componentes funcionais usarem React feats. sem precisar usar classes. Temos useState, useEffect, useContext, useReducer, etc; `,
+            
+            `&rightarrow; Pra usar, primeiro importamos ela, importando td com <strong>import React from 'react'</strong> ou apenas <strong>import useState from 'react'</strong>; `,
+
+            `&rightarrow; Dois pontos para se levar em consideração: usamos o useState porque (1) as variáveis locais não geram um trigger, então o React não sabe quando renderizar e (2) variáveis locais não persistem; `,
+
+            `&rightarrow; Na construção do useState, fazemos: <strong>const [index, setIndex] = useState(initialValue);</strong>. Com isso, temos o index, que seria uma <strong>stateful variable</strong> e o setIndex, que seria uma <strong>setter function</strong>. Pra setter function, precisamos declará-la (seja uma function expression ou uma função mesmo) e fazemos da seguinte forma: const updateIndex = () => { setIndex(newValue); }; `,
+        ]
+    },
+    {
+        subtitle: '8. onCHange in React',
+        desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=CgkZ7MvWUAA" class="channel" target="_blank">Bro Code</a>',
+        contentItself: [
+            `&rightarrow; ; `,
+        ]
+    },
 ]
 
 function renderSectionContent(contentArray, containerId) {
