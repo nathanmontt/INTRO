@@ -2265,7 +2265,7 @@ const reactContent = [
         subtitle: '8. onCHange in React',
         desc: 'Conteúdo estudado do vídeo <a href="https://www.youtube.com/watch?v=CgkZ7MvWUAA" class="channel" target="_blank">Bro Code</a>',
         contentItself: [
-            `&rightarrow; ; `,
+            `&rightarrow; Aqui, é dado um gatilho em uma função toda vez que o valor em um input muda (normalmente era usado em forms). O valor é mudado em tempo real. Lembrar também que essa função tem como parâmetro um <strong>event</strong>, e dentro dela nós pegamos <em>event.targe.value</em>; `,
         ]
     },
 ]
