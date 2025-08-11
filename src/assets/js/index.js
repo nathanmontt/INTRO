@@ -2270,6 +2270,17 @@ const reactContent = [
     },
 ]
 
+const buildToolsContent = [
+    {
+        subtitle: '1. Module Bundler',
+        desc: 'Conteúdo estudado do roadmap <a href="https://roadmap.sh/frontend" class="channel" target="_blank">roadmap.sh</a>',
+        contentItself: [
+            `&rightarrow; <em>Build tools</em> automatizam a feitura de apps. Eles compilam, linkam, minificam, e empacotam o código, rodam testes e gerenciam as dependências;`,
+            `&rightarrow; Exemplos de <em>build tools</em>: <strong>Webpack, Vite e Parcel</strong>;`,
+        ]
+    },
+]
+
 function renderSectionContent(contentArray, containerId) {
     const container = document.getElementById(containerId);
 
@@ -2310,4 +2321,5 @@ document.addEventListener('DOMContentLoaded', () => {
     renderSectionContent(vueContent, 'container-vue');
     renderSectionContent(cssArchContent, 'container-archi');
     renderSectionContent(reactContent, 'container-react');
+    renderSectionContent(buildToolsContent, 'container-build');
 });

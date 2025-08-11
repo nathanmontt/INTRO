@@ -80,7 +80,7 @@ header {
 /* #container-variables > .holder-variable-title,
 #container-user-input > .holder-user-input-title {} */
 
-#container-first, #container-second, #container-third, #container-fourth, #container-fifth, #container-sixth, #container-seventh, #container-eighth, #container-nineth {
+#container-first, #container-second, #container-third, #container-fourth, #container-fifth, #container-sixth, #container-seventh, #container-eighth, #container-nineth, #container-tenth {
     margin: var(--main-size);
     padding: var(--sec-size);
     height: var(--block-content-hight);
@@ -97,7 +97,8 @@ header {
 #container-sixth .title-content,
 #container-seventh .title-content, 
 #container-eighth .title-content,
-#container-nineth .title-content {
+#container-nineth .title-content,
+#container-tenth .title-content {
     border-bottom: 2px solid var(--main);
 }
 
@@ -109,7 +110,8 @@ header {
 #container-npm .reference-study-link,
 #container-vue .reference-study-link,
 #container-archi .reference-study-link,
-#container-react .reference-study-link {
+#container-react .reference-study-link,
+#container-build .reference-study-link {
     padding: var(--sec-size);
     margin: var(--sec-size) 0;
     font-size: var(--thir-size);
@@ -126,7 +128,8 @@ header {
 #container-npm .subtitle,
 #container-vue .subtitle,
 #container-archi .subtitle,
-#container-react .subtitle {
+#container-react .subtitle,
+#container-build .subtitle {
     margin-top: var(--sec-size);
 }
 
@@ -138,7 +141,8 @@ header {
 #container-npm .holder-list,
 #container-vue .holder-list,
 #container-archi .holder-list,
-#container-react .holder-list {
+#container-react .holder-list,
+#container-build .holder-list {
     border: 2px solid;
 }
 
@@ -150,7 +154,8 @@ header {
 #container-npm .list-item,
 #container-vue .list-item,
 #container-archi .list-item,
-#container-react .list-item {
+#container-react .list-item,
+#container-build .list-item {
     padding: var(--sec-size);
     text-indent: 1em;
     border-bottom: 2px solid;
